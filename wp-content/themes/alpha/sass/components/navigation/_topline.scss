@@ -9,12 +9,12 @@
 		text-decoration: none;
 	}
 
-	ul {
+	.menu {
 		@include container();
 		list-style: none;
 		display: flex;
 		justify-content: flex-end;
-		padding: 0;
+		margin-bottom: 0;
 
 		li {
 			margin-left: 40px;

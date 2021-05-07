@@ -12,6 +12,9 @@ if ( ! defined( 'ALPHA_VERSION' ) ) {
 	define( 'ALPHA_VERSION', '1.0.0' );
 }
 
+require_once get_template_directory() . '/inc/acf-load.php';
+require_once get_template_directory() . '/inc/wp-cli-acf-tools.php';
+
 if ( ! function_exists( 'alpha_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -125,15 +128,15 @@ add_action( 'after_setup_theme', 'alpha_content_width', 0 );
  */
 function alpha_widgets_init() {
 	// register_sidebar(
-	// 	array(
-	// 		'name'          => esc_html__( 'Sidebar', 'alpha' ),
-	// 		'id'            => 'sidebar-1',
-	// 		'description'   => esc_html__( 'Add widgets here.', 'alpha' ),
-	// 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-	// 		'after_widget'  => '</section>',
-	// 		'before_title'  => '<h2 class="widget-title">',
-	// 		'after_title'   => '</h2>',
-	// 	)
+	// array(
+	// 'name'          => esc_html__( 'Sidebar', 'alpha' ),
+	// 'id'            => 'sidebar-1',
+	// 'description'   => esc_html__( 'Add widgets here.', 'alpha' ),
+	// 'before_widget' => '<section id="%1$s" class="widget %2$s">',
+	// 'after_widget'  => '</section>',
+	// 'before_title'  => '<h2 class="widget-title">',
+	// 'after_title'   => '</h2>',
+	// )
 	// );
 }
 add_action( 'widgets_init', 'alpha_widgets_init' );
