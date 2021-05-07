@@ -50,8 +50,9 @@ if ( ! function_exists( 'alpha_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'primary' => esc_html__( 'Primary', 'alpha' ),
-				'topline' => esc_html__( 'Topline', 'alpha' ),
+				'primary'       => esc_html__( 'Primary', 'alpha' ),
+				'primary-right' => esc_html__( 'Primary Right', 'alpha' ),
+				'topline'       => esc_html__( 'Topline', 'alpha' ),
 			)
 		);
 
