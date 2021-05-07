@@ -14,6 +14,7 @@ if ( ! defined( 'ALPHA_VERSION' ) ) {
 
 require_once get_template_directory() . '/inc/acf-load.php';
 require_once get_template_directory() . '/inc/wp-cli-acf-tools.php';
+require_once get_template_directory() . '/inc/alpha-menu.php';
 
 if ( ! function_exists( 'alpha_setup' ) ) :
 	/**

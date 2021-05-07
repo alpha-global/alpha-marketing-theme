@@ -51,6 +51,7 @@
 						'theme_location'  => 'primary',
 						'menu_id'         => 'primary-menu',
 						'container_class' => 'primary-menu-container',
+						'walker'          => new Alpha_Menu_Walker(),
 					)
 				);
 				wp_nav_menu(
@@ -58,6 +59,7 @@
 						'theme_location'  => 'primary-right',
 						'menu_id'         => 'primary-right-menu',
 						'container_class' => 'primary-right-menu-container',
+						'walker'          => new Alpha_Menu_Walker(),
 					)
 				);
 				?>

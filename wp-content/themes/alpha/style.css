@@ -893,6 +893,10 @@ textarea {
 	margin-left: 0;
 }
 
+.site-header {
+	position: relative;
+}
+
 .site-header .main-navigation {
 	display: flex;
 	flex-grow: 1;
@@ -908,35 +912,165 @@ textarea {
 	line-height: 1.4em;
 }
 
-.site-header .main-navigation .menu > li {
+.site-header .main-navigation .menu > .menu-item {
 	margin-left: 56px;
 }
 
-.site-header .main-navigation .menu > li:first-child {
+.site-header .main-navigation .menu > .menu-item:first-child {
 	margin-left: 0;
 }
 
-.site-header .main-navigation .menu > li > a {
+.site-header .main-navigation .menu > .menu-item > a {
 	display: inline-block;
 	padding: 9px 0;
 	color: #fff;
 	text-decoration: none;
 }
 
-.site-header .main-navigation .sub-menu {
+.site-header .main-navigation .menu > .menu-item > a.button {
+	display: inline-block;
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 8px 30px;
+	border-radius: 8px;
+	transition: all .3s ease;
+}
+
+.site-header .main-navigation .menu > .menu-item > a.button:hover {
+	background-color: #b81d0f;
+	border-color: #b81d0f;
+}
+
+.site-header .main-navigation .menu > .menu-item-has-children > a {
+	position: relative;
+}
+
+.site-header .main-navigation .menu > .menu-item-has-children > a:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	width: 0;
+	background-color: #e42312;
+	transition: all .3s ease;
+}
+
+.site-header .main-navigation .menu > .menu-item-has-children > a:after {
+	font-family: "AlphaOrgIcons" !important;
+	display: inline-block;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\e806";
+	margin-left: 0.8em;
+	font-size: 75%;
+	transition: all .3s ease;
+}
+
+.site-header .main-navigation .menu > .menu-item .sub-menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.site-header .main-navigation .menu > .menu-item .sub-menu > .menu-item {
+	margin-bottom: 2em;
+}
+
+.site-header .main-navigation .menu > .menu-item .sub-menu > .menu-item > a {
+	text-decoration: none;
+	color: #000;
+}
+
+.site-header .main-navigation .menu > .menu-item .sub-menu > .menu-item > a .title {
+	color: #e42312;
+	margin-bottom: 0.5em;
+}
+
+.site-header .main-navigation .menu > .menu-item .sub-menu > .menu-item > a .image {
+	margin-bottom: 0.5em;
+}
+
+.site-header .main-navigation .menu > .menu-item .sub-menu > .menu-item > a .image img {
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: -1px -1px 15px -2px rgba(0, 0, 0, 0.3);
+}
+
+.site-header .main-navigation .menu > .menu-item .sub-menu > .menu-item > a .description {
+	font-size: 90%;
+	max-width: 25em;
+}
+
+.site-header .main-navigation .menu > .menu-item > .sub-menu {
 	display: none;
+	flex-wrap: wrap;
+	position: absolute;
+	list-style: none;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	margin: 0;
+	padding: 40px calc( ( 100vw - 1200px ) / 2 - 25px) 40px calc(  ( 100vw - 1200px ) / 2 + 92px - 25px);
+	transition: all .3s ease-in;
+	height: 0;
+}
+
+.site-header .main-navigation .menu > .menu-item > .sub-menu > .menu-item {
+	flex: 0 0 25%;
+	padding: 0 20px;
+}
+
+.site-header .main-navigation .menu > .menu-item > .sub-menu > .menu-item.menu-item-column {
+	flex: 0 0 50%;
+}
+
+.site-header .main-navigation .menu > .menu-item:hover > a {
+	color: #e42312;
+}
+
+.site-header .main-navigation .menu > .menu-item:hover > a:before {
+	width: 100%;
+}
+
+.site-header .main-navigation .menu > .menu-item:hover > a:after {
+	transform: rotate(-180deg);
+}
+
+.site-header .main-navigation .menu > .menu-item:hover > .sub-menu {
+	display: flex;
+	height: auto;
 }
 
 .site-header .menu-toggle {
 	display: none;
 }
 
-.site-header.solid {
+.site-header:hover, .site-header.solid {
 	background-color: #fff;
 }
 
-.site-header.solid .main-navigation .menu > li > a {
+.site-header:hover .main-navigation .menu > .menu-item > a, .site-header.solid .main-navigation .menu > .menu-item > a {
 	color: #000;
+}
+
+.site-header:hover .main-navigation .menu > .menu-item > a.button, .site-header.solid .main-navigation .menu > .menu-item > a.button {
+	background-color: #e42312;
+	border-color: #e42312;
+	color: #fff;
+}
+
+.site-header:hover .main-navigation .menu > .menu-item > a.button:hover, .site-header.solid .main-navigation .menu > .menu-item > a.button:hover {
+	background-color: #b81d0f;
+	border-color: #b81d0f;
 }
 
 /* Posts and pages
