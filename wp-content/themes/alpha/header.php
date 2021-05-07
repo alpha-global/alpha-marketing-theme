@@ -25,32 +25,44 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'alpha' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		
-		<?php the_custom_logo(); ?>
+	<nav id="topline-nav" class="topline-nav">
+		<?php
+		wp_nav_menu(
+			array(
+				'theme_location' => 'topline',
+				'menu_id'        => 'topline-menu',
+			)
+		);
+		?>
+	</nav>
 
-		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'alpha' ); ?></button>
+	<header id="masthead" class="site-header solid">
 
-		<nav id="topline-nav" class="topline-nav">
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'topline',
-					'menu_id'        => 'topline-menu',
-				)
-			);
-			?>
-		</nav>
+		<div class="branding">
 
-		<nav id="site-navigation" class="main-navigation">
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'primary',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav>
+			<a id="header-menu-logo" title="<?php bloginfo( 'name' ); ?>" rel="home" class="aicon-logo" href="<?php echo esc_url( home_url() ); ?>"></a>
+
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'alpha' ); ?></button>
+
+			<nav id="site-navigation" class="main-navigation">
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location'  => 'primary',
+						'menu_id'         => 'primary-menu',
+						'container_class' => 'primary-menu-container',
+					)
+				);
+				wp_nav_menu(
+					array(
+						'theme_location'  => 'primary-right',
+						'menu_id'         => 'primary-right-menu',
+						'container_class' => 'primary-right-menu-container',
+					)
+				);
+				?>
+			</nav><!-- #site-navigation -->
+
+		</div><!-- .container -->
 
 	</header><!-- #masthead -->
