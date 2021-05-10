@@ -4,7 +4,7 @@ if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
 	'key' => 'group_6094e09d21d9b',
-	'title' => 'Primary menu item',
+	'title' => 'Menu Item',
 	'fields' => array(
 		array(
 			'key' => 'field_6094e0a9978d2',
@@ -29,6 +29,44 @@ acf_add_local_field_group(array(
 			'max_height' => '',
 			'max_size' => '',
 			'mime_types' => '',
+		),
+		array(
+			'key' => 'field_6094e21600f3d',
+			'label' => 'Is Button',
+			'name' => 'is_button',
+			'type' => 'true_false',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'message' => '',
+			'default_value' => 0,
+			'ui' => 1,
+			'ui_on_text' => '',
+			'ui_off_text' => '',
+		),
+		array(
+			'key' => 'field_6094fb452b5fa',
+			'label' => 'Is Column',
+			'name' => 'is_column',
+			'type' => 'true_false',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'message' => '',
+			'default_value' => 0,
+			'ui' => 1,
+			'ui_on_text' => '',
+			'ui_off_text' => '',
 		),
 	),
 	'location' => array(
