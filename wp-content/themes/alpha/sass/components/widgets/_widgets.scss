@@ -5,4 +5,18 @@
 	select {
 		max-width: 100%;
 	}
+
+	&-columns {
+		display: flex;
+	}
+
+	&-column {
+		margin-right: 3%;
+		
+		&:last-child {
+			margin-right: 0;
+		}
+	}
 }
+
+@import "alpha-cta";

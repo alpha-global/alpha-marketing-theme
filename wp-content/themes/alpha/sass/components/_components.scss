@@ -7,6 +7,10 @@
 @import "navigation/topline";
 @import "navigation/navigation";
 
+/* Buttons
+--------------------------------------------- */
+@import "buttons/buttons";
+
 /* Posts and pages
 --------------------------------------------- */
 @import "content/posts-and-pages";
@@ -30,3 +34,7 @@
 /* Galleries
 --------------------------------------------- */
 @import "media/galleries";
+
+/* Footer
+--------------------------------------------- */
+@import "footer/footer";

@@ -1,0 +1,25 @@
+.button {
+	display: inline-block;
+	padding: 8px $gutter;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 8px;
+	text-decoration: none;
+
+	&-outline {
+		border-color: $color__white;
+		background-color: transparent;
+		color: $color__white;
+	}
+
+	&-primary {
+		border-color: $color__accent;
+		background-color: $color__accent;
+		color: $color__white;
+	}
+
+	&:hover {
+		background-color: $color__accent-hover;
+		border-color: $color__accent-hover;
+	}
+}

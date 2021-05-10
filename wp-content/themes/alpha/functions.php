@@ -15,6 +15,7 @@ if ( ! defined( 'ALPHA_VERSION' ) ) {
 require_once get_template_directory() . '/inc/acf-load.php';
 require_once get_template_directory() . '/inc/wp-cli-acf-tools.php';
 require_once get_template_directory() . '/inc/alpha-menu.php';
+require_once get_template_directory() . '/inc/widgets.php';
 
 if ( ! function_exists( 'alpha_setup' ) ) :
 	/**
@@ -128,17 +129,17 @@ add_action( 'after_setup_theme', 'alpha_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function alpha_widgets_init() {
-	// register_sidebar(
-	// array(
-	// 'name'          => esc_html__( 'Sidebar', 'alpha' ),
-	// 'id'            => 'sidebar-1',
-	// 'description'   => esc_html__( 'Add widgets here.', 'alpha' ),
-	// 'before_widget' => '<section id="%1$s" class="widget %2$s">',
-	// 'after_widget'  => '</section>',
-	// 'before_title'  => '<h2 class="widget-title">',
-	// 'after_title'   => '</h2>',
-	// )
-	// );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer', 'alpha' ),
+			'id'            => 'footer',
+			'description'   => esc_html__( 'Add footer widgets.', 'alpha' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 }
 add_action( 'widgets_init', 'alpha_widgets_init' );
 
@@ -182,11 +183,4 @@ require get_template_directory() . '/inc/customizer.php';
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
-}
-
-/**
- * Load WooCommerce compatibility file.
- */
-if ( class_exists( 'WooCommerce' ) ) {
-	require get_template_directory() . '/inc/woocommerce.php';
 }
