@@ -26,6 +26,24 @@
 					padding: 9px 0;
 					color: $color__nav-link;
 					text-decoration: none;
+					position: relative;
+
+					&:not(.button) {
+						&:before {
+							content: '';
+							position: absolute;
+							left: 0;
+							bottom: 0;
+							height: 2px;
+							width: 0;
+							background-color: $color__accent;
+							transition: all .3s ease;
+						}
+					}
+
+					&:hover {
+						color: $color__accent;
+					}
 
 					&.button {
 						display: inline-block;
@@ -44,21 +62,9 @@
 
 				&-has-children {
 					> a {
-						position: relative;
-
-						&:before {
-							content: '';
-							position: absolute;
-							left: 0;
-							bottom: 0;
-							height: 2px;
-							width: 0;
-							background-color: $color__accent;
-							transition: all .3s ease;
-						}
 
 						&:after {
-							font-family: "AlphaOrgIcons" !important;
+							font-family: $font__icons;
 							display: inline-block;
 							font-style: normal;
 							font-weight: normal;
@@ -167,6 +173,10 @@
 				> .menu-item {
 					> a {
 						color: $color__dark;
+
+						&:hover {
+							color: $color__accent;
+						}
 
 						&.button {
 							background-color: $color__accent;

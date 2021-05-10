@@ -925,6 +925,22 @@ textarea {
 	padding: 9px 0;
 	color: #fff;
 	text-decoration: none;
+	position: relative;
+}
+
+.site-header .main-navigation .menu > .menu-item > a:not(.button):before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	width: 0;
+	background-color: #e42312;
+	transition: all .3s ease;
+}
+
+.site-header .main-navigation .menu > .menu-item > a:hover {
+	color: #e42312;
 }
 
 .site-header .main-navigation .menu > .menu-item > a.button {
@@ -941,23 +957,8 @@ textarea {
 	border-color: #b81d0f;
 }
 
-.site-header .main-navigation .menu > .menu-item-has-children > a {
-	position: relative;
-}
-
-.site-header .main-navigation .menu > .menu-item-has-children > a:before {
-	content: '';
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	height: 2px;
-	width: 0;
-	background-color: #e42312;
-	transition: all .3s ease;
-}
-
 .site-header .main-navigation .menu > .menu-item-has-children > a:after {
-	font-family: "AlphaOrgIcons" !important;
+	font-family: "AlphaOrgIcons";
 	display: inline-block;
 	font-style: normal;
 	font-weight: normal;
@@ -1060,6 +1061,10 @@ textarea {
 
 .site-header:hover .main-navigation .menu > .menu-item > a, .site-header.solid .main-navigation .menu > .menu-item > a {
 	color: #000;
+}
+
+.site-header:hover .main-navigation .menu > .menu-item > a:hover, .site-header.solid .main-navigation .menu > .menu-item > a:hover {
+	color: #e42312;
 }
 
 .site-header:hover .main-navigation .menu > .menu-item > a.button, .site-header.solid .main-navigation .menu > .menu-item > a.button {
