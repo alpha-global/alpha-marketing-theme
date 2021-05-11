@@ -7,11 +7,16 @@
 ( function() {
 	const siteHeader = document.getElementById( 'masthead' );
 	const initialScroll = window.scrollY;
+	const adminBar = document.getElementById( 'wpadminbar' );
+	const adminBarHeight = adminBar ? adminBar.getBoundingClientRect().height : 0;
 	const siteHeaderInitialTop = siteHeader.getBoundingClientRect().top + initialScroll;
+	
+	console.log( adminBar );
+
 
 	const handleFixedHeader = function() {
 		const currentScroll = window.scrollY;
-		if ( currentScroll > siteHeaderInitialTop ) {
+		if ( currentScroll + adminBarHeight > siteHeaderInitialTop ) {
 			siteHeader.classList.add( 'fixed' );
 		} else {
 			siteHeader.classList.remove( 'fixed' );

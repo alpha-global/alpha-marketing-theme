@@ -10,6 +10,10 @@
 
 	&-full-page {
 		min-height: calc( 100vh - 40px );
+
+		body.admin-bar & {
+			min-height: calc( 100vh - 40px - 32px );
+		}
 	}
 
 	.background,
