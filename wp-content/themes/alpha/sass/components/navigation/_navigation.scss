@@ -42,10 +42,6 @@
 						}
 					}
 
-					&:hover {
-						color: $color__accent;
-					}
-
 					&.button {
 						display: inline-block;
 						border: 1px solid $color__white;
@@ -78,6 +74,12 @@
 							font-size: 75%;
 							transition: all .3s ease;
 						}
+					}
+				}
+
+				&:hover {
+					> a {
+						color: $color__accent;
 					}
 				}
 				
@@ -176,7 +178,7 @@
 
 		+ .site-main {
 			position: relative;
-			z-index: -1;
+			z-index: 0;
 		}
 	}
 
@@ -188,7 +190,7 @@
 
 		+ .site-main {
 			position: relative;
-			z-index: -1;
+			z-index: 0;
 		}
 
 		&:not(.overlay) {
@@ -210,10 +212,6 @@
 					> a {
 						color: $color__dark;
 
-						&:hover {
-							color: $color__accent;
-						}
-
 						&.button {
 							background-color: $color__accent;
 							border-color: $color__accent;
@@ -223,6 +221,12 @@
 								background-color: $color__accent-hover;
 								border-color: $color__accent-hover;
 							}
+						}
+					}
+
+					&:hover {
+						> a {
+							color: $color__accent;
 						}
 					}
 				}

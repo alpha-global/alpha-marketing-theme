@@ -1001,10 +1001,6 @@ textarea {
 	transition: all .3s ease;
 }
 
-.site-header .main-navigation .menu > .menu-item > a:hover {
-	color: #e42312;
-}
-
 .site-header .main-navigation .menu > .menu-item > a.button {
 	display: inline-block;
 	border: 1px solid #fff;
@@ -1033,6 +1029,10 @@ textarea {
 	margin-left: 0.8em;
 	font-size: 75%;
 	transition: all .3s ease;
+}
+
+.site-header .main-navigation .menu > .menu-item:hover > a {
+	color: #e42312;
 }
 
 .site-header .main-navigation .menu > .menu-item .sub-menu {
@@ -1126,7 +1126,7 @@ textarea {
 
 .site-header.overlay + .site-main {
 	position: relative;
-	z-index: -1;
+	z-index: 0;
 }
 
 .site-header.fixed {
@@ -1138,7 +1138,7 @@ textarea {
 
 .site-header.fixed + .site-main {
 	position: relative;
-	z-index: -1;
+	z-index: 0;
 }
 
 .site-header.fixed:not(.overlay) + .site-main {
@@ -1155,11 +1155,6 @@ textarea {
 	color: #000;
 }
 
-.site-header:hover .main-navigation .menu > .menu-item > a:hover, .site-header.solid .main-navigation .menu > .menu-item > a:hover, .site-header.fixed .main-navigation .menu > .menu-item > a:hover,
-.topline-nav:hover + .site-header .main-navigation .menu > .menu-item > a:hover {
-	color: #e42312;
-}
-
 .site-header:hover .main-navigation .menu > .menu-item > a.button, .site-header.solid .main-navigation .menu > .menu-item > a.button, .site-header.fixed .main-navigation .menu > .menu-item > a.button,
 .topline-nav:hover + .site-header .main-navigation .menu > .menu-item > a.button {
 	background-color: #e42312;
@@ -1171,6 +1166,11 @@ textarea {
 .topline-nav:hover + .site-header .main-navigation .menu > .menu-item > a.button:hover {
 	background-color: #b81d0f;
 	border-color: #b81d0f;
+}
+
+.site-header:hover .main-navigation .menu > .menu-item:hover > a, .site-header.solid .main-navigation .menu > .menu-item:hover > a, .site-header.fixed .main-navigation .menu > .menu-item:hover > a,
+.topline-nav:hover + .site-header .main-navigation .menu > .menu-item:hover > a {
+	color: #e42312;
 }
 
 /* Buttons

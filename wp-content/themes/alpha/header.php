@@ -77,6 +77,6 @@
 				?>
 			</nav><!-- #site-navigation -->
 
-		</div><!-- .container -->
+		</div><!-- .branding -->
 
 	</header><!-- #masthead -->
