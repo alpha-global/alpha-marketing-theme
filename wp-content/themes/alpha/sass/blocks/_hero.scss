@@ -5,6 +5,8 @@
 	align-items: center;
 	position: relative;
 	justify-content: flex-start;
+	padding-top: 112px;
+	padding-bottom: 112px;
 
 	&-full-page {
 		min-height: calc( 100vh - 40px );

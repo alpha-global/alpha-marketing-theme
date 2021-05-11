@@ -1468,6 +1468,8 @@ textarea {
 	align-items: center;
 	position: relative;
 	justify-content: flex-start;
+	padding-top: 112px;
+	padding-bottom: 112px;
 }
 
 .alpha-hero-full-page {
