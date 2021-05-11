@@ -30,6 +30,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 	- Media
 	- Captions
 	- Galleries
+# Blocks
 # plugins
 	- Jetpack infinite scroll
 # Utilities
@@ -371,6 +372,7 @@ html {
 /* Grid
 --------------------------------------------- */
 .container {
+	width: 100%;
 	max-width: 1230px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -612,7 +614,16 @@ h4,
 h5,
 h6 {
 	font-family: "ITCAvantGardeStd", sans-serif;
+	line-height: 140%;
 	clear: both;
+}
+
+h1 {
+	font-size: 56px;
+}
+
+h4 {
+	font-size: 20px;
 }
 
 p {
@@ -840,6 +851,7 @@ textarea {
 /* Branding
 --------------------------------------------- */
 .branding {
+	width: 100%;
 	max-width: 1230px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -865,6 +877,8 @@ textarea {
 	color: #fff;
 	font-size: 12px;
 	line-height: 2;
+	position: relative;
+	z-index: 2;
 }
 
 .topline-nav a {
@@ -872,7 +886,29 @@ textarea {
 	text-decoration: none;
 }
 
+.topline-nav a:hover {
+	color: #e42312;
+}
+
+.topline-nav .sub-menu {
+	display: none;
+	position: absolute;
+	left: -8px;
+	top: 100%;
+	width: 100px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background-color: #2a323f;
+}
+
+.topline-nav .sub-menu > .menu-item {
+	padding: 4px 8px;
+	white-space: nowrap;
+}
+
 .topline-nav .menu {
+	width: 100%;
 	max-width: 1230px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -884,17 +920,43 @@ textarea {
 	margin-bottom: 0;
 }
 
-.topline-nav .menu li {
+.topline-nav .menu > .menu-item {
 	margin-left: 40px;
 	padding: 8px 0;
+	position: relative;
 }
 
-.topline-nav .menu li:first-child {
+.topline-nav .menu > .menu-item:first-child {
 	margin-left: 0;
+}
+
+.topline-nav .menu > .menu-item:hover > .sub-menu {
+	display: block;
+}
+
+.topline-nav .menu > .menu-item-has-children > a:after {
+	font-family: "AlphaOrgIcons";
+	display: inline-block;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none !important;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\e806";
+	margin-left: 0.8em;
+	font-size: 75%;
+	transition: all .3s ease;
+}
+
+.topline-nav .menu > .menu-item-has-children:hover > a:after {
+	transform: translateY(-4px) rotate(180deg);
 }
 
 .site-header {
 	position: relative;
+	transition: background-color .3s ease;
 }
 
 .site-header .main-navigation {
@@ -964,7 +1026,6 @@ textarea {
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none !important;
-	speak: none;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -1055,25 +1116,59 @@ textarea {
 	display: none;
 }
 
-.site-header:hover, .site-header.solid {
+.site-header.overlay {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.site-header.overlay + .site-main {
+	position: relative;
+	z-index: -1;
+}
+
+.site-header.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.site-header.fixed + .site-main {
+	position: relative;
+	z-index: -1;
+}
+
+.site-header.fixed:not(.overlay) + .site-main {
+	padding-top: 112px;
+}
+
+.site-header:hover, .site-header.solid, .site-header.fixed,
+.topline-nav:hover + .site-header {
 	background-color: #fff;
 }
 
-.site-header:hover .main-navigation .menu > .menu-item > a, .site-header.solid .main-navigation .menu > .menu-item > a {
+.site-header:hover .main-navigation .menu > .menu-item > a, .site-header.solid .main-navigation .menu > .menu-item > a, .site-header.fixed .main-navigation .menu > .menu-item > a,
+.topline-nav:hover + .site-header .main-navigation .menu > .menu-item > a {
 	color: #000;
 }
 
-.site-header:hover .main-navigation .menu > .menu-item > a:hover, .site-header.solid .main-navigation .menu > .menu-item > a:hover {
+.site-header:hover .main-navigation .menu > .menu-item > a:hover, .site-header.solid .main-navigation .menu > .menu-item > a:hover, .site-header.fixed .main-navigation .menu > .menu-item > a:hover,
+.topline-nav:hover + .site-header .main-navigation .menu > .menu-item > a:hover {
 	color: #e42312;
 }
 
-.site-header:hover .main-navigation .menu > .menu-item > a.button, .site-header.solid .main-navigation .menu > .menu-item > a.button {
+.site-header:hover .main-navigation .menu > .menu-item > a.button, .site-header.solid .main-navigation .menu > .menu-item > a.button, .site-header.fixed .main-navigation .menu > .menu-item > a.button,
+.topline-nav:hover + .site-header .main-navigation .menu > .menu-item > a.button {
 	background-color: #e42312;
 	border-color: #e42312;
 	color: #fff;
 }
 
-.site-header:hover .main-navigation .menu > .menu-item > a.button:hover, .site-header.solid .main-navigation .menu > .menu-item > a.button:hover {
+.site-header:hover .main-navigation .menu > .menu-item > a.button:hover, .site-header.solid .main-navigation .menu > .menu-item > a.button:hover, .site-header.fixed .main-navigation .menu > .menu-item > a.button:hover,
+.topline-nav:hover + .site-header .main-navigation .menu > .menu-item > a.button:hover {
 	background-color: #b81d0f;
 	border-color: #b81d0f;
 }
@@ -1082,16 +1177,22 @@ textarea {
 --------------------------------------------- */
 .button {
 	display: inline-block;
-	padding: 8px 30px;
+	padding: 12px 32px;
 	border-width: 1px;
+	line-height: 1;
 	border-style: solid;
 	border-radius: 8px;
 	text-decoration: none;
+	transition: all .3s ease;
 }
 
 .button-outline {
 	border-color: #fff;
 	background-color: transparent;
+	color: #fff;
+}
+
+.button-outline:hover {
 	color: #fff;
 }
 
@@ -1101,37 +1202,23 @@ textarea {
 	color: #fff;
 }
 
+.button-primary:visited {
+	color: #fff;
+}
+
 .button:hover {
 	background-color: #b81d0f;
 	border-color: #b81d0f;
 }
 
+.button > [class^="aicon-"]:before,
+.button [class*=" aicon-"]:before {
+	margin-right: 1em;
+	transform: translateY(-1px);
+}
+
 /* Posts and pages
 --------------------------------------------- */
-.sticky {
-	display: block;
-}
-
-.post,
-.page {
-	margin: 0 0 1.5em;
-}
-
-.updated:not(.published) {
-	display: none;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
-}
-
-.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
-}
-
 /* Comments
 --------------------------------------------- */
 .comment-content a {
@@ -1285,6 +1372,7 @@ textarea {
 }
 
 .site-footer .widget {
+	width: 100%;
 	max-width: 1230px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -1368,6 +1456,73 @@ textarea {
 	content: ' | ';
 	margin-left: 6px;
 	margin-right: 6px;
+}
+
+/*--------------------------------------------------------------
+# Blocks
+--------------------------------------------------------------*/
+.alpha-hero {
+	color: #fff;
+	background-color: #414141;
+	display: flex;
+	align-items: center;
+	position: relative;
+	justify-content: flex-start;
+}
+
+.alpha-hero-full-page {
+	min-height: calc( 100vh - 40px);
+}
+
+.alpha-hero .background, .alpha-hero:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	z-index: 1;
+}
+
+.alpha-hero:before {
+	content: '';
+	z-index: 2;
+	background-color: inherit;
+	opacity: 0.2;
+}
+
+.alpha-hero .container {
+	position: relative;
+	z-index: 3;
+}
+
+.alpha-hero-content {
+	max-width: 780px;
+}
+
+.alpha-hero-description {
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+.alpha-hero h1 {
+	margin: 0 0 24px;
+}
+
+.alpha-hero-buttons {
+	list-style: none;
+	padding: 0;
+	margin: 24px 0 0;
+}
+
+.alpha-hero-buttons li {
+	display: inline-block;
+	margin: 0 32px 0 0;
+}
+
+.alpha-hero-buttons li:last-child {
+	margin-right: 0;
 }
 
 /*--------------------------------------------------------------

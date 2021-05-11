@@ -163,3 +163,36 @@ if ( ! function_exists( 'wp_body_open' ) ) :
 		do_action( 'wp_body_open' ); //phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 	}
 endif;
+
+if ( ! function_exists( 'alpha_button' ) ) :
+	/**
+	 * Display button
+	 *
+	 * @param array  $button ACF Link array.
+	 * @param string $style Button style
+	 * @param string $icon Button icon (don't display if empty)
+	 * @return void
+	 */
+	function alpha_button( $button = array(), $style = 'primary', $icon = '' ) {
+		if ( ! isset( $button['url'] ) || ! isset( $button['title'] ) ) {
+			return _doing_it_wrong( 'alpha_button', __( '$button should contain url and title.', 'alpha' ), ALPHA_VERSION );
+		}
+
+		$class_name = 'button';
+		if ( ! empty( $style ) ) {
+			$class_name .= ' button-' . (string) $style;
+		}
+
+		?>
+			<a class="<?php echo esc_attr( $class_name ); ?>" href="<?php echo esc_url( $button['url'] ); ?>" target="<?php echo $button['target'] ? esc_attr( $button['target'] ) : '_self'; ?>">
+				<?php if ( ! empty( $icon ) ) : ?>
+					<span class="aicon-<?php echo esc_attr( $icon ); ?>">
+				<?php endif; ?>
+				<?php echo esc_html( $button['title'] ); ?>
+				<?php if ( ! empty( $icon ) ) : ?>
+					</span>
+				<?php endif; ?>
+			</a>
+		<?php
+	}
+endif;

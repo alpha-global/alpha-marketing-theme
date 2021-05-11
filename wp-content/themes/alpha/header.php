@@ -36,7 +36,19 @@
 		?>
 	</nav>
 
-	<header id="masthead" class="site-header solid">
+	<?php
+
+	$site_header_class = 'site-header';
+	if ( is_page() && has_block( 'acf/hero' ) ) {
+		$site_header_class .= ' overlay';
+	} else {
+		$site_header_class .= ' solid';
+	}
+
+	?>
+
+
+	<header id="masthead" class="<?php echo esc_attr( $site_header_class ); ?>">
 
 		<div class="branding">
 

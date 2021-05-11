@@ -1,25 +1,43 @@
 .button {
 	display: inline-block;
-	padding: 8px $gutter;
+	padding: 12px 32px;
 	border-width: 1px;
+	line-height: 1;
 	border-style: solid;
 	border-radius: 8px;
 	text-decoration: none;
+	transition: all .3s ease;
 
 	&-outline {
 		border-color: $color__white;
 		background-color: transparent;
 		color: $color__white;
+
+		&:hover {
+			color: $color__white;
+		}
 	}
 
 	&-primary {
 		border-color: $color__accent;
 		background-color: $color__accent;
 		color: $color__white;
+
+		&:visited {
+			color: $color__white;
+		}
 	}
 
 	&:hover {
 		background-color: $color__accent-hover;
 		border-color: $color__accent-hover;
+	}
+
+	> [class^="aicon-"],
+	[class*=" aicon-"] {
+		&:before {
+			margin-right: 1em;
+			transform: translateY(-1px);
+		}
 	}
 }

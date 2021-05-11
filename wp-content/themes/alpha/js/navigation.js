@@ -5,6 +5,22 @@
  * navigation support for dropdown menus.
  */
 ( function() {
+	const siteHeader = document.getElementById( 'masthead' );
+	const initialScroll = window.scrollY;
+	const siteHeaderInitialTop = siteHeader.getBoundingClientRect().top + initialScroll;
+
+	const handleFixedHeader = function() {
+		const currentScroll = window.scrollY;
+		if ( currentScroll > siteHeaderInitialTop ) {
+			siteHeader.classList.add( 'fixed' );
+		} else {
+			siteHeader.classList.remove( 'fixed' );
+		}
+	}
+
+	window.addEventListener( 'scroll', handleFixedHeader );
+	handleFixedHeader();
+
 	const siteNavigation = document.getElementById( 'site-navigation' );
 
 	// Return early if the navigation don't exist.

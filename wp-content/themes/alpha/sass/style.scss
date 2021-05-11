@@ -31,6 +31,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 	- Media
 	- Captions
 	- Galleries
+# Blocks
 # plugins
 	- Jetpack infinite scroll
 # Utilities
@@ -69,6 +70,11 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 # Components
 --------------------------------------------------------------*/
 @import "components/components";
+
+/*--------------------------------------------------------------
+# Blocks
+--------------------------------------------------------------*/
+@import "blocks/blocks";
 
 /*--------------------------------------------------------------
 # Plugins

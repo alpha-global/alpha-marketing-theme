@@ -1,5 +1,6 @@
 .site-header {
 	position: relative;
+	transition: background-color .3s ease;
 
 	.main-navigation {
 		display: flex;
@@ -62,7 +63,6 @@
 
 				&-has-children {
 					> a {
-
 						&:after {
 							font-family: $font__icons;
 							display: inline-block;
@@ -70,7 +70,6 @@
 							font-weight: normal;
 							font-variant: normal;
 							text-transform: none !important;
-							speak: none;
 							line-height: 1;
 							-webkit-font-smoothing: antialiased;
 							-moz-osx-font-smoothing: grayscale;
@@ -145,13 +144,16 @@
 				&:hover {
 					> a {
 						color: $color__accent;
+					
 						&:before {
 							width: 100%;
 						}
+					
 						&:after {
 							transform: rotate( -180deg );
 						}
 					}
+
 					> .sub-menu {
 						display: flex;
 						height: auto;
@@ -165,9 +167,43 @@
 		display: none;
 	}
 
+	&.overlay {
+		position: absolute;
+		top: 40px;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+
+		+ .site-main {
+			position: relative;
+			z-index: -1;
+		}
+	}
+
+	&.fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+
+		+ .site-main {
+			position: relative;
+			z-index: -1;
+		}
+
+		&:not(.overlay) {
+			+ .site-main {
+				padding-top: 112px;
+			}
+		}
+	}
+
 	&:hover,
-	&.solid {
+	&.solid,
+	&.fixed,
+	.topline-nav:hover + & {
 		background-color: $color__background-body;
+
 		.main-navigation {
 			.menu {
 				> .menu-item {
