@@ -1,0 +1,57 @@
+.alpha-stats {
+	background-image: url(assets/images/world-map.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	box-shadow: 0px 0px 50px 50px inset white;
+
+	padding-top: 72px;
+	padding-bottom: 72px;
+
+	.container {
+		display: flex;
+		align-items: center;
+	}
+
+	&-image,
+	&-overlay {
+		img {
+			@include rounded-shadow();	
+		}
+	}
+
+	&-image {
+		flex-basis: 60%;
+		position: relative;
+	}
+
+	&.image-right .alpha-stats-image {
+		order: 1;
+	}
+
+	&-overlay {
+		position: absolute;
+		bottom: -3em;
+		right: 3em;
+		max-width: 300px;
+	}
+
+	&-content {
+		flex-basis: 40%;
+	}
+
+	&-time {
+		font-weight: 700;
+		display: inline-block;
+		border-bottom: 3px solid $color__accent;
+		margin: 0 0 32px;
+	}
+
+	&-heading {
+		width: 150%;
+		position: relative;
+		z-index: 1;
+		margin-top: 0;
+	}
+}
