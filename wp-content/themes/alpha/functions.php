@@ -184,3 +184,11 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+ * Enqueue block editor style for Gutenberg Blocks
+ */
+function alpha_block_editor_styles() {
+	wp_enqueue_style( 'axis1-blocks-editor-style', get_theme_file_uri( '/block-editor-style.css' ), false, wp_get_theme()->get( 'Version' ), 'all' );
+}
+add_action( 'enqueue_block_editor_assets', 'alpha_block_editor_styles' );
