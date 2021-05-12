@@ -178,9 +178,9 @@ if ( ! function_exists( 'alpha_button' ) ) :
 			return _doing_it_wrong( 'alpha_button', __( '$button should contain url and title.', 'alpha' ), ALPHA_VERSION );
 		}
 
-		$class_name = 'button';
+		$class_name = 'btn';
 		if ( ! empty( $style ) ) {
-			$class_name .= ' button-' . (string) $style;
+			$class_name .= ' btn-' . (string) $style;
 		}
 
 		?>

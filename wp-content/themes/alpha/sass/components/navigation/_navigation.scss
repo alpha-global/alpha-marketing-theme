@@ -29,7 +29,7 @@
 					text-decoration: none;
 					position: relative;
 
-					&:not(.button) {
+					&:not(.btn) {
 						&:before {
 							content: '';
 							position: absolute;
@@ -42,7 +42,7 @@
 						}
 					}
 
-					&.button {
+					&.btn {
 						display: inline-block;
 						border: 1px solid $color__white;
 						color: $color__white;
@@ -220,7 +220,7 @@
 					> a {
 						color: $color__dark;
 
-						&.button {
+						&.btn {
 							background-color: $color__accent;
 							border-color: $color__accent;
 							color: $color__white;

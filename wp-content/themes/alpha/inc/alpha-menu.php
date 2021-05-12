@@ -30,9 +30,9 @@ function alpha_menu_item_link_attributes( $atts = array(), $item = null ) {
 
 	if ( true === $is_button ) {
 		if ( ! isset( $atts['class'] ) ) {
-			$atts['class'] = 'button';
+			$atts['class'] = 'btn';
 		} else {
-			$atts['class'] .= ' button';
+			$atts['class'] .= ' btn';
 		}
 	}
 

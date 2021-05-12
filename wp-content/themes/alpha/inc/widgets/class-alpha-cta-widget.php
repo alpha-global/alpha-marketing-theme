@@ -41,7 +41,7 @@ class Alpha_CTA_Widget extends WP_Widget {
 			</div>
 			<?php if ( is_array( $button ) ) : ?>
 			<div class="widget-column">
-				<a class="button button-primary" href="<?php echo $button['url'] ?>" target="<?php echo $button['target'] ? $button['target'] : '_self'; ?>"><?php echo $button['title']; ?></a>
+				<a class="btn btn-primary" href="<?php echo $button['url'] ?>" target="<?php echo $button['target'] ? $button['target'] : '_self'; ?>"><?php echo $button['title']; ?></a>
 			</div>				
 			<?php endif; ?>
 		</div>
