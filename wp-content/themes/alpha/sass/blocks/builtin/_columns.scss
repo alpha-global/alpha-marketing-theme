@@ -1,0 +1,8 @@
+.wp-block-columns {
+	@include container;
+}
+.wp-block-column {
+	&:not(:first-child) {
+		margin-left: 60px;
+	}
+}
