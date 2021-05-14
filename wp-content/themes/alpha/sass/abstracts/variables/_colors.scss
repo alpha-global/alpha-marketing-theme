@@ -1,5 +1,9 @@
 $color__white: #fff;
 $color__dark: #000;
+$color__dark_gray: #414141;
+$color__dark_blue: #1e2433;
+$color__red: #e42312;
+$color__light_gray: #f3f4f5;
 
 $color__background-body: $color__white;
 $color__background-screen: #f1f1f1;
@@ -8,11 +12,11 @@ $color__background-button: #e6e6e6;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__background-nav: #2a323f;
-$color__background-hero: #414141;
+$color__background-hero: $color__dark_gray;
 
-$color__background-footer: #1e2433;
+$color__background-footer: $color__dark_blue;
 
-$color__accent: #e42312;
+$color__accent: $color__red;
 $color__accent-hover: #b81d0f;
 
 $color__text-screen: #21759b;
@@ -33,3 +37,12 @@ $color__nav-content: $color__white;
 $color__nav-link: $color__white;
 
 $color__text: $color__dark;
+
+$colors: (
+    "black": $color__dark,
+    "white": $color__white,
+    "dark-gray": $color__dark_gray,
+    "dark-blue": $color__dark_blue,
+    "red": $color__red,
+    "light-gray": $color__light_gray,
+);

@@ -192,3 +192,42 @@ function alpha_block_editor_styles() {
 	wp_enqueue_style( 'axis1-blocks-editor-style', get_theme_file_uri( '/block-editor-style.css' ), false, wp_get_theme()->get( 'Version' ), 'all' );
 }
 add_action( 'enqueue_block_editor_assets', 'alpha_block_editor_styles' );
+
+function alpha_add_custom_gutenberg_color_palette() {
+	add_theme_support(
+		'editor-color-palette',
+		array(
+			array(
+				'name'  => esc_html__( 'Black', 'alpha' ),
+				'slug'  => 'black',
+				'color' => '#000000',
+			),
+			array(
+				'name'  => esc_html__( 'White', 'alpha' ),
+				'slug'  => 'white',
+				'color' => '#ffffff',
+			),
+			array(
+				'name'  => esc_html__( 'Dark Gray', 'alpha' ),
+				'slug'  => 'dark-gray',
+				'color' => '#414141',
+			),
+			array(
+				'name'  => esc_html__( 'Dark Blue', 'alpha' ),
+				'slug'  => 'dark-blue',
+				'color' => '#1e2433',
+			),
+			array(
+				'name'  => esc_html__( 'Red', 'alpha' ),
+				'slug'  => 'red',
+				'color' => '#e42312',
+			),
+			array(
+				'name'  => esc_html__( 'Light Gray', 'alpha' ),
+				'slug'  => 'light-gray',
+				'color' => '#f3f4f5',
+			),
+		)
+	);
+}
+add_action( 'after_setup_theme', 'alpha_add_custom_gutenberg_color_palette' );
