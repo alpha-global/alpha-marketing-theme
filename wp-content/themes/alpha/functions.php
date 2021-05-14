@@ -227,6 +227,11 @@ function alpha_add_custom_gutenberg_color_palette() {
 				'slug'  => 'light-gray',
 				'color' => '#f3f4f5',
 			),
+			array(
+				'name'  => esc_html__( 'Purple', 'alpha' ),
+				'slug'  => 'purple',
+				'color' => '#4D4DA5',
+			),
 		)
 	);
 }

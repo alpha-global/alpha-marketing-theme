@@ -4,6 +4,7 @@ $color__dark_gray: #414141;
 $color__dark_blue: #1e2433;
 $color__red: #e42312;
 $color__light_gray: #f3f4f5;
+$color__purple: #4D4DA5;
 
 $color__background-body: $color__white;
 $color__background-screen: #f1f1f1;
@@ -45,4 +46,5 @@ $colors: (
     "dark-blue": $color__dark_blue,
     "red": $color__red,
     "light-gray": $color__light_gray,
+	"purple": $color__purple,
 );
