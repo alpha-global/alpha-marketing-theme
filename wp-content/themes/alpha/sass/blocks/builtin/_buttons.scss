@@ -1,0 +1,20 @@
+.wp-block-button {
+	&__link {
+		@extend .btn;
+		@extend .btn-primary;	
+	}
+
+	&.is-style {
+		&-fill {
+			.wp-block-button__link {
+				@extend .btn-primary;
+			}
+		}
+
+		&-outline {
+			.wp-block-button__link {
+				@extend .btn-outline;
+			}
+		}
+	}
+}

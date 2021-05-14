@@ -9,12 +9,26 @@
 	transition: all .3s ease;
 
 	&-outline {
-		border-color: $color__white;
+		border-color: $color__accent;
 		background-color: transparent;
-		color: $color__white;
+		color: $color__accent;
 
 		&:hover {
+			color: $color__accent;
+		}
+
+		&.white {
+			border-color: $color__white;
+			background-color: transparent;
 			color: $color__white;
+	
+			&:hover {
+				color: $color__white;
+			}
+
+			&:visited {
+				color: $color__white;
+			}
 		}
 	}
 
@@ -23,14 +37,14 @@
 		background-color: $color__accent;
 		color: $color__white;
 
+		&:hover {
+			background-color: $color__accent-hover;
+			border-color: $color__accent-hover;
+		}
+	
 		&:visited {
 			color: $color__white;
 		}
-	}
-
-	&:hover {
-		background-color: $color__accent-hover;
-		border-color: $color__accent-hover;
 	}
 
 	> [class^="aicon-"],
