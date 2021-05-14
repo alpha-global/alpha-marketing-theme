@@ -232,7 +232,7 @@
 					}
 
 					&:hover {
-						> a {
+						> a:not(.btn) {
 							color: $color__accent;
 						}
 					}
