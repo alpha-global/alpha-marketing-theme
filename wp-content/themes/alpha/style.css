@@ -1257,6 +1257,51 @@ body.admin-bar .site-header.fixed {
 
 /* Posts and pages
 --------------------------------------------- */
+/* Slider
+--------------------------------------------- */
+.alpha-slider .slick-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 32px;
+	color: #e42312;
+}
+
+.alpha-slider .slick-arrow.prev {
+	left: 0;
+}
+
+.alpha-slider .slick-arrow.next {
+	right: 0;
+}
+
+.alpha-slider .slick-dots {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.alpha-slider .slick-dots li {
+	display: inline-block;
+	margin: 0 8px;
+}
+
+.alpha-slider .slick-dots li button {
+	-webkit-appearance: none;
+	font-size: 0;
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	border: 1px solid #000;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.alpha-slider .slick-dots li.slick-active button {
+	background-color: #000;
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {
@@ -1569,6 +1614,11 @@ body.admin-bar .alpha-hero-full-page {
 	margin-right: 0;
 }
 
+.alpha-hero-buttons li .btn-outline, .alpha-hero-buttons li .wp-block-button.is-style-outline .wp-block-button__link, .wp-block-button.is-style-outline .alpha-hero-buttons li .wp-block-button__link {
+	color: #fff;
+	border-color: #fff;
+}
+
 .alpha-stats {
 	background-image: url(assets/images/world-map.png);
 	background-size: contain;
@@ -1622,6 +1672,55 @@ body.admin-bar .alpha-hero-full-page {
 	position: relative;
 	z-index: 1;
 	margin-top: 0;
+}
+
+.alpha-testimonials {
+	padding-top: 72px;
+	padding-bottom: 72px;
+}
+
+.alpha-testimonials-slider {
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+.alpha-testimonial {
+	display: flex;
+	align-items: center;
+	padding: 42px 0 15px;
+	position: relative;
+}
+
+.alpha-testimonial-quote {
+	position: absolute;
+	color: #4D4DA5;
+	font-size: 45px;
+	top: 0;
+	left: 0;
+}
+
+.alpha-testimonial-text {
+	font-size: 30px;
+}
+
+.alpha-testimonial-name {
+	font-size: 17px;
+}
+
+.alpha-testimonial-position {
+	display: inline;
+}
+
+.alpha-testimonial-image {
+	flex: 0 0 25%;
+	margin-left: 32px;
+	padding-right: 15px;
+}
+
+.alpha-testimonial-image img {
+	display: inline-block;
+	border-radius: 8px;
+	box-shadow: -1px -1px 15px -2px rgba(0, 0, 0, 0.3);
 }
 
 .wp-block-columns {
@@ -1694,6 +1793,14 @@ body.admin-bar .alpha-hero-full-page {
 
 .has-light-gray-background-color {
 	background-color: #f3f4f5;
+}
+
+.has-purple-color {
+	color: #4D4DA5;
+}
+
+.has-purple-background-color {
+	background-color: #4D4DA5;
 }
 
 /*--------------------------------------------------------------
