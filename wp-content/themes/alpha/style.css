@@ -619,12 +619,14 @@ h6 {
 
 h1 {
 	font-family: "ITCAvantGardeStd", sans-serif;
+	color: #000;
 	line-height: 140%;
 	font-size: 56px;
 }
 
 h2 {
 	font-family: "ITCAvantGardeStd", sans-serif;
+	color: #000;
 	line-height: 140%;
 	font-size: 48px;
 }
@@ -634,8 +636,8 @@ h3 {
 }
 
 h4 {
-	font-size: 32px;
-	font-weight: 400;
+	font-size: 1.4em;
+	margin-bottom: 8px;
 }
 
 p {
@@ -1170,6 +1172,7 @@ body.admin-bar .site-header.fixed {
 .site-header:hover, .site-header.solid, .site-header.fixed,
 .topline-nav:hover + .site-header {
 	background-color: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.12);
 }
 
 .site-header:hover .main-navigation .menu > .menu-item > a, .site-header.solid .main-navigation .menu > .menu-item > a, .site-header.fixed .main-navigation .menu > .menu-item > a,
@@ -1192,8 +1195,8 @@ body.admin-bar .site-header.fixed {
 	border-color: #b81d0f;
 }
 
-.site-header:hover .main-navigation .menu > .menu-item:hover > a, .site-header.solid .main-navigation .menu > .menu-item:hover > a, .site-header.fixed .main-navigation .menu > .menu-item:hover > a,
-.topline-nav:hover + .site-header .main-navigation .menu > .menu-item:hover > a {
+.site-header:hover .main-navigation .menu > .menu-item:hover > a:not(.btn):not(.wp-block-button__link), .site-header.solid .main-navigation .menu > .menu-item:hover > a:not(.btn):not(.wp-block-button__link), .site-header.fixed .main-navigation .menu > .menu-item:hover > a:not(.btn):not(.wp-block-button__link),
+.topline-nav:hover + .site-header .main-navigation .menu > .menu-item:hover > a:not(.btn):not(.wp-block-button__link) {
 	color: #e42312;
 }
 
@@ -1204,6 +1207,7 @@ body.admin-bar .site-header.fixed {
 	padding: 12px 32px;
 	border-width: 1px;
 	line-height: 1;
+	font-size: 1em;
 	border-style: solid;
 	border-radius: 8px;
 	text-decoration: none;
@@ -1352,6 +1356,7 @@ body.admin-bar .site-header.fixed {
 
 .widget_alpha_cta h2 {
 	font-family: "AvenirRoman", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	color: #fff;
 	font-size: 32px;
 	font-weight: 400;
 }
@@ -1598,6 +1603,7 @@ body.admin-bar .alpha-hero-full-page {
 
 .alpha-hero h1 {
 	margin: 0 0 24px;
+	color: #fff;
 }
 
 .alpha-hero-buttons {
@@ -1746,11 +1752,6 @@ body.admin-bar .alpha-hero-full-page {
 	max-height: 6em;
 }
 
-.alpha-card h4 {
-	font-size: 1.4em;
-	margin-bottom: 8px;
-}
-
 .alpha-card p {
 	margin: 0 0 1em;
 }
@@ -1769,7 +1770,7 @@ body.admin-bar .alpha-hero-full-page {
 }
 
 .wp-block-column:not(:first-child) {
-	margin-left: 60px;
+	margin-left: 50px;
 }
 
 .wp-block-image.is-style-rounded img {
@@ -1781,6 +1782,10 @@ body.admin-bar .alpha-hero-full-page {
 .wp-block-group {
 	padding-top: 72px;
 	padding-bottom: 72px;
+}
+
+.wp-block-button__link {
+	box-shadow: 0px 2px 15px -2px rgba(0, 0, 0, 0.3);
 }
 
 .has-black-color {
