@@ -50,7 +50,6 @@ function alpha_register_acf_block_types() {
 		)
 	);
 
-
 	acf_register_block_type(
 		array(
 			'name'            => 'testimonials',
@@ -60,6 +59,26 @@ function alpha_register_acf_block_types() {
 			'category'        => 'alpha',
 			'keywords'        => array( 'testimonials', 'alpha' ),
 			'mode'            => 'auto',
+			'icon'            => 'images-alt2',
+			'supports'        => array(
+				'mode'            => false,
+				'align'           => false,
+				'anchor'          => true,
+				'customClassName' => true,
+				'jsx'             => true,
+			),
+		)
+	);
+
+	acf_register_block_type(
+		array(
+			'name'            => 'card',
+			'title'           => __( 'Card', 'alpha' ),
+			'description'     => __( 'Card', 'alpha' ),
+			'render_template' => 'template-parts/blocks/card.php',
+			'category'        => 'alpha',
+			'keywords'        => array( 'card', 'alpha' ),
+			'mode'            => 'preview',
 			'icon'            => 'images-alt2',
 			'supports'        => array(
 				'mode'            => false,
