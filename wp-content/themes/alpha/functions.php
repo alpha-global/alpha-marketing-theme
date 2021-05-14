@@ -9,7 +9,7 @@
 
 if ( ! defined( 'ALPHA_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'ALPHA_VERSION', '1.0.0' );
+	define( 'ALPHA_VERSION', '1.0.0-build.1' );
 }
 
 require_once get_template_directory() . '/inc/acf-load.php';
@@ -195,7 +195,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Enqueue block editor style for Gutenberg Blocks
  */
 function alpha_block_editor_styles() {
-	wp_enqueue_style( 'axis1-blocks-editor-style', get_theme_file_uri( '/block-editor-style.css' ), false, wp_get_theme()->get( 'Version' ), 'all' );
+	wp_enqueue_style( 'axis1-blocks-editor-style', get_theme_file_uri( '/block-editor-style.css' ), false, ALPHA_VERSION, 'all' );
 }
 add_action( 'enqueue_block_editor_assets', 'alpha_block_editor_styles' );
 
