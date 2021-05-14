@@ -11,9 +11,6 @@
 	const adminBarHeight = adminBar ? adminBar.getBoundingClientRect().height : 0;
 	const siteHeaderInitialTop = siteHeader.getBoundingClientRect().top + initialScroll;
 	
-	console.log( adminBar );
-
-
 	const handleFixedHeader = function() {
 		const currentScroll = window.scrollY;
 		if ( currentScroll + adminBarHeight > siteHeaderInitialTop ) {
