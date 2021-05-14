@@ -754,15 +754,16 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #4169e1;
+	color: #e42312;
+	text-decoration: none;
 }
 
 a:visited {
-	color: #800080;
+	color: #e42312;
 }
 
 a:hover, a:focus, a:active {
-	color: #191970;
+	color: #b81d0f;
 }
 
 a:focus {
@@ -1721,6 +1722,41 @@ body.admin-bar .alpha-hero-full-page {
 	display: inline-block;
 	border-radius: 8px;
 	box-shadow: -1px -1px 15px -2px rgba(0, 0, 0, 0.3);
+}
+
+.alpha-card {
+	display: inline-block;
+	border-radius: 8px;
+	box-shadow: -1px -1px 15px -2px rgba(0, 0, 0, 0.3);
+	display: block;
+	padding: 20px;
+}
+
+.alpha-card .wp-block-image {
+	margin: 1em auto;
+	width: 6em;
+	height: 6em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.alpha-card .wp-block-image img {
+	max-width: 6em;
+	max-height: 6em;
+}
+
+.alpha-card h4 {
+	font-size: 1.4em;
+	margin-bottom: 8px;
+}
+
+.alpha-card p {
+	margin: 0 0 1em;
+}
+
+.alpha-card p:last-child {
+	margin-bottom: 0;
 }
 
 .wp-block-columns {

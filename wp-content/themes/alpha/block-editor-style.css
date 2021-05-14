@@ -1084,6 +1084,41 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-full-page 
 	box-shadow: -1px -1px 15px -2px rgba(0, 0, 0, 0.3);
 }
 
+.block-editor-block-list__layout .wp-block .alpha-card {
+	display: inline-block;
+	border-radius: 8px;
+	box-shadow: -1px -1px 15px -2px rgba(0, 0, 0, 0.3);
+	display: block;
+	padding: 20px;
+}
+
+.block-editor-block-list__layout .wp-block .alpha-card .wp-block-image {
+	margin: 1em auto;
+	width: 6em;
+	height: 6em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.block-editor-block-list__layout .wp-block .alpha-card .wp-block-image img {
+	max-width: 6em;
+	max-height: 6em;
+}
+
+.block-editor-block-list__layout .wp-block .alpha-card h4 {
+	font-size: 1.4em;
+	margin-bottom: 8px;
+}
+
+.block-editor-block-list__layout .wp-block .alpha-card p {
+	margin: 0 0 1em;
+}
+
+.block-editor-block-list__layout .wp-block .alpha-card p:last-child {
+	margin-bottom: 0;
+}
+
 .block-editor-block-list__layout .wp-block .wp-block-columns {
 	width: 100%;
 	max-width: 1230px;
