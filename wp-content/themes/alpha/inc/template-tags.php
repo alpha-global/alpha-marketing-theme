@@ -196,3 +196,45 @@ if ( ! function_exists( 'alpha_button' ) ) :
 		<?php
 	}
 endif;
+
+if ( ! function_exists( 'has_reusable_block' ) ) {
+
+	/**
+	 * Determine whether a $post or a string contains a specific block type in reusable blocks.
+	 *
+	 * This test optimizes for performance rather than strict accuracy, detecting
+	 * the block type exists but not validating its structure. For strict accuracy,
+	 * you should use the block parser on post content.
+	 *
+	 * @param string                  $block_name Full Block type to look for.
+	 * @param int|string|WP_Post|null $post Optional. Post content, post ID, or post object. Defaults to global $post.
+	 * @return bool Whether the post content contains the specified block.
+	 */
+	function has_reusable_block( $block_name, $post = null ) {
+		$post = get_post( $post );
+
+		if ( $post ) {
+
+			if ( has_block( 'block', $post ) ) {
+
+				// Check reusable blocks.
+				$content = get_post_field( 'post_content', $post );
+				$blocks  = parse_blocks( $content );
+
+				if ( ! is_array( $blocks ) || empty( $blocks ) ) {
+					return false;
+				}
+
+				foreach ( $blocks as $block ) {
+					if ( $block['blockName'] === 'core/block' && ! empty( $block['attrs']['ref'] ) ) {
+						if ( has_block( $block_name, $block['attrs']['ref'] ) ) {
+							return true;
+						}
+					}
+				}
+			}
+		}
+
+		return false;
+	}
+}
