@@ -1,2 +1,11 @@
 $width__container: 1230px;
-$gutter: 30px;
+$gutter: 40px;
+$tablet: 1023px;
+$mobile: 639px;
+$desktop: 1024px;
+
+$tablet__only: "min-width: 600px) and (max-width: 781px";
+$mobile__only: "max-width: 599px";
+$desktop__only: "min-width: 782px";
+$mobile__tablet: "max-width: 781px";
+$tablet__desktop: "min-width: 600px";

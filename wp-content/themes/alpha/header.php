@@ -50,13 +50,15 @@
 
 	<header id="masthead" class="<?php echo esc_attr( $site_header_class ); ?>">
 
-		<div class="branding">
+		<div class="branding" id="branding">
 
 			<a id="header-menu-logo" title="<?php bloginfo( 'name' ); ?>" rel="home" class="aicon-logo" href="<?php echo esc_url( home_url() ); ?>"></a>
 
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'alpha' ); ?></button>
+			<a href="#" class="menu-toggle" id="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="aicon-hamburger"></i></a>
 
 			<nav id="site-navigation" class="main-navigation">
+				<a href="#" id="menu-close" class="menu-close"><i class="aicon-close"></i></a>
+
 				<?php
 				wp_nav_menu(
 					array(

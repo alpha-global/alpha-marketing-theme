@@ -13,6 +13,14 @@ h1 {
 	color: $color__dark;
 	line-height: 140%;
 	font-size: 56px;
+
+	@include media( $tablet__only ) {
+		font-size: 48px;
+	}
+
+	@include media( $mobile__only ) {
+		font-size: 28px;
+	}
 }
 
 h2 {
@@ -20,10 +28,27 @@ h2 {
 	color: $color__dark;
 	line-height: 140%;
 	font-size: 48px;
+
+
+	@include media( $tablet__only ) {
+		font-size: 30px;
+	}
+
+	@include media( $mobile__only ) {
+		font-size: 24px;
+	}
 }
 
 h3 {
 	font-size: 40px;
+
+	@include media( $tablet__only ) {
+		font-size: 24px;
+	}
+
+	@include media( $mobile__only ) {
+		font-size: 20px;
+	}
 }
 
 h4 {

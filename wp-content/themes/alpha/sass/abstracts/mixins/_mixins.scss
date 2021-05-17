@@ -10,6 +10,24 @@
 	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
 }
 
+@mixin media( $screen ) {
+	@media ($screen) {
+		@content;
+	}
+}
+
+@mixin media-breakpoint-down( $bp ) {
+	@media (max-width: $bp) {
+		@content;
+	}
+}
+
+@mixin media-breakpoint-up( $bp ) {
+	@media (min-width: $bp) {
+		@content;
+	}
+}
+
 @mixin container() {
 	width: 100%;
 	max-width: $width__container;
@@ -22,5 +40,19 @@
 @mixin rounded-shadow() {
 	display: inline-block;
 	border-radius: 8px;
+	@include shadow();
+}
+
+@mixin shadow() {
 	box-shadow: -1px -1px 15px -2px rgba( 0, 0, 0, 0.3 );
+}
+
+@mixin block-group() {
+    padding-top: 72px;
+    padding-bottom: 72px;
+
+    @include media($mobile__tablet) {
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
 }

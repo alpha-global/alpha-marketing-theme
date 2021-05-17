@@ -6,6 +6,10 @@
 	
 	height: 112px;
 
+	@include media( $mobile__tablet ) {
+		height: 72px;
+	}
+
 	#header-menu-logo {
 		font-size: 40px;
 		color: $color__accent;

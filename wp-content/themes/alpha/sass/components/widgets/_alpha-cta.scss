@@ -17,5 +17,9 @@
 		color: $color__white;
 		font-size: 32px;
 		font-weight: 400;
+
+		@include media( $mobile__only ) {
+			font-size: 24px;
+		}
 	}
 }

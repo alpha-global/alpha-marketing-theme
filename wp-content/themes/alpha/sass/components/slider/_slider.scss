@@ -13,6 +13,11 @@
 		&.next {
 			right: 0;
 		}
+
+		@include media( $mobile__only ) {
+			top: 100%;
+			transform: translateY(-80%);
+		}
     }
 
 	.slick-dots {

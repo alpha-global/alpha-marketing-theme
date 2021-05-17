@@ -1,11 +1,16 @@
 .alpha-testimonials {
-	padding-top: 72px;
-	padding-bottom: 72px;
+	@include block-group();
 
-	&-slider {
-		padding-left: 80px;
-		padding-right: 80px;
+	@include media( $tablet__desktop ) {
+		&-slider {
+			padding-left: 80px;
+			padding-right: 80px;
+		}
 	}
+}
+
+.alpha-testimonials {
+	padding-bottom: 72px;
 }
 
 .alpha-testimonial {
@@ -14,20 +19,54 @@
 	padding: 42px 0 15px;
 	position: relative;
 
+	@include media( $mobile__only ) {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
 	&-quote {
 		position: absolute;
 		color: $color__purple;
 		font-size: 45px;
 		top: 0;
 		left: 0;
+
+		@include media( $mobile__only ) {
+			top: 152px;
+			left: 50%;
+			transform: translateX(-94px);
+
+			&:after {
+				content: '';
+				display: block;
+				background-color: $color__white;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				position: absolute;
+				z-index: -1;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+			}
+		}
+
 	}
 
 	&-text {
 		font-size: 30px;
+
+		@include media( $mobile__only ) {
+			font-size: 22px;
+			text-align: center;
+		}
 	}
 
 	&-name {
 		font-size: 17px;
+		@include media( $mobile__only ) {
+			text-align: center;
+		}
 	}
 
 	&-position {
@@ -41,6 +80,14 @@
 
 		img {
 			@include rounded-shadow();
+		}
+
+		@include media( $mobile__only ) {
+			order: -1;
+			flex: 0 0 140px;
+			margin-left: 0;
+			padding-right: 0;
+			margin-bottom: 1em;
 		}
 	}
 }

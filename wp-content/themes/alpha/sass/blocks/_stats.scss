@@ -6,12 +6,12 @@
 
 	box-shadow: 0px 0px 50px 50px inset white;
 
-	padding-top: 72px;
-	padding-bottom: 72px;
+	@include block-group();
 
 	.container {
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
 	}
 
 	&-image,
@@ -22,12 +22,18 @@
 	}
 
 	&-image {
-		flex-basis: 60%;
+		flex-basis: 100%;
 		position: relative;
+
+		@include media( $tablet__desktop ) {
+			flex-basis: 60%;
+		}
 	}
 
 	&.image-right .alpha-stats-image {
-		order: 1;
+		@include media( $tablet__desktop ) {
+			order: 1;
+		}
 	}
 
 	&-overlay {
@@ -35,10 +41,24 @@
 		bottom: -3em;
 		right: 3em;
 		max-width: 300px;
+
+		@include media( $tablet__only ) {
+			max-width: 240px;
+			bottom: -1em;
+			right: 1em;
+		}
+
+		@include media( $mobile__only ) {
+			display: none;
+		}
 	}
 
 	&-content {
-		flex-basis: 40%;
+		flex-basis: 100%;
+
+		@include media( $tablet__desktop ) {
+			flex-basis: 40%;
+		}
 	}
 
 	&-time {
@@ -49,7 +69,9 @@
 	}
 
 	&-heading {
-		width: 150%;
+		@include media( $tablet__desktop ) {
+			width: 150%;
+		}
 		position: relative;
 		z-index: 1;
 		margin-top: 0;
