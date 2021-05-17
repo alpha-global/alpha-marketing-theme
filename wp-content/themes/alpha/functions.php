@@ -152,7 +152,7 @@ function alpha_scripts() {
 
 	wp_enqueue_script( 'alpha-navigation', get_template_directory_uri() . '/js/navigation.js', array(), ALPHA_VERSION, true );
 
-	if ( has_block( 'acf/testimonials' ) ) {
+	if ( has_block( 'acf/testimonials' ) || has_reusable_block( 'acf/testimonials' ) ) {
 		wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/vendor/slick/slick/slick.js', array( 'jquery' ), ALPHA_VERSION, true );
 		wp_enqueue_style( 'slick', get_template_directory_uri() . '/js/vendor/slick/slick/slick.css', array(), ALPHA_VERSION );
 		wp_enqueue_script( 'alpha-slider', get_template_directory_uri() . '/js/slider.js', array( 'jquery', 'slick' ), ALPHA_VERSION, true );
