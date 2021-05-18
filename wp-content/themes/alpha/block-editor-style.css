@@ -999,6 +999,12 @@ body.admin-bar .block-editor-block-list__layout .wp-block .site-header.fixed {
 	position: relative;
 }
 
+@media (max-width: 599px) {
+	.block-editor-block-list__layout .wp-block .site-footer .alpha-menu-columns {
+		padding: 96px 0 0;
+	}
+}
+
 .block-editor-block-list__layout .wp-block .site-footer .alpha-menu-columns:before {
 	font-family: "AlphaOrgIcons";
 	content: "\e802";
@@ -1006,6 +1012,12 @@ body.admin-bar .block-editor-block-list__layout .wp-block .site-header.fixed {
 	color: #e42312;
 	position: absolute;
 	left: 0;
+}
+
+@media (max-width: 599px) {
+	.block-editor-block-list__layout .wp-block .site-footer .alpha-menu-columns:before {
+		top: 16px;
+	}
 }
 
 .block-editor-block-list__layout .wp-block .site-footer .alpha-menu-columns .menu,
@@ -1017,6 +1029,7 @@ body.admin-bar .block-editor-block-list__layout .wp-block .site-header.fixed {
 
 .block-editor-block-list__layout .wp-block .site-footer .alpha-menu-columns .menu {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .block-editor-block-list__layout .wp-block .site-footer .alpha-menu-columns .menu a {
@@ -1027,6 +1040,12 @@ body.admin-bar .block-editor-block-list__layout .wp-block .site-header.fixed {
 	flex: 0 0 25%;
 }
 
+@media (max-width: 599px) {
+	.block-editor-block-list__layout .wp-block .site-footer .alpha-menu-columns .menu > .menu-item {
+		flex: 0 0 100%;
+	}
+}
+
 .block-editor-block-list__layout .wp-block .site-footer .alpha-menu-columns .menu > .menu-item > a {
 	pointer-events: none;
 	font-family: "ITCAvantGardeStd", sans-serif;
@@ -1035,6 +1054,12 @@ body.admin-bar .block-editor-block-list__layout .wp-block .site-header.fixed {
 
 .block-editor-block-list__layout .wp-block .site-footer .alpha-menu-columns .sub-menu {
 	margin-top: 1em;
+}
+
+@media (max-width: 599px) {
+	.block-editor-block-list__layout .wp-block .site-footer .alpha-menu-columns .sub-menu {
+		margin-bottom: 2em;
+	}
 }
 
 .block-editor-block-list__layout .wp-block .site-footer .alpha-menu-columns .sub-menu > .menu-item {
