@@ -98,7 +98,7 @@ function alpha_register_acf_block_types() {
 			'render_template' => 'template-parts/blocks/accordion.php',
 			'category'        => 'alpha',
 			'keywords'        => array( 'accordion', 'alpha' ),
-			'mode'            => 'preview',
+			'mode'            => 'auto',
 			'icon'            => 'images-alt2',
 			'supports'        => array(
 				'mode'            => false,
