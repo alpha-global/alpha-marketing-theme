@@ -90,6 +90,26 @@ function alpha_register_acf_block_types() {
 		)
 	);
 
+	acf_register_block_type(
+		array(
+			'name'            => 'accordion',
+			'title'           => __( 'Accordion', 'alpha' ),
+			'description'     => __( 'Accordion', 'alpha' ),
+			'render_template' => 'template-parts/blocks/accordion.php',
+			'category'        => 'alpha',
+			'keywords'        => array( 'accordion', 'alpha' ),
+			'mode'            => 'preview',
+			'icon'            => 'images-alt2',
+			'supports'        => array(
+				'mode'            => false,
+				'align'           => false,
+				'anchor'          => true,
+				'customClassName' => true,
+				'jsx'             => true,
+			),
+		)
+	);
+
 	/*
 	acf_register_block_type(
 		array(
