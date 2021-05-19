@@ -158,6 +158,10 @@ function alpha_scripts() {
 		wp_enqueue_script( 'alpha-slider', get_template_directory_uri() . '/js/slider.js', array( 'jquery', 'slick' ), ALPHA_VERSION, true );
 	}
 
+	if ( has_block( 'acf/accordion' ) || has_reusable_block( 'acf/accordion' ) ) {
+		wp_enqueue_script( 'alpha-accordion', get_template_directory_uri() . '/js/accordion.js', array( 'jquery' ), ALPHA_VERSION, true );
+	}
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
