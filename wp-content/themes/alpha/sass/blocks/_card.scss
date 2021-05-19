@@ -1,4 +1,5 @@
 .alpha-card {
+	@include container();
 	@include rounded-shadow();
 	display: block;
 	padding: 20px;
