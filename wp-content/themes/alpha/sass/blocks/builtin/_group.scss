@@ -1,12 +1,14 @@
 .wp-block-group {
     @include block-group();
 
-    &__inner-container {
-        @include container();
-    }
+	&__inner-container {
+		.has-background & {
+			@include container();
+		}
+	}
 
     &.has-background {
         margin-left: calc((100vw - 100%) / -2);
         margin-right: calc((100vw - 100%) / -2);
-    }
+	}
 }
