@@ -1,8 +1,29 @@
 .alpha-card {
-	@include container();
-	@include rounded-shadow();
-	display: block;
-	padding: 20px;
+
+	&-icon {
+		position: absolute;
+		color: $color__accent;
+		font-size: 34px;
+	}
+
+	&.has-style {
+		&-shadow {
+			@include rounded-shadow();
+			padding: 20px;
+		}
+
+		&-plain {
+			&.has-icon {
+				padding-left: 60px;
+				position: relative;
+			}
+			
+			.alpha-card-icon {
+				left: 0;
+				top: -8px;
+			}
+		}
+	}
 
 	.wp-block-image {
 		margin: 1em auto;
