@@ -4,67 +4,69 @@
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
  */
-( function() {
+( function () {
 	const html = document.documentElement;
-	const siteHeader = document.getElementById( 'masthead' );
-	const toplineNav = document.getElementById( 'topline-nav' );
-	const siteNavigation = document.getElementById( 'site-navigation' );
-	const page = document.getElementById( 'page' );
-	const menuToggle = document.getElementById( 'menu-toggle' );
-	const menuClose = document.getElementById( 'menu-close' );
+	const siteHeader = document.getElementById( "masthead" );
+	const toplineNav = document.getElementById( "topline-nav" );
+	const siteNavigation = document.getElementById( "site-navigation" );
+	const page = document.getElementById( "page" );
+	const menuToggle = document.getElementById( "menu-toggle" );
+	const menuClose = document.getElementById( "menu-close" );
 	var isDesktop = true;
 	const initialScroll = window.scrollY;
-	const adminBar = document.getElementById( 'wpadminbar' );
-	const adminBarHeight = adminBar ? adminBar.getBoundingClientRect().height : 0;
-	const siteHeaderInitialTop = siteHeader.getBoundingClientRect().top + initialScroll;
+	const adminBar = document.getElementById( "wpadminbar" );
+	const adminBarHeight = adminBar
+		? adminBar.getBoundingClientRect().height
+		: 0;
+	const siteHeaderInitialTop =
+		siteHeader.getBoundingClientRect().top + initialScroll;
 
-	const branding = document.getElementById( 'branding' );
-	const menuBackground = document.createElement('div');
-	menuBackground.classList.add('menu-background');
-	
-	const handleFixedHeader = function() {
+	const branding = document.getElementById( "branding" );
+	const menuBackground = document.createElement( "div" );
+	menuBackground.classList.add( "menu-background" );
+
+	const handleFixedHeader = function () {
 		const currentScroll = window.scrollY;
 		if ( currentScroll + adminBarHeight > siteHeaderInitialTop ) {
-			siteHeader.classList.add( 'fixed' );
+			siteHeader.classList.add( "fixed" );
 		} else {
-			siteHeader.classList.remove( 'fixed' );
+			siteHeader.classList.remove( "fixed" );
 		}
-	}
+	};
 
-	window.addEventListener( 'scroll', handleFixedHeader );
+	window.addEventListener( "scroll", handleFixedHeader );
 	handleFixedHeader();
 
-	const handleWindowResize = function() {
+	const handleWindowResize = function () {
 		const threshold = 1024;
 
 		if ( window.innerWidth < threshold ) {
 			if ( isDesktop === true ) {
 				siteNavigation.appendChild( toplineNav );
-				isDesktop = false;	
+				isDesktop = false;
 			}
 		} else {
 			if ( isDesktop === false ) {
 				page.insertBefore( toplineNav, siteHeader );
-				isDesktop = true;	
+				isDesktop = true;
 			}
 		}
-	}
+	};
 
-	window.addEventListener( 'resize', handleWindowResize );
+	window.addEventListener( "resize", handleWindowResize );
 	handleWindowResize();
 
-	menuToggle.addEventListener( 'click', function(e) {
+	menuToggle.addEventListener( "click", function ( e ) {
 		e.preventDefault();
-		siteNavigation.classList.add('on');
-		html.classList.add('nav-opened');
-		branding.insertBefore(menuBackground, siteNavigation);
-	});
+		siteNavigation.classList.add( "on" );
+		html.classList.add( "nav-opened" );
+		branding.insertBefore( menuBackground, siteNavigation );
+	} );
 
-	menuClose.addEventListener( 'click', function(e) {
+	menuClose.addEventListener( "click", function ( e ) {
 		e.preventDefault();
-		siteNavigation.classList.remove('on');
-		html.classList.remove('nav-opened');
+		siteNavigation.classList.remove( "on" );
+		html.classList.remove( "nav-opened" );
 		menuBackground.remove();
-	});
-
-}() );
+	} );
+} )();
