@@ -383,7 +383,7 @@ body.nav-opened {
 --------------------------------------------- */
 .container {
 	width: 100%;
-	max-width: 1230px;
+	max-width: 1240px;
 	padding-left: 20px;
 	padding-right: 20px;
 	margin-left: auto;
@@ -917,7 +917,7 @@ textarea {
 --------------------------------------------- */
 .branding {
 	width: 100%;
-	max-width: 1230px;
+	max-width: 1240px;
 	padding-left: 20px;
 	padding-right: 20px;
 	margin-left: auto;
@@ -980,7 +980,7 @@ textarea {
 
 .topline-nav .menu {
 	width: 100%;
-	max-width: 1230px;
+	max-width: 1240px;
 	padding-left: 20px;
 	padding-right: 20px;
 	margin-left: auto;
@@ -1134,7 +1134,6 @@ textarea {
 	width: 100%;
 	height: 150px;
 	object-fit: cover;
-	display: inline-block;
 	border-radius: 8px;
 	box-shadow: -1px -1px 15px -2px rgba(0, 0, 0, 0.3);
 }
@@ -1483,7 +1482,7 @@ body.admin-bar .site-header.fixed {
 --------------------------------------------- */
 .entry-content {
 	width: 100%;
-	max-width: 1230px;
+	max-width: 1240px;
 	padding-left: 20px;
 	padding-right: 20px;
 	margin-left: auto;
@@ -1933,7 +1932,6 @@ body.admin-bar .alpha-hero-full-page {
 }
 
 .alpha-stats-image img, .alpha-stats-overlay img {
-	display: inline-block;
 	border-radius: 8px;
 	box-shadow: -1px -1px 15px -2px rgba(0, 0, 0, 0.3);
 }
@@ -2103,7 +2101,6 @@ body.admin-bar .alpha-hero-full-page {
 }
 
 .alpha-testimonial-image img {
-	display: inline-block;
 	border-radius: 8px;
 	box-shadow: -1px -1px 15px -2px rgba(0, 0, 0, 0.3);
 }
@@ -2118,18 +2115,26 @@ body.admin-bar .alpha-hero-full-page {
 	}
 }
 
-.alpha-card {
-	width: 100%;
-	max-width: 1230px;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	display: inline-block;
+.alpha-card-icon {
+	position: absolute;
+	color: #e42312;
+	font-size: 34px;
+}
+
+.alpha-card.has-style-shadow {
 	border-radius: 8px;
 	box-shadow: -1px -1px 15px -2px rgba(0, 0, 0, 0.3);
-	display: block;
 	padding: 20px;
+}
+
+.alpha-card.has-style-plain.has-icon {
+	padding-left: 60px;
+	position: relative;
+}
+
+.alpha-card.has-style-plain .alpha-card-icon {
+	left: 0;
+	top: -8px;
 }
 
 .alpha-card .wp-block-image {
@@ -2155,7 +2160,6 @@ body.admin-bar .alpha-hero-full-page {
 }
 
 .alpha-accordion-tab {
-	display: inline-block;
 	border-radius: 8px;
 	box-shadow: -1px -1px 15px -2px rgba(0, 0, 0, 0.3);
 	display: block;
@@ -2215,7 +2219,6 @@ body.admin-bar .alpha-hero-full-page {
 }
 
 .wp-block-image.is-style-rounded img {
-	display: inline-block;
 	border-radius: 8px;
 	box-shadow: -1px -1px 15px -2px rgba(0, 0, 0, 0.3);
 }
@@ -2234,7 +2237,7 @@ body.admin-bar .alpha-hero-full-page {
 
 .has-background .wp-block-group__inner-container {
 	width: 100%;
-	max-width: 1230px;
+	max-width: 1240px;
 	padding-left: 20px;
 	padding-right: 20px;
 	margin-left: auto;
