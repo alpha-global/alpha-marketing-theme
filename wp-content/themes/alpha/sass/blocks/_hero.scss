@@ -28,13 +28,10 @@
         opacity: 0.2;
     }
 
-    .container {
-        position: relative;
-        z-index: 3;
-    }
-
     &-content {
         max-width: 780px;
+		position: relative;
+		z-index: 3;
     }
 
     &-description {
