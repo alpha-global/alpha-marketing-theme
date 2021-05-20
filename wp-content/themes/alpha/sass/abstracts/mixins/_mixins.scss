@@ -38,7 +38,6 @@
 }
 
 @mixin rounded-shadow() {
-	display: inline-block;
 	border-radius: 8px;
 	@include shadow();
 }
