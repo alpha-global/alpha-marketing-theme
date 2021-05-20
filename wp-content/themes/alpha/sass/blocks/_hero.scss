@@ -60,6 +60,10 @@
             .btn-outline {
                 color: $color__white;
                 border-color: $color__white;
+
+				&:hover {
+					border-color: $color__accent;
+				}
             }
 
             @include media($mobile__only) {

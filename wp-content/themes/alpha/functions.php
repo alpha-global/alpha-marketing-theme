@@ -151,6 +151,7 @@ function alpha_scripts() {
 	wp_style_add_data( 'alpha-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'alpha-navigation', get_template_directory_uri() . '/js/navigation.js', array(), ALPHA_VERSION, true );
+	wp_enqueue_script( 'alpha-buttons', get_template_directory_uri() . '/js/buttons.js', array(), ALPHA_VERSION, true );
 
 	if ( has_block( 'acf/testimonials' ) || has_reusable_block( 'acf/testimonials' ) ) {
 		wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/vendor/slick/slick/slick.js', array( 'jquery' ), ALPHA_VERSION, true );
