@@ -7,10 +7,6 @@
 		color: $color__nav-content;
 	}
 
-	.widget {
-		@include container();
-	}
-
 	.alpha-menu {
 		&-columns {
 			padding: 40px 0 40px 112px;
