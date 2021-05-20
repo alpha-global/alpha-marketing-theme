@@ -1,77 +1,77 @@
 .btn {
-    display: inline-block;
-    padding: 12px 32px;
-    border-width: 1px;
-    line-height: 1;
-    font-size: 1em;
-    border-style: solid;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.3s ease;
+	display: inline-block;
+	padding: 12px 32px;
+	border-width: 1px;
+	line-height: 1;
+	font-size: 1em;
+	border-style: solid;
+	border-radius: 8px;
+	text-decoration: none;
+	transition: all 0.3s ease;
 
-    // For ripple effect
-    position: relative;
-    overflow: hidden;
-    span.ripple {
-        position: absolute; /* The absolute position we mentioned earlier */
-        border-radius: 50%;
-        transform: scale(0);
-        animation: ripple 300ms linear;
-        background-color: rgba(0, 0, 0, 0.3);
-    }
-    @keyframes ripple {
-        to {
-            transform: scale(4);
-            opacity: 0;
-        }
-    }
+	// For ripple effect
+	position: relative;
+	overflow: hidden;
+	span.ripple {
+		position: absolute; /* The absolute position we mentioned earlier */
+		border-radius: 50%;
+		transform: scale( 0 );
+		animation: ripple 300ms linear;
+		background-color: rgba( 0, 0, 0, 0.3 );
+	}
+	@keyframes ripple {
+		to {
+			transform: scale( 4 );
+			opacity: 0;
+		}
+	}
 
-    &-outline {
-        border-color: $color__accent;
-        border-width: 1px;
-        background-color: transparent;
-        color: $color__accent;
+	&-outline {
+		border-color: $color__accent;
+		border-width: 1px;
+		background-color: transparent;
+		color: $color__accent;
 
-        &:hover {
-            color: $color__white;
-            background-color: $color__accent;
-        }
+		&:hover {
+			color: $color__white;
+			background-color: $color__accent;
+		}
 
-        &.white {
-            border-color: $color__white;
-            background-color: transparent;
-            color: $color__white;
+		&.white {
+			border-color: $color__white;
+			background-color: transparent;
+			color: $color__white;
 
-            &:hover {
-                color: $color__white;
-            }
+			&:hover {
+				color: $color__white;
+			}
 
-            &:visited {
-                color: $color__white;
-            }
-        }
-    }
+			&:visited {
+				color: $color__white;
+			}
+		}
+	}
 
-    &-primary {
-        border-color: $color__accent;
-        background-color: $color__accent;
-        color: $color__white;
+	&-primary {
+		border-color: $color__accent;
+		background-color: $color__accent;
+		color: $color__white;
 
-        &:hover {
-            background-color: $color__accent-hover;
-            border-color: $color__accent-hover;
-        }
+		&:hover {
+			background-color: $color__accent-hover;
+			border-color: $color__accent-hover;
+		}
 
-        &:visited {
-            color: $color__white;
-        }
-    }
+		&:visited {
+			color: $color__white;
+		}
+	}
 
-    > [class^="aicon-"],
-    [class*=" aicon-"] {
-        &:before {
-            margin-right: 1em;
-            transform: translateY(-1px);
-        }
-    }
+	> [class^="aicon-"],
+	[class*=" aicon-"] {
+		&:before {
+			margin-right: 1em;
+			transform: translateY( -1px );
+		}
+	}
 }

@@ -6,24 +6,25 @@
 }
 
 // Column width with margin
-@mixin column-width($numberColumns: 3) {
-	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+@mixin column-width( $numberColumns: 3 ) {
+	width: map-get( $columns, $numberColumns ) -
+		( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
 }
 
 @mixin media( $screen ) {
-	@media ($screen) {
+	@media ( $screen ) {
 		@content;
 	}
 }
 
 @mixin media-breakpoint-down( $bp ) {
-	@media (max-width: $bp) {
+	@media ( max-width: $bp ) {
 		@content;
 	}
 }
 
 @mixin media-breakpoint-up( $bp ) {
-	@media (min-width: $bp) {
+	@media ( min-width: $bp ) {
 		@content;
 	}
 }
@@ -47,11 +48,11 @@
 }
 
 @mixin block-group() {
-    padding-top: 72px;
-    padding-bottom: 72px;
+	padding-top: 72px;
+	padding-bottom: 72px;
 
-    @include media($mobile__tablet) {
-        padding-top: 36px;
-        padding-bottom: 36px;
-    }
+	@include media( $mobile__tablet ) {
+		padding-top: 36px;
+		padding-bottom: 36px;
+	}
 }

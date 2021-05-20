@@ -1,8 +1,8 @@
 .alpha-slider {
-    .slick-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		transform: translateY( -50% );
 		font-size: 32px;
 		color: $color__accent;
 
@@ -16,9 +16,9 @@
 
 		@include media( $mobile__only ) {
 			top: 100%;
-			transform: translateY(-80%);
+			transform: translateY( -80% );
 		}
-    }
+	}
 
 	.slick-dots {
 		list-style: none;

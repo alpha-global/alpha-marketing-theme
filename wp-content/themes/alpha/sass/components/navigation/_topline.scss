@@ -68,14 +68,13 @@
 					content: "\e806";
 					margin-left: 0.8em;
 					font-size: 75%;
-					transition: all .3s ease;
+					transition: all 0.3s ease;
 				}
 				&:hover {
 					> a:after {
-						transform: translateY(-4px) rotate(180deg);
+						transform: translateY( -4px ) rotate( 180deg );
 					}
 				}
-
 			}
 		}
 	}

@@ -1,8 +1,4 @@
 .wp-block-image {
-	img {
-		// @include rounded-shadow();
-	}
-
 	&.is-style-rounded img {
 		@include rounded-shadow();
 	}

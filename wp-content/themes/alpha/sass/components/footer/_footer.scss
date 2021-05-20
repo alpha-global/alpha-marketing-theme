@@ -1,6 +1,6 @@
 .site-footer {
 	color: $color__nav-content;
-    background-color: $color__background-footer;
+	background-color: $color__background-footer;
 	padding: 40px 0;
 
 	a {
@@ -28,31 +28,30 @@
 				@include media( $mobile__only ) {
 					top: 16px;
 				}
-	
 			}
-	
+
 			.menu,
 			.sub-menu {
 				list-style: none;
 				padding: 0;
 				margin: 0;
 			}
-	
+
 			.menu {
 				display: flex;
 				flex-wrap: wrap;
-				
+
 				a {
 					text-decoration: none;
 				}
-	
+
 				> .menu-item {
 					flex: 0 0 25%;
-	
+
 					@include media( $mobile__only ) {
 						flex: 0 0 100%;
 					}
-		
+
 					> a {
 						pointer-events: none;
 						font-family: $font__title;
@@ -60,14 +59,14 @@
 					}
 				}
 			}
-	
+
 			.sub-menu {
 				margin-top: 1em;
 
 				@include media( $mobile__only ) {
 					margin-bottom: 2em;
-				}	
-	
+				}
+
 				> .menu-item {
 					margin-bottom: 0.75em;
 				}
@@ -94,13 +93,12 @@
 
 				.menu-item {
 					display: inline-block;
-					
-					&:not(:first-child):before {
-						content: ' | ';
+
+					&:not( :first-child ):before {
+						content: " | ";
 						margin-left: 6px;
 						margin-right: 6px;
 					}
-					
 				}
 			}
 		}
