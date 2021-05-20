@@ -30,6 +30,7 @@ if ( ! function_exists( 'acf_add_options_page' ) ) {
 
 }
 
+require_once __DIR__ . '/acf-icon-field/acf-icon-field.php';
 
 if ( ! defined( 'ACF_FROM_DB' ) || ACF_FROM_DB !== true ) {
 	include_once __DIR__ . '/acf-fields.php';
