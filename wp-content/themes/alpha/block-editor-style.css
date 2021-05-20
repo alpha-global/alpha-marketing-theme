@@ -738,17 +738,37 @@ body.admin-bar .block-editor-block-list__layout .wp-block .site-header.fixed {
 	border-style: solid;
 	border-radius: 8px;
 	text-decoration: none;
-	transition: all .3s ease;
+	transition: all 0.3s ease;
+	position: relative;
+	overflow: hidden;
+}
+
+.block-editor-block-list__layout .wp-block .btn span.ripple, .block-editor-block-list__layout .wp-block .wp-block-button__link span.ripple {
+	position: absolute;
+	/* The absolute position we mentioned earlier */
+	border-radius: 50%;
+	transform: scale(0);
+	animation: ripple 300ms linear;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+@keyframes ripple {
+	to {
+		transform: scale(4);
+		opacity: 0;
+	}
 }
 
 .block-editor-block-list__layout .wp-block .btn-outline, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-outline .wp-block-button__link {
 	border-color: #e42312;
+	border-width: 1px;
 	background-color: transparent;
 	color: #e42312;
 }
 
 .block-editor-block-list__layout .wp-block .btn-outline:hover, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-outline .wp-block-button__link:hover {
-	color: #e42312;
+	color: #fff;
+	background-color: #e42312;
 }
 
 .block-editor-block-list__layout .wp-block .btn-outline.white, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-outline .white.wp-block-button__link {
@@ -993,15 +1013,6 @@ body.admin-bar .block-editor-block-list__layout .wp-block .site-header.fixed {
 	color: #fff;
 }
 
-.block-editor-block-list__layout .wp-block .site-footer .widget {
-	width: 100%;
-	max-width: 1230px;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .block-editor-block-list__layout .wp-block .site-footer .alpha-menu-columns {
 	padding: 40px 0 40px 112px;
 	border-top: 1px solid rgba(204, 204, 204, 0.2);
@@ -1135,13 +1146,10 @@ body.admin-bar .block-editor-block-list__layout .wp-block .site-header.fixed {
 	opacity: 0.2;
 }
 
-.block-editor-block-list__layout .wp-block .alpha-hero .container {
-	position: relative;
-	z-index: 3;
-}
-
 .block-editor-block-list__layout .wp-block .alpha-hero-content {
 	max-width: 780px;
+	position: relative;
+	z-index: 3;
 }
 
 .block-editor-block-list__layout .wp-block .alpha-hero-description {
@@ -1172,6 +1180,10 @@ body.admin-bar .block-editor-block-list__layout .wp-block .site-header.fixed {
 .block-editor-block-list__layout .wp-block .alpha-hero-buttons li .btn-outline, .block-editor-block-list__layout .wp-block .alpha-hero-buttons li .wp-block-button.is-style-outline .wp-block-button__link, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-outline .alpha-hero-buttons li .wp-block-button__link {
 	color: #fff;
 	border-color: #fff;
+}
+
+.block-editor-block-list__layout .wp-block .alpha-hero-buttons li .btn-outline:hover, .block-editor-block-list__layout .wp-block .alpha-hero-buttons li .wp-block-button.is-style-outline .wp-block-button__link:hover, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-outline .alpha-hero-buttons li .wp-block-button__link:hover {
+	border-color: #e42312;
 }
 
 @media (max-width: 599px) {
@@ -1544,6 +1556,15 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-full-page 
 
 .block-editor-block-list__layout .wp-block .wp-block-button__link {
 	box-shadow: 0px 2px 15px -2px rgba(0, 0, 0, 0.3);
+}
+
+.block-editor-block-list__layout .wp-block .wp-block-buttons > .wp-block-button {
+	margin-right: 32px;
+	margin-bottom: 32px;
+}
+
+.block-editor-block-list__layout .wp-block .wp-block-buttons > .wp-block-button:last-child {
+	margin-right: 0;
 }
 
 .block-editor-block-list__layout .wp-block .wp-block-embed.aligncenter iframe {

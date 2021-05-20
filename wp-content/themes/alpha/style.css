@@ -1410,17 +1410,37 @@ body.admin-bar .site-header.fixed {
 	border-style: solid;
 	border-radius: 8px;
 	text-decoration: none;
-	transition: all .3s ease;
+	transition: all 0.3s ease;
+	position: relative;
+	overflow: hidden;
+}
+
+.btn span.ripple, .wp-block-button__link span.ripple {
+	position: absolute;
+	/* The absolute position we mentioned earlier */
+	border-radius: 50%;
+	transform: scale(0);
+	animation: ripple 300ms linear;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+@keyframes ripple {
+	to {
+		transform: scale(4);
+		opacity: 0;
+	}
 }
 
 .btn-outline, .wp-block-button.is-style-outline .wp-block-button__link {
 	border-color: #e42312;
+	border-width: 1px;
 	background-color: transparent;
 	color: #e42312;
 }
 
 .btn-outline:hover, .wp-block-button.is-style-outline .wp-block-button__link:hover {
-	color: #e42312;
+	color: #fff;
+	background-color: #e42312;
 }
 
 .btn-outline.white, .wp-block-button.is-style-outline .white.wp-block-button__link {
@@ -1682,15 +1702,6 @@ body.admin-bar .site-header.fixed {
 	color: #fff;
 }
 
-.site-footer .widget {
-	width: 100%;
-	max-width: 1230px;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .site-footer .alpha-menu-columns {
 	padding: 40px 0 40px 112px;
 	border-top: 1px solid rgba(204, 204, 204, 0.2);
@@ -1827,13 +1838,10 @@ body.admin-bar .site-header.fixed {
 	opacity: 0.2;
 }
 
-.alpha-hero .container {
-	position: relative;
-	z-index: 3;
-}
-
 .alpha-hero-content {
 	max-width: 780px;
+	position: relative;
+	z-index: 3;
 }
 
 .alpha-hero-description {
@@ -1864,6 +1872,10 @@ body.admin-bar .site-header.fixed {
 .alpha-hero-buttons li .btn-outline, .alpha-hero-buttons li .wp-block-button.is-style-outline .wp-block-button__link, .wp-block-button.is-style-outline .alpha-hero-buttons li .wp-block-button__link {
 	color: #fff;
 	border-color: #fff;
+}
+
+.alpha-hero-buttons li .btn-outline:hover, .alpha-hero-buttons li .wp-block-button.is-style-outline .wp-block-button__link:hover, .wp-block-button.is-style-outline .alpha-hero-buttons li .wp-block-button__link:hover {
+	border-color: #e42312;
 }
 
 @media (max-width: 599px) {
@@ -2236,6 +2248,15 @@ body.admin-bar .alpha-hero-full-page {
 
 .wp-block-button__link {
 	box-shadow: 0px 2px 15px -2px rgba(0, 0, 0, 0.3);
+}
+
+.wp-block-buttons > .wp-block-button {
+	margin-right: 32px;
+	margin-bottom: 32px;
+}
+
+.wp-block-buttons > .wp-block-button:last-child {
+	margin-right: 0;
 }
 
 .wp-block-embed.aligncenter iframe {
