@@ -655,7 +655,9 @@ h2 {
 }
 
 h3 {
-  font-size: 40px;
+  font-family: "ITCAvantGardeStd", sans-serif;
+  font-size: 32px;
+  color: #000;
 }
 @media (min-width: 600px) and (max-width: 781px) {
   h3 {
