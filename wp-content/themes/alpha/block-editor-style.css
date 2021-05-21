@@ -1276,6 +1276,7 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-full-page 
   margin-bottom: 1em;
   padding: 1em 1em 1em 3em;
   border-left: 2px solid #e42312;
+  position: relative;
 }
 .block-editor-block-list__layout .wp-block .alpha-accordion-tab h5 {
   margin: 0;
@@ -1301,6 +1302,13 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-full-page 
 }
 .block-editor-block-list__layout .wp-block .alpha-accordion-tab.on > div {
   display: block;
+}
+.block-editor-block-list__layout .wp-block .alpha-accordion-icon {
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  font-size: 18px;
+  color: #e42312;
 }
 .block-editor-block-list__layout .wp-block .alpha-image-text {
   padding-top: 72px;

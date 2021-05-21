@@ -1989,6 +1989,7 @@ body.admin-bar .alpha-hero-full-page {
   margin-bottom: 1em;
   padding: 1em 1em 1em 3em;
   border-left: 2px solid #e42312;
+  position: relative;
 }
 .alpha-accordion-tab h5 {
   margin: 0;
@@ -2014,6 +2015,13 @@ body.admin-bar .alpha-hero-full-page {
 }
 .alpha-accordion-tab.on > div {
   display: block;
+}
+.alpha-accordion-icon {
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  font-size: 18px;
+  color: #e42312;
 }
 
 .alpha-image-text {
