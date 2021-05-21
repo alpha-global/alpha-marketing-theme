@@ -110,6 +110,26 @@ function alpha_register_acf_block_types() {
 		)
 	);
 
+	acf_register_block_type(
+		array(
+			'name'            => 'image-text',
+			'title'           => __( 'Image with text', 'alpha' ),
+			'description'     => __( 'Image with text', 'alpha' ),
+			'render_template' => 'template-parts/blocks/image-text.php',
+			'category'        => 'alpha',
+			'keywords'        => array( 'image', 'text', 'alpha' ),
+			'mode'            => 'preview',
+			'icon'            => 'images-alt2',
+			'supports'        => array(
+				'mode'            => false,
+				'align'           => false,
+				'anchor'          => true,
+				'customClassName' => true,
+				'jsx'             => true,
+			),
+		)
+	);
+
 	/*
 	acf_register_block_type(
 		array(
