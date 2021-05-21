@@ -32,7 +32,7 @@
                 "key": "field_60a632de3adb1",
                 "label": "Icon",
                 "name": "icon",
-                "type": "text",
+                "type": "alpha_icon",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -41,11 +41,7 @@
                     "class": "",
                     "id": ""
                 },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
+                "font_size": 14
             }
         ],
         "location": [
