@@ -442,7 +442,7 @@
   width: 100%;
   background-color: #fff;
   margin: 0;
-  padding: 40px calc((100vw - 1200px) / 2 - 25px) 40px calc((100vw - 1200px) / 2 + 92px - 25px);
+  padding: 40px calc( ( 100vw - 1200px ) / 2 - 25px ) 40px calc( ( 100vw - 1200px ) / 2 + 92px - 25px );
   transition: all 0.3s ease-in;
   height: 0;
 }
@@ -986,7 +986,7 @@ body.admin-bar .block-editor-block-list__layout .wp-block .site-header.fixed {
   position: absolute;
   top: 0;
   left: 0;
-  margin-left: calc((100vw - 100%) / -2);
+  margin-left: calc( ( 100vw - 100% ) / -2 );
   width: 100vw;
   height: 100%;
   background-position: center;
@@ -1045,10 +1045,10 @@ body.admin-bar .block-editor-block-list__layout .wp-block .site-header.fixed {
   }
 }
 .block-editor-block-list__layout .wp-block .alpha-hero-full-page {
-  min-height: calc(100vh - 40px);
+  min-height: calc( 100vh - 40px );
 }
 body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-full-page {
-  min-height: calc(100vh - 40px - 32px);
+  min-height: calc( 100vh - 40px - 32px );
 }
 .block-editor-block-list__layout .wp-block .alpha-hero-default {
   min-height: 400px;
@@ -1170,7 +1170,7 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-full-page 
 }
 .block-editor-block-list__layout .wp-block .alpha-testimonial-quote {
   position: absolute;
-  color: #4D4DA5;
+  color: #4d4da5;
   font-size: 45px;
   top: 0;
   left: 0;
@@ -1302,6 +1302,60 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-full-page 
 .block-editor-block-list__layout .wp-block .alpha-accordion-tab.on > div {
   display: block;
 }
+.block-editor-block-list__layout .wp-block .alpha-image-text {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+@media (max-width: 781px) {
+  .block-editor-block-list__layout .wp-block .alpha-image-text {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+}
+.block-editor-block-list__layout .wp-block .alpha-image-text-columns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.block-editor-block-list__layout .wp-block .alpha-image-text-content, .block-editor-block-list__layout .wp-block .alpha-image-text-image {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.block-editor-block-list__layout .wp-block .alpha-image-text-content {
+  flex: 0 0 40%;
+}
+@media (max-width: 599px) {
+  .block-editor-block-list__layout .wp-block .alpha-image-text-content {
+    flex: 0 0 100%;
+  }
+}
+@media (min-width: 600px) {
+  .image-position-right .block-editor-block-list__layout .wp-block .alpha-image-text-content-wrap {
+    width: 150%;
+  }
+}
+.block-editor-block-list__layout .wp-block .alpha-image-text-image {
+  flex: 0 0 60%;
+}
+@media (max-width: 599px) {
+  .block-editor-block-list__layout .wp-block .alpha-image-text-image {
+    flex: 0 0 100%;
+  }
+}
+@media (min-width: 600px) {
+  .image-position-right .block-editor-block-list__layout .wp-block .alpha-image-text-image {
+    order: 1;
+    z-index: -1;
+  }
+}
+.block-editor-block-list__layout .wp-block .alpha-image-text-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: -1px -1px 15px -2px rgba(0, 0, 0, 0.3);
+}
 .block-editor-block-list__layout .wp-block .wp-block-column {
   margin-bottom: 2em;
 }
@@ -1341,8 +1395,8 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-full-page 
   margin-right: auto;
 }
 .block-editor-block-list__layout .wp-block .wp-block-group.has-background {
-  margin-left: calc((100vw - 100%) / -2);
-  margin-right: calc((100vw - 100%) / -2);
+  margin-left: calc( ( 100vw - 100% ) / -2 );
+  margin-right: calc( ( 100vw - 100% ) / -2 );
 }
 .block-editor-block-list__layout .wp-block .wp-block-button__link {
   box-shadow: 0px 2px 15px -2px rgba(0, 0, 0, 0.3);
@@ -1353,6 +1407,13 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-full-page 
 }
 .block-editor-block-list__layout .wp-block .wp-block-buttons > .wp-block-button:last-child {
   margin-right: 0;
+}
+@media (max-width: 599px) {
+  .block-editor-block-list__layout .wp-block .wp-block-buttons > .wp-block-button {
+    margin-right: 0;
+    margin-bottom: 24px;
+    display: block;
+  }
 }
 .block-editor-block-list__layout .wp-block .wp-block-embed.aligncenter iframe {
   display: block;
@@ -1396,10 +1457,10 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-full-page 
   background-color: #f3f4f5;
 }
 .block-editor-block-list__layout .wp-block .has-purple-color {
-  color: #4D4DA5;
+  color: #4d4da5;
 }
 .block-editor-block-list__layout .wp-block .has-purple-background-color {
-  background-color: #4D4DA5;
+  background-color: #4d4da5;
 }
 
 /*# sourceMappingURL=block-editor-style.css.map */
