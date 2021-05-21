@@ -28,5 +28,11 @@
 		&:last-child {
 			margin-right: 0;
 		}
+
+		@include media( $mobile__only ) {
+			margin-right: 0;
+			margin-bottom: 24px;
+			display: block;
+		}
 	}
 }
