@@ -5,6 +5,7 @@
 		margin-bottom: 1em;
 		padding: 1em 1em 1em 3em;
 		border-left: 2px solid $color__accent;
+		position: relative;
 
 		h5 {
 			margin: 0;
@@ -20,7 +21,7 @@
 					top: 4px;
 					font-family: $font__icons;
 					font-size: 13px;
-					content:"\e806";
+					content: "\e806";
 				}
 			}
 		}
@@ -31,11 +32,19 @@
 
 		&.on {
 			h5 a:after {
-				transform: translateY(-2px) rotate(180deg);
+				transform: translateY( -2px ) rotate( 180deg );
 			}
 			> div {
 				display: block;
 			}
 		}
+	}
+
+	&-icon {
+		position: absolute;
+		left: 18px;
+		top: 18px;
+		font-size: 18px;
+		color: $color__accent;
 	}
 }

@@ -23,18 +23,19 @@ $c = 0;
 
 if ( have_rows( 'tabs' ) ) : ?>
 <section id="<?php echo esc_attr( $block_id ); ?>" class="<?php echo esc_attr( $class_name ); ?>">
-	<div class="container">
-		<?php
-		while ( have_rows( 'tabs' ) ) :
-			the_row();
-			$c++;
-			$tab_id = sanitize_title( get_sub_field( 'title' ) );
-			?>
-			<div class="alpha-accordion-tab" id="<?php echo esc_attr( $tab_id ); ?>">
-				<h5 class="alpha-accordion-title"><a href="#<?php echo esc_attr( $tab_id ); ?>"><?php the_sub_field( 'title' ); ?></a></h5>
-				<div class="alpha-accordion-content"><?php the_sub_field( 'content' ); ?></div>
-			</div>
-		<?php endwhile; ?>
-	</div>
+	<?php
+	while ( have_rows( 'tabs' ) ) :
+		the_row();
+		$c++;
+		$tab_id = sanitize_title( get_sub_field( 'title' ) );
+		?>
+		<div class="alpha-accordion-tab" id="<?php echo esc_attr( $tab_id ); ?>">
+			<?php if ( get_sub_field('icon') ) : ?>
+				<span class="alpha-accordion-icon aicon-<?php echo esc_attr( get_sub_field('icon') ); ?>"></span>
+			<?php endif; ?>
+			<h5 class="alpha-accordion-title"><a href="#<?php echo esc_attr( $tab_id ); ?>"><?php the_sub_field( 'title' ); ?></a></h5>
+			<div class="alpha-accordion-content"><?php the_sub_field( 'content' ); ?></div>
+		</div>
+	<?php endwhile; ?>
 </section>
 <?php endif; ?>

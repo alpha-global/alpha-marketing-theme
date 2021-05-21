@@ -42,6 +42,21 @@
                         "maxlength": ""
                     },
                     {
+                        "key": "field_60a7aaa324301",
+                        "label": "Icon",
+                        "name": "icon",
+                        "type": "alpha_icon",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "font_size": 14
+                    },
+                    {
                         "key": "field_60a4e9ae6c20e",
                         "label": "Content",
                         "name": "content",
@@ -56,7 +71,7 @@
                         },
                         "default_value": "",
                         "tabs": "all",
-                        "toolbar": "full",
+                        "toolbar": "basic",
                         "media_upload": 1,
                         "delay": 0
                     }
