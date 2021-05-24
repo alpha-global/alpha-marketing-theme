@@ -130,6 +130,26 @@ function alpha_register_acf_block_types() {
 		)
 	);
 
+	acf_register_block_type(
+		array(
+			'name'            => 'offices',
+			'title'           => __( 'National Offices', 'alpha' ),
+			'description'     => __( 'National Offices', 'alpha' ),
+			'render_template' => 'template-parts/blocks/offices.php',
+			'category'        => 'alpha',
+			'keywords'        => array( 'offices', 'alpha' ),
+			'mode'            => 'auto',
+			'icon'            => 'images-alt2',
+			'supports'        => array(
+				'mode'            => false,
+				'align'           => false,
+				'anchor'          => true,
+				'customClassName' => true,
+				'jsx'             => true,
+			),
+		)
+	);
+
 	/*
 	acf_register_block_type(
 		array(
