@@ -389,6 +389,32 @@ body.nav-opened {
   margin-right: auto;
 }
 
+.columns {
+  display: flex;
+  margin-left: -25px;
+  margin-right: -25px;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.columns .column {
+  padding: 25px;
+  flex: 0 0 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+@media (min-width: 600px) and (max-width: 781px) {
+  .columns.has-4-columns .column {
+    flex: 0 0 50%;
+  }
+}
+@media (min-width: 782px) {
+  .columns.has-4-columns .column {
+    flex: 0 0 25%;
+  }
+}
+
 /* Typography
 --------------------------------------------- */
 body,
@@ -677,6 +703,13 @@ h4 {
 
 h5 {
   font-size: 1.3em;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: 900;
+  color: #000;
+  margin: 1.2em 0;
 }
 
 p {
@@ -1442,6 +1475,54 @@ body.admin-bar .site-header.fixed {
   padding-right: 72px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.alpha-related-posts {
+  background-color: #f3f4f5;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+.alpha-related-posts h3 {
+  text-align: center;
+}
+.alpha-related-posts .see-all {
+  text-align: center;
+}
+
+.post-summary {
+  border-radius: 8px;
+  box-shadow: -1px -1px 15px -2px rgba(0, 0, 0, 0.3);
+  display: block;
+  overflow: hidden;
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+}
+.post-summary-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 70%;
+}
+.post-summary-thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.post-summary-content {
+  padding: 20px;
+}
+.post-summary-date {
+  font-size: 0.8em;
+  color: #414141;
+}
+.post-summary-link {
+  color: #e42312;
+  font-size: 0.9em;
+  font-weight: 600;
 }
 
 /* Slider
