@@ -1166,6 +1166,7 @@ body.admin-bar .site-header.overlay {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1000;
 }
 body.admin-bar .site-header.fixed {
   top: 32px;
@@ -1391,11 +1392,54 @@ body.admin-bar .site-header.fixed {
 
 /* Posts and pages
 --------------------------------------------- */
-.entry-content {
+.post-thumbnail {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+}
+.post-thumbnail .wp-post-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.entry-header {
+  background-color: #fff;
+  padding: 72px;
+  border-radius: 8px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.entry-title {
+  margin-bottom: 0;
+}
+
+.post-thumbnail + .entry-header {
+  margin-top: -250px;
+  position: relative;
+}
+
+.entry-content,
+.entry-footer {
   width: 100%;
   max-width: 1240px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.type-post .entry-content,
+.type-post .entry-footer,
+.post-navigation,
+.comments-area {
+  max-width: 1024px;
+  padding-left: 72px;
+  padding-right: 72px;
   margin-left: auto;
   margin-right: auto;
 }

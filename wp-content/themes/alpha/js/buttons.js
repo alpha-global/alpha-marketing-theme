@@ -22,7 +22,7 @@
 	const buttons = document.querySelectorAll(
 		".btn, .btn-primary, .btn-outline, .wp-block-button__link"
 	);
-	console.log( buttons );
+
 	for ( const button of buttons ) {
 		button.addEventListener( "click", createRipple );
 	}

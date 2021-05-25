@@ -1,0 +1,16 @@
+.entry-header {
+	background-color: $color__white;
+	padding: 72px;
+	border-radius: 8px;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.entry-title {
+	margin-bottom: 0;
+}
+
+.post-thumbnail + .entry-header {
+	margin-top: -250px;
+	position: relative;
+}
