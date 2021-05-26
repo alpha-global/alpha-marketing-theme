@@ -925,6 +925,44 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+.blog-archive {
+  width: 100%;
+  max-width: 1240px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.blog-archive > .entry-content,
+.blog-archive > .all-posts-header {
+  flex: 0 0 100%;
+}
+.blog-archive .all-posts-header {
+  margin: 2em 0;
+}
+.blog-archive .posts {
+  flex: 0 0 70%;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.blog-archive .posts .post {
+  flex: 0 0 50%;
+  padding: 25px;
+}
+.blog-archive .posts .post:first-child {
+  flex: 0 0 100%;
+  padding-top: 0;
+}
+.blog-archive .widget-area {
+  flex: 0 0 25%;
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -1817,6 +1855,7 @@ body.admin-bar .site-header.fixed {
   padding-bottom: 112px;
 }
 .alpha-hero .background, .alpha-hero:before {
+  background-color: #414141;
   position: absolute;
   top: 0;
   left: 0;
@@ -1890,6 +1929,25 @@ body.admin-bar .alpha-hero-full-page {
 .alpha-hero-default .alpha-hero-content {
   max-width: none;
   text-align: center;
+}
+.alpha-hero-blog-card {
+  background-color: #fff;
+  padding: 30px;
+  margin-left: calc( ( 100vw - 100% ) / -2 );
+  padding-left: calc( ( 100vw - 100% ) / 2 );
+  color: #000;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.alpha-hero-blog-card h1,
+.alpha-hero-blog-card h2,
+.alpha-hero-blog-card p {
+  margin: 0;
+}
+.alpha-hero-blog-summary {
+  padding-left: 20px;
+  border-left: 2px solid #e42312;
+  margin-bottom: 2em;
 }
 
 .alpha-stats {
