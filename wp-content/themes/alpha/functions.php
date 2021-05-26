@@ -131,6 +131,18 @@ add_action( 'after_setup_theme', 'alpha_content_width', 0 );
 function alpha_widgets_init() {
 	register_sidebar(
 		array(
+			'name'          => esc_html__( 'Sidebar', 'alpha' ),
+			'id'            => 'sidebar',
+			'description'   => esc_html__( 'Add sidebar widgets.', 'alpha' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+
+	register_sidebar(
+		array(
 			'name'          => esc_html__( 'Footer', 'alpha' ),
 			'id'            => 'footer',
 			'description'   => esc_html__( 'Add footer widgets.', 'alpha' ),
