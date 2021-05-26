@@ -904,6 +904,37 @@ body.admin-bar .block-editor-block-list__layout .wp-block .site-header.fixed {
 .block-editor-block-list__layout .wp-block .widget-column:last-child {
   margin-right: 0;
 }
+.block-editor-block-list__layout .wp-block .widget_categories .widget-title {
+  color: #414141;
+}
+.block-editor-block-list__layout .wp-block .widget_categories ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 0;
+}
+.block-editor-block-list__layout .wp-block .widget_search label {
+  position: relative;
+}
+.block-editor-block-list__layout .wp-block .widget_search label:before {
+  font-family: "AlphaOrgIcons";
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  font-size: 1em;
+  z-index: 1;
+}
+.block-editor-block-list__layout .wp-block .widget_search .search-field {
+  padding: 8px 8px 8px 42px;
+  line-height: 1;
+  position: relative;
+  display: block;
+  -webkit-appearance: none;
+  border: 1px solid #414141;
+}
+.block-editor-block-list__layout .wp-block .widget_search .search-submit {
+  display: none;
+}
 .block-editor-block-list__layout .wp-block .widget_alpha_cta .widget-columns {
   max-width: 820px;
   margin-left: auto;
