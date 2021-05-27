@@ -39,7 +39,7 @@
 	<?php
 
 	$site_header_class = 'site-header';
-	if ( is_page() && has_block( 'acf/hero' ) || ( is_home() && ! is_front_page() ) ) {
+	if ( is_page() && has_block( 'acf/hero' ) || ( is_home() && ! is_front_page() && ! is_paged() ) ) {
 		$site_header_class .= ' overlay';
 	} else {
 		$site_header_class .= ' solid';
