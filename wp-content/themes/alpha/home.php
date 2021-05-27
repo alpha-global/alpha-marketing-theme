@@ -8,11 +8,11 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main blog-archive">
+	<main id="primary" class="site-main blog-archive <?php echo ! is_paged() ? 'index' : ''; ?>">
 		<?php if ( have_posts() ) : ?>
 
 			<?php
-			if ( is_home() && ! is_front_page() ) :
+			if ( is_home() && ! is_front_page() && ! is_paged() ) :
 				the_post();
 
 				if ( has_post_thumbnail() ) {
@@ -50,27 +50,15 @@ get_header();
 
 			</div>
 
+			<?php endif; ?>
+
 			<div class="all-posts-header">
 				<h2><?php _e( 'All Posts', 'alpha' ); ?></h2>
 			</div>
-
-			<?php endif; ?>
-
 			
-		<div class="posts">
-			<?php
-			while ( have_posts() ) :
-				the_post();
-				?>
-				
-				<div class="post">
-					<?php get_template_part( 'template-parts/content-post-summary' ); ?>
-				</div>
+			<?php get_template_part( 'template-parts/list-posts' ); ?>
 
-			<?php endwhile; ?>
-		</div>
-
-		<?php get_sidebar(); ?>
+			<?php get_sidebar(); ?>
 		<?php endif; ?>
 	</main><!-- #main -->
 
