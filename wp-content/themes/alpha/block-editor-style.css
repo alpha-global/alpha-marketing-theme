@@ -683,6 +683,14 @@ body.admin-bar .block-editor-block-list__layout .wp-block .site-header.fixed {
   height: 100%;
   background-color: rgba(142, 145, 152, 0.4);
 }
+.block-editor-block-list__layout .wp-block .pagination {
+  padding: 25px;
+  text-align: center;
+}
+.block-editor-block-list__layout .wp-block .pagination .page-numbers {
+  margin: 0 0.5em;
+  display: inline-block;
+}
 .block-editor-block-list__layout .wp-block .btn, .block-editor-block-list__layout .wp-block .wp-block-button__link {
   display: inline-block;
   padding: 12px 32px;
