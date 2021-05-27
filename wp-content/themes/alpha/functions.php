@@ -159,20 +159,24 @@ add_action( 'widgets_init', 'alpha_widgets_init' );
  * Enqueue scripts and styles.
  */
 function alpha_scripts() {
-	wp_enqueue_style( 'alpha-style', get_stylesheet_uri(), array(), ALPHA_VERSION );
+
+	$version = ALPHA_VERSION;
+	$version = date('YmdHis');
+
+	wp_enqueue_style( 'alpha-style', get_stylesheet_uri(), array(), $version );
 	wp_style_add_data( 'alpha-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'alpha-navigation', get_template_directory_uri() . '/js/navigation.js', array(), ALPHA_VERSION, true );
-	wp_enqueue_script( 'alpha-buttons', get_template_directory_uri() . '/js/buttons.js', array(), ALPHA_VERSION, true );
+	wp_enqueue_script( 'alpha-navigation', get_template_directory_uri() . '/js/navigation.js', array(), $version, true );
+	wp_enqueue_script( 'alpha-buttons', get_template_directory_uri() . '/js/buttons.js', array(), $version, true );
 
 	if ( has_block( 'acf/testimonials' ) || has_reusable_block( 'acf/testimonials' ) ) {
-		wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/vendor/slick/slick/slick.js', array( 'jquery' ), ALPHA_VERSION, true );
-		wp_enqueue_style( 'slick', get_template_directory_uri() . '/js/vendor/slick/slick/slick.css', array(), ALPHA_VERSION );
-		wp_enqueue_script( 'alpha-slider', get_template_directory_uri() . '/js/slider.js', array( 'jquery', 'slick' ), ALPHA_VERSION, true );
+		wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/vendor/slick/slick/slick.js', array( 'jquery' ), $version, true );
+		wp_enqueue_style( 'slick', get_template_directory_uri() . '/js/vendor/slick/slick/slick.css', array(), $version );
+		wp_enqueue_script( 'alpha-slider', get_template_directory_uri() . '/js/slider.js', array( 'jquery', 'slick' ), $version, true );
 	}
 
 	if ( has_block( 'acf/accordion' ) || has_reusable_block( 'acf/accordion' ) ) {
-		wp_enqueue_script( 'alpha-accordion', get_template_directory_uri() . '/js/accordion.js', array( 'jquery' ), ALPHA_VERSION, true );
+		wp_enqueue_script( 'alpha-accordion', get_template_directory_uri() . '/js/accordion.js', array( 'jquery' ), $version, true );
 	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
