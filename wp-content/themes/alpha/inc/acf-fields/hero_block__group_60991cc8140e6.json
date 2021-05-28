@@ -23,6 +23,25 @@
                 "ui_off_text": "Default"
             },
             {
+                "key": "field_60abe183f346c",
+                "label": "Is Blog Hero",
+                "name": "is_blog_hero",
+                "type": "true_false",
+                "instructions": "(Will raise upcoming content up)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 1,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
                 "key": "field_60991e9de2a68",
                 "label": "Background Image",
                 "name": "background_image",
@@ -144,10 +163,10 @@
                         "placeholder": ""
                     },
                     {
-                        "key": "field_60991e836a7b5",
+                        "key": "field_60b0deb232a48",
                         "label": "Icon",
                         "name": "icon",
-                        "type": "text",
+                        "type": "alpha_icon",
                         "instructions": "",
                         "required": 0,
                         "conditional_logic": 0,
@@ -156,11 +175,7 @@
                             "class": "",
                             "id": ""
                         },
-                        "default_value": "",
-                        "placeholder": "",
-                        "prepend": "",
-                        "append": "",
-                        "maxlength": ""
+                        "font_size": 14
                     }
                 ]
             }
