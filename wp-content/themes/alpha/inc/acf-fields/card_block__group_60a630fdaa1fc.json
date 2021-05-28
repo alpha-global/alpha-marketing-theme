@@ -18,7 +18,8 @@
                 },
                 "choices": {
                     "shadow": "Shadow Round Corners",
-                    "plain": "Plain"
+                    "plain": "Plain",
+                    "rounded": "Round Corners"
                 },
                 "default_value": "shadow",
                 "allow_null": 0,

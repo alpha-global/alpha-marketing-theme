@@ -22,6 +22,7 @@ acf_add_local_field_group(array(
 			'choices' => array(
 				'shadow' => 'Shadow Round Corners',
 				'plain' => 'Plain',
+				'rounded' => 'Round Corners',
 			),
 			'default_value' => 'shadow',
 			'allow_null' => 0,
