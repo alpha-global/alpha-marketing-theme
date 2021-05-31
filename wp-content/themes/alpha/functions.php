@@ -218,7 +218,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Enqueue block editor style for Gutenberg Blocks
  */
 function alpha_block_editor_styles() {
-	wp_enqueue_style( 'axis1-blocks-editor-style', get_theme_file_uri( '/block-editor-style.css' ), false, ALPHA_VERSION, 'all' );
+
+	$version = ALPHA_VERSION;
+	$version = date('YmdHis');
+
+	wp_enqueue_style( 'axis1-blocks-editor-style', get_theme_file_uri( '/block-editor-style.css' ), false, $version, 'all' );
 }
 add_action( 'enqueue_block_editor_assets', 'alpha_block_editor_styles' );
 
