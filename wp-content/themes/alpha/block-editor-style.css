@@ -1653,7 +1653,7 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-full-page 
 }
 .block-editor-block-list__layout .wp-block .alpha-story-summary {
   display: flex;
-  padding: 10px 20px;
+  padding: 15px 20px;
   justify-content: space-between;
 }
 .block-editor-block-list__layout .wp-block .alpha-story-summary h5 {

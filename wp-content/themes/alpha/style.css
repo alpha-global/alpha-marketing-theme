@@ -2439,7 +2439,7 @@ body.admin-bar .alpha-hero-full-page {
 }
 .alpha-story-summary {
   display: flex;
-  padding: 10px 20px;
+  padding: 15px 20px;
   justify-content: space-between;
 }
 .alpha-story-summary h5 {
