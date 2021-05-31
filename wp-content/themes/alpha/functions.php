@@ -16,7 +16,7 @@ require_once get_template_directory() . '/inc/acf-load.php';
 require_once get_template_directory() . '/inc/wp-cli-acf-tools.php';
 require_once get_template_directory() . '/inc/alpha-menu.php';
 require_once get_template_directory() . '/inc/widgets.php';
-require_once get_template_directory() . '/inc/stories-post-type.php';
+require_once get_template_directory() . '/inc/story-post-type.php';
 
 if ( ! function_exists( 'alpha_setup' ) ) :
 	/**
