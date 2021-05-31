@@ -150,6 +150,26 @@ function alpha_register_acf_block_types() {
 		)
 	);
 
+	acf_register_block_type(
+		array(
+			'name'            => 'stories',
+			'title'           => __( 'Stories', 'alpha' ),
+			'description'     => __( 'Stories', 'alpha' ),
+			'render_template' => 'template-parts/blocks/stories.php',
+			'category'        => 'alpha',
+			'keywords'        => array( 'offices', 'alpha' ),
+			'mode'            => 'preview',
+			'icon'            => 'images-alt2',
+			'supports'        => array(
+				'mode'            => false,
+				'align'           => false,
+				'anchor'          => true,
+				'customClassName' => true,
+				'jsx'             => true,
+			),
+		)
+	);
+
 	/*
 	acf_register_block_type(
 		array(
