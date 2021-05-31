@@ -8,5 +8,9 @@
 		@import "base/grid";
 		@import "components/components";
 		@import "blocks/blocks";
+
+		a {
+			pointer-events: none;
+		}
 	}
 }
