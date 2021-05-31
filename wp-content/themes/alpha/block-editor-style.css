@@ -1580,6 +1580,92 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-full-page 
   border-radius: 8px;
   box-shadow: -1px -1px 15px -2px rgba(0, 0, 0, 0.3);
 }
+.block-editor-block-list__layout .wp-block .alpha-stories {
+  display: flex;
+  margin-left: -25px;
+  margin-right: -25px;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.block-editor-block-list__layout .wp-block .alpha-stories-single {
+  padding: 25px;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  flex: 0 0 33.333%;
+}
+.block-editor-block-list__layout .wp-block .alpha-stories-single:nth-child(1), .block-editor-block-list__layout .wp-block .alpha-stories-single:nth-child(7) {
+  flex: 0 0 66.666%;
+}
+.block-editor-block-list__layout .wp-block .alpha-story {
+  border-radius: 8px;
+  box-shadow: -1px -1px 15px -2px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  overflow: hidden;
+}
+.block-editor-block-list__layout .wp-block .alpha-story > a {
+  display: block;
+}
+.block-editor-block-list__layout .wp-block .alpha-story-details {
+  position: relative;
+}
+.block-editor-block-list__layout .wp-block .alpha-story-details:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(32, 40, 54, 0.85) 10%, rgba(32, 40, 54, 0.33) 60%, rgba(32, 40, 54, 0.04) 70%);
+  z-index: 2;
+}
+.block-editor-block-list__layout .wp-block .alpha-story-details figure {
+  margin: 0;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  z-index: 1;
+}
+.block-editor-block-list__layout .wp-block .alpha-story-details figure img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.block-editor-block-list__layout .wp-block .alpha-story-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 20px 50px;
+  color: #fff;
+  font-size: 22px;
+  z-index: 3;
+}
+.block-editor-block-list__layout .wp-block .alpha-story-description p:first-child {
+  margin-top: 0;
+}
+.block-editor-block-list__layout .wp-block .alpha-story-description p:last-child {
+  margin-bottom: 0;
+}
+.block-editor-block-list__layout .wp-block .alpha-story-summary {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+}
+.block-editor-block-list__layout .wp-block .alpha-story-summary h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  margin: 0;
+}
+.block-editor-block-list__layout .wp-block .alpha-story-watch {
+  white-space: nowrap;
+  margin-left: 20px;
+}
 .block-editor-block-list__layout .wp-block .wp-block-column {
   margin-bottom: 2em;
 }
@@ -1685,6 +1771,9 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-full-page 
 }
 .block-editor-block-list__layout .wp-block .has-purple-background-color {
   background-color: #4d4da5;
+}
+.block-editor-block-list__layout .wp-block a {
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=block-editor-style.css.map */
