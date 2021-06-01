@@ -281,3 +281,43 @@ function alpha_add_custom_gutenberg_color_palette() {
 	);
 }
 add_action( 'after_setup_theme', 'alpha_add_custom_gutenberg_color_palette' );
+
+/**
+ * Converts video link to iframe player link
+ *
+ * @param string $video_link Link to the video
+ * @return string
+ */
+function alpha_video_player_link( $video_link ) {
+	$video_players = array(
+		'vimeo' => array(
+			'search'  => '/https:\/\/vimeo\.com\/(\d+)/',
+			'replace' => 'https://player.vimeo.com/video/$1',
+		),
+	);
+
+	foreach ( $video_players as $player ) {
+		if ( preg_match( $player['search'], $video_link ) ) {
+			return preg_replace( $player['search'], $player['replace'], $video_link);
+		}
+	}
+
+	return false;
+}
+
+/**
+ * Converts video link to iframe player
+ *
+ * @param string $video_link Link to the video
+ * @return string
+ */
+function alpha_video_player( $video_link )
+{
+	$player = alpha_video_player_link( $video_link );
+
+	if ( false !== $player ) {
+		return "<iframe src=\"{$player}\" frameborder=\"0\" allowfullscreen tabindex=\"-1\"></iframe>";
+	} else {
+		return '';
+	}
+}
