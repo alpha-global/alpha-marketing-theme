@@ -172,6 +172,26 @@ function alpha_register_acf_block_types() {
 
 	acf_register_block_type(
 		array(
+			'name'            => 'product-meta',
+			'title'           => __( 'Product Meta', 'alpha' ),
+			'description'     => __( 'Product Meta', 'alpha' ),
+			'render_template' => 'template-parts/blocks/product-meta.php',
+			'category'        => 'alpha',
+			'keywords'        => array( 'product', 'meta', 'alpha' ),
+			'mode'            => 'preview',
+			'icon'            => 'images-alt2',
+			'supports'        => array(
+				'mode'            => false,
+				'align'           => false,
+				'anchor'          => true,
+				'customClassName' => true,
+				'jsx'             => true,
+			),
+		)
+	);
+
+	acf_register_block_type(
+		array(
 			'name'            => 'episodes',
 			'title'           => __( 'Episodes', 'alpha' ),
 			'description'     => __( 'Episodes', 'alpha' ),
