@@ -170,6 +170,26 @@ function alpha_register_acf_block_types() {
 		)
 	);
 
+	acf_register_block_type(
+		array(
+			'name'            => 'episodes',
+			'title'           => __( 'Episodes', 'alpha' ),
+			'description'     => __( 'Episodes', 'alpha' ),
+			'render_template' => 'template-parts/blocks/episodes.php',
+			'category'        => 'alpha',
+			'keywords'        => array( 'episodes', 'alpha' ),
+			'mode'            => 'auto',
+			'icon'            => 'images-alt2',
+			'supports'        => array(
+				'mode'            => false,
+				'align'           => false,
+				'anchor'          => true,
+				'customClassName' => true,
+				'jsx'             => true,
+			),
+		)
+	);
+
 	/*
 	acf_register_block_type(
 		array(

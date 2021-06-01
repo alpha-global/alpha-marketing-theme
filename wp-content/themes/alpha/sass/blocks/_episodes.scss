@@ -1,0 +1,107 @@
+.alpha-episodes {
+	background-color: $color__light_gray;
+
+	margin-left: calc( ( 100vw - 100% ) / -2 );
+	width: 100vw;
+	padding: 72px 0;
+
+	h2 {
+		text-align: center;
+	}
+
+	&-previews {
+		max-width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+
+		.slick-list {
+			overflow: visible;
+		}
+
+		.slick-arrow {
+			width: 48px;
+			height: 48px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: $color__accent;
+			color: $color__white;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 10;
+
+			&:before {
+				width: 12px;
+				height: 12px;
+			}
+
+			&.prev {
+				left: -48px;
+			}
+
+			&.next {
+				right: -48px;
+			}
+		}
+	}
+
+	&-preview {
+		padding: 2em;
+
+		> div {
+			@include rounded-shadow();
+			overflow: hidden;
+			width: 100%;
+			height: 0;
+			padding-bottom: 56.25%;
+			position: relative;
+	
+			iframe {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+
+	&-nav {
+		ul {
+			max-width: 520px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 1em;
+			list-style: none;
+			max-height: 15em;
+			overflow-y: scroll;
+
+			li {
+				display: block;
+				margin: 0.3em 0;
+
+				a {
+					display: flex;
+					justify-content: space-between;
+					border-radius: 8px;
+					padding: 8px;
+					color: $color__dark;
+
+					.name {
+						font-weight: 500;
+					}
+
+					&.current {
+						background-color: $color__white;
+
+						.name {
+							color: $color__accent;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -172,7 +172,7 @@ function alpha_scripts() {
 	wp_enqueue_script( 'alpha-buttons', get_template_directory_uri() . '/js/buttons.js', array(), $version, true );
 	wp_enqueue_script( 'alpha-video-popup', get_template_directory_uri() . '/js/video-popup.js', array( 'jquery' ), 0, true );
 
-	if ( has_block( 'acf/testimonials' ) || has_reusable_block( 'acf/testimonials' ) ) {
+	if ( has_block( 'acf/testimonials' ) || has_reusable_block( 'acf/testimonials' ) || has_block( 'acf/episodes' ) || has_reusable_block( 'acf/episodes' ) ) {
 		wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/vendor/slick/slick/slick.js', array( 'jquery' ), $version, true );
 		wp_enqueue_style( 'slick', get_template_directory_uri() . '/js/vendor/slick/slick/slick.css', array(), $version );
 		wp_enqueue_script( 'alpha-slider', get_template_directory_uri() . '/js/slider.js', array( 'jquery', 'slick' ), $version, true );
