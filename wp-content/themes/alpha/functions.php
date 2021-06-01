@@ -226,6 +226,17 @@ function alpha_block_editor_styles() {
 }
 add_action( 'enqueue_block_editor_assets', 'alpha_block_editor_styles' );
 
+/**
+ * Add custom fonts and icons to the backend
+ */
+function alpha_add_editor_fonts() {
+	$version = ALPHA_VERSION;
+	$version = date( 'YmdHis' );
+
+	wp_enqueue_style( 'alpha-editor-fonts', get_theme_file_uri( '/editor-fonts.css' ), false, $version, 'all' );
+}
+add_action( 'admin_enqueue_scripts', 'alpha_add_editor_fonts' );
+
 function alpha_add_custom_gutenberg_color_palette() {
 	add_theme_support(
 		'editor-color-palette',
