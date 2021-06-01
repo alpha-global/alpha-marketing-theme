@@ -124,4 +124,41 @@
 			margin-bottom: 2em;
 		}
 	}
+
+	&-style {
+		&-product {
+			justify-content: center;
+
+			.alpha-hero-content {
+				max-width: none;
+				text-align: center;
+			}
+		}
+	}
+
+	&-teaser-video-link {
+		display: inline-block;
+		text-align: center;
+		color: $color__white;
+
+		&:hover {
+			color: $color__white;
+		}
+
+		i {
+			display: flex;
+			margin: 0 auto 1em;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			background-color: rgba(255, 255, 255, 0.6);
+			color: $color__white;
+			justify-content: center;
+			align-items: center;
+		}
+
+		span {
+			display: block;
+		}
+	}
 }
