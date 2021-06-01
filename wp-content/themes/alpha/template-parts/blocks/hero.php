@@ -23,10 +23,13 @@ if ( get_field( 'is_full_page' ) ) {
 } else {
 	$class_name .= ' alpha-hero-default';
 }
+if ( get_field( 'hero_style' ) ) {
+	$class_name .= ' alpha-hero-style-' . get_field( 'hero_style' );
+}
 
 if ( get_field( 'background_image' ) ) {
-	$background_id = get_field( 'background_image' );
-	$background_url = wp_get_attachment_image_url( $background_id, 'full' );
+	$background_id         = get_field( 'background_image' );
+	$background_url        = wp_get_attachment_image_url( $background_id, 'full' );
 	$background_url_mobile = wp_get_attachment_image_url( $background_id, 'large' );
 
 	?>
@@ -42,6 +45,8 @@ if ( get_field( 'background_image' ) ) {
 	</style>
 	<?php
 }
+
+$teaser_video = get_field( 'teaser_video', $post_id );
 
 ?>
 
@@ -68,6 +73,9 @@ if ( get_field( 'background_image' ) ) {
 					</li>
 				<?php endwhile; ?>
 			</ul>
+		<?php endif; ?>
+		<?php if ( 'product' === get_field( 'hero_style' ) ) : ?>
+			<a href="<?php echo esc_url( $teaser_video ); ?>" class="alpha-hero-teaser-video-link"><i class="aicon-play"></i><span><?php _e( 'Watch Teaser', 'alpha' ); ?></span></a>
 		<?php endif; ?>
 	</div>
 </section>

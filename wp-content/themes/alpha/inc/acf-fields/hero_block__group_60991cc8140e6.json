@@ -23,11 +23,11 @@
                 "ui_off_text": "Default"
             },
             {
-                "key": "field_60abe183f346c",
-                "label": "Is Blog Hero",
-                "name": "is_blog_hero",
-                "type": "true_false",
-                "instructions": "(Will raise upcoming content up)",
+                "key": "field_60b5fe74ffe13",
+                "label": "Hero Style",
+                "name": "hero_style",
+                "type": "select",
+                "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -35,11 +35,18 @@
                     "class": "",
                     "id": ""
                 },
-                "message": "",
-                "default_value": 0,
-                "ui": 1,
-                "ui_on_text": "",
-                "ui_off_text": ""
+                "choices": {
+                    "default": "default",
+                    "blog": "blog",
+                    "product": "product"
+                },
+                "default_value": "default",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
             },
             {
                 "key": "field_60991e9de2a68",
