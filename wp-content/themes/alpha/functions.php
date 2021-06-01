@@ -163,7 +163,7 @@ add_action( 'widgets_init', 'alpha_widgets_init' );
 function alpha_scripts() {
 
 	$version = ALPHA_VERSION;
-	$version = date('YmdHis');
+	$version = date( 'YmdHis' );
 
 	wp_enqueue_style( 'alpha-style', get_stylesheet_uri(), array(), $version );
 	wp_style_add_data( 'alpha-style', 'rtl', 'replace' );
@@ -221,9 +221,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 function alpha_block_editor_styles() {
 
 	$version = ALPHA_VERSION;
-	$version = date('YmdHis');
+	$version = date( 'YmdHis' );
 
-	wp_enqueue_style( 'axis1-blocks-editor-style', get_theme_file_uri( '/block-editor-style.css' ), false, $version, 'all' );
+	wp_enqueue_style( 'alpha-blocks-editor-style', get_theme_file_uri( '/block-editor-style.css' ), false, $version, 'all' );
 }
 add_action( 'enqueue_block_editor_assets', 'alpha_block_editor_styles' );
 
