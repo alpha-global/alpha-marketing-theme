@@ -7,9 +7,10 @@
 
 /**
  * Registers a new post type
+ *
  * @uses $wp_post_types Inserts new post type object into the list
  *
- * @param string $post_type Post type key, must not exceed 20 characters
+ * @param string       $post_type Post type key, must not exceed 20 characters
  * @param array|string $args See optional args description above.
  * @return object|WP_Error the registered post type object, or an error object
  */
