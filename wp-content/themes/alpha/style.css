@@ -388,6 +388,11 @@ body.nav-opened {
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width: 1300px) {
+  .container {
+    max-width: 1004px;
+  }
+}
 
 .columns {
   display: flex;
@@ -937,6 +942,11 @@ textarea {
   align-items: stretch;
   justify-content: space-between;
 }
+@media (max-width: 1300px) {
+  .blog-archive {
+    max-width: 1004px;
+  }
+}
 .blog-archive > .entry-content,
 .blog-archive > .all-posts-header,
 .blog-archive .pagination {
@@ -991,6 +1001,11 @@ textarea {
   display: flex;
   align-items: center;
   height: 112px;
+}
+@media (max-width: 1300px) {
+  .branding {
+    max-width: 1004px;
+  }
 }
 @media (max-width: 1023px) {
   .branding {
@@ -1048,6 +1063,11 @@ textarea {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 0;
+}
+@media (max-width: 1300px) {
+  .topline-nav .menu {
+    max-width: 1004px;
+  }
 }
 .topline-nav .menu > .menu-item {
   margin-left: 40px;
@@ -1525,6 +1545,12 @@ body.admin-bar .site-header.fixed {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 1300px) {
+  .entry-content,
+.entry-footer {
+    max-width: 1004px;
+  }
 }
 
 .type-post .entry-content,
@@ -2062,7 +2088,7 @@ body.admin-bar .alpha-hero-full-page {
   text-align: center;
   color: #fff;
 }
-.alpha-hero-teaser-video-link:hover {
+.alpha-hero-teaser-video-link:hover, .alpha-hero-teaser-video-link:visited {
   color: #fff;
 }
 .alpha-hero-teaser-video-link i {
@@ -2592,6 +2618,37 @@ body.admin-bar .alpha-hero-full-page {
   color: #e42312;
 }
 
+.alpha-contributor {
+  display: flex;
+  justify-content: stretch;
+  align-items: flex-start;
+}
+.alpha-contributor figure {
+  flex: 0 0 80px;
+  height: 80px;
+  margin: 0 30px 0 0;
+  background-color: #f3f4f5;
+  border-radius: 8px;
+  box-shadow: -1px -1px 15px -2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.alpha-contributor figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.alpha-contributor-content h1,
+.alpha-contributor-content h2,
+.alpha-contributor-content h3,
+.alpha-contributor-content h4,
+.alpha-contributor-content h5,
+.alpha-contributor-content h6 {
+  margin: 0 0 0.5em;
+}
+.alpha-contributor-content p {
+  margin: 0;
+}
+
 .wp-block-column {
   margin-bottom: 2em;
 }
@@ -2631,6 +2688,11 @@ body.admin-bar .alpha-hero-full-page {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 1300px) {
+  .has-background .wp-block-group__inner-container {
+    max-width: 1004px;
+  }
 }
 .wp-block-group.has-background {
   margin-left: calc( ( 100vw - 100% ) / -2 );

@@ -239,6 +239,11 @@
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width: 1300px) {
+  .block-editor-block-list__layout .wp-block .container {
+    max-width: 1004px;
+  }
+}
 .block-editor-block-list__layout .wp-block .columns {
   display: flex;
   margin-left: -25px;
@@ -274,6 +279,11 @@
   display: flex;
   align-items: center;
   height: 112px;
+}
+@media (max-width: 1300px) {
+  .block-editor-block-list__layout .wp-block .branding {
+    max-width: 1004px;
+  }
 }
 @media (max-width: 1023px) {
   .block-editor-block-list__layout .wp-block .branding {
@@ -328,6 +338,11 @@
   display: flex;
   justify-content: flex-end;
   margin-bottom: 0;
+}
+@media (max-width: 1300px) {
+  .block-editor-block-list__layout .wp-block .topline-nav .menu {
+    max-width: 1004px;
+  }
 }
 .block-editor-block-list__layout .wp-block .topline-nav .menu > .menu-item {
   margin-left: 40px;
@@ -792,6 +807,12 @@ body.admin-bar .block-editor-block-list__layout .wp-block .site-header.fixed {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 1300px) {
+  .block-editor-block-list__layout .wp-block .entry-content,
+.block-editor-block-list__layout .wp-block .entry-footer {
+    max-width: 1004px;
+  }
 }
 .block-editor-block-list__layout .wp-block .type-post .entry-content,
 .block-editor-block-list__layout .wp-block .type-post .entry-footer,
@@ -1285,7 +1306,7 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-full-page 
   text-align: center;
   color: #fff;
 }
-.block-editor-block-list__layout .wp-block .alpha-hero-teaser-video-link:hover {
+.block-editor-block-list__layout .wp-block .alpha-hero-teaser-video-link:hover, .block-editor-block-list__layout .wp-block .alpha-hero-teaser-video-link:visited {
   color: #fff;
 }
 .block-editor-block-list__layout .wp-block .alpha-hero-teaser-video-link i {
@@ -1803,6 +1824,36 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-full-page 
 .block-editor-block-list__layout .wp-block .alpha-episodes-nav ul li a.current .name {
   color: #e42312;
 }
+.block-editor-block-list__layout .wp-block .alpha-contributor {
+  display: flex;
+  justify-content: stretch;
+  align-items: flex-start;
+}
+.block-editor-block-list__layout .wp-block .alpha-contributor figure {
+  flex: 0 0 80px;
+  height: 80px;
+  margin: 0 30px 0 0;
+  background-color: #f3f4f5;
+  border-radius: 8px;
+  box-shadow: -1px -1px 15px -2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.block-editor-block-list__layout .wp-block .alpha-contributor figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.block-editor-block-list__layout .wp-block .alpha-contributor-content h1,
+.block-editor-block-list__layout .wp-block .alpha-contributor-content h2,
+.block-editor-block-list__layout .wp-block .alpha-contributor-content h3,
+.block-editor-block-list__layout .wp-block .alpha-contributor-content h4,
+.block-editor-block-list__layout .wp-block .alpha-contributor-content h5,
+.block-editor-block-list__layout .wp-block .alpha-contributor-content h6 {
+  margin: 0 0 0.5em;
+}
+.block-editor-block-list__layout .wp-block .alpha-contributor-content p {
+  margin: 0;
+}
 .block-editor-block-list__layout .wp-block .wp-block-column {
   margin-bottom: 2em;
 }
@@ -1840,6 +1891,11 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-full-page 
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 1300px) {
+  .has-background .block-editor-block-list__layout .wp-block .wp-block-group__inner-container {
+    max-width: 1004px;
+  }
 }
 .block-editor-block-list__layout .wp-block .wp-block-group.has-background {
   margin-left: calc( ( 100vw - 100% ) / -2 );
