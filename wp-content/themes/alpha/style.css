@@ -2316,6 +2316,9 @@ body.admin-bar .alpha-hero-full-page {
   max-width: 6em;
   max-height: 6em;
 }
+.alpha-card h5:last-child {
+  margin-bottom: 0;
+}
 .alpha-card p {
   margin: 0 0 1em;
 }
@@ -2647,6 +2650,10 @@ body.admin-bar .alpha-hero-full-page {
 }
 .alpha-contributor-content p {
   margin: 0;
+}
+
+.wp-block-columns {
+  margin-bottom: 0;
 }
 
 .wp-block-column {
