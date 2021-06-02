@@ -39,6 +39,12 @@
 		}
 	}
 
+	h5 {
+		&:last-child {
+			margin-bottom: 0;	
+		}
+	}
+
 	p {
 		margin: 0 0 1em;
 
