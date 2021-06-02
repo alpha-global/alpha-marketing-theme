@@ -210,6 +210,26 @@ function alpha_register_acf_block_types() {
 		)
 	);
 
+	acf_register_block_type(
+		array(
+			'name'            => 'contributor',
+			'title'           => __( 'Contributor', 'alpha' ),
+			'description'     => __( 'Contributor', 'alpha' ),
+			'render_template' => 'template-parts/blocks/contributor.php',
+			'category'        => 'alpha',
+			'keywords'        => array( 'episodes', 'alpha' ),
+			'mode'            => 'preview',
+			'icon'            => 'images-alt2',
+			'supports'        => array(
+				'mode'            => false,
+				'align'           => false,
+				'anchor'          => true,
+				'customClassName' => true,
+				'jsx'             => true,
+			),
+		)
+	);
+
 	/*
 	acf_register_block_type(
 		array(

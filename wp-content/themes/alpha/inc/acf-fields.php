@@ -12,6 +12,7 @@ if ( function_exists( 'acf_add_local_field_group' ) ) :
 	require_once __DIR__ . '/acf-fields/alpha_product__group_60b4d8bf85523.php';
 	require_once __DIR__ . '/acf-fields/alpha_story__group_60b0b5449b810.php';
 	require_once __DIR__ . '/acf-fields/card_block__group_60a630fdaa1fc.php';
+	require_once __DIR__ . '/acf-fields/contributor_block__group_60b7377599884.php';
 	require_once __DIR__ . '/acf-fields/episodes_block__group_60b61302de38d.php';
 	require_once __DIR__ . '/acf-fields/hero_block__group_60991cc8140e6.php';
 	require_once __DIR__ . '/acf-fields/image_with_text_block__group_60a77bf984813.php';
