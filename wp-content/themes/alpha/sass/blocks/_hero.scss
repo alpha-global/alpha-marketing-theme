@@ -141,7 +141,8 @@
 		text-align: center;
 		color: $color__white;
 
-		&:hover {
+		&:hover,
+		&:visited {
 			color: $color__white;
 		}
 
