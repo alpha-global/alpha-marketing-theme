@@ -69,3 +69,286 @@ function alpha_register_product_post_type() {
 	register_post_type( 'product', $args );
 }
 add_action( 'init', 'alpha_register_product_post_type' );
+
+/**
+ * Default template for Product post type
+ *
+ * @return void
+ */
+function alpha_product_register_template() {
+	$post_type_object           = get_post_type_object( 'product' );
+	$post_type_object->template = array(
+		array(
+			'acf/hero',
+			array(
+				'data' => array(
+					'is_full_page' => 1,
+					'hero_style'   => 'product',
+					'title'        => __( 'Product Title', 'alpha' ),
+				),
+			),
+		),
+		array(
+			'core/group',
+			array(),
+			array(
+				array(
+					'core/heading',
+					array(
+						'placeholder' => __( 'Product subtitle', 'alpha' ),
+						'level'       => 4,
+					),
+				),
+				array(
+					'core/columns',
+					array(),
+					array(
+						array(
+							'core/column',
+							array( 'width' => '75%' ),
+							array(
+								array(
+									'core/heading',
+									array(
+										'placeholder' => __( 'Title', 'alpha' ),
+										'level'       => 3,
+									),
+								),
+								array( 'core/paragraph', array( 'placeholder' => __( 'Description', 'alpha' ) ) ),
+								array( 'core/button', array( 'placeholder' => __( 'Button', 'alpha' ) ) ),
+							),
+						),
+						array(
+							'core/column',
+							array(),
+							array(
+								array( 'acf/product-meta' ),
+							),
+						),
+					),
+				),
+			),
+		),
+		array(
+			'core/group',
+			array(),
+			array(
+				array(
+					'core/heading',
+					array(
+						'content' => __( 'Presenters', 'alpha' ),
+						'level'   => 2,
+					),
+				),
+				array( 'core/paragraph' ),
+				array(
+					'core/columns',
+					array(),
+					array(
+						array(
+							'core/column',
+							array(),
+							array(
+								array( 'core/image', array( 'align' => 'center' ) ),
+								array(
+									'core/heading',
+									array(
+										'level'     => 4,
+										'textAlign' => 'center',
+									),
+								),
+								array( 'core/paragraph', array( 'align' => 'center' ) ),
+							),
+						),
+						array(
+							'core/column',
+							array(),
+							array(
+								array( 'core/image', array( 'align' => 'center' ) ),
+								array(
+									'core/heading',
+									array(
+										'level'     => 4,
+										'textAlign' => 'center',
+									),
+								),
+								array( 'core/paragraph', array( 'align' => 'center' ) ),
+							),
+						),
+						array(
+							'core/column',
+							array(),
+							array(
+								array( 'core/image', array( 'align' => 'center' ) ),
+								array(
+									'core/heading',
+									array(
+										'level'     => 4,
+										'textAlign' => 'center',
+									),
+								),
+								array( 'core/paragraph', array( 'align' => 'center' ) ),
+							),
+						),
+					),
+				),
+			),
+		),
+		array( 'acf/episodes' ),
+		array(
+			'core/group',
+			array(),
+			array(
+				array(
+					'core/heading',
+					array(
+						'content' => __( 'Contributors', 'alpha' ),
+						'level'   => 2,
+					),
+				),
+				array(
+					'core/columns',
+					array(),
+					array(
+						array(
+							'core/column',
+							array(),
+							array(
+								array(
+									'acf/contributor',
+									array(),
+									array(
+										array( 'core/heading', array( 'level' => 4 ) ),
+										array( 'core/paragraph' ),
+									),
+								),
+							),
+						),
+						array(
+							'core/column',
+							array(),
+							array(
+								array(
+									'acf/contributor',
+									array(),
+									array(
+										array( 'core/heading', array( 'level' => 4 ) ),
+										array( 'core/paragraph' ),
+									),
+								),
+							),
+						),
+						array(
+							'core/column',
+							array(),
+							array(
+								array(
+									'acf/contributor',
+									array(),
+									array(
+										array( 'core/heading', array( 'level' => 4 ) ),
+										array( 'core/paragraph' ),
+									),
+								),
+							),
+						),
+					),
+				),
+			),
+		),
+		array(
+			'core/group',
+			array(),
+			array(
+				array(
+					'core/heading',
+					array(
+						'level'   => 2,
+						'content' => __( 'What\'s included', 'alpha' ),
+					),
+				),
+				array( 'core/paragraph', array( 'content' => __( 'Alpha comes with everything you need to get started, and everything is available for free.', 'alpha' ) ) ),
+				array(
+					'core/columns',
+					array(),
+					array(
+						array(
+							'core/column',
+							array(),
+							array(
+								array(
+									'acf/card',
+									array(
+										'data' => array(
+											'style' => 'plain',
+											'icon'  => 'logo',
+										),
+									),
+									array(
+										array(
+											'core/heading',
+											array(
+												'level'   => 5,
+												'content' => __( 'Item description', 'alpha' ),
+											),
+										),
+									),
+								),
+							),
+						),
+						array(
+							'core/column',
+							array(),
+							array(
+								array(
+									'acf/card',
+									array(
+										'data' => array(
+											'style' => 'plain',
+											'icon'  => 'logo',
+										),
+									),
+									array(
+										array(
+											'core/heading',
+											array(
+												'level'   => 5,
+												'content' => __( 'Item description', 'alpha' ),
+											),
+										),
+									),
+								),
+							),
+						),
+						array(
+							'core/column',
+							array(),
+							array(
+								array(
+									'acf/card',
+									array(
+										'data' => array(
+											'style' => 'plain',
+											'icon'  => 'logo',
+										),
+									),
+									array(
+										array(
+											'core/heading',
+											array(
+												'level'   => 5,
+												'content' => __( 'Item description', 'alpha' ),
+											),
+										),
+									),
+								),
+							),
+						),
+					),
+				),
+				array( 'core/button', array( 'text' => __( 'Sign Up', 'alpha' ) ) ),
+			),
+		),
+	);
+}
+add_action( 'init', 'alpha_product_register_template' );
