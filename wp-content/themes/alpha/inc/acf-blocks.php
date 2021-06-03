@@ -230,6 +230,26 @@ function alpha_register_acf_block_types() {
 		)
 	);
 
+	acf_register_block_type(
+		array(
+			'name'            => 'products',
+			'title'           => __( 'Products', 'alpha' ),
+			'description'     => __( 'Products', 'alpha' ),
+			'render_template' => 'template-parts/blocks/products.php',
+			'category'        => 'alpha',
+			'keywords'        => array( 'products', 'alpha' ),
+			'mode'            => 'preview',
+			'icon'            => 'images-alt2',
+			'supports'        => array(
+				'mode'            => false,
+				'align'           => false,
+				'anchor'          => true,
+				'customClassName' => true,
+				'jsx'             => true,
+			),
+		)
+	);
+
 	/*
 	acf_register_block_type(
 		array(
