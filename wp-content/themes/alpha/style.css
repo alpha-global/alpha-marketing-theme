@@ -2652,6 +2652,142 @@ body.admin-bar .alpha-hero-full-page {
   margin: 0;
 }
 
+.alpha-products {
+  display: flex;
+  margin-left: -25px;
+  margin-right: -25px;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.alpha-products-single {
+  padding: 25px;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  color: #fff;
+  flex: 0 0 50%;
+}
+.alpha-products-single figure {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.alpha-products-single figure img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.alpha-products-single figure:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(32, 40, 54, 0.85) 10%, rgba(32, 40, 54, 0.33) 60%, rgba(32, 40, 54, 0.04) 70%);
+}
+.alpha-products-single-wrap {
+  border-radius: 8px;
+  box-shadow: -1px -1px 15px -2px rgba(0, 0, 0, 0.3);
+  height: 600px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.alpha-products-single-wrap .hover-expand {
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+.alpha-products-single-wrap:hover .hover-expand {
+  max-height: 500px;
+  opacity: 1;
+}
+.alpha-products-single .overlay {
+  background-color: rgba(32, 40, 54, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+.alpha-products-single:hover figure:before {
+  background: linear-gradient(to top, rgba(32, 40, 54, 0.85) 10%, rgba(32, 40, 54, 0.33) 60%, rgba(32, 40, 54, 0.04) 70%);
+}
+.alpha-products-single:hover .overlay {
+  opacity: 1;
+}
+.alpha-products-single-summary {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  padding: 0 40px;
+  z-index: 2;
+}
+.alpha-products-single-summary h2 {
+  color: #fff;
+  font-size: 2.5em;
+  margin: 0 0 10px;
+}
+.alpha-products-single-subtitle {
+  padding-left: 2em;
+  border-left: 2px solid #e42312;
+}
+.alpha-products-single-meta ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2em 0;
+  padding: 0 0 0 2em;
+}
+.alpha-products-single-meta ul li {
+  margin: 0 2em 1em 0;
+}
+.alpha-products-single-actions {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+.alpha-products-single-actions a {
+  margin-left: 2em;
+}
+.alpha-products-single-actions a:first-child {
+  margin-left: 0;
+}
+.alpha-products-single-actions .trailer-link {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.alpha-products-single-actions .trailer-link .aicon-play {
+  width: 45px;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  margin-right: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .wp-block-columns {
   margin-bottom: 0;
 }
