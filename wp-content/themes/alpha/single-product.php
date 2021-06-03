@@ -21,7 +21,7 @@ get_header();
 		endwhile; // End of the loop.
 		?>
 
-		<?php get_template_part( 'template-parts/related-posts' ); ?>
+		<?php get_template_part( 'template-parts/related-products' ); ?>
 
 	</main><!-- #main -->
 
