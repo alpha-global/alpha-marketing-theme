@@ -35,7 +35,6 @@ get_header();
 
 				}
 				?>
-			<div class="entry-content">
 				<section id="alpha-blog-hero" class="alpha-hero alpha-hero-blog alpha-hero-full-page">
 					<div class="background"></div>
 					<div class="alpha-hero-content alpha-hero-blog-card">
@@ -47,8 +46,6 @@ get_header();
 						<p><a href="<?php the_permalink(); ?>"><?php _e( 'Read Article', 'alpha' ); ?></a></p>
 					</div>
 				</section>
-
-			</div>
 
 			<?php endif; ?>
 
