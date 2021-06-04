@@ -111,12 +111,21 @@
 			padding-left: 2em;
 			margin-left: 0;
 			max-width: 780px;
+
+			@include media( $mobile__only ) {
+				margin-left: - $gutter / 2;
+			}
 		}
 
 		&:before,
 		.background {
 			margin-left: 0;
 			width: 100%;
+
+			@include media( $mobile__only ) {
+				margin-left: - $gutter / 2;
+				width: 100vw;
+			}
 		}
 
 		&-card {
