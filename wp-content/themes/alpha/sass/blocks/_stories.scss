@@ -14,9 +14,15 @@
 
 		flex: 0 0 33.333%;
 
-		&:nth-child( 1 ),
-		&:nth-child( 7 ) {
-			flex: 0 0 66.666%;
+		@include media( $desktop__only ) {
+			&:nth-child( 1 ),
+			&:nth-child( 7 ) {
+				flex: 0 0 66.666%;
+			}
+		}
+
+		@include media( $mobile__tablet ) {
+			flex: 0 0 100%;
 		}
 	}
 }
@@ -56,6 +62,18 @@
 			position: relative;
 			z-index: 1;
 
+			@include media( $tablet__only ) {
+				height: 300px;
+			}
+
+			@include media( $mobile__only ) {
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+			}
+
 			img {
 				position: absolute;
 				top: 0;
@@ -76,6 +94,11 @@
 		color: $color__white;
 		font-size: 22px;
 		z-index: 3;
+
+		@include media( $mobile__only ) {
+			position: relative;
+			font-size: 18px;
+		}
 
 		p {
 			&:first-child {
