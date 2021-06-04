@@ -12,7 +12,11 @@
 	}
 
 	.all-posts-header {
-		margin: 2em 0;
+		margin: 2em 0 0;
+
+		h2 {
+			margin: 0;
+		}
 	}
 
 	.posts {
@@ -23,31 +27,43 @@
 		align-items: stretch;
 		flex-wrap: wrap;
 
+		@include media( $mobile__only ) {
+			flex: 0 0 100%;
+			margin-left: 0;
+		}
+
 		.post {
 			flex: 0 0 50%;
 			padding: 25px;
 			display: flex;
+
+			@include media( $mobile__only ) {
+				flex: 0 0 100%;
+				padding: 25px 0;
+			}	
 		}
 	}
 
-	&.index {
-		.posts {
-			.post {
-				&:first-child {
-					flex: 0 0 100%;
-					padding-top: 0;
-	
-					.post-summary {
-						display: flex;
-	
-						&-thumbnail {
-							flex: 0 0 60%;
-							padding-bottom: 40%;
-						}
-	
-						&-content {
-							h6 {
-								font-size: 1.2em;
+	@include media( $tablet__desktop ) {
+		&.index {
+			.posts {
+				.post {
+					&:first-child {
+						flex: 0 0 100%;
+						padding-top: 0;
+		
+						.post-summary {
+							display: flex;
+		
+							&-thumbnail {
+								flex: 0 0 60%;
+								padding-bottom: 40%;
+							}
+		
+							&-content {
+								h6 {
+									font-size: 1.2em;
+								}
 							}
 						}
 					}
@@ -56,7 +72,12 @@
 		}
 	}
 
+
 	.widget-area {
 		flex: 0 0 25%;
+
+		@include media( $mobile__only ) {
+			display: none;
+		}
 	}
 }
