@@ -101,6 +101,24 @@
 	}
 
 	&-blog {
+		min-height: 0;
+
+		body.admin-bar & {
+			min-height: 0;
+		}
+
+		.alpha-hero-content {
+			padding-left: 2em;
+			margin-left: 0;
+			max-width: 780px;
+		}
+
+		&:before,
+		.background {
+			margin-left: 0;
+			width: 100%;
+		}
+
 		&-card {
 			background-color: $color__white;
 			padding: 30px;
