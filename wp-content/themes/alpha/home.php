@@ -15,8 +15,15 @@ get_header();
 			if ( is_home() && ! is_front_page() && ! is_paged() ) :
 				the_post();
 
-				if ( has_post_thumbnail() ) {
-					$background_id         = get_post_thumbnail_id();
+				$background_id = false;
+
+				if ( get_field( 'default_blog_image', 'option' ) ) {
+					$background_id = get_field( 'default_blog_image', 'option' );
+				} elseif ( has_post_thumbnail() ) {
+					$background_id = get_post_thumbnail_id();
+				}
+
+				if ( false !== $background_id ) {
 					$background_url        = wp_get_attachment_image_url( $background_id, 'full' );
 					$background_url_mobile = wp_get_attachment_image_url( $background_id, 'large' );
 
