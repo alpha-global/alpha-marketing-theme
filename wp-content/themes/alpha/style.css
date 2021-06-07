@@ -1008,6 +1008,51 @@ textarea {
   }
 }
 
+.type-product .alpha-hero {
+  background-color: #000;
+}
+.type-product .alpha-hero:before {
+  opacity: 0.3;
+}
+.type-product .wp-block-group:first-of-type h4 {
+  font-size: 32px;
+  letter-spacing: 1px;
+  line-height: 140%;
+  margin-bottom: 20px;
+  color: #414141;
+}
+.type-product .wp-block-group:first-of-type h3 {
+  margin-top: 15px;
+  font-size: 32px;
+}
+@media (max-width: 599px) {
+  .type-product .wp-block-group:first-of-type h3, .type-product .wp-block-group:first-of-type h4 {
+    font-size: 18px;
+  }
+  .type-product .wp-block-group:first-of-type h3 {
+    margin-top: 0;
+  }
+  .type-product .wp-block-group:first-of-type .wp-block-column:last-child {
+    order: -1;
+  }
+}
+@media (max-width: 599px) {
+  .type-product .wp-block-buttons {
+    justify-content: center;
+  }
+}
+.type-product .wp-block-button__link {
+  min-width: 280px;
+  margin: 20px auto;
+}
+.type-product .alpha-card.has-style-plain .alpha-card-icon {
+  top: -12px;
+}
+.type-product .alpha-card.has-style-plain h5 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -2190,6 +2235,18 @@ body.admin-bar .alpha-hero-blog {
 }
 .alpha-hero-teaser-video-link span {
   display: block;
+}
+.alpha-hero .go-back {
+  color: #fff;
+  position: absolute;
+  font-size: 0.9em;
+  font-weight: 600;
+  top: 2em;
+  left: 0;
+  z-index: 2;
+}
+.alpha-hero .go-back:before {
+  margin-right: 1em;
 }
 
 .alpha-stats {
