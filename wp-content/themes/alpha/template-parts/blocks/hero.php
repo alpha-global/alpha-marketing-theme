@@ -48,10 +48,15 @@ if ( get_field( 'background_image' ) ) {
 
 $teaser_video = get_field( 'teaser_video', $post_id );
 
+$link_back_to = get_field( 'link_back_to', $post_id );
+
 ?>
 
 <section id="<?php echo esc_attr( $block_id ); ?>" class="<?php echo esc_attr( $class_name ); ?>">
 	<div class="background"></div>
+	<?php if ( $link_back_to ) : ?>
+		<a class="aicon-arrow-left go-back" href="<?php echo get_permalink( $link_back_to->ID ); ?>"><?php esc_html_e('Back to', 'alpha') ?> <?php echo esc_html( $link_back_to->post_title ); ?></a>
+	<?php endif; ?>
 	<div class="alpha-hero-content">
 		<?php if ( get_field( 'title' ) ) : ?>
 			<h1><?php the_field( 'title' ); ?></h1>

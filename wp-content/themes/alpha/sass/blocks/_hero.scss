@@ -190,4 +190,18 @@
 			display: block;
 		}
 	}
+
+	.go-back {
+		color: $color__white;
+		position: absolute;
+		font-size: 0.9em;
+		font-weight: 600;
+		top: 2em;
+		left: 0;
+		z-index: 2;
+
+		&:before {
+			margin-right: 1em;
+		}
+	}
 }
