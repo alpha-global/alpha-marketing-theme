@@ -30,6 +30,56 @@
                 "placeholder": ""
             },
             {
+                "key": "field_60bf4cdc7d115",
+                "label": "Image Position",
+                "name": "image_position",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "default": "default",
+                    "small": "small",
+                    "full-width": "full-width"
+                },
+                "default_value": "default",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_60bf4effe4b78",
+                "label": "Image",
+                "name": "image",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "id",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
                 "key": "field_60a632de3adb1",
                 "label": "Icon",
                 "name": "icon",
