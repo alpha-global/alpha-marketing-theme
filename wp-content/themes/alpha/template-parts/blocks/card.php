@@ -21,10 +21,12 @@ if ( ! empty( $block['align'] ) ) {
 if ( get_field( 'style' ) ) {
 	$class_name .= ' has-style has-style-' . get_field( 'style' );
 }
+if ( get_field( 'image_position' ) ) {
+	$class_name .= ' has-image-position has-image-position-' . get_field( 'image_position' );
+}
 if ( get_field( 'icon' ) ) {
 	$class_name .= ' has-icon';
 }
-
 
 $allowed_blocks = array( 'core/heading', 'core/paragraph', 'core/image', 'core/button', 'core/buttons', 'core/embed' );
 
@@ -44,10 +46,16 @@ $template = array(
 	),
 );
 
+
 ?>
 
 <section id="<?php echo esc_attr( $block_id ); ?>" class="<?php echo esc_attr( $class_name ); ?>">
 	<div class="card-content">
+		<?php if ( get_field( 'image' ) ) : ?>
+			<div class="alpha-card-image">
+				<?php echo wp_get_attachment_image( get_field( 'image' ), 'large' ); ?>
+			</div>
+		<?php endif; ?>
 		<?php if ( get_field( 'icon' ) ) : ?>
 			<span class="alpha-card-icon aicon-<?php echo esc_attr( get_field( 'icon' ) ); ?>"></span>
 		<?php endif; ?>

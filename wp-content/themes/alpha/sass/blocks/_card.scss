@@ -1,4 +1,9 @@
 .alpha-card {
+	margin-bottom: 20px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 
 	&-icon {
 		position: absolute;
@@ -9,6 +14,7 @@
 	&.has-style {
 		&-shadow {
 			@include rounded-shadow();
+			overflow: hidden;
 			padding: 20px;
 		}
 
@@ -27,15 +33,50 @@
 
 	.wp-block-image {
 		margin: 1em auto;
-		width: 6em;
-		height: 6em;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	}
 
-		img {
-			max-width: 6em;
-			max-height: 6em;
+	&.has-image-position {
+
+		.alpha-card-image {
+			margin-bottom: 20px;
+		}
+
+		&-default,
+		&-small {
+			.wp-block-image {
+				width: 6em;
+				height: 6em;		
+				img {
+					max-width: 6em;
+					max-height: 6em;
+				}
+			}
+		}
+
+		&-full-width {
+			.wp-block-image {
+				width: 100%;
+				height: auto;
+
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+
+			.alpha-card-image {
+				margin-left: -20px;
+				margin-right: -20px;
+				margin-top: -20px;
+
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
 		}
 	}
 
