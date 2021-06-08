@@ -706,7 +706,8 @@ body.admin-bar .block-editor-block-list__layout .wp-block .site-header.fixed {
   margin: 0 0.5em;
   display: inline-block;
 }
-.block-editor-block-list__layout .wp-block .btn, .block-editor-block-list__layout .wp-block .wp-block-button__link {
+.block-editor-block-list__layout .wp-block .btn, .block-editor-block-list__layout .wp-block .wp-block-button__link,
+.block-editor-block-list__layout .wp-block input.gform_button {
   display: inline-block;
   padding: 12px 32px;
   border-width: 1px;
@@ -719,7 +720,8 @@ body.admin-bar .block-editor-block-list__layout .wp-block .site-header.fixed {
   position: relative;
   overflow: hidden;
 }
-.block-editor-block-list__layout .wp-block .btn span.ripple, .block-editor-block-list__layout .wp-block .wp-block-button__link span.ripple {
+.block-editor-block-list__layout .wp-block .btn span.ripple, .block-editor-block-list__layout .wp-block .wp-block-button__link span.ripple,
+.block-editor-block-list__layout .wp-block input.gform_button span.ripple {
   position: absolute;
   /* The absolute position we mentioned earlier */
   border-radius: 50%;
@@ -733,44 +735,59 @@ body.admin-bar .block-editor-block-list__layout .wp-block .site-header.fixed {
     opacity: 0;
   }
 }
-.block-editor-block-list__layout .wp-block .btn-outline, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-outline .wp-block-button__link {
+.block-editor-block-list__layout .wp-block .btn-outline, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-outline .wp-block-button__link,
+.block-editor-block-list__layout .wp-block input.gform_button-outline {
   border-color: #e42312;
   border-width: 1px;
   background-color: transparent;
   color: #e42312;
 }
-.block-editor-block-list__layout .wp-block .btn-outline:hover, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-outline .wp-block-button__link:hover {
+.block-editor-block-list__layout .wp-block .btn-outline:hover, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-outline .wp-block-button__link:hover,
+.block-editor-block-list__layout .wp-block input.gform_button-outline:hover {
   color: #fff;
   background-color: #e42312;
 }
-.block-editor-block-list__layout .wp-block .btn-outline.white, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-outline .white.wp-block-button__link {
+.block-editor-block-list__layout .wp-block .btn-outline.white, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-outline .white.wp-block-button__link,
+.block-editor-block-list__layout .wp-block input.gform_button-outline.white {
   border-color: #fff;
   background-color: transparent;
   color: #fff;
 }
-.block-editor-block-list__layout .wp-block .btn-outline.white:hover, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-outline .white.wp-block-button__link:hover {
+.block-editor-block-list__layout .wp-block .btn-outline.white:hover, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-outline .white.wp-block-button__link:hover,
+.block-editor-block-list__layout .wp-block input.gform_button-outline.white:hover {
   color: #fff;
 }
-.block-editor-block-list__layout .wp-block .btn-outline.white:visited, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-outline .white.wp-block-button__link:visited {
+.block-editor-block-list__layout .wp-block .btn-outline.white:visited, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-outline .white.wp-block-button__link:visited,
+.block-editor-block-list__layout .wp-block input.gform_button-outline.white:visited {
   color: #fff;
 }
-.block-editor-block-list__layout .wp-block .btn-primary, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-fill .wp-block-button__link, .block-editor-block-list__layout .wp-block .wp-block-button__link {
+.block-editor-block-list__layout .wp-block .btn-primary, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-fill .wp-block-button__link, .block-editor-block-list__layout .wp-block .wp-block-button__link, .block-editor-block-list__layout .wp-block .gform_button,
+.block-editor-block-list__layout .wp-block input.gform_button-primary {
   border-color: #e42312;
   background-color: #e42312;
   color: #fff;
 }
-.block-editor-block-list__layout .wp-block .btn-primary:hover, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-fill .wp-block-button__link:hover, .block-editor-block-list__layout .wp-block .wp-block-button__link:hover {
+.block-editor-block-list__layout .wp-block .btn-primary:hover, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-fill .wp-block-button__link:hover, .block-editor-block-list__layout .wp-block .wp-block-button__link:hover, .block-editor-block-list__layout .wp-block .gform_button:hover,
+.block-editor-block-list__layout .wp-block input.gform_button-primary:hover {
   background-color: #b81d0f;
   border-color: #b81d0f;
 }
-.block-editor-block-list__layout .wp-block .btn-primary:visited, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-fill .wp-block-button__link:visited, .block-editor-block-list__layout .wp-block .wp-block-button__link:visited {
+.block-editor-block-list__layout .wp-block .btn-primary:visited, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-fill .wp-block-button__link:visited, .block-editor-block-list__layout .wp-block .wp-block-button__link:visited, .block-editor-block-list__layout .wp-block .gform_button:visited,
+.block-editor-block-list__layout .wp-block input.gform_button-primary:visited {
   color: #fff;
 }
 .block-editor-block-list__layout .wp-block .btn > [class^=aicon-]:before, .block-editor-block-list__layout .wp-block .wp-block-button__link > [class^=aicon-]:before,
 .block-editor-block-list__layout .wp-block .btn [class*=" aicon-"]:before,
-.block-editor-block-list__layout .wp-block .wp-block-button__link [class*=" aicon-"]:before {
+.block-editor-block-list__layout .wp-block .wp-block-button__link [class*=" aicon-"]:before,
+.block-editor-block-list__layout .wp-block input.gform_button > [class^=aicon-]:before,
+.block-editor-block-list__layout .wp-block input.gform_button [class*=" aicon-"]:before {
   margin-right: 1em;
   transform: translateY(-1px);
+}
+.block-editor-block-list__layout .wp-block .gform_button {
+  -webkit-appearance: none;
+  cursor: pointer;
+  min-width: 200px;
 }
 .block-editor-block-list__layout .wp-block .post-thumbnail {
   width: 100%;
@@ -1575,6 +1592,12 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
     margin-bottom: 1em;
   }
 }
+.block-editor-block-list__layout .wp-block .alpha-card {
+  margin-bottom: 20px;
+}
+.block-editor-block-list__layout .wp-block .alpha-card:last-child {
+  margin-bottom: 0;
+}
 .block-editor-block-list__layout .wp-block .alpha-card-icon {
   position: absolute;
   color: #e42312;
@@ -1583,6 +1606,7 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 .block-editor-block-list__layout .wp-block .alpha-card.has-style-shadow {
   border-radius: 8px;
   box-shadow: -1px -1px 15px -2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
   padding: 20px;
 }
 .block-editor-block-list__layout .wp-block .alpha-card.has-style-plain.has-icon {
@@ -1595,15 +1619,37 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 }
 .block-editor-block-list__layout .wp-block .alpha-card .wp-block-image {
   margin: 1em auto;
-  width: 6em;
-  height: 6em;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.block-editor-block-list__layout .wp-block .alpha-card .wp-block-image img {
+.block-editor-block-list__layout .wp-block .alpha-card.has-image-position .alpha-card-image {
+  margin-bottom: 20px;
+}
+.block-editor-block-list__layout .wp-block .alpha-card.has-image-position-default .wp-block-image, .block-editor-block-list__layout .wp-block .alpha-card.has-image-position-small .wp-block-image {
+  width: 6em;
+  height: 6em;
+}
+.block-editor-block-list__layout .wp-block .alpha-card.has-image-position-default .wp-block-image img, .block-editor-block-list__layout .wp-block .alpha-card.has-image-position-small .wp-block-image img {
   max-width: 6em;
   max-height: 6em;
+}
+.block-editor-block-list__layout .wp-block .alpha-card.has-image-position-full-width .wp-block-image {
+  width: 100%;
+  height: auto;
+}
+.block-editor-block-list__layout .wp-block .alpha-card.has-image-position-full-width .wp-block-image img {
+  width: 100%;
+  height: auto;
+}
+.block-editor-block-list__layout .wp-block .alpha-card.has-image-position-full-width .alpha-card-image {
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: -20px;
+}
+.block-editor-block-list__layout .wp-block .alpha-card.has-image-position-full-width .alpha-card-image img {
+  width: 100%;
+  height: auto;
 }
 .block-editor-block-list__layout .wp-block .alpha-card h5:last-child {
   margin-bottom: 0;

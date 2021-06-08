@@ -851,34 +851,6 @@ a:hover, a:active {
 
 /* Forms
 --------------------------------------------- */
-button,
-input[type=button],
-input[type=reset],
-input[type=submit] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
-  line-height: 1;
-  padding: 0.6em 1em 0.4em;
-}
-button:hover,
-input[type=button]:hover,
-input[type=reset]:hover,
-input[type=submit]:hover {
-  border-color: #ccc #bbb #aaa;
-}
-button:active, button:focus,
-input[type=button]:active,
-input[type=button]:focus,
-input[type=reset]:active,
-input[type=reset]:focus,
-input[type=submit]:active,
-input[type=submit]:focus {
-  border-color: #aaa #bbb #bbb;
-}
-
 input[type=text],
 input[type=email],
 input[type=url],
@@ -1200,7 +1172,7 @@ textarea {
   text-decoration: none;
   position: relative;
 }
-.site-header .main-navigation .menu > .menu-item > a:not(.btn):not(.wp-block-button__link):before {
+.site-header .main-navigation .menu > .menu-item > a:not(.btn):not(.wp-block-button__link):not(button):not(input[type=button]):not(input[type=reset]):not(input[type=submit]):before {
   content: "";
   position: absolute;
   left: 0;
@@ -1369,7 +1341,7 @@ body.admin-bar .site-header.fixed {
   background-color: #b81d0f;
   border-color: #b81d0f;
 }
-.site-header.solid .main-navigation .menu > .menu-item:hover > a:not(.btn):not(.wp-block-button__link), .site-header.fixed .main-navigation .menu > .menu-item:hover > a:not(.btn):not(.wp-block-button__link), .topline-nav:hover + .site-header .main-navigation .menu > .menu-item:hover > a:not(.btn):not(.wp-block-button__link) {
+.site-header.solid .main-navigation .menu > .menu-item:hover > a:not(.btn):not(.wp-block-button__link):not(button):not(input[type=button]):not(input[type=reset]):not(input[type=submit]), .site-header.fixed .main-navigation .menu > .menu-item:hover > a:not(.btn):not(.wp-block-button__link):not(button):not(input[type=button]):not(input[type=reset]):not(input[type=submit]), .topline-nav:hover + .site-header .main-navigation .menu > .menu-item:hover > a:not(.btn):not(.wp-block-button__link):not(button):not(input[type=button]):not(input[type=reset]):not(input[type=submit]) {
   color: #e42312;
 }
 @media (min-width: 1024px) {
@@ -1392,7 +1364,7 @@ body.admin-bar .site-header.fixed {
     background-color: #b81d0f;
     border-color: #b81d0f;
   }
-  .site-header:hover .main-navigation .menu > .menu-item:hover > a:not(.btn):not(.wp-block-button__link) {
+  .site-header:hover .main-navigation .menu > .menu-item:hover > a:not(.btn):not(.wp-block-button__link):not(button):not(input[type=button]):not(input[type=reset]):not(input[type=submit]) {
     color: #e42312;
   }
 }
@@ -1504,7 +1476,11 @@ body.admin-bar .site-header.fixed {
 
 /* Buttons
 --------------------------------------------- */
-.btn, .wp-block-button__link {
+.btn, .wp-block-button__link, button,
+input[type=button],
+input[type=reset],
+input[type=submit],
+input.gform_button {
   display: inline-block;
   padding: 12px 32px;
   border-width: 1px;
@@ -1517,7 +1493,11 @@ body.admin-bar .site-header.fixed {
   position: relative;
   overflow: hidden;
 }
-.btn span.ripple, .wp-block-button__link span.ripple {
+.btn span.ripple, .wp-block-button__link span.ripple, button span.ripple,
+input[type=button] span.ripple,
+input[type=reset] span.ripple,
+input[type=submit] span.ripple,
+input.gform_button span.ripple {
   position: absolute;
   /* The absolute position we mentioned earlier */
   border-radius: 50%;
@@ -1531,44 +1511,67 @@ body.admin-bar .site-header.fixed {
     opacity: 0;
   }
 }
-.btn-outline, .wp-block-button.is-style-outline .wp-block-button__link {
+.btn-outline, .wp-block-button.is-style-outline .wp-block-button__link,
+input.gform_button-outline {
   border-color: #e42312;
   border-width: 1px;
   background-color: transparent;
   color: #e42312;
 }
-.btn-outline:hover, .wp-block-button.is-style-outline .wp-block-button__link:hover {
+.btn-outline:hover, .wp-block-button.is-style-outline .wp-block-button__link:hover,
+input.gform_button-outline:hover {
   color: #fff;
   background-color: #e42312;
 }
-.btn-outline.white, .wp-block-button.is-style-outline .white.wp-block-button__link {
+.btn-outline.white, .wp-block-button.is-style-outline .white.wp-block-button__link,
+input.gform_button-outline.white {
   border-color: #fff;
   background-color: transparent;
   color: #fff;
 }
-.btn-outline.white:hover, .wp-block-button.is-style-outline .white.wp-block-button__link:hover {
+.btn-outline.white:hover, .wp-block-button.is-style-outline .white.wp-block-button__link:hover,
+input.gform_button-outline.white:hover {
   color: #fff;
 }
-.btn-outline.white:visited, .wp-block-button.is-style-outline .white.wp-block-button__link:visited {
+.btn-outline.white:visited, .wp-block-button.is-style-outline .white.wp-block-button__link:visited,
+input.gform_button-outline.white:visited {
   color: #fff;
 }
-.btn-primary, .wp-block-button.is-style-fill .wp-block-button__link, .wp-block-button__link {
+.btn-primary, .wp-block-button.is-style-fill .wp-block-button__link, .wp-block-button__link, .gform_button,
+input.gform_button-primary {
   border-color: #e42312;
   background-color: #e42312;
   color: #fff;
 }
-.btn-primary:hover, .wp-block-button.is-style-fill .wp-block-button__link:hover, .wp-block-button__link:hover {
+.btn-primary:hover, .wp-block-button.is-style-fill .wp-block-button__link:hover, .wp-block-button__link:hover, .gform_button:hover,
+input.gform_button-primary:hover {
   background-color: #b81d0f;
   border-color: #b81d0f;
 }
-.btn-primary:visited, .wp-block-button.is-style-fill .wp-block-button__link:visited, .wp-block-button__link:visited {
+.btn-primary:visited, .wp-block-button.is-style-fill .wp-block-button__link:visited, .wp-block-button__link:visited, .gform_button:visited,
+input.gform_button-primary:visited {
   color: #fff;
 }
-.btn > [class^=aicon-]:before, .wp-block-button__link > [class^=aicon-]:before,
+.btn > [class^=aicon-]:before, .wp-block-button__link > [class^=aicon-]:before, button > [class^=aicon-]:before,
+input[type=button] > [class^=aicon-]:before,
+input[type=reset] > [class^=aicon-]:before,
+input[type=submit] > [class^=aicon-]:before,
 .btn [class*=" aicon-"]:before,
-.wp-block-button__link [class*=" aicon-"]:before {
+.wp-block-button__link [class*=" aicon-"]:before,
+button [class*=" aicon-"]:before,
+input[type=button] [class*=" aicon-"]:before,
+input[type=reset] [class*=" aicon-"]:before,
+input[type=submit] [class*=" aicon-"]:before,
+input.gform_button > [class^=aicon-]:before,
+input.gform_button [class*=" aicon-"]:before {
   margin-right: 1em;
   transform: translateY(-1px);
+}
+
+.gform_button {
+  -webkit-appearance: none;
+  cursor: pointer;
+  min-width: 200px;
 }
 
 /* Posts and pages
@@ -2137,7 +2140,10 @@ body.admin-bar .site-header.fixed {
     display: block;
     margin: 0 0 1em;
   }
-  .alpha-hero-buttons li .btn, .alpha-hero-buttons li .wp-block-button__link {
+  .alpha-hero-buttons li .btn, .alpha-hero-buttons li .wp-block-button__link, .alpha-hero-buttons li button,
+.alpha-hero-buttons li input[type=button],
+.alpha-hero-buttons li input[type=reset],
+.alpha-hero-buttons li input[type=submit] {
     display: block;
     text-align: center;
   }
@@ -2429,6 +2435,12 @@ body.admin-bar .alpha-hero-blog {
   }
 }
 
+.alpha-card {
+  margin-bottom: 20px;
+}
+.alpha-card:last-child {
+  margin-bottom: 0;
+}
 .alpha-card-icon {
   position: absolute;
   color: #e42312;
@@ -2437,6 +2449,7 @@ body.admin-bar .alpha-hero-blog {
 .alpha-card.has-style-shadow {
   border-radius: 8px;
   box-shadow: -1px -1px 15px -2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
   padding: 20px;
 }
 .alpha-card.has-style-plain.has-icon {
@@ -2449,15 +2462,37 @@ body.admin-bar .alpha-hero-blog {
 }
 .alpha-card .wp-block-image {
   margin: 1em auto;
-  width: 6em;
-  height: 6em;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.alpha-card .wp-block-image img {
+.alpha-card.has-image-position .alpha-card-image {
+  margin-bottom: 20px;
+}
+.alpha-card.has-image-position-default .wp-block-image, .alpha-card.has-image-position-small .wp-block-image {
+  width: 6em;
+  height: 6em;
+}
+.alpha-card.has-image-position-default .wp-block-image img, .alpha-card.has-image-position-small .wp-block-image img {
   max-width: 6em;
   max-height: 6em;
+}
+.alpha-card.has-image-position-full-width .wp-block-image {
+  width: 100%;
+  height: auto;
+}
+.alpha-card.has-image-position-full-width .wp-block-image img {
+  width: 100%;
+  height: auto;
+}
+.alpha-card.has-image-position-full-width .alpha-card-image {
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: -20px;
+}
+.alpha-card.has-image-position-full-width .alpha-card-image img {
+  width: 100%;
+  height: auto;
 }
 .alpha-card h5:last-child {
   margin-bottom: 0;

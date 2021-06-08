@@ -298,7 +298,7 @@ function alpha_video_player_link( $video_link ) {
 
 	foreach ( $video_players as $player ) {
 		if ( preg_match( $player['search'], $video_link ) ) {
-			return preg_replace( $player['search'], $player['replace'], $video_link);
+			return preg_replace( $player['search'], $player['replace'], $video_link );
 		}
 	}
 
@@ -311,8 +311,7 @@ function alpha_video_player_link( $video_link ) {
  * @param string $video_link Link to the video
  * @return string
  */
-function alpha_video_player( $video_link )
-{
+function alpha_video_player( $video_link ) {
 	$player = alpha_video_player_link( $video_link );
 
 	if ( false !== $player ) {
