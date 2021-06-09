@@ -60,6 +60,7 @@ if ( ! function_exists( 'alpha_setup' ) ) :
 				'primary'       => esc_html__( 'Primary', 'alpha' ),
 				'primary-right' => esc_html__( 'Primary Right', 'alpha' ),
 				'topline'       => esc_html__( 'Topline', 'alpha' ),
+				'splash'        => esc_html__( 'Splash', 'alpha' ),
 			)
 		);
 
@@ -147,6 +148,18 @@ function alpha_widgets_init() {
 		array(
 			'name'          => esc_html__( 'Footer', 'alpha' ),
 			'id'            => 'footer',
+			'description'   => esc_html__( 'Add footer widgets.', 'alpha' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Splash Footer', 'alpha' ),
+			'id'            => 'footer-splash',
 			'description'   => esc_html__( 'Add footer widgets.', 'alpha' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',

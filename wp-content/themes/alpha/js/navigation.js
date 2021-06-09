@@ -34,8 +34,10 @@
 		}
 	};
 
-	window.addEventListener( "scroll", handleFixedHeader );
-	handleFixedHeader();
+	if ( ! siteHeader.classList.contains( "splash" ) ) {
+		window.addEventListener( "scroll", handleFixedHeader );
+		handleFixedHeader();
+	}
 
 	const handleWindowResize = function () {
 		const threshold = 1024;
