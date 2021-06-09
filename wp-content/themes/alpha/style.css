@@ -1274,6 +1274,30 @@ textarea {
     height: auto;
   }
 }
+.site-header .main-navigation .splash-menu-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.site-header .main-navigation .splash-menu-container .menu > .menu-item > .btn, .site-header .main-navigation .splash-menu-container .menu > .menu-item > .wp-block-button__link, .site-header .main-navigation .splash-menu-container .menu > .menu-item > button,
+.site-header .main-navigation .splash-menu-container .menu > .menu-item > input[type=button],
+.site-header .main-navigation .splash-menu-container .menu > .menu-item > input[type=reset],
+.site-header .main-navigation .splash-menu-container .menu > .menu-item > input[type=submit] {
+  display: inline-block;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 8px 40px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.site-header .main-navigation .splash-menu-container .menu > .menu-item > .btn:hover, .site-header .main-navigation .splash-menu-container .menu > .menu-item > .wp-block-button__link:hover, .site-header .main-navigation .splash-menu-container .menu > .menu-item > button:hover,
+.site-header .main-navigation .splash-menu-container .menu > .menu-item > input[type=button]:hover,
+.site-header .main-navigation .splash-menu-container .menu > .menu-item > input[type=reset]:hover,
+.site-header .main-navigation .splash-menu-container .menu > .menu-item > input[type=submit]:hover {
+  color: #e42312;
+  background-color: #fff;
+  border-color: #fff;
+}
 .site-header .menu-toggle {
   display: none;
   color: #fff;
@@ -1304,6 +1328,12 @@ body.admin-bar .site-header.overlay {
 .site-header.overlay + .site-main {
   position: relative;
   z-index: 0;
+}
+.site-header.splash {
+  top: 0;
+}
+body.admin-bar .site-header.splash {
+  top: 32px;
 }
 .site-header.fixed {
   position: fixed;
@@ -1345,26 +1375,26 @@ body.admin-bar .site-header.fixed {
   color: #e42312;
 }
 @media (min-width: 1024px) {
-  .site-header:hover {
+  .site-header:hover:not(.splash) {
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.12);
   }
-  .site-header:hover .menu-toggle {
+  .site-header:hover:not(.splash) .menu-toggle {
     color: #000;
   }
-  .site-header:hover .main-navigation .menu > .menu-item > a {
+  .site-header:hover:not(.splash) .main-navigation .menu > .menu-item > a {
     color: #000;
   }
-  .site-header:hover .main-navigation .menu > .menu-item > a.btn, .site-header:hover .main-navigation .menu > .menu-item > a.wp-block-button__link {
+  .site-header:hover:not(.splash) .main-navigation .menu > .menu-item > a.btn, .site-header:hover:not(.splash) .main-navigation .menu > .menu-item > a.wp-block-button__link {
     background-color: #e42312;
     border-color: #e42312;
     color: #fff;
   }
-  .site-header:hover .main-navigation .menu > .menu-item > a.btn:hover, .site-header:hover .main-navigation .menu > .menu-item > a.wp-block-button__link:hover {
+  .site-header:hover:not(.splash) .main-navigation .menu > .menu-item > a.btn:hover, .site-header:hover:not(.splash) .main-navigation .menu > .menu-item > a.wp-block-button__link:hover {
     background-color: #b81d0f;
     border-color: #b81d0f;
   }
-  .site-header:hover .main-navigation .menu > .menu-item:hover > a:not(.btn):not(.wp-block-button__link):not(button):not(input[type=button]):not(input[type=reset]):not(input[type=submit]) {
+  .site-header:hover:not(.splash) .main-navigation .menu > .menu-item:hover > a:not(.btn):not(.wp-block-button__link):not(button):not(input[type=button]):not(input[type=reset]):not(input[type=submit]) {
     color: #e42312;
   }
 }
@@ -2219,6 +2249,23 @@ body.admin-bar .alpha-hero-blog {
 .alpha-hero-style-product .alpha-hero-content {
   max-width: none;
   text-align: center;
+}
+.alpha-hero-style-splash {
+  justify-content: center;
+  min-height: calc(100vh - 200px);
+}
+.alpha-hero-style-splash h1 {
+  font-size: 3em;
+}
+.alpha-hero-style-splash .alpha-hero-content {
+  max-width: none;
+  text-align: center;
+}
+.alpha-hero-style-splash .alpha-hero-description {
+  width: 30%;
+  min-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .alpha-hero-teaser-video-link {
   display: inline-block;
