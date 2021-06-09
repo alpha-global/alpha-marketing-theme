@@ -42,6 +42,7 @@ acf_add_local_field_group(array(
 				'default' => 'default',
 				'blog' => 'blog',
 				'product' => 'product',
+				'splash' => 'splash',
 			),
 			'default_value' => 'default',
 			'allow_null' => 0,
