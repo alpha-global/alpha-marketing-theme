@@ -14,8 +14,16 @@
 		margin-left: auto;
 		margin-right: auto;
 
+		@include media( $mobile__only ) {
+			max-width: none;
+		}
+
 		.slick-list {
 			overflow: visible;
+
+			@include media( $mobile__only ) {
+				overflow: hidden;
+			}
 		}
 
 		.slick-arrow {
@@ -49,6 +57,10 @@
 
 	&-preview {
 		padding: 2em;
+
+		@include media( $mobile__only ) {
+			padding: 0;
+		}
 
 		> div {
 			@include rounded-shadow();

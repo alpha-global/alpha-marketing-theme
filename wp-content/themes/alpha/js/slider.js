@@ -11,6 +11,15 @@
 		slidesToScroll: 1,
 		prevArrow: '<span class="aicon-arrow-left prev"></span>',
 		nextArrow: '<span class="aicon-arrow-right next"></span>',
+		responsive: [
+			{
+				breakpoint: 480,
+				settings: {
+					arrows: false,
+					dots: false,
+				}
+			}
+		],
 	}).on( 'beforeChange', function( event, slick, currentSlide, nextSlide ) {
 		$('.alpha-episodes-nav a').removeClass('current');
 		$('.alpha-episodes-nav a[data-for="'+nextSlide+'"]').addClass('current');
