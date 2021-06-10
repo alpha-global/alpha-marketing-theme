@@ -43,7 +43,7 @@
 		event.preventDefault();
 		const playerLink = $link.data( "vimeo-player-url" );
 		const $popup = $(
-			`<div class="alpha-modal-container"><div class="alpha-modal"><a href="#" class="aicon-close close"></a><iframe src="${ playerLink }" frameborder="0" allowfullscreen allow="autoplay" tabindex="-1"></div></div>`
+			`<div class="alpha-modal-container"><div class="alpha-modal"><div class="alpha-modal-player"><a href="#" class="aicon-close close"></a><iframe src="${ playerLink }" frameborder="0" allowfullscreen allow="autoplay" tabindex="-1"></div></div></div>`
 		);
 		$popup.appendTo( $( "body" ) );
 	}
