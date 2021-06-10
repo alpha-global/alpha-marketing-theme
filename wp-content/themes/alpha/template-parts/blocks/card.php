@@ -20,9 +20,13 @@ if ( ! empty( $block['align'] ) ) {
 }
 if ( get_field( 'style' ) ) {
 	$class_name .= ' has-style has-style-' . get_field( 'style' );
+} else {
+	$class_name .= ' has-style has-style-default';
 }
 if ( get_field( 'image_position' ) ) {
 	$class_name .= ' has-image-position has-image-position-' . get_field( 'image_position' );
+} else {
+	$class_name .= ' has-image-position has-image-position-default';
 }
 if ( get_field( 'icon' ) ) {
 	$class_name .= ' has-icon';
