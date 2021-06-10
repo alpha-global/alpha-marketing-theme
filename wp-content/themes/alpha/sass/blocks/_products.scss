@@ -130,6 +130,8 @@
 
 				@include media( $mobile__only ) {
 					font-size: 1.5em;
+					text-align: center;
+					margin-bottom: 30px;
 				}
 			}
 		}
@@ -182,6 +184,11 @@
 				color: $color__white;
 				display: flex;
 				align-items: center;
+
+				@include media( $mobile__only ) {
+					justify-content: center;
+					margin-top: 10px;
+				}
 
 				.aicon-play {
 					width: 45px;
