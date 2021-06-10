@@ -1186,7 +1186,8 @@ textarea {
   display: inline-block;
   border: 1px solid #fff;
   color: #fff;
-  padding: 8px 40px;
+  padding: 14px 32px;
+  text-align: center;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
@@ -1512,16 +1513,26 @@ input[type=reset],
 input[type=submit],
 input.gform_button {
   display: inline-block;
-  padding: 12px 32px;
+  padding: 14px 32px;
   border-width: 1px;
   line-height: 1;
   font-size: 1em;
   border-style: solid;
   border-radius: 8px;
   text-decoration: none;
+  text-align: center;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 480px) {
+  .btn, .wp-block-button__link, button,
+input[type=button],
+input[type=reset],
+input[type=submit],
+input.gform_button {
+    width: 100%;
+  }
 }
 .btn span.ripple, .wp-block-button__link span.ripple, button span.ripple,
 input[type=button] span.ripple,
@@ -1783,6 +1794,7 @@ input.gform_button [class*=" aicon-"]:before {
   font-size: 0;
   width: 8px;
   height: 8px;
+  padding: 0;
   border-radius: 4px;
   border: 1px solid #000;
   background-color: #fff;
@@ -2057,11 +2069,19 @@ input.gform_button [class*=" aicon-"]:before {
 }
 
 .alpha-modal {
-  width: 100%;
+  width: 90%;
   max-width: 720px;
-  height: 100%;
-  max-height: 405px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 0;
   position: relative;
+}
+.alpha-modal-player {
+  width: 100%;
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+  transform: translateY(-50%);
 }
 .alpha-modal iframe {
   position: absolute;
@@ -2088,6 +2108,11 @@ input.gform_button [class*=" aicon-"]:before {
 .alpha-modal .close:before {
   width: 12px;
   height: 12px;
+}
+@media (max-width: 599px) {
+  .alpha-modal .close {
+    right: 0;
+  }
 }
 .alpha-modal-container {
   position: fixed;
@@ -2703,20 +2728,6 @@ body.admin-bar .alpha-hero-blog {
   position: relative;
   z-index: 1;
 }
-@media (min-width: 600px) and (max-width: 781px) {
-  .alpha-story-details figure {
-    height: 300px;
-  }
-}
-@media (max-width: 599px) {
-  .alpha-story-details figure {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-}
 .alpha-story-details figure img {
   position: absolute;
   top: 0;
@@ -2737,8 +2748,7 @@ body.admin-bar .alpha-hero-blog {
 }
 @media (max-width: 599px) {
   .alpha-story-description {
-    position: relative;
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 .alpha-story-description p:first-child {
@@ -2757,6 +2767,19 @@ body.admin-bar .alpha-hero-blog {
   font-weight: 400;
   color: #000;
   margin: 0;
+}
+@media (max-width: 599px) {
+  .alpha-story-summary {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .alpha-story-summary h5 {
+    flex: 0 0 100%;
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
 }
 .alpha-story-watch {
   white-space: nowrap;
@@ -2797,8 +2820,18 @@ body.admin-bar .alpha-hero-blog {
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width: 599px) {
+  .alpha-episodes-previews {
+    max-width: none;
+  }
+}
 .alpha-episodes-previews .slick-list {
   overflow: visible;
+}
+@media (max-width: 599px) {
+  .alpha-episodes-previews .slick-list {
+    overflow: hidden;
+  }
 }
 .alpha-episodes-previews .slick-arrow {
   width: 48px;
@@ -2826,6 +2859,11 @@ body.admin-bar .alpha-hero-blog {
 }
 .alpha-episodes-preview {
   padding: 2em;
+}
+@media (max-width: 599px) {
+  .alpha-episodes-preview {
+    padding: 0;
+  }
 }
 .alpha-episodes-preview > div {
   border-radius: 8px;
@@ -3015,6 +3053,8 @@ body.admin-bar .alpha-hero-blog {
 @media (max-width: 599px) {
   .alpha-products-single-summary h2 {
     font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 30px;
   }
 }
 .alpha-products-single-subtitle {
@@ -3061,6 +3101,12 @@ body.admin-bar .alpha-hero-blog {
   color: #fff;
   display: flex;
   align-items: center;
+}
+@media (max-width: 599px) {
+  .alpha-products-single-actions .trailer-link {
+    justify-content: center;
+    margin-top: 10px;
+  }
 }
 .alpha-products-single-actions .trailer-link .aicon-play {
   width: 45px;
@@ -3142,6 +3188,7 @@ body.admin-bar .alpha-hero-blog {
     margin-right: 0;
     margin-bottom: 24px;
     display: block;
+    flex: 0 0 100%;
   }
 }
 
