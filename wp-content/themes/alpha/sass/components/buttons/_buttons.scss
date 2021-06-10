@@ -1,7 +1,7 @@
 .btn,
 input.gform_button {
 	display: inline-block;
-	padding: 12px 32px;
+	padding: 14px 32px;
 	border-width: 1px;
 	line-height: 1;
 	font-size: 1em;
@@ -9,6 +9,10 @@ input.gform_button {
 	border-radius: 8px;
 	text-decoration: none;
 	transition: all 0.3s ease;
+
+	@include media( 'max-width: 480px' ) {
+		width: 100%;
+	}
 
 	// For ripple effect
 	position: relative;
