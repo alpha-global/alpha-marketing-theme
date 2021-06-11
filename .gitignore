@@ -33,6 +33,7 @@ wp-config.php
 /wp-content/plugins/query-monitor/
 /wp-content/plugins/sitepress-multilingual-cms/
 /wp-content/plugins/gravityforms/
+/wp-content/plugins/
 
 # Uploads
 /wp-content/uploads/
