@@ -195,6 +195,10 @@ function alpha_scripts() {
 		wp_enqueue_script( 'alpha-accordion', get_template_directory_uri() . '/js/accordion.js', array( 'jquery' ), $version, true );
 	}
 
+	if ( has_block( 'acf/offices' ) || has_reusable_block( 'acf/offices' ) ) {
+		wp_enqueue_script( 'alpha-tabs', get_template_directory_uri() . '/js/tabs.js', array( 'jquery' ), $version, true );
+	}
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -332,4 +336,38 @@ function alpha_video_player( $video_link ) {
 	} else {
 		return '';
 	}
+}
+
+/**
+ * Prints out image tag for the flag
+ *
+ * @param string $country_code Country code.
+ * @return void
+ */
+function alpha_flag_image( $country_code ) {
+	$flags = alpha_get_flags();
+
+	$flag_key = strtoupper( $country_code );
+
+	$flag_image = get_template_directory_uri() . '/country-flags/alpha.png';
+	$flag_image_html = '<img src="' . esc_url( $flag_image ) . '" alt="" />';
+
+	if ( isset( $flags[ $flag_key ] ) ) {
+		$flag_image = get_template_directory_uri() . '/country-flags/png100px/' . $country_code . '.png';
+		$flag_image_html = '<img class="country-flag" src="' . esc_url( $flag_image ) . '" alt="" />';
+	}
+
+	echo $flag_image_html;
+}
+
+function alpha_get_flags() {
+	$flags = wp_cache_get( 'flags', 'alpha' );
+
+	if ( ! $flags ) {
+		$flags = (array) json_decode( file_get_contents( get_template_directory() . '/country-flags/countries.json' ) );
+
+		wp_cache_set( 'flags', 'alpha' );
+	}
+
+	return $flags;
 }

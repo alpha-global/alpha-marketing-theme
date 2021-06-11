@@ -138,7 +138,7 @@ function alpha_register_acf_block_types() {
 			'render_template' => 'template-parts/blocks/offices.php',
 			'category'        => 'alpha',
 			'keywords'        => array( 'offices', 'alpha' ),
-			'mode'            => 'auto',
+			'mode'            => 'preview',
 			'icon'            => 'images-alt2',
 			'supports'        => array(
 				'mode'            => false,
