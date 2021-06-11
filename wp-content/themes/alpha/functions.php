@@ -311,6 +311,14 @@ function alpha_video_player_link( $video_link ) {
 			'search'  => '/https:\/\/vimeo\.com\/(\d+)/',
 			'replace' => 'https://player.vimeo.com/video/$1',
 		),
+		'youtube' => array(
+			'search'  => '/https:\/\/www\.youtube\.com\/watch\?v=(.*?)/',
+			'replace' => 'https://www.youtube.com/embed/$1',
+		),
+		'youtube_short' => array(
+			'search'  => '/https:\/\/youtu\.be\/(.*?)/',
+			'replace' => 'https://www.youtube.com/embed/$1',
+		),
 	);
 
 	foreach ( $video_players as $player ) {
