@@ -78,7 +78,10 @@ $q = new WP_Query( $args );
 					</div>
 					<div class="alpha-products-single-actions">
 						<a href="<?php the_permalink(); ?>" class="btn btn-primary"><?php _e( 'Find Out More', 'alpha' ); ?></a>
-						<a href="<?php the_field( 'teaser_video', get_the_ID() ); ?>" class="trailer-link"><?php _e( 'Watch Trailer', 'alpha' ); ?></a>
+						
+						<?php if ( get_field( 'teaser_video', get_the_ID() ) ) : ?>
+							<a href="<?php the_field( 'teaser_video', get_the_ID() ); ?>" class="trailer-link"><?php _e( 'Watch Trailer', 'alpha' ); ?></a>	
+						<?php endif; ?>
 					</div>
 				</div>
 			</div>
