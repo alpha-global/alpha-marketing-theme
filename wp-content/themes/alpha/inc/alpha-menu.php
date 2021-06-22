@@ -53,7 +53,7 @@ function alpha_nav_menu_item_title( $title = '', $item = null, $args = array(), 
 
 	$image = (int) get_post_meta( $item->ID, 'image', true );
 
-	if ( $image > 0 || ! empty( $item->post_content ) ) {
+	if ( $image > 0 || ! empty( trim( $item->post_content ) ) ) {
 		$title = "<div class=\"title\">{$title}</div>";
 
 		if ( $image > 0 ) {
