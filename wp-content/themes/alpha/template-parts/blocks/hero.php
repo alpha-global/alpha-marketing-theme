@@ -79,7 +79,7 @@ $link_back_to = get_field( 'link_back_to', $post_id );
 				<?php endwhile; ?>
 			</ul>
 		<?php endif; ?>
-		<?php if ( 'product' === get_field( 'hero_style' ) ) : ?>
+		<?php if ( 'product' === get_field( 'hero_style' ) && ! empty( $teaser_video ) ) : ?>
 			<a href="<?php echo esc_url( $teaser_video ); ?>" class="alpha-hero-teaser-video-link"><i class="aicon-play"></i><span><?php _e( 'Watch Teaser', 'alpha' ); ?></span></a>
 		<?php endif; ?>
 	</div>
