@@ -1588,6 +1588,7 @@ input.gform_button-primary {
 input.gform_button-primary:hover {
   background-color: #b81d0f;
   border-color: #b81d0f;
+  color: #fff;
 }
 .btn-primary:visited, .wp-block-button.is-style-fill .wp-block-button__link:visited, .wp-block-button__link:visited, .gform_button:visited,
 input.gform_button-primary:visited {

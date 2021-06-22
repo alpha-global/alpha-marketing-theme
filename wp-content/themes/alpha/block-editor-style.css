@@ -803,6 +803,7 @@ body.admin-bar .block-editor-block-list__layout .wp-block .site-header.fixed {
 .block-editor-block-list__layout .wp-block input.gform_button-primary:hover {
   background-color: #b81d0f;
   border-color: #b81d0f;
+  color: #fff;
 }
 .block-editor-block-list__layout .wp-block .btn-primary:visited, .block-editor-block-list__layout .wp-block .wp-block-button.is-style-fill .wp-block-button__link:visited, .block-editor-block-list__layout .wp-block .wp-block-button__link:visited, .block-editor-block-list__layout .wp-block .gform_button:visited,
 .block-editor-block-list__layout .wp-block input.gform_button-primary:visited {

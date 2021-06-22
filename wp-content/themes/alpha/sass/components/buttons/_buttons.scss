@@ -66,6 +66,7 @@ input.gform_button {
 		&:hover {
 			background-color: $color__accent-hover;
 			border-color: $color__accent-hover;
+			color: $color__white;
 		}
 
 		&:visited {
