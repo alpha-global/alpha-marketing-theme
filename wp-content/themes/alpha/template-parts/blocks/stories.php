@@ -33,8 +33,10 @@ $display_stories = get_field( 'display_stories' );
 switch ( $display_stories ) {
 	case 'type':
 		$args['tax_query'] = array(
-			'taxonomy' => 'story_type',
-			'terms'    => get_field( 'story_type' ),
+			array(
+				'taxonomy' => 'story_type',
+				'terms'    => get_field( 'story_type' ),
+			)
 		);
 		break;
 
