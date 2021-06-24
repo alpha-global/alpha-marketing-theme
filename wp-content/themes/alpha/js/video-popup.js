@@ -2,15 +2,15 @@
 	function getPlayerLink( href ) {
 		const videoPlayers = {
 			vimeo: {
-				search: /https:\/\/vimeo\.com\/(\d+)/,
+				search: /https?:\/\/vimeo\.com\/(\d+)/,
 				replace: "https://player.vimeo.com/video/$1?autoplay=1",
 			},
 			youtube: {
-				search: /https:\/\/www\.youtube\.com\/watch\?v=(.*?)/,
+				search: /https?:\/\/www\.youtube\.com\/watch\?v=(.*?)/,
 				replace: "https://www.youtube.com/embed/$1",
 			},
 			youtube_short: {
-				search: /https:\/\/youtu\.be\/(.*?)/,
+				search: /https?:\/\/youtu\.be\/(.*?)/,
 				replace: "https://www.youtube.com/embed/$1",
 			},
 		};
