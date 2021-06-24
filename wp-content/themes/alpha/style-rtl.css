@@ -2536,6 +2536,9 @@ body.admin-bar .alpha-hero-blog {
 .alpha-card.has-image-position .alpha-card-image {
   margin-bottom: 20px;
 }
+.alpha-card.has-image-position .alpha-card-image:last-child {
+  margin-bottom: 0;
+}
 .alpha-card.has-image-position-default .wp-block-image, .alpha-card.has-image-position-small .wp-block-image {
   width: 6em;
   height: 6em;

@@ -1684,6 +1684,9 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 .block-editor-block-list__layout .wp-block .alpha-card.has-image-position .alpha-card-image {
   margin-bottom: 20px;
 }
+.block-editor-block-list__layout .wp-block .alpha-card.has-image-position .alpha-card-image:last-child {
+  margin-bottom: 0;
+}
 .block-editor-block-list__layout .wp-block .alpha-card.has-image-position-default .wp-block-image, .block-editor-block-list__layout .wp-block .alpha-card.has-image-position-small .wp-block-image {
   width: 6em;
   height: 6em;
