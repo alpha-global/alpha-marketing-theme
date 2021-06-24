@@ -31,7 +31,7 @@ if ( ! empty( $block['align'] ) ) {
 					?>
 					<div>
 						<div class="alpha-testimonial">
-							<div class="aicon-quote alpha-testimonial-quote"></div>
+							<div class="alpha-testimonial-quote"></div>
 							<div class="alpha-testimonial-content">
 								<?php if ( get_sub_field( 'text' ) ) : ?>
 									<div class="alpha-testimonial-text">
