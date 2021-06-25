@@ -49,7 +49,7 @@ function alpha_register_product_post_type() {
 		'has_archive'         => true,
 		'query_var'           => true,
 		'can_export'          => true,
-		'rewrite'             => true,
+		'rewrite'             => array( 'slug' => 'preview' ),
 		'capability_type'     => 'post',
 		'supports'            => array(
 			'title',
