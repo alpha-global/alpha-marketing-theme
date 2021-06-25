@@ -1020,7 +1020,11 @@ body.admin-bar .block-editor-block-list__layout .wp-block .site-header.fixed {
 }
 .block-editor-block-list__layout .wp-block .widget-columns {
   display: flex;
-  flex-wrap: wrap;
+}
+@media (max-width: 599px) {
+  .block-editor-block-list__layout .wp-block .widget-columns {
+    flex-wrap: wrap;
+  }
 }
 .block-editor-block-list__layout .wp-block .widget-column {
   margin-right: 3%;

@@ -1833,7 +1833,11 @@ input.gform_button [class*=" aicon-"]:before {
 }
 .widget-columns {
   display: flex;
-  flex-wrap: wrap;
+}
+@media (max-width: 599px) {
+  .widget-columns {
+    flex-wrap: wrap;
+  }
 }
 .widget-column {
   margin-right: 3%;

@@ -8,7 +8,10 @@
 
 	&-columns {
 		display: flex;
-		flex-wrap: wrap;
+
+		@include media( $mobile__only ) {
+			flex-wrap: wrap;
+		}
 	}
 
 	&-column {
