@@ -37,6 +37,11 @@ if ( get_field( 'background_image' ) ) {
 	$background_url        = wp_get_attachment_image_url( $background_id, 'full' );
 	$background_url_mobile = wp_get_attachment_image_url( $background_id, 'large' );
 
+	$mobile_background_id = get_field('mobile_background');
+	if ( $mobile_background_id ) {
+		$background_url_mobile = wp_get_attachment_image_url( $mobile_background_id, 'full' );
+	}
+
 	?>
 	<style>
 		#<?php echo $block_id; ?> .background {
