@@ -85,8 +85,16 @@
   content: "";
 }
 
+[dir=rtl] .aicon-arrow-right::before {
+  content: "";
+}
+
 .aicon-arrow-left::before {
   content: "";
+}
+
+[dir=rtl] .aicon-arrow-left::before {
+  content: "";
 }
 
 .aicon-quote::before {

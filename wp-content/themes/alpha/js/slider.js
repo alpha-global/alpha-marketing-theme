@@ -1,5 +1,9 @@
 ( function ( $ ) {
+
+	var isRtl = $("html").prop("dir") === "rtl";
+
 	$( ".alpha-slider" ).slick( {
+		rtl: isRtl,
 		prevArrow: '<span class="aicon-arrow-left prev"></span>',
 		nextArrow: '<span class="aicon-arrow-right next"></span>',
 		dots: true,
@@ -7,6 +11,7 @@
 
 	const $episodes = $( ".alpha-episodes-previews");
 	$episodes.slick({
+		rtl: isRtl,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		prevArrow: '<span class="aicon-arrow-left prev"></span>',
