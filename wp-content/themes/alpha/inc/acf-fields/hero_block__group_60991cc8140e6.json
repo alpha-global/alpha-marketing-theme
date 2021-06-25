@@ -31,7 +31,7 @@
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
-                    "width": "",
+                    "width": "50",
                     "class": "",
                     "id": ""
                 },
@@ -40,6 +40,33 @@
                     "blog": "blog",
                     "product": "product",
                     "splash": "splash"
+                },
+                "default_value": "default",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_60d584e6eedce",
+                "label": "Text Align",
+                "name": "text_align",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "default": "default",
+                    "left": "left",
+                    "center": "center",
+                    "right": "right"
                 },
                 "default_value": "default",
                 "allow_null": 0,

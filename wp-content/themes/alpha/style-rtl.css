@@ -2293,6 +2293,26 @@ body.admin-bar .alpha-hero-blog {
   margin-right: auto;
   margin-left: auto;
 }
+.alpha-hero-text-align-left {
+  justify-content: flex-start;
+}
+.alpha-hero-text-align-left .alpha-hero-content {
+  text-align: right;
+}
+.alpha-hero-text-align-center {
+  justify-content: center;
+}
+.alpha-hero-text-align-center .alpha-hero-content {
+  max-width: none;
+  text-align: center;
+}
+.alpha-hero-text-align-right {
+  justify-content: flex-end;
+}
+.alpha-hero-text-align-right .alpha-hero-content {
+  max-width: none;
+  text-align: left;
+}
 .alpha-hero-teaser-video-link {
   display: inline-block;
   text-align: center;

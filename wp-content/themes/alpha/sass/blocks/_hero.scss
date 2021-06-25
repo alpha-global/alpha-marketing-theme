@@ -185,6 +185,32 @@
 		}
 	}
 
+	&-text-align {
+		&-left {
+			justify-content: flex-start;
+
+			.alpha-hero-content {
+				text-align: left;	
+			}
+		}
+		&-center {
+			justify-content: center;
+
+			.alpha-hero-content {
+				max-width: none;
+				text-align: center;
+			}
+		}
+		&-right {
+			justify-content: flex-end;
+
+			.alpha-hero-content {
+				max-width: none;
+				text-align: right;	
+			}
+		}
+	}
+
 	&-teaser-video-link {
 		display: inline-block;
 		text-align: center;

@@ -26,6 +26,11 @@ if ( get_field( 'is_full_page' ) ) {
 if ( get_field( 'hero_style' ) ) {
 	$class_name .= ' alpha-hero-style-' . get_field( 'hero_style' );
 }
+if ( get_field( 'text_align' ) ) {
+	$class_name .= ' alpha-hero-text-align-' . get_field( 'text_align' );
+} else {
+	$class_name .= ' alpha-hero-text-align-left';
+}
 
 if ( get_field( 'background_image' ) ) {
 	$background_id         = get_field( 'background_image' );
