@@ -874,7 +874,7 @@ body.admin-bar .block-editor-block-list__layout .wp-block .site-header.fixed {
   margin-bottom: 0;
 }
 .block-editor-block-list__layout .wp-block .post-thumbnail + .entry-header {
-  margin-top: -250px;
+  margin-top: -240px;
   position: relative;
 }
 @media (max-width: 599px) {
