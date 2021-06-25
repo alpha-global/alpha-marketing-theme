@@ -29,7 +29,7 @@ if ( get_field( 'hero_style' ) ) {
 if ( get_field( 'text_align' ) ) {
 	$class_name .= ' alpha-hero-text-align-' . get_field( 'text_align' );
 } else {
-	$class_name .= ' alpha-hero-text-align-left';
+	$class_name .= ' alpha-hero-text-align-default';
 }
 
 if ( get_field( 'background_image' ) ) {
