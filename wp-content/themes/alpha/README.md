@@ -68,3 +68,18 @@ $ npm install
 Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
 
 Good luck!
+
+If someone else needs to add more ACF fields. By default, "Custom Fields" menu is hidden (for live/dev sites). 
+And all field configs are loaded from PHP files. On the local environment, please add to wp-config.php:
+
+define( 'ACF_SHOW_ADMIN', true ); // Will display "Custom Fields" menu in the admin dashboard
+define( 'ACF_FROM_DB', true ); // Will use custom fields from the database instead of files (dynamically)
+
+To import/export ACF between JSON/PHP to Database, use wp cli commands:
+wp acf import
+wp acf export
+
+First will load all fields configs from JSON files into database (and you will be able to edit/add/delete fields). 
+Second command will save fields config to JSON/PHP (you can commit them to Git, and fields will be loaded from files on live/dev site)
+
+To compile SASS into theme style.css, refer to npm commands from /themes/alpha/package.json , and not forget to run npm install in the beginning of development. (edited) 
