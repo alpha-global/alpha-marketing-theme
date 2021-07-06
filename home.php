@@ -3,7 +3,6 @@
  * Blog template
  *
  * @package Alpha
- * test comment
  */
 
 get_header();
