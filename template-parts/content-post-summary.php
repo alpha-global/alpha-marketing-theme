@@ -23,7 +23,6 @@
 		</div>
 	<?php endif; ?>
 
-
 	<div class="post-summary-content">
 		<div class="post-summary-date"><?php the_time( 'M j, Y' ); ?></div>
 		<h6 class="post-summary-title"><?php the_title(); ?></h6>
