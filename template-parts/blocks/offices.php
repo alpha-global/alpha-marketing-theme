@@ -188,7 +188,7 @@ $sites = array(
 	),
 	16 => array(
 		'name'    => __( 'Brasil', 'alpha' ),
-		'domain'  => 'http://brasil.alpha.org/',
+		'domain'  => 'https://vemproalpha.org/',
 		'flag'    => 'br',
 		'regions' => array(
 			0 => 'all',
