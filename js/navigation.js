@@ -44,7 +44,7 @@
 
 		if ( window.innerWidth < threshold ) {
 			if ( isDesktop === true ) {
-				siteNavigation.appendChild( toplineNav );
+				siteNavigation.append( toplineNav );
 				isDesktop = false;
 			}
 		} else {
