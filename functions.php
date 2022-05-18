@@ -340,7 +340,7 @@ function alpha_video_player( $video_link ) {
 	$player = alpha_video_player_link( $video_link );
 
 	if ( false !== $player ) {
-		return "<iframe src=\"{$player}\" frameborder=\"0\" allowfullscreen tabindex=\"-1\"></iframe>";
+		return "<iframe src=\"{$player}\" frameborder=\"0\" tabindex=\"-1\"></iframe>";
 	} else {
 		return '';
 	}
