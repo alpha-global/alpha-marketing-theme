@@ -10,6 +10,7 @@
 	const toplineNav = document.getElementById( "topline-nav" );
 	const siteNavigation = document.getElementById( "site-navigation" );
 	const page = document.getElementById( "page" );
+	const splashPage = document.getElementById("splash-menu");
 	const menuToggle = document.getElementById( "menu-toggle" );
 	const menuClose = document.getElementById( "menu-close" );
 	var isDesktop = true;
@@ -23,6 +24,7 @@
 
 	const branding = document.getElementById( "branding" );
 	const menuBackground = document.createElement( "div" );
+	
 	menuBackground.classList.add( "menu-background" );
 
 	const handleFixedHeader = function () {
@@ -43,13 +45,13 @@
 		const threshold = 1024;
 
 		if ( window.innerWidth < threshold ) {
-			if ( isDesktop === true ) {
+			if ( isDesktop === true && !splashPage) { //Added check for splash page since toplineNav menu does not exist on the splash page
 				siteNavigation.append( toplineNav );
 				isDesktop = false;
 			}
 		} else {
-			if ( isDesktop === false ) {
-				page.insertBefore( toplineNav, siteHeader );
+			if ( isDesktop === false && !splashPage ) {
+				page.insertBefore( toplineNav , siteHeader );
 				isDesktop = true;
 			}
 		}
