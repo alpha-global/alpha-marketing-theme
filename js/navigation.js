@@ -25,9 +25,7 @@
 	const branding = document.getElementById( "branding" );
 	const menuBackground = document.createElement( "div" );
 	
-	
 	menuBackground.classList.add( "menu-background" );
-
 
 	const handleFixedHeader = function () {
 		const currentScroll = window.scrollY;
@@ -60,7 +58,7 @@
 	};
 
 	window.addEventListener( "resize", handleWindowResize );
-	//handleWindowResize();
+	handleWindowResize();
 
 	menuToggle.addEventListener( "click", function ( e ) {
 		e.preventDefault();
