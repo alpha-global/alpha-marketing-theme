@@ -394,26 +394,26 @@ $sites = array(
 			1 => 'asia-pacific',
 		),
 	),
-	// Europe and Middle East
-	41 => array(
-		'name'    => __( 'Shqipërisë / Albania', 'alpha' ),
+// Europe and Middle East
+	/* 41 => array(
+		'name'    => __( 'Shqipërisë', 'alpha' ),
 		'domain'  => 'mailto:hervinfushekati@gmail.com',
 		'flag'    => 'al',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
-	),
+	), */
 	42 => array(
-		'name'    => __( 'Österreich / Austria', 'alpha' ),
-		'domain'  => 'https://alphakurs.at/',
+		'name'    => __( 'Österreich', 'alpha' ),
+		'domain'  => 'https://alpha.at/',
 		'flag'    => 'at',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
 	),
-	43 => array(
+	/* 43 => array(
 		'name'    => __( 'Belarus', 'alpha' ),
 		'domain'  => 'mailto:alphahomeminsk@gmail.com',
 		'flag'    => 'by',
@@ -421,10 +421,10 @@ $sites = array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
-	),
+	), */
 	44 => array(
-		'name'    => __( 'België / Belgium', 'alpha' ),
-		'domain'  => 'https://www.parcoursalpha.be/',
+		'name'    => __( 'België', 'alpha' ),
+		'domain'  => 'https://alphavlaanderen.be/',
 		'flag'    => 'be',
 		'regions' => array(
 			0 => 'all',
@@ -432,52 +432,61 @@ $sites = array(
 		),
 	),
 	45 => array(
-		'name'    => __( 'Боснa и Херцеговина / Bosnia and Herzegovina', 'alpha' ),
-		'domain'  => 'http://alpha.org/run',
-		'flag'    => 'ba',
+		'name'    => __( 'Belgique', 'alpha' ),
+		'domain'  => 'https://www.parcoursalpha.be/',
+		'flag'    => 'be',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
 	),
-	46 => array(
-		'name'    => __( 'България / Bulgaria', 'alpha' ),
-		'domain'  => 'mailto:jan.bakker@alpha.org',
+	/* 46 => array(
+		'name'    => __( 'Боснa и Херцеговина', 'alpha' ),
+		'domain'  => 'https://alpha.org/run',
+		'flag'    => 'ba',
+		'regions' => array(
+			0 => 'all',
+			1 => 'europe-middle-east',
+		),
+	), */
+	47 => array(
+		'name'    => __( 'България', 'alpha' ),
+		'domain'  => 'https://run.bulgaria.alpha.org/',
 		'flag'    => 'bg',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
 	),
-	47 => array(
-		'name'    => __( 'Hrvatska / Croatia', 'alpha' ),
-		'domain'  => 'http://alpha.org/run',
+	/* 48 => array(
+		'name'    => __( 'Hrvatska', 'alpha' ),
+		'domain'  => 'https://alpha.org/run',
 		'flag'    => 'hr',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
-	),
-	48 => array(
+	), */
+	/* 49 => array(
 		'name'    => __( 'Cyprus', 'alpha' ),
-		'domain'  => 'mailto:eric.martin@alpha.org',
+		'domain'  => 'https://alpha.org/run',
 		'flag'    => 'cy',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
-	),
-	49 => array(
-		'name'    => __( 'Česká republika / Czech Republic', 'alpha' ),
-		'domain'  => 'http://www.kurzyalfa.cz/',
+	), */
+	50 => array(
+		'name'    => __( 'Česká Republika', 'alpha' ),
+		'domain'  => 'https://www.kurzyalfa.cz/',
 		'flag'    => 'cz',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
 	),
-	50 => array(
-		'name'    => __( 'Danmark / Denmark', 'alpha' ),
+	51 => array(
+		'name'    => __( 'Danmark', 'alpha' ),
 		'domain'  => 'https://danmark.alpha.org/',
 		'flag'    => 'dk',
 		'regions' => array(
@@ -485,8 +494,8 @@ $sites = array(
 			1 => 'europe-middle-east',
 		),
 	),
-	51 => array(
-		'name'    => __( 'مصر / Egypt', 'alpha' ),
+	52 => array(
+		'name'    => __( 'مصر', 'alpha' ),
 		'domain'  => 'https://mena.alpha.org/',
 		'flag'    => 'eg',
 		'regions' => array(
@@ -494,26 +503,17 @@ $sites = array(
 			1 => 'europe-middle-east',
 		),
 	),
-	52 => array(
-		'name'    => __( 'Eesti / Estonia', 'alpha' ),
-		'domain'  => 'https://run.europe.alpha.org',
+	53 => array(
+		'name'    => __( 'Eesti', 'alpha' ),
+		'domain'  => 'https://run.estonia.alpha.org',
 		'flag'    => 'ee',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
 	),
-	53 => array(
-		'name'    => __( 'Europe, Middle East & North Africa Regional', 'alpha' ),
-		'domain'  => 'https://run.europe.alpha.org',
-		'flag'    => 'alpha',
-		'regions' => array(
-			0 => 'all',
-			1 => 'europe-middle-east',
-		),
-	),
-	54 => array(
-		'name'    => __( 'Suomi / Finland', 'alpha' ),
+	55 => array(
+		'name'    => __( 'Suomi', 'alpha' ),
 		'domain'  => 'https://kokeilealfaa.fi/',
 		'flag'    => 'fi',
 		'regions' => array(
@@ -521,7 +521,7 @@ $sites = array(
 			1 => 'europe-middle-east',
 		),
 	),
-	55 => array(
+	56 => array(
 		'name'    => __( 'France', 'alpha' ),
 		'domain'  => 'https://www.parcoursalpha.fr/',
 		'flag'    => 'fr',
@@ -530,7 +530,7 @@ $sites = array(
 			1 => 'europe-middle-east',
 		),
 	),
-	56 => array(
+	/* 57 => array(
 		'name'    => __( 'Georgia', 'alpha' ),
 		'domain'  => 'https://run.europe.alpha.org',
 		'flag'    => 'ge',
@@ -538,18 +538,18 @@ $sites = array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
-	),
-	57 => array(
-		'name'    => __( 'Gulf Regional', 'alpha' ),
-		'domain'  => 'mailto:gcc@alpha.org',
+	), */
+	58 => array(
+		'name'    => __( 'Gulf ', 'alpha' ),
+		'domain'  => 'https://gulf.alpha.org',
 		'flag'    => 'alpha',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
 	),
-	58 => array(
-		'name'    => __( 'Deutschland / Germany', 'alpha' ),
+	59 => array(
+		'name'    => __( 'Deutschland', 'alpha' ),
 		'domain'  => 'https://alphakurs.de/',
 		'flag'    => 'de',
 		'regions' => array(
@@ -557,8 +557,8 @@ $sites = array(
 			1 => 'europe-middle-east',
 		),
 	),
-	59 => array(
-		'name'    => __( 'Magyarország / Hungary', 'alpha' ),
+	60 => array(
+		'name'    => __( 'Magyarország', 'alpha' ),
 		'domain'  => 'https://alpha.org.hu/',
 		'flag'    => 'hu',
 		'regions' => array(
@@ -566,7 +566,7 @@ $sites = array(
 			1 => 'europe-middle-east',
 		),
 	),
-	60 => array(
+	/* 61 => array(
 		'name'    => __( 'Iceland', 'alpha' ),
 		'domain'  => 'mailto:ragnar@sik.is',
 		'flag'    => 'is',
@@ -574,18 +574,18 @@ $sites = array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
-	),
-	61 => array(
+	), */
+	62 => array(
 		'name'    => __( 'Ireland', 'alpha' ),
-		'domain'  => 'https://ireland.alpha.org/',
+		'domain'  => 'https://alphaireland.org/',
 		'flag'    => 'ie',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
 	),
-	62 => array(
-		'name'    => __( 'Italia / Italy', 'alpha' ),
+	63=> array(
+		'name'    => __( 'Italia', 'alpha' ),
 		'domain'  => 'https://italia.alpha.org/',
 		'flag'    => 'it',
 		'regions' => array(
@@ -593,27 +593,27 @@ $sites = array(
 			1 => 'europe-middle-east',
 		),
 	),
-	63 => array(
-		'name'    => __( 'Latvija / Latvia', 'alpha' ),
-		'domain'  => 'http://latvija.alpha.org/',
-		'flag'    => 'lv',
+	83=> array(
+		'name'    => __( 'יִשְׂרָאֵל', 'alpha' ),
+		'domain'  => 'https://israel.alpha.org/',
+		'flag'    => 'il',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
 	),
 	64 => array(
-		'name'    => __( 'Lebanon', 'alpha' ),
-		'domain'  => 'mailto:samimouwakdie@hotmail.com',
-		'flag'    => 'lb',
+		'name'    => __( 'Latvija', 'alpha' ),
+		'domain'  => 'https://alfakurss.lv/',
+		'flag'    => 'lv',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
 	),
 	65 => array(
-		'name'    => __( 'Levant Regional', 'alpha' ),
-		'domain'  => 'mailto:nabilfshehadi@gmail.com',
+		'name'    => __( 'Levant ', 'alpha' ),
+		'domain'  => 'mailto:nabil.shehadi@alpha.org',
 		'flag'    => 'alpha',
 		'regions' => array(
 			0 => 'all',
@@ -621,43 +621,43 @@ $sites = array(
 		),
 	),
 	66 => array(
-		'name'    => __( 'Lietuva / Lithuania', 'alpha' ),
-		'domain'  => 'http://alpha.org/run',
+		'name'    => __( 'Lietuva', 'alpha' ),
+		'domain'  => 'https://www.alfakursai.lt',
 		'flag'    => 'lt',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
 	),
-	67 => array(
-		'name'    => __( 'Mакедонија / Macedonia', 'alpha' ),
-		'domain'  => 'http://alpha.org/run',
+	/* 67 => array(
+		'name'    => __( 'Mакедонија', 'alpha' ),
+		'domain'  => 'https://alpha.org/run',
 		'flag'    => 'mk',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
-	),
-	68 => array(
+	), */
+	/* 68 => array(
 		'name'    => __( 'Malta', 'alpha' ),
-		'domain'  => 'http://www.alpha.org.mt/',
+		'domain'  => 'https://www.alpha.org.mt/',
 		'flag'    => 'mt',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
-	),
-	69 => array(
-		'name'    => __( 'Nederland / Netherlands', 'alpha' ),
-		'domain'  => 'https://alpha-cursus.nl/',
+	), */
+	70 => array(
+		'name'    => __( 'Nederland', 'alpha' ),
+		'domain'  => 'https://alphanederland.org/',
 		'flag'    => 'nl',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
 	),
-	70 => array(
-		'name'    => __( 'Norge / Norway', 'alpha' ),
+	71 => array(
+		'name'    => __( 'Norge', 'alpha' ),
 		'domain'  => 'https://norge.alpha.org/',
 		'flag'    => 'no',
 		'regions' => array(
@@ -665,16 +665,16 @@ $sites = array(
 			1 => 'europe-middle-east',
 		),
 	),
-	71 => array(
-		'name'    => __( 'Polska / Poland', 'alpha' ),
-		'domain'  => 'http://polska.alpha.org/',
+	72 => array(
+		'name'    => __( 'Polska', 'alpha' ),
+		'domain'  => 'https://polska.alpha.org/',
 		'flag'    => 'pl',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
 	),
-	72 => array(
+	73 => array(
 		'name'    => __( 'Portugal', 'alpha' ),
 		'domain'  => 'https://portugal.alpha.org/',
 		'flag'    => 'pt',
@@ -683,17 +683,17 @@ $sites = array(
 			1 => 'europe-middle-east',
 		),
 	),
-	73 => array(
+	74 => array(
 		'name'    => __( 'Romania', 'alpha' ),
-		'domain'  => 'http://alpharomania.org/',
+		'domain'  => 'https://alpharomania.org/',
 		'flag'    => 'ro',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
 	),
-	74 => array(
-		'name'    => __( 'Россия / Russia', 'alpha' ),
+	75 => array(
+		'name'    => __( 'Россия', 'alpha' ),
 		'domain'  => 'https://alphacourse.ru/',
 		'flag'    => 'ru',
 		'regions' => array(
@@ -701,60 +701,97 @@ $sites = array(
 			1 => 'europe-middle-east',
 		),
 	),
-	75 => array(
-		'name'    => __( 'Србија/ Serbia', 'alpha' ),
-		'domain'  => 'http://alpha.org/run',
+	/* 76 => array(
+		'name'    => __( 'Србија', 'alpha' ),
+		'domain'  => 'https://alpha.org/run',
 		'flag'    => 'rs',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
-	),
-	76 => array(
-		'name'    => __( 'España / Spain', 'alpha' ),
-		'domain'  => 'http://spain.alpha.org/',
+	), */
+	77 => array(
+		'name'    => __( 'España', 'alpha' ),
+		'domain'  => 'https://spain.alpha.org/',
 		'flag'    => 'es',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
 	),
-	77 => array(
-		'name'    => __( 'Suisse / Switzerland', 'alpha' ),
-		'domain'  => 'https://alphalive.ch/',
+	78 => array(
+		'name'    => __( 'Suisse', 'alpha' ),
+		'domain'  => 'https://fr.alphalive.ch/',
 		'flag'    => 'ch',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
 	),
-	78 => array(
-		'name'    => __( 'Sverige / Sweden', 'alpha' ),
-		'domain'  => 'http://sverige.alpha.org/',
+	79 => array(
+		'name'    => __( 'Schweiz', 'alpha' ),
+		'domain'  => 'https://de.alphalive.ch/',
+		'flag'    => 'ch',
+		'regions' => array(
+			0 => 'all',
+			1 => 'europe-middle-east',
+		),
+	),	
+	80 => array(
+		'name'    => __( 'Sverige', 'alpha' ),
+		'domain'  => 'https://sverige.alpha.org/',
 		'flag'    => 'se',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
 	),
-	79 => array(
-		'name'    => __( 'Türkiye / Turkey', 'alpha' ),
-		'domain'  => 'https://run.turkey.alpha.org/',
+	81 => array(
+		'name'    => __( 'Türkiye', 'alpha' ),
+		'domain'  => 'https://turkey.alpha.org/',
 		'flag'    => 'tr',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
 	),
-	80 => array(
-		'name'    => __( 'Україна / Ukraine', 'alpha' ),
-		'domain'  => 'http://alpha.org.ua/',
+	82 => array(
+		'name'    => __( 'Україна', 'alpha' ),
+		'domain'  => 'https://alpha.org.ua/',
 		'flag'    => 'ua',
 		'regions' => array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
 	),
+	99 => array(
+		'name'    => __( 'United Kingdom', 'alpha' ),
+		'domain'  => 'https://alpha.org.uk/',
+		'flag'    => 'gb',
+		'regions' => array(
+			0 => 'all',
+			1 => 'europe-middle-east',
+		),
+	),
+	54 => array(
+		'name'    => __( 'Europe ', 'alpha' ),
+		'domain'  => 'https://run.europe.alpha.org',
+		'flag'    => 'alpha',
+		'regions' => array(
+			0 => 'all',
+			1 => 'europe-middle-east',
+
+		),
+	),
+	69 => array(
+		'name'    => __( 'Middle East & North Africa ', 'alpha' ),
+		'domain'  => 'https://run.mena.alpha.org',
+		'flag'    => 'alpha',
+		'regions' => array(
+			0 => 'all',
+			1 => 'europe-middle-east',
+		),
+	),	
 );
 
 ?>
