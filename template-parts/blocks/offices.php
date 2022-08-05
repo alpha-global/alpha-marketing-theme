@@ -791,7 +791,34 @@ $sites = array(
 			0 => 'all',
 			1 => 'europe-middle-east',
 		),
+	),
+	70 => array(
+		'name'    => __( 'Hong Kong', 'alpha' ),
+		'domain'  => 'https://alpha.org.hk/',
+		'flag'    => 'hk',
+		'regions' => array(
+			0 => 'all',
+			1 => 'asia-pacific',
+		),
 	),	
+	71 => array(
+		'name'    => __( 'Sri Lanka', 'alpha' ),
+		'domain'  => 'https://srilanka.alpha.org/',
+		'flag'    => 'lk',
+		'regions' => array(
+			0 => 'all',
+			1 => 'asia-pacific',
+		),
+	),
+	72 => array(
+		'name'    => __( 'Mongolia', 'alpha' ),
+		'domain'  => 'https://mongolia.alpha.org/',
+		'flag'    => 'mn',
+		'regions' => array(
+			0 => 'all',
+			1 => 'asia-pacific',
+		),
+	),
 );
 
 ?>
