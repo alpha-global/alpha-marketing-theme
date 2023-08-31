@@ -279,7 +279,7 @@ $sites = array(
 	),
 	26 => array(
 		'name'    => __( 'ព្រះរាជាណាចក្រកម្ពុជា / Cambodia', 'alpha' ),
-		'domain'  => 'https://asiapacific.alpha.org/',
+		'domain'  => 'https://cambodia.alpha.org/',
 		'flag'    => 'kh',
 		'regions' => array(
 			0 => 'all',
@@ -647,7 +647,7 @@ $sites = array(
 			1 => 'europe-middle-east',
 		),
 	), */
-	70 => array(
+	67 => array(
 		'name'    => __( 'Nederland', 'alpha' ),
 		'domain'  => 'https://alphanederland.org/',
 		'flag'    => 'nl',
@@ -656,7 +656,7 @@ $sites = array(
 			1 => 'europe-middle-east',
 		),
 	),
-	71 => array(
+	68 => array(
 		'name'    => __( 'Norge', 'alpha' ),
 		'domain'  => 'https://norge.alpha.org/',
 		'flag'    => 'no',
@@ -665,7 +665,7 @@ $sites = array(
 			1 => 'europe-middle-east',
 		),
 	),
-	72 => array(
+	69 => array(
 		'name'    => __( 'Polska', 'alpha' ),
 		'domain'  => 'https://polska.alpha.org/',
 		'flag'    => 'pl',
@@ -783,7 +783,7 @@ $sites = array(
 
 		),
 	),
-	69 => array(
+	73 => array(
 		'name'    => __( 'Middle East & North Africa ', 'alpha' ),
 		'domain'  => 'https://run.mena.alpha.org',
 		'flag'    => 'alpha',
