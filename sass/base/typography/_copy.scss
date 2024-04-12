@@ -49,3 +49,21 @@ ins {
 big {
 	font-size: 125%;
 }
+
+.ays-styles{
+	p{
+		font-family: $font__ays;
+		font-optical-sizing: auto;
+		font-weight: 400;
+		font-size: 18px;
+		color: #000;
+		margin-top: 0;
+	}
+	p.has-large-font-size{
+		font-size: 28px !important;
+		margin-top: 0;
+		max-width: 880px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

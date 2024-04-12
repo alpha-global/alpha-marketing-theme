@@ -67,3 +67,24 @@ h6 {
 	color: $color__dark;
 	margin: 1.2em 0;
 }
+
+.ays-styles{
+	h1{
+		font-size: 140px;
+		font-family: $font__ays;
+		font-optical-sizing: auto;
+		font-weight: 700;
+		font-style: normal;
+		text-transform: uppercase;
+		margin: 0;
+	}
+	h3{
+		font-size: 32px;
+		font-family: $font__ays;
+		font-optical-sizing: auto;
+		font-weight: 700;
+		font-style: normal;
+		text-transform: uppercase;
+		margin: 0;
+	}
+}

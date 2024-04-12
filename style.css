@@ -744,6 +744,26 @@ h6 {
 	margin: 1.2em 0;
 }
 
+.ays-styles h1 {
+	font-size: 140px;
+	font-family: "Work Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.ays-styles h3 {
+	font-size: 32px;
+	font-family: "Work Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	text-transform: uppercase;
+	margin: 0;
+}
+
 p {
 	margin-bottom: 1.5em;
 }
@@ -794,6 +814,23 @@ ins {
 
 big {
 	font-size: 125%;
+}
+
+.ays-styles p {
+	font-family: "Work Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-size: 18px;
+	color: #000;
+	margin-top: 0;
+}
+
+.ays-styles p.has-large-font-size {
+	font-size: 28px !important;
+	margin-top: 0;
+	max-width: 880px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Elements
@@ -3659,6 +3696,50 @@ body.admin-bar .alpha-hero-blog {
 	}
 }
 
+@media (min-width: 1024px) {
+	.alpha-ays-cards .container {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.ays-card {
+	position: relative;
+}
+
+@media (min-width: 1024px) {
+	.ays-card {
+		width: 30.79667%;
+	}
+}
+
+.ays-card picture {
+	position: relative;
+	margin-left: 20px;
+}
+
+.ays-card-bg-ays-green {
+	background-color: #C2FF00;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: calc(100% - 40px);
+	width: calc(100% - 10px);
+	padding-right: 20px;
+}
+
+@media (min-width: 1024px) {
+	.ays-card-bg-ays-green {
+		width: 100%;
+	}
+}
+
+.ays-content {
+	position: relative;
+	padding: 20px;
+	padding-bottom: 0;
+}
+
 .wp-block-columns {
 	margin-bottom: 0;
 }
@@ -3801,6 +3882,22 @@ body.admin-bar .alpha-hero-blog {
 
 .has-purple-background-color {
 	background-color: #4d4da5;
+}
+
+.has-ays-blue-color {
+	color: #4F38E1;
+}
+
+.has-ays-blue-background-color {
+	background-color: #4F38E1;
+}
+
+.has-ays-green-color {
+	color: #C2FF00;
+}
+
+.has-ays-green-background-color {
+	background-color: #C2FF00;
 }
 
 /*--------------------------------------------------------------

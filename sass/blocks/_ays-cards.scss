@@ -1,0 +1,40 @@
+.alpha-ays-cards{
+	.container{
+		@include media($desktop__only){
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}
+
+.ays-card{
+	@include media($desktop__only){
+		@include column-width(3);
+	}
+	position: relative;
+	picture{
+		position: relative;
+		margin-left: 20px
+	}
+}
+
+.ays-card-bg-ays-green{
+	background-color: $color__ays-green;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: calc(100% - 40px);
+	width: calc(100% - 10px);
+	padding-right: 20px;
+
+	@include media($desktop__only){
+		width: 100%;
+	}
+}
+
+.ays-content{
+	position: relative;
+	padding: 20px;
+	padding-bottom: 0;
+	// width: calc(100% - 20px);
+}

@@ -39,6 +39,9 @@ $color__nav-link: $color__white;
 
 $color__text: $color__dark;
 
+$color__ays-blue: #4F38E1;
+$color__ays-green: #C2FF00;
+
 $colors: (
 	"black": $color__dark,
 	"white": $color__white,
@@ -47,4 +50,7 @@ $colors: (
 	"red": $color__red,
 	"light-gray": $color__light_gray,
 	"purple": $color__purple,
+	"ays-blue": $color__ays-blue,
+	"ays-green": $color__ays-green	
 );
+
