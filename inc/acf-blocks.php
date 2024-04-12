@@ -272,6 +272,26 @@ function alpha_register_acf_block_types() {
 	);
 	*/
 
+	acf_register_block_type(
+		array(
+			'name'            => 'hero-video',
+			'title'           => __( 'Hero Video', 'alpha' ),
+			'description'     => __( 'Hero Video', 'alpha' ),
+			'render_template' => 'template-parts/blocks/hero-video.php',
+			'category'        => 'alpha',
+			'keywords'        => array( 'hero-video', 'alpha' ),
+			'mode'            => 'auto',
+			'icon'            => 'format-video',
+			'supports'        => array(
+				'mode'            => false,
+				'align'           => false,
+				'anchor'          => true,
+				'customClassName' => true,
+				'jsx'             => true,
+			),
+		)
+	);
+
 }
 
 // Check if function exists and hook into setup.

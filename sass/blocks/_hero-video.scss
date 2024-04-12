@@ -1,0 +1,35 @@
+.alpha-hero-video {
+	display: flex;
+	justify-content: center;
+    align-items: flex-end;
+	height: 85vh;
+
+	@include media( $mobile__only ) {
+		height: 50vh;
+	}
+	video{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 85vh;
+		background-position: center;
+		background-size: cover;
+		z-index: 1;
+		object-fit: cover;
+
+		@include media( $mobile__only ) {
+			height: 50vh;
+		}
+	}
+	svg{
+		
+		position: relative;
+		z-index: 2;
+		margin-bottom: 40px;
+
+		@include media( $mobile__only ) {
+			margin-bottom: 20px;
+		}
+	}
+}
