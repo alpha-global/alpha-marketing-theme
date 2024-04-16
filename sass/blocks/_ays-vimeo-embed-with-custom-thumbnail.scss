@@ -1,0 +1,39 @@
+.ays-vimeo-custom-thumb{
+
+	&:before{
+			content: "";
+			width: 100vw;
+			height: 35%;
+			background-color: #fff;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+	.container{
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+		margin-bottom: 40px;
+
+
+		iframe, 
+		.ays-vimeo-custom-thumb-cover{
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		svg{
+			position: absolute;
+ 			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}

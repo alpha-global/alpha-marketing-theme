@@ -71,6 +71,7 @@ h6 {
 .ays-styles{
 	h1{
 		font-size: 140px;
+		line-height: 140px;
 		font-family: $font__ays;
 		font-optical-sizing: auto;
 		font-weight: 700;
@@ -87,6 +88,7 @@ h6 {
 		font-style: normal;
 		text-transform: uppercase;
 		margin: 0;
+		margin-bottom: 20px;
 
 		@include media($tablet__desktop){
 			font-size: 105px;

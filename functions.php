@@ -205,6 +205,12 @@ function alpha_scripts() {
 		wp_enqueue_script( 'alpha-ays-episodes-carousel', get_template_directory_uri() . '/js/ays-episodes-carousel.js', array( 'jquery', 'swiper' ), $version, true );
 	}
 
+	if ( has_block( 'acf/ays-vimeo-custom-thumb' ) || has_reusable_block( 'acf/ays-vimeo-custom-thumb' ) ) {
+		wp_enqueue_script( 'vimeo', 'https://player.vimeo.com/api/player.js', array(), $version, true );
+		wp_enqueue_script( 'vimeo-player', get_template_directory_uri() . '/js/vimeo-player.js', array(), array( 'jquery' ), $version, true );
+
+	}
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

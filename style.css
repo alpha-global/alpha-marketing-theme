@@ -746,6 +746,7 @@ h6 {
 
 .ays-styles h1 {
 	font-size: 140px;
+	line-height: 140px;
 	font-family: "Work Sans", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 700;
@@ -763,6 +764,7 @@ h6 {
 	font-style: normal;
 	text-transform: uppercase;
 	margin: 0;
+	margin-bottom: 20px;
 }
 
 @media (min-width: 600px) {
@@ -846,7 +848,7 @@ big {
 .ays-styles p.has-large-font-size {
 	font-size: 28px !important;
 	margin-top: 0;
-	max-width: 880px;
+	max-width: 900px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -2995,6 +2997,34 @@ body.admin-bar .alpha-hero-blog {
 	color: #e42312;
 }
 
+.ays-styles .alpha-accordion-tab {
+	border-radius: 0;
+	box-shadow: none;
+	padding: 0;
+	border-left: 0;
+	border-top: solid 1px #000;
+	padding-top: 20px;
+}
+
+.ays-styles .alpha-accordion h5 {
+	font-size: 30px;
+	line-height: 30px;
+	font-family: "Work Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.ays-styles .alpha-accordion h5 a:after {
+	top: 1px;
+}
+
+.ays-styles .alpha-accordion .alpha-accordion-title {
+	margin-bottom: 20px;
+}
+
 .alpha-image-text {
 	padding-top: 72px;
 	padding-bottom: 72px;
@@ -3891,6 +3921,43 @@ html .swiper-button-next:after {
 	background-color: #4F38E1;
 }
 
+.ays-vimeo-custom-thumb:before {
+	content: "";
+	width: 100vw;
+	height: 35%;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.ays-vimeo-custom-thumb .container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 56.25%;
+	/* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+	margin-bottom: 40px;
+}
+
+.ays-vimeo-custom-thumb .container iframe,
+.ays-vimeo-custom-thumb .container .ays-vimeo-custom-thumb-cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.ays-vimeo-custom-thumb .container svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 .wp-block-columns {
 	margin-bottom: 0;
 }
@@ -3949,6 +4016,10 @@ html .swiper-button-next:after {
 .wp-block-group.has-background {
 	margin-left: calc( ( 100vw - 100% ) / -2);
 	margin-right: calc( ( 100vw - 100% ) / -2);
+}
+
+.ays-styles .wp-block-group {
+	position: relative;
 }
 
 .wp-block-button__link {

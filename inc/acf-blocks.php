@@ -352,6 +352,26 @@ function alpha_register_acf_block_types() {
 		)
 	);
 
+	acf_register_block_type(
+		array(
+			'name'            => 'ays-vimeo-custom-thumb',
+			'title'           => __( 'Vimeo embed with custom thumbnail', 'alpha' ),
+			'description'     => __( 'Vimeo embed with custom thumbnail', 'alpha' ),
+			'render_template' => 'template-parts/blocks/ays-vimeo-custom-thumb.php',
+			'category'        => 'alpha',
+			'keywords'        => array( 'vimeo', 'custom-thumbnail', 'alpha' ),
+			'mode'            => 'auto',
+			'icon'            => 'video',
+			'supports'        => array(
+				'mode'            => false,
+				'align'           => false,
+				'anchor'          => true,
+				'customClassName' => true,
+				'jsx'             => true,
+			),
+		)
+	);
+
 }
 
 // Check if function exists and hook into setup.

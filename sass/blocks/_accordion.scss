@@ -48,3 +48,38 @@
 		color: $color__accent;
 	}
 }
+
+
+.ays-styles{
+	.alpha-accordion {
+		&-tab {
+			border-radius: 0;
+			box-shadow: none;
+			padding: 0;	
+			border-left: 0;
+			border-top: solid 1px #000;
+			padding-top: 20px;
+		}
+
+		h5{
+			font-size: 30px;
+			line-height: 30px;
+			font-family: $font__ays;
+			font-optical-sizing: auto;
+			font-weight: 700;
+			font-style: normal;
+			text-transform: uppercase;
+			margin: 0;
+
+			a{
+				&:after{
+					top: 1px;
+				}
+			}
+		}
+
+		.alpha-accordion-title{
+			margin-bottom: 20px;
+		}
+	}
+}
