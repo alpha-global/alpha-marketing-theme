@@ -78,6 +78,21 @@ h6 {
 		text-transform: uppercase;
 		margin: 0;
 	}
+	h2{
+		font-size: 60px;
+		line-height: 60px;
+		font-family: $font__ays;
+		font-optical-sizing: auto;
+		font-weight: 700;
+		font-style: normal;
+		text-transform: uppercase;
+		margin: 0;
+
+		@include media($tablet__desktop){
+			font-size: 105px;
+			line-height: 105px;
+		}
+	}
 	h3{
 		font-size: 32px;
 		font-family: $font__ays;

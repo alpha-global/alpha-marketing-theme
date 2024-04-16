@@ -199,6 +199,12 @@ function alpha_scripts() {
 		wp_enqueue_script( 'alpha-tabs', get_template_directory_uri() . '/js/tabs.js', array( 'jquery' ), $version, true );
 	}
 
+	if ( has_block( 'acf/ays-episode-carousel' ) || has_reusable_block( 'acf/ays-episode-carousel' ) ) {
+		wp_enqueue_script( 'swiper', get_template_directory_uri() . '/js/vendor/swiper/swiper-bundle.min.js', array(), $version, true );
+		wp_enqueue_style( 'swiper', get_template_directory_uri() . '/js/vendor/swiper/swiper-bundle.min.css', array(), $version );
+		wp_enqueue_script( 'alpha-ays-episodes-carousel', get_template_directory_uri() . '/js/ays-episodes-carousel.js', array( 'jquery', 'swiper' ), $version, true );
+	}
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

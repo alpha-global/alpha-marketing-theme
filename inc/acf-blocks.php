@@ -312,7 +312,45 @@ function alpha_register_acf_block_types() {
 		)
 	);
 
-	
+	acf_register_block_type(
+		array(
+			'name'            => 'ays-link-tile',
+			'title'           => __( 'AYS Link Tile', 'alpha' ),
+			'description'     => __( 'AYS Link Tile', 'alpha' ),
+			'render_template' => 'template-parts/blocks/ays-link-tile.php',
+			'category'        => 'alpha',
+			'keywords'        => array( 'ays-link-tile', 'alpha' ),
+			'mode'            => 'auto',
+			'icon'            => 'format-video',
+			'supports'        => array(
+				'mode'            => false,
+				'align'           => false,
+				'anchor'          => true,
+				'customClassName' => true,
+				'jsx'             => true,
+			),
+		)
+	);
+
+	acf_register_block_type(
+		array(
+			'name'            => 'ays-episode-carousel',
+			'title'           => __( 'AYS Episodes Carousel', 'alpha' ),
+			'description'     => __( 'AYS Episodes Carousel', 'alpha' ),
+			'render_template' => 'template-parts/blocks/ays-episodes-carousel.php',
+			'category'        => 'alpha',
+			'keywords'        => array( 'ays-episodes-carousel', 'alpha' ),
+			'mode'            => 'auto',
+			'icon'            => 'images-alt',
+			'supports'        => array(
+				'mode'            => false,
+				'align'           => false,
+				'anchor'          => true,
+				'customClassName' => true,
+				'jsx'             => true,
+			),
+		)
+	);
 
 }
 
