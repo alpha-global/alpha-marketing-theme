@@ -1,7 +1,8 @@
 .ays-vimeo-custom-thumb{
-
-	margin-top: -29rem;
-
+	margin-top: -9rem;
+	@include media($desktop__only){
+		margin-top: -29rem;
+	}
 	// &:before{
 	// 		content: "";
 	// 		width: 100vw;
@@ -56,17 +57,24 @@
 }
 
 .ays-styles .overlap-group{
-	margin-top: 29rem;
+	margin-top: 9rem;
 	position: relative;
 	z-index: 1;
 	&:before{
 		content: "";
 		width: 100vw;
-		height: 29rem;
+		height: 9rem;
 		background-color: #fff;
 		position: absolute;
-		top: -29rem;
+		top: -9rem;
 		left: 0;
 		z-index: 0;
+	}
+	@include media($desktop__only){
+		margin-top: 29rem;
+		&:before{
+			height: 29rem;
+			top: -29rem;
+		}
 	}
 }

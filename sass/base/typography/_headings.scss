@@ -70,18 +70,23 @@ h6 {
 
 .ays-styles{
 	h1{
-		font-size: 140px;
-		line-height: 140px;
+		font-size: 70px;
+		line-height: 70px;
 		font-family: $font__ays;
 		font-optical-sizing: auto;
 		font-weight: 700;
 		font-style: normal;
 		text-transform: uppercase;
-		margin: 0;
+		margin-bottom: 10px;
+
+		@include media($tablet__desktop){
+			font-size: 140px;
+			line-height: 140px;
+		}
 	}
 	h2{
-		font-size: 60px;
-		line-height: 60px;
+		font-size: 50px;
+		line-height: 50px;
 		font-family: $font__ays;
 		font-optical-sizing: auto;
 		font-weight: 700;

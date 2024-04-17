@@ -60,10 +60,14 @@ big {
 		margin-top: 0;
 	}
 	p.has-large-font-size{
-		font-size: 28px !important;
+		font-size: 20px !important;
 		margin-top: 0;
 		max-width: 900px;
 		margin-left: auto;
 		margin-right: auto;
+
+		@include media($tablet__desktop){
+			font-size: 28px !important;
+		}
 	}
 }

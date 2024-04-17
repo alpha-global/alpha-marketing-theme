@@ -96,14 +96,14 @@
 	 });
 	}
 
-	$(window).load(function() {
-	  equalheight('.ays-episode-inner');
-	});
+	// $(window).load(function() {
+	//   equalheight('.ays-episode-inner');
+	// });
 
 
-	$(window).resize(function(){
-	  equalheight('.ays-episode-inner');
-	});
+	// $(window).resize(function(){
+	//   equalheight('.ays-episode-inner');
+	// });
 
 
 } )( jQuery );

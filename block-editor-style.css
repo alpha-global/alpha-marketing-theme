@@ -2843,14 +2843,13 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 }
 
 .block-editor-block-list__layout .wp-block .alpha-hero-video .alpha-hero-video-container {
-	height: 85vh;
+	height: 100%;
 	overflow: hidden;
 	position: fixed;
 	z-index: -999;
 	top: 0;
 	left: 0;
 	width: 100vw;
-	height: 85vh;
 }
 
 .block-editor-block-list__layout .wp-block .alpha-hero-video video {
@@ -2954,12 +2953,28 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 	padding-bottom: 0;
 }
 
-.block-editor-block-list__layout .wp-block .alpha-ays-cards {
+.block-editor-block-list__layout .wp-block .ays-card-0 {
+	transform: translate3d(0px, 120px, 0px);
+}
+
+.block-editor-block-list__layout .wp-block .ays-card-0 img {
+	transform: translate3d(0px, 140px, 0px);
+}
+
+.block-editor-block-list__layout .wp-block .ays-card-1 {
 	transform: translate3d(0px, 60px, 0px);
 }
 
-.block-editor-block-list__layout .wp-block .alpha-ays-cards img {
+.block-editor-block-list__layout .wp-block .ays-card-1 img {
 	transform: translate3d(0px, 80px, 0px);
+}
+
+.block-editor-block-list__layout .wp-block .ays-card-2 {
+	transform: translate3d(0px, 180px, 0px);
+}
+
+.block-editor-block-list__layout .wp-block .ays-card-2 img {
+	transform: translate3d(0px, 180px, 0px);
 }
 
 .block-editor-block-list__layout .wp-block .ays-episode-carousel-colour-one-ays-purple .swiper-slide:nth-child(odd) {
@@ -3007,8 +3022,8 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 }
 
 .block-editor-block-list__layout .wp-block .ays-episode-title {
-	font-size: 50px;
-	line-height: 50px;
+	font-size: 30px;
+	line-height: 30px;
 	font-family: "Work Sans", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 700;
@@ -3045,6 +3060,10 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 .block-editor-block-list__layout .wp-block .swiper.ays-episode-carousel-swiper {
 	margin-top: 40px;
 	overflow: visible;
+}
+
+.block-editor-block-list__layout .wp-block .swiper.ays-episode-carousel-swiper .swiper-slide {
+	height: auto;
 }
 
 .block-editor-block-list__layout .wp-block html .swiper-button-prev,
@@ -3103,7 +3122,13 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 }
 
 .block-editor-block-list__layout .wp-block .ays-vimeo-custom-thumb {
-	margin-top: -29rem;
+	margin-top: -9rem;
+}
+
+@media (min-width: 1024px) {
+	.block-editor-block-list__layout .wp-block .ays-vimeo-custom-thumb {
+		margin-top: -29rem;
+	}
 }
 
 .block-editor-block-list__layout .wp-block .ays-vimeo-custom-thumb .container {
@@ -3147,7 +3172,7 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 }
 
 .block-editor-block-list__layout .wp-block .ays-styles .overlap-group {
-	margin-top: 29rem;
+	margin-top: 9rem;
 	position: relative;
 	z-index: 1;
 }
@@ -3155,12 +3180,22 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 .block-editor-block-list__layout .wp-block .ays-styles .overlap-group:before {
 	content: "";
 	width: 100vw;
-	height: 29rem;
+	height: 9rem;
 	background-color: #fff;
 	position: absolute;
-	top: -29rem;
+	top: -9rem;
 	left: 0;
 	z-index: 0;
+}
+
+@media (min-width: 1024px) {
+	.block-editor-block-list__layout .wp-block .ays-styles .overlap-group {
+		margin-top: 29rem;
+	}
+	.block-editor-block-list__layout .wp-block .ays-styles .overlap-group:before {
+		height: 29rem;
+		top: -29rem;
+	}
 }
 
 @media (min-width: 600px) {
@@ -3216,6 +3251,11 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 	color: #000;
 }
 
+.block-editor-block-list__layout .wp-block .alpha-ays-tiles .container-full {
+	margin-left: calc((100vw - 100%) / -2);
+	margin-right: calc((100vw - 100%) / -2);
+}
+
 @media (min-width: 1024px) {
 	.block-editor-block-list__layout .wp-block .alpha-ays-tiles .container-full {
 		display: flex;
@@ -3228,20 +3268,27 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 	}
 }
 
+.block-editor-block-list__layout .wp-block .ays-link-tile {
+	position: relative;
+	height: 600px;
+	overflow: hidden;
+	display: block;
+}
+
+.block-editor-block-list__layout .wp-block .ays-link-tile img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
 @media (min-width: 1024px) {
 	.block-editor-block-list__layout .wp-block .ays-link-tile {
 		width: 50%;
 		position: relative;
 		height: 900px;
-		overflow: hidden;
-	}
-	.block-editor-block-list__layout .wp-block .ays-link-tile img {
-		position: absolute;
-		top: 0;
-		left: 0;
-		object-fit: cover;
-		width: 100%;
-		height: 100%;
 	}
 }
 
@@ -3422,6 +3469,10 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 	transition-duration: 600ms;
 }
 
+.block-editor-block-list__layout .wp-block .alpha-ays-tiles .ays-link-tile-0.move-in {
+	transform: translate3d(0, 0, 0px);
+}
+
 .block-editor-block-list__layout .wp-block .alpha-ays-tiles .ays-link-tile-1 {
 	transform: translate3d(200px, 200px, 0px);
 	transition-property: all;
@@ -3429,11 +3480,7 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 	transition-duration: 600ms;
 }
 
-.block-editor-block-list__layout .wp-block .alpha-ays-tiles.move-in .ays-link-tile-0 {
-	transform: translate3d(0, 0, 0px);
-}
-
-.block-editor-block-list__layout .wp-block .alpha-ays-tiles.move-in .ays-link-tile-1 {
+.block-editor-block-list__layout .wp-block .alpha-ays-tiles .ays-link-tile-1.move-in {
 	transform: translate3d(0, 0, 0px);
 }
 

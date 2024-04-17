@@ -9,7 +9,7 @@
  * Template name: AYS
  */
 
-get_header('splash');
+get_header();
 ?>
 
 	<main id="primary" class="site-main ays-styles">
@@ -31,4 +31,4 @@ get_header('splash');
 	</main><!-- #main -->
 
 <?php
-get_footer('splash');
+get_footer();

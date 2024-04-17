@@ -41,7 +41,18 @@
 
 
 // Parallax Stuff
-.alpha-ays-cards {
+.ays-card-0 {
+	
+	transform: translate3d(0px, 120px, 0px);
+
+	img{
+		transform: translate3d(0px, 140px, 0px);
+	}
+
+	
+
+}
+.ays-card-1 {
 	
 	transform: translate3d(0px, 60px, 0px);
 
@@ -49,6 +60,13 @@
 		transform: translate3d(0px, 80px, 0px);
 	}
 
+}
+.ays-card-2 {
 	
+	transform: translate3d(0px, 180px, 0px);
 
+	img{
+		transform: translate3d(0px, 180px, 0px);
+	}
+	
 }

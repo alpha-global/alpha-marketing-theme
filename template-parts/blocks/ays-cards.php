@@ -15,13 +15,15 @@ if ( get_field( 'cards' ) ) {
 	$cards = get_field( 'cards' );
 }
 
+$i = 0;
+
 ?>
 
 <section id="<?php echo esc_attr( $block_id ); ?>" class="<?php echo esc_attr( $class_name ); ?>">
 	<div class="container">
 		
 		<?php foreach($cards as $card){ ?>
-			<div class="ays-card">
+			<div class="ays-card ays-card-<?php echo $i; ?>">
 				<div class="ays-card-bg ays-card-bg-<?php echo $card['background']; ?>"></div>
 				<div class="ays-content">
 					<h3><?php echo $card['title']; ?></h3>
@@ -39,6 +41,7 @@ if ( get_field( 'cards' ) ) {
 				   alt="a cute kitten">
 				</picture>
 			</div>
+			<?php $i++; ?>
 		<?php } ?>
 		
 
