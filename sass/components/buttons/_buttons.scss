@@ -90,3 +90,22 @@ input.gform_button {
 
 	@extend .btn-primary;
 }
+
+.ays-button{
+	font-size: 24px;
+	line-height: 24px;
+	padding: 20px;
+	font-family: $font__ays;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	text-transform: uppercase;
+	background-color: $color__ays-green;
+	color: #000;
+	display: inline-block;
+
+	&:hover{
+		background-color: darken($color__ays-green, 5%);
+		color: #000;
+	}
+}

@@ -315,9 +315,9 @@ function alpha_register_acf_block_types() {
 	acf_register_block_type(
 		array(
 			'name'            => 'ays-link-tile',
-			'title'           => __( 'AYS Link Tile', 'alpha' ),
-			'description'     => __( 'AYS Link Tile', 'alpha' ),
-			'render_template' => 'template-parts/blocks/ays-link-tile.php',
+			'title'           => __( 'AYS Link Tiles', 'alpha' ),
+			'description'     => __( 'AYS Link Tiles', 'alpha' ),
+			'render_template' => 'template-parts/blocks/ays-link-tiles.php',
 			'category'        => 'alpha',
 			'keywords'        => array( 'ays-link-tile', 'alpha' ),
 			'mode'            => 'auto',
@@ -362,6 +362,26 @@ function alpha_register_acf_block_types() {
 			'keywords'        => array( 'vimeo', 'custom-thumbnail', 'alpha' ),
 			'mode'            => 'auto',
 			'icon'            => 'video',
+			'supports'        => array(
+				'mode'            => false,
+				'align'           => false,
+				'anchor'          => true,
+				'customClassName' => true,
+				'jsx'             => true,
+			),
+		)
+	);
+
+	acf_register_block_type(
+		array(
+			'name'            => 'ays-stay-connected',
+			'title'           => __( 'AYS Stay Connected', 'alpha' ),
+			'description'     => __( 'AYS Stay Connected', 'alpha' ),
+			'render_template' => 'template-parts/blocks/ays-stay-connected.php',
+			'category'        => 'alpha',
+			'keywords'        => array( 'stay-connected', 'alpha' ),
+			'mode'            => 'auto',
+			'icon'            => 'columns',
 			'supports'        => array(
 				'mode'            => false,
 				'align'           => false,

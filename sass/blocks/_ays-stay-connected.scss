@@ -1,0 +1,46 @@
+.alpha-ays-stay-connected{
+	.container{
+		@include media($tablet__desktop){
+			display: grid;
+			grid-template-columns: repeat(12, minmax(0, 1fr));
+			align-items: center;
+		}
+
+	}
+
+	.ays-stay-connected-left{
+		@include media($tablet__desktop){
+			position: relative;
+			grid-row-start: 1;
+			grid-row-end: 1;
+			grid-column-start: 1;
+			grid-column-end: 7;
+		}
+	}
+
+	.ays-stay-connected-right{
+		margin-top: 20px;
+		@include media($tablet__desktop){
+			grid-row-start: 1;
+			grid-row-end: 1;
+			grid-column-start: 6;
+			grid-column-end: 13;
+		}
+	}
+}
+
+.ays-stay-connected-social{
+	margin: 20px 0;
+	display: flex;
+	gap: 20px;
+
+	@include media($tablet__desktop){
+		margin: 40px 0;
+	}
+}
+
+.ays-stay-connected-email{
+	display: flex;
+	gap: 10px;
+	color: #000;
+}

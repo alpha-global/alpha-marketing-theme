@@ -216,6 +216,11 @@ add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
 
 	}
 
+	if ( has_block( 'acf/ays-link-tile' ) || has_reusable_block( 'acf/ays-link-tile' ) ) {
+		wp_enqueue_script( 'alpha-ays-country-selector', get_template_directory_uri() . '/js/ays-country-selector.js', array(), array( 'jquery' ), $version, true );
+
+	}
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
