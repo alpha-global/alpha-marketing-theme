@@ -1,6 +1,6 @@
 .alpha-ays-tiles{
 	.container-full{
-		margin: 80px 0;
+		// margin: 80px 0;
 		@include media($desktop__only){
 			display: flex;
 			justify-content: space-between;
@@ -147,7 +147,7 @@
 			transition-property: transform;
 			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 			transition-duration: 150ms;
-				}
+		}
 
 		&.open{
 			svg{
@@ -185,4 +185,32 @@
 		top: 20px;
 		right: 40px;
 	}
+}
+
+// Parallax stuff
+.alpha-ays-tiles{
+	background-color: #fff;
+	
+	.ays-link-tile-0{
+		transform: translate3d(-200px, 200px, 0px);
+		transition-property: all;
+		transition-timing-function: ease-in-out(0.4, 0, 0.2, 1);
+		transition-duration: 600ms;
+	}
+	.ays-link-tile-1{
+		transform: translate3d(200px, 200px, 0px);
+		transition-property: all;
+		transition-timing-function: ease-in-out(0.4, 0, 0.2, 1);
+		transition-duration: 600ms;
+	}
+
+	&.move-in{
+		.ays-link-tile-0{
+			transform: translate3d(0, 0, 0px);
+		}
+		.ays-link-tile-1{
+			transform: translate3d(0, 0, 0px);
+		}
+	}
+	
 }

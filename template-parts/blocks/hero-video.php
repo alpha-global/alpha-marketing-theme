@@ -32,18 +32,21 @@ if ( get_field( 'video_file_ogg' ) ) {
 ?>
 
 <section id="<?php echo esc_attr( $block_id ); ?>" class="<?php echo esc_attr( $class_name ); ?>">
-	<video autoplay="true" loop muted>
-		<?php if(isset($video_file_mp4)){ ?>
-	  		<source src="<?php echo $video_file_mp4['url']; ?>" type="video/mp4">
-	  	<?php } ?>
-	  	<?php if(isset($video_file_mp4)){ ?>
-		  <source src="<?php echo $video_file_ogg['url']; ?>" type="video/ogg">
-		<?php } ?>
-		<?php if(isset($video_file_mp4)){ ?>
-	  		<source src="<?php echo $video_file_webm['url']; ?>" type="video/webm">
-	  	<?php } ?>
-	Your browser does not support the video tag.
-	</video>
+	
+	<div class="alpha-hero-video-container">
+		<video autoplay="true" loop muted>
+			<?php if(isset($video_file_mp4)){ ?>
+		  		<source src="<?php echo $video_file_mp4['url']; ?>" type="video/mp4">
+		  	<?php } ?>
+		  	<?php if(isset($video_file_mp4)){ ?>
+			  <source src="<?php echo $video_file_ogg['url']; ?>" type="video/ogg">
+			<?php } ?>
+			<?php if(isset($video_file_mp4)){ ?>
+		  		<source src="<?php echo $video_file_webm['url']; ?>" type="video/webm">
+		  	<?php } ?>
+		Your browser does not support the video tag.
+		</video>
+	</div>
 
 	<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<g clip-path="url(#clip0_111_103)">

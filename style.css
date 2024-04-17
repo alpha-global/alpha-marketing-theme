@@ -3733,15 +3733,21 @@ body.admin-bar .alpha-hero-blog {
 	}
 }
 
-.alpha-hero-video video {
-	position: absolute;
+.alpha-hero-video .alpha-hero-video-container {
+	height: 85vh;
+	overflow: hidden;
+	position: fixed;
+	z-index: -999;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	height: 85vh;
+}
+
+.alpha-hero-video video {
+	width: 100vw;
 	background-position: center;
 	background-size: cover;
-	z-index: 1;
 	object-fit: cover;
 }
 
@@ -3761,6 +3767,38 @@ body.admin-bar .alpha-hero-blog {
 	.alpha-hero-video svg {
 		margin-bottom: 20px;
 	}
+}
+
+.alpha-hero-video {
+	overflow: hidden;
+}
+
+.alpha-hero-video svg {
+	opacity: 0;
+	margin-bottom: 100px;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 700ms;
+}
+
+.alpha-hero-video video {
+	transform: scale(1.5);
+	transition-property: transform;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 700ms;
+}
+
+.alpha-hero-video.loaded svg {
+	opacity: 1;
+	margin-bottom: 40px;
+}
+
+.alpha-hero-video.loaded video {
+	transform: scale(1);
+}
+
+.page-template-template-ays .site-footer {
+	position: relative;
 }
 
 @media (min-width: 1024px) {
@@ -3805,6 +3843,14 @@ body.admin-bar .alpha-hero-blog {
 	position: relative;
 	padding: 20px;
 	padding-bottom: 0;
+}
+
+.alpha-ays-cards {
+	transform: translate3d(0px, 60px, 0px);
+}
+
+.alpha-ays-cards img {
+	transform: translate3d(0px, 80px, 0px);
 }
 
 .ays-episode-carousel-colour-one-ays-purple .swiper-slide:nth-child(odd) {
@@ -3923,10 +3969,6 @@ html .swiper-button-next:after {
 	}
 }
 
-.ays-episode-carousel-container {
-	margin: 80px 0;
-}
-
 .ays-episode-carousel-container .swiper-scrollbar {
 	bottom: -30px !important;
 	height: 15px !important;
@@ -3940,14 +3982,19 @@ html .swiper-button-next:after {
 	background-color: #4F38E1;
 }
 
-.ays-vimeo-custom-thumb:before {
-	content: "";
-	width: 100vw;
-	height: 35%;
-	background-color: #fff;
-	position: absolute;
-	top: 0;
-	left: 0;
+.ays-episode-carousel-swiper {
+	transform: translate3d(100%, 120px, 0px);
+	transition-property: transform;
+	transition-timing-function: ease-in-out(0.4, 0, 0.2, 1);
+	transition-duration: 600ms;
+}
+
+.ays-episode-carousel-swiper.move-in {
+	transform: translate3d(0px, 0px, 0px);
+}
+
+.ays-vimeo-custom-thumb {
+	margin-top: -29rem;
 }
 
 .ays-vimeo-custom-thumb .container {
@@ -3977,6 +4024,36 @@ html .swiper-button-next:after {
 	transform: translate(-50%, -50%);
 }
 
+.ays-vimeo-custom-thumb {
+	transform: translate3d(0px, 300px, 0px) scale(1.5);
+	opacity: 0;
+	transition-property: all;
+	transition-timing-function: ease-in-out(0.4, 0, 0.2, 1);
+	transition-duration: 600ms;
+}
+
+.ays-vimeo-custom-thumb.move-in {
+	transform: translate3d(0px, 0px, 0px) scale(1);
+	opacity: 1;
+}
+
+.ays-styles .overlap-group {
+	margin-top: 29rem;
+	position: relative;
+	z-index: 1;
+}
+
+.ays-styles .overlap-group:before {
+	content: "";
+	width: 100vw;
+	height: 29rem;
+	background-color: #fff;
+	position: absolute;
+	top: -29rem;
+	left: 0;
+	z-index: 0;
+}
+
 @media (min-width: 600px) {
 	.alpha-ays-stay-connected .container {
 		display: grid;
@@ -3992,6 +4069,7 @@ html .swiper-button-next:after {
 		grid-row-end: 1;
 		grid-column-start: 1;
 		grid-column-end: 7;
+		z-index: 2;
 	}
 }
 
@@ -4005,6 +4083,9 @@ html .swiper-button-next:after {
 		grid-row-end: 1;
 		grid-column-start: 6;
 		grid-column-end: 13;
+	}
+	.alpha-ays-stay-connected .ays-stay-connected-right img {
+		margin-top: 70px;
 	}
 }
 
@@ -4024,10 +4105,6 @@ html .swiper-button-next:after {
 	display: flex;
 	gap: 10px;
 	color: #000;
-}
-
-.alpha-ays-tiles .container-full {
-	margin: 80px 0;
 }
 
 @media (min-width: 1024px) {
@@ -4223,6 +4300,32 @@ html .swiper-button-next:after {
 	position: absolute;
 	top: 20px;
 	right: 40px;
+}
+
+.alpha-ays-tiles {
+	background-color: #fff;
+}
+
+.alpha-ays-tiles .ays-link-tile-0 {
+	transform: translate3d(-200px, 200px, 0px);
+	transition-property: all;
+	transition-timing-function: ease-in-out(0.4, 0, 0.2, 1);
+	transition-duration: 600ms;
+}
+
+.alpha-ays-tiles .ays-link-tile-1 {
+	transform: translate3d(200px, 200px, 0px);
+	transition-property: all;
+	transition-timing-function: ease-in-out(0.4, 0, 0.2, 1);
+	transition-duration: 600ms;
+}
+
+.alpha-ays-tiles.move-in .ays-link-tile-0 {
+	transform: translate3d(0, 0, 0px);
+}
+
+.alpha-ays-tiles.move-in .ays-link-tile-1 {
+	transform: translate3d(0, 0, 0px);
 }
 
 .wp-block-columns {

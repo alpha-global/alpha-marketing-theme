@@ -188,7 +188,10 @@ function alpha_scripts() {
 	// Work Sans for AYS
 	wp_enqueue_style( 'work-sans-google-fonts', 'https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900', false ); 
   
-add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
+	if(get_page_template_slug() == 'template-ays.php'){
+		wp_enqueue_script( 'waypoint', get_template_directory_uri() . '/js/vendor/waypoints/lib/jquery.waypoints.js', array( 'jquery' ), $version, true );
+		wp_enqueue_script( 'alpha-ays-parallax', get_template_directory_uri() . '/js/ays-parallax.js', array( 'jquery', 'waypoint' ), $version, true );
+	}
 
 	if ( has_block( 'acf/testimonials' ) || has_reusable_block( 'acf/testimonials' ) || has_block( 'acf/episodes' ) || has_reusable_block( 'acf/episodes' ) ) {
 		wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/vendor/slick/slick/slick.js', array( 'jquery' ), $version, true );
