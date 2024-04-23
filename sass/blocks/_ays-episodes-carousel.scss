@@ -13,11 +13,13 @@
 .ays-episode-carousel-colour-one-ays-green{
 	.swiper-slide:nth-child(odd){
 		background-color: $color__ays-green;
+		color: #000;
 	}
 }
 .ays-episode-carousel-colour-two-ays-green{
 	.swiper-slide:nth-child(even){
 		background-color: $color__ays-green;
+		color: #000;
 	}
 }
 .ays-episode-carousel-colour-one-ays-blue{
@@ -46,7 +48,7 @@
 	padding: 2rem 4em 2rem 2rem;
 
 	@include media($tablet__desktop){
-		padding: 6rem 6em 6rem 4rem;
+		padding: 5rem 6em 6rem 4rem;
 	}
 }
 .ays-episode-title{
@@ -60,8 +62,8 @@
 	margin: 0;
 
 	@include media($tablet__desktop){
-		font-size: 70px;
-		line-height: 70px;
+		font-size: 60px;
+		line-height: 60px;
 	}
 }
 .ays-episode-number{
@@ -75,8 +77,9 @@
 	margin: 0;
 
 	@include media($tablet__desktop){
-		font-size: 20px;
-		line-height: 20px;
+		font-size: 26px;
+		line-height: 26px;
+		margin-bottom: 0.7em;
 	}
 }
 .swiper.ays-episode-carousel-swiper{
@@ -169,15 +172,17 @@ html .swiper-button-next{
 }
 
 // Parallax stuff
-.ays-episode-carousel-swiper{
-		
-	transform: translate3d(100%, 120px, 0px);
-	transition-property: transform;
-	transition-timing-function: ease-in-out(0.4, 0, 0.2, 1);
-	transition-duration: 600ms;
+.ays-parallax{
+	.ays-episode-carousel-swiper{
+			
+		transform: translate3d(100%, 120px, 0px);
+		transition-property: transform;
+		transition-timing-function: ease-in-out(0.4, 0, 0.2, 1);
+		transition-duration: 1s;
 
-	&.move-in{
-		transform: translate3d(0px, 0px, 0px);
+		&.move-in{
+			transform: translate3d(0px, 0px, 0px);
+		}
+		
 	}
-	
 }

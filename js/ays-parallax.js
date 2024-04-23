@@ -8,6 +8,8 @@
 	// });
 
 	$( document ).ready(function() {
+		// Add a class to indicate we can use parallax styles, because JS and jQuery is safe to use
+		$('.ays-styles').addClass('ays-parallax');
 		$(this).scrollTop(0);
 	    $('.alpha-hero-video').addClass('loaded');
 	});
@@ -119,54 +121,83 @@
 		  	// $('.ays-vimeo-custom-thumb').css({'transform' : 'translate3d(0px, ' + video_position + 'px, 0px)'});
 		}
 
-		if(elementScrolled('.alpha-ays-cards')) {
+		// MOUSE PARALLAX - BUGGY
+		// if(elementScrolled('.alpha-ays-cards')) {
+		// 	if(scroll > position) {
+		// 		if(card_0_position > 0){
+		//         	card_0_position--;
+		// 		}
+		// 		if(card_1_position > 0){
+		//         	card_1_position--;
+		// 		}
+		// 		if(card_2_position > 0){
+		//         	card_2_position--;
+		// 		}
+		// 		if(card_0_img_position > 0){
+		//         	card_0_img_position--;
+		// 		}
+		// 		if(card_1_img_position > 0){
+		//         	card_1_img_position--;
+		// 		}
+		// 		if(card_2_img_position > 0){
+		//         	card_2_img_position--;
+		// 		}
+		//     } else {
+		//     	if(elementFromTop('.alpha-ays-cards') > -150){
+		// 	    	if(card_0_position < 60){
+		// 	        	card_0_position++;
+		// 	        }
+		// 	        if(card_1_position < 120){
+		// 	        	card_1_position++;
+		// 	        }
+		// 	        if(card_2_position < 180){
+		// 	        	card_2_position++;
+		// 	        }
+		// 	        if(card_0_img_position < 140){
+		// 	        	card_0_img_position++;
+		// 	        }
+		// 	        if(card_1_img_position < 80){
+		// 	        	card_1_img_position++;
+		// 	        }
+		// 	        if(card_2_img_position < 180){
+		// 	        	card_2_img_position++;
+		// 	        }
+		// 	    }
+		//     }
+		//   	$('.ays-card-0').css({'transform' : 'translate3d(0px, ' + card_0_position + 'px, 0px)'});
+		//   	$('.ays-card-1').css({'transform' : 'translate3d(0px, ' + card_1_position + 'px, 0px)'});
+		//   	$('.ays-card-2').css({'transform' : 'translate3d(0px, ' + card_2_position + 'px, 0px)'});
+		//   	$('.ays-card-0 img').css({'transform' : 'translate3d(0px, ' + card_0_img_position + 'px, 0px)'});
+		//   	$('.ays-card-1 img').css({'transform' : 'translate3d(0px, ' + card_2_img_position + 'px, 0px)'});
+		//   	$('.ays-card-2 img').css({'transform' : 'translate3d(0px, ' + card_1_img_position + 'px, 0px)'});
+		// }
+
+		if(elementScrolled('.ays-card-0')) {
 			if(scroll > position) {
-				if(card_0_position > 0){
-		        	card_0_position--;
-				}
-				if(card_1_position > 0){
-		        	card_1_position--;
-				}
-				if(card_2_position > 0){
-		        	card_2_position--;
-				}
-				if(card_0_img_position > 0){
-		        	card_0_img_position--;
-				}
-				if(card_1_img_position > 0){
-		        	card_1_img_position--;
-				}
-				if(card_2_img_position > 0){
-		        	card_2_img_position--;
-				}
+				$('.ays-card-0').addClass('move-in');
 		    } else {
 		    	if(elementFromTop('.alpha-ays-cards') > -150){
-			    	if(card_0_position < 60){
-			        	card_0_position++;
-			        }
-			        if(card_1_position < 12){
-			        	card_1_position++;
-			        }
-			        if(card_2_position < 180){
-			        	card_2_position++;
-			        }
-			        if(card_0_img_position < 140){
-			        	card_0_img_position++;
-			        }
-			        if(card_1_img_position < 80){
-			        	card_1_img_position++;
-			        }
-			        if(card_2_img_position < 180){
-			        	card_2_img_position++;
-			        }
+			    	$('.ays-card-0').removeClass('move-in');
 			    }
 		    }
-		  	$('.ays-card-0').css({'transform' : 'translate3d(0px, ' + card_0_position + 'px, 0px)'});
-		  	$('.ays-card-1').css({'transform' : 'translate3d(0px, ' + card_1_position + 'px, 0px)'});
-		  	$('.ays-card-2').css({'transform' : 'translate3d(0px, ' + card_2_position + 'px, 0px)'});
-		  	$('.ays-card-0 img').css({'transform' : 'translate3d(0px, ' + card_0_img_position + 'px, 0px)'});
-		  	$('.ays-card-1 img').css({'transform' : 'translate3d(0px, ' + card_2_img_position + 'px, 0px)'});
-		  	$('.ays-card-2 img').css({'transform' : 'translate3d(0px, ' + card_1_img_position + 'px, 0px)'});
+		}
+		if(elementScrolled('.ays-card-1')) {
+			if(scroll > position) {
+				$('.ays-card-1').addClass('move-in');
+		    } else {
+		    	if(elementFromTop('.alpha-ays-cards') > -150){
+			    	$('.ays-card-1').removeClass('move-in');
+			    }
+		    }
+		}
+		if(elementScrolled('.ays-card-2')) {
+			if(scroll > position) {
+				$('.ays-card-2').addClass('move-in');
+		    } else {
+		    	if(elementFromTop('.alpha-ays-cards') > -150){
+			    	$('.ays-card-2').removeClass('move-in');
+			    }
+		    }
 		}
 
 		if(elementScrolled('.ays-link-tile-0')) {
@@ -186,7 +217,7 @@
 		        // 		tiles_position_right_x = 0;
 		        // 	}
 				// }
-
+				console.log(elementFromTop('.ays-link-tile-0'));
 				$('.ays-link-tile-0').addClass('move-in');
 				
 		    } else {
@@ -222,16 +253,23 @@
 		  	// $('.ays-link-tile-1').css({'transform' : 'translate3d(' + tiles_position_right_x +'px, ' + tiles_position_y + 'px, 0px)'});
 		  	// $('.alpha-ays-cards img').css({'transform' : 'translate3d(0px, ' + cards_img_position + 'px, 0px)'});
 		}
+		if ($(window).width() > 1024) {
+   
+			if(elementScrolled('.ays-stay-connected-right')) {
+				if(scroll > position) {
+					if(stay_connected_right_position > -130){
+			        	stay_connected_right_position--;
+					}
+					// $('.ays-stay-connected-right').addClass('move-in');
+			    } else {
+			         stay_connected_right_position = stay_connected_right_position + 1;
+			    	// if(elementFromTop('.ays-stay-connected-right') > -200){
+				    // 	$('.ays-stay-connected-right').removeClass('move-in');
+					// }
+			    }
+			  	$('.ays-stay-connected-right').css({'transform' : 'translate3d(0px, ' + stay_connected_right_position + 'px, 0px)'});
+			}
 
-		if(elementScrolled('.ays-stay-connected-right')) {
-			if(scroll > position) {
-				if(stay_connected_right_position > -130){
-		        	stay_connected_right_position--;
-				}
-		    } else {
-		         stay_connected_right_position++;
-		    }
-		  	$('.ays-stay-connected-right').css({'transform' : 'translate3d(0px, ' + stay_connected_right_position + 'px, 0px)'});
 		}
 
 		if(elementScrolled('.ays-episode-carousel-swiper')) {

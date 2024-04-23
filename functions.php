@@ -328,6 +328,11 @@ function alpha_add_custom_gutenberg_color_palette() {
 				'slug'  => 'ays-green',
 				'color' => '#C2FF00',
 			),
+			array(
+				'name'  => esc_html__( 'AYS Grey', 'alpha' ),
+				'slug'  => 'ays-grey',
+				'color' => '#E0DBD7',
+			),
 		)
 	);
 }

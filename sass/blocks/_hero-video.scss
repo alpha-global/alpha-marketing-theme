@@ -9,7 +9,7 @@
 		height: 50vh;
 	}
 	.alpha-hero-video-container{
-		height: 100%;
+		height: 90vh;
 		overflow: hidden;
 		position: fixed;
 		z-index: -999;
@@ -25,6 +25,7 @@
 		// left: 0;
 		width: 100vw;
 		// height: 85vh;
+		height: 100%;
 		background-position: center;
 		background-size: cover;
 		object-fit: cover;
@@ -46,6 +47,7 @@
 }
 
 // Parallax Stuff
+
 .alpha-hero-video {
 	overflow: hidden;
 	svg{
@@ -53,14 +55,14 @@
 		margin-bottom: 100px;
 		transition-property: all;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-		transition-duration: 700ms;
+		transition-duration: 2s;
 	}
 
 	video{
 		transform: scale(1.5);
 		transition-property: transform;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-		transition-duration: 700ms;
+		transition-duration: 2s;
 	}
 
 	&.loaded{
@@ -74,8 +76,9 @@
 	}
 
 }
+
 .page-template-template-ays{
-	.site-footer{
-		position: relative;
+		.site-footer{
+			position: relative;
+		}
 	}
-}

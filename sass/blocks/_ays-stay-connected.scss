@@ -1,6 +1,6 @@
 .alpha-ays-stay-connected{
 	.container{
-		@include media($tablet__desktop){
+		@include media($desktop__only){
 			display: grid;
 			grid-template-columns: repeat(12, minmax(0, 1fr));
 			align-items: center;
@@ -9,7 +9,7 @@
 	}
 
 	.ays-stay-connected-left{
-		@include media($tablet__desktop){
+		@include media($desktop__only){
 			position: relative;
 			grid-row-start: 1;
 			grid-row-end: 1;
@@ -21,7 +21,7 @@
 
 	.ays-stay-connected-right{
 		margin-top: 20px;
-		@include media($tablet__desktop){
+		@include media($desktop__only){
 			grid-row-start: 1;
 			grid-row-end: 1;
 			grid-column-start: 6;
@@ -38,7 +38,7 @@
 	display: flex;
 	gap: 20px;
 
-	@include media($tablet__desktop){
+	@include media($desktop__only){
 		margin: 40px 0;
 	}
 }
@@ -48,3 +48,19 @@
 	gap: 10px;
 	color: #000;
 }
+
+// Parallax stuff
+// .ays-parallax{
+// 	.ays-stay-connected-right{
+			
+// 		transform: translate3d(0, 300px, 0px);
+// 		transition-property: transform;
+// 		transition-timing-function: ease-in-out(0.4, 0, 0.2, 1);
+// 		transition-duration: 700ms;
+
+// 		&.move-in{
+// 			transform: translate3d(0px, 0px, 0px);
+// 		}
+		
+// 	}
+// }

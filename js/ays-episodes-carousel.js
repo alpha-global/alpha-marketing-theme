@@ -48,7 +48,7 @@
 		  breakpoints: {
 		    640: {
 		      centeredSlides: false,
-		      slidesPerView: 2,
+		      slidesPerView: 1.7,
 		    },
 		  },
 

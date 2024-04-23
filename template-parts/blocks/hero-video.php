@@ -34,7 +34,7 @@ if ( get_field( 'video_file_ogg' ) ) {
 <section id="<?php echo esc_attr( $block_id ); ?>" class="<?php echo esc_attr( $class_name ); ?>">
 	
 	<div class="alpha-hero-video-container">
-		<video autoplay="true" loop muted>
+		<video autoplay="true" loop muted playsinline>
 			<?php if(isset($video_file_mp4)){ ?>
 		  		<source src="<?php echo $video_file_mp4['url']; ?>" type="video/mp4">
 		  	<?php } ?>
@@ -48,7 +48,7 @@ if ( get_field( 'video_file_ogg' ) ) {
 		</video>
 	</div>
 
-	<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- 	<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<g clip-path="url(#clip0_111_103)">
 		<path d="M24.9923 49.9999C23.9304 49.9999 23.0686 49.1381 23.0686 48.0763C23.0686 47.5684 23.2687 47.076 23.6303 46.7143L46.7144 23.6303C47.4761 22.8916 48.6919 22.907 49.4383 23.6688C50.1616 24.4151 50.1616 25.6078 49.4383 26.3542L26.3543 49.4382C25.9926 49.7999 25.5078 49.9999 24.9923 49.9999Z" fill="white"/>
 		<path d="M24.9923 49.9999C24.4845 49.9999 23.992 49.7998 23.6303 49.4382L0.546322 26.3465C-0.192366 25.5847 -0.176977 24.3689 0.584796 23.6226C1.33118 22.8993 2.52385 22.8993 3.27024 23.6226L26.3543 46.7066C27.1083 47.4607 27.1083 48.6764 26.3543 49.4305C25.9926 49.7921 25.5078 49.9922 24.9923 49.9922V49.9999Z" fill="white"/>
@@ -60,7 +60,7 @@ if ( get_field( 'video_file_ogg' ) ) {
 		<rect width="49.9769" height="50" fill="white"/>
 		</clipPath>
 		</defs>
-		</svg>
+	</svg> -->
 
 
 </section>

@@ -108,4 +108,11 @@ input.gform_button {
 		background-color: darken($color__ays-green, 5%);
 		color: #000;
 	}
+	.wp-block-button__link{
+		box-shadow: none;
+	    border: none;
+	    background: none;
+	    color: inherit;
+	    padding: 0;
+	}
 }

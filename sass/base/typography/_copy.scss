@@ -62,9 +62,10 @@ big {
 	p.has-large-font-size{
 		font-size: 20px !important;
 		margin-top: 0;
-		max-width: 900px;
+		max-width: 970px;
 		margin-left: auto;
 		margin-right: auto;
+		margin-bottom: 1em;
 
 		@include media($tablet__desktop){
 			font-size: 28px !important;
