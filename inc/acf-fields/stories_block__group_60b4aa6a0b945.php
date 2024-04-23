@@ -10,6 +10,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_60b4ad0fcbeec',
 			'label' => 'Per Page Display',
 			'name' => 'per_page_display',
+			'aria-label' => '',
 			'type' => 'number',
 			'instructions' => '',
 			'required' => 0,
@@ -31,6 +32,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_60b4aa71c596b',
 			'label' => 'Display Stories',
 			'name' => 'display_stories',
+			'aria-label' => '',
 			'type' => 'select',
 			'instructions' => '',
 			'required' => 0,
@@ -57,6 +59,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_60b4aaa3c596c',
 			'label' => 'Story Type',
 			'name' => 'story_type',
+			'aria-label' => '',
 			'type' => 'taxonomy',
 			'instructions' => '',
 			'required' => 0,
@@ -82,11 +85,14 @@ acf_add_local_field_group(array(
 			'load_terms' => 0,
 			'return_format' => 'id',
 			'multiple' => 0,
+			'bidirectional_target' => array(
+			),
 		),
 		array(
 			'key' => 'field_60b4aac7c596d',
 			'label' => 'Pick Stories',
 			'name' => 'pick_stories',
+			'aria-label' => '',
 			'type' => 'post_object',
 			'instructions' => '',
 			'required' => 0,
@@ -112,6 +118,8 @@ acf_add_local_field_group(array(
 			'multiple' => 1,
 			'return_format' => 'id',
 			'ui' => 1,
+			'bidirectional_target' => array(
+			),
 		),
 	),
 	'location' => array(
@@ -131,6 +139,7 @@ acf_add_local_field_group(array(
 	'hide_on_screen' => '',
 	'active' => true,
 	'description' => '',
+	'show_in_rest' => false,
 ));
 
 endif;

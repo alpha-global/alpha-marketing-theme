@@ -7,6 +7,7 @@
                 "key": "field_60a4e99d6c20c",
                 "label": "Tabs",
                 "name": "tabs",
+                "aria-label": "",
                 "type": "repeater",
                 "instructions": "",
                 "required": 0,
@@ -21,11 +22,13 @@
                 "max": 0,
                 "layout": "block",
                 "button_label": "Add Tab",
+                "rows_per_page": 20,
                 "sub_fields": [
                     {
                         "key": "field_60a4e9a96c20d",
                         "label": "Title",
                         "name": "title",
+                        "aria-label": "",
                         "type": "text",
                         "instructions": "",
                         "required": 0,
@@ -39,12 +42,14 @@
                         "placeholder": "",
                         "prepend": "",
                         "append": "",
-                        "maxlength": ""
+                        "maxlength": "",
+                        "parent_repeater": "field_60a4e99d6c20c"
                     },
                     {
                         "key": "field_60a7aaa324301",
                         "label": "Icon",
                         "name": "icon",
+                        "aria-label": "",
                         "type": "alpha_icon",
                         "instructions": "",
                         "required": 0,
@@ -54,12 +59,14 @@
                             "class": "",
                             "id": ""
                         },
-                        "font_size": 14
+                        "font_size": 14,
+                        "parent_repeater": "field_60a4e99d6c20c"
                     },
                     {
                         "key": "field_60a4e9ae6c20e",
                         "label": "Content",
                         "name": "content",
+                        "aria-label": "",
                         "type": "wysiwyg",
                         "instructions": "",
                         "required": 0,
@@ -73,7 +80,8 @@
                         "tabs": "all",
                         "toolbar": "basic",
                         "media_upload": 1,
-                        "delay": 0
+                        "delay": 0,
+                        "parent_repeater": "field_60a4e99d6c20c"
                     }
                 ]
             }
@@ -94,6 +102,7 @@
         "instruction_placement": "label",
         "hide_on_screen": "",
         "active": true,
-        "description": ""
+        "description": "",
+        "show_in_rest": false
     }
 ]

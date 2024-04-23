@@ -10,6 +10,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_60b87d40084d7',
 			'label' => 'Per Page Display',
 			'name' => 'per_page_display',
+			'aria-label' => '',
 			'type' => 'number',
 			'instructions' => '',
 			'required' => 0,
@@ -31,6 +32,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_60b87d5f084d8',
 			'label' => 'Pick Products',
 			'name' => 'pick_products',
+			'aria-label' => '',
 			'type' => 'post_object',
 			'instructions' => '',
 			'required' => 0,
@@ -48,6 +50,8 @@ acf_add_local_field_group(array(
 			'multiple' => 1,
 			'return_format' => 'id',
 			'ui' => 1,
+			'bidirectional_target' => array(
+			),
 		),
 	),
 	'location' => array(
@@ -67,6 +71,7 @@ acf_add_local_field_group(array(
 	'hide_on_screen' => '',
 	'active' => true,
 	'description' => '',
+	'show_in_rest' => false,
 ));
 
 endif;

@@ -10,6 +10,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_6094e0a9978d2',
 			'label' => 'Image',
 			'name' => 'image',
+			'aria-label' => '',
 			'type' => 'image',
 			'instructions' => '',
 			'required' => 0,
@@ -34,6 +35,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_6094e21600f3d',
 			'label' => 'Is Button',
 			'name' => 'is_button',
+			'aria-label' => '',
 			'type' => 'true_false',
 			'instructions' => '',
 			'required' => 0,
@@ -53,6 +55,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_6094fb452b5fa',
 			'label' => 'Is Column',
 			'name' => 'is_column',
+			'aria-label' => '',
 			'type' => 'true_false',
 			'instructions' => '',
 			'required' => 0,
@@ -86,6 +89,7 @@ acf_add_local_field_group(array(
 	'hide_on_screen' => '',
 	'active' => true,
 	'description' => '',
+	'show_in_rest' => false,
 ));
 
 endif;

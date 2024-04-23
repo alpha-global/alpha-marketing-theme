@@ -10,6 +10,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_60b614d2bf631',
 			'label' => 'Block Title',
 			'name' => 'title',
+			'aria-label' => '',
 			'type' => 'text',
 			'instructions' => '',
 			'required' => 0,
@@ -29,6 +30,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_60b613102fa9d',
 			'label' => 'Episodes',
 			'name' => 'episodes',
+			'aria-label' => '',
 			'type' => 'repeater',
 			'instructions' => '',
 			'required' => 0,
@@ -43,11 +45,13 @@ acf_add_local_field_group(array(
 			'max' => 0,
 			'layout' => 'block',
 			'button_label' => 'Add Episode',
+			'rows_per_page' => 20,
 			'sub_fields' => array(
 				array(
 					'key' => 'field_60b613192fa9e',
 					'label' => 'Title',
 					'name' => 'title',
+					'aria-label' => '',
 					'type' => 'text',
 					'instructions' => '',
 					'required' => 0,
@@ -62,11 +66,13 @@ acf_add_local_field_group(array(
 					'prepend' => '',
 					'append' => '',
 					'maxlength' => '',
+					'parent_repeater' => 'field_60b613102fa9d',
 				),
 				array(
 					'key' => 'field_60b613222fa9f',
 					'label' => 'Duration',
 					'name' => 'duration',
+					'aria-label' => '',
 					'type' => 'text',
 					'instructions' => '',
 					'required' => 0,
@@ -81,11 +87,13 @@ acf_add_local_field_group(array(
 					'prepend' => '',
 					'append' => '',
 					'maxlength' => '',
+					'parent_repeater' => 'field_60b613102fa9d',
 				),
 				array(
 					'key' => 'field_60b613282faa0',
 					'label' => 'Video Link',
 					'name' => 'video_link',
+					'aria-label' => '',
 					'type' => 'url',
 					'instructions' => '',
 					'required' => 0,
@@ -97,6 +105,7 @@ acf_add_local_field_group(array(
 					),
 					'default_value' => '',
 					'placeholder' => '',
+					'parent_repeater' => 'field_60b613102fa9d',
 				),
 			),
 		),
@@ -118,6 +127,7 @@ acf_add_local_field_group(array(
 	'hide_on_screen' => '',
 	'active' => true,
 	'description' => '',
+	'show_in_rest' => false,
 ));
 
 endif;

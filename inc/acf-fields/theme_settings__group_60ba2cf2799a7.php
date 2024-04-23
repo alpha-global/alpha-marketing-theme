@@ -10,6 +10,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_60c3233b17316',
 			'label' => 'Blog',
 			'name' => '',
+			'aria-label' => '',
 			'type' => 'tab',
 			'instructions' => '',
 			'required' => 0,
@@ -26,6 +27,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_60ba2cf79f221',
 			'label' => 'Default Blog Image',
 			'name' => 'default_blog_image',
+			'aria-label' => '',
 			'type' => 'image',
 			'instructions' => '',
 			'required' => 0,
@@ -64,6 +66,7 @@ acf_add_local_field_group(array(
 	'hide_on_screen' => '',
 	'active' => true,
 	'description' => '',
+	'show_in_rest' => false,
 ));
 
 endif;

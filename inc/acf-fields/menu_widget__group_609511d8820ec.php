@@ -10,6 +10,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_609511f6c1bda',
 			'label' => 'Style',
 			'name' => 'style',
+			'aria-label' => '',
 			'type' => 'select',
 			'instructions' => '',
 			'required' => 0,
@@ -49,6 +50,7 @@ acf_add_local_field_group(array(
 	'hide_on_screen' => '',
 	'active' => true,
 	'description' => '',
+	'show_in_rest' => false,
 ));
 
 endif;

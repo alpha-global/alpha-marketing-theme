@@ -10,6 +10,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_60a4e99d6c20c',
 			'label' => 'Tabs',
 			'name' => 'tabs',
+			'aria-label' => '',
 			'type' => 'repeater',
 			'instructions' => '',
 			'required' => 0,
@@ -24,11 +25,13 @@ acf_add_local_field_group(array(
 			'max' => 0,
 			'layout' => 'block',
 			'button_label' => 'Add Tab',
+			'rows_per_page' => 20,
 			'sub_fields' => array(
 				array(
 					'key' => 'field_60a4e9a96c20d',
 					'label' => 'Title',
 					'name' => 'title',
+					'aria-label' => '',
 					'type' => 'text',
 					'instructions' => '',
 					'required' => 0,
@@ -43,11 +46,13 @@ acf_add_local_field_group(array(
 					'prepend' => '',
 					'append' => '',
 					'maxlength' => '',
+					'parent_repeater' => 'field_60a4e99d6c20c',
 				),
 				array(
 					'key' => 'field_60a7aaa324301',
 					'label' => 'Icon',
 					'name' => 'icon',
+					'aria-label' => '',
 					'type' => 'alpha_icon',
 					'instructions' => '',
 					'required' => 0,
@@ -58,11 +63,13 @@ acf_add_local_field_group(array(
 						'id' => '',
 					),
 					'font_size' => 14,
+					'parent_repeater' => 'field_60a4e99d6c20c',
 				),
 				array(
 					'key' => 'field_60a4e9ae6c20e',
 					'label' => 'Content',
 					'name' => 'content',
+					'aria-label' => '',
 					'type' => 'wysiwyg',
 					'instructions' => '',
 					'required' => 0,
@@ -77,6 +84,7 @@ acf_add_local_field_group(array(
 					'toolbar' => 'basic',
 					'media_upload' => 1,
 					'delay' => 0,
+					'parent_repeater' => 'field_60a4e99d6c20c',
 				),
 			),
 		),
@@ -98,6 +106,7 @@ acf_add_local_field_group(array(
 	'hide_on_screen' => '',
 	'active' => true,
 	'description' => '',
+	'show_in_rest' => false,
 ));
 
 endif;

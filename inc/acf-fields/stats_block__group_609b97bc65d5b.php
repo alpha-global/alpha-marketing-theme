@@ -10,6 +10,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_609b97deca9c7',
 			'label' => 'Image',
 			'name' => 'image',
+			'aria-label' => '',
 			'type' => 'image',
 			'instructions' => '',
 			'required' => 0,
@@ -34,6 +35,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_609b97c7ca9c6',
 			'label' => 'Image Position',
 			'name' => 'image_position',
+			'aria-label' => '',
 			'type' => 'select',
 			'instructions' => '',
 			'required' => 0,
@@ -59,6 +61,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_609b97fcca9c8',
 			'label' => 'Time',
 			'name' => 'time',
+			'aria-label' => '',
 			'type' => 'text',
 			'instructions' => '',
 			'required' => 0,
@@ -78,6 +81,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_609b9874ca9c9',
 			'label' => 'Heading',
 			'name' => 'heading',
+			'aria-label' => '',
 			'type' => 'text',
 			'instructions' => '',
 			'required' => 0,
@@ -97,6 +101,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_609b987bca9ca',
 			'label' => 'Overlay Image',
 			'name' => 'overlay_image',
+			'aria-label' => '',
 			'type' => 'image',
 			'instructions' => '',
 			'required' => 0,
@@ -135,6 +140,7 @@ acf_add_local_field_group(array(
 	'hide_on_screen' => '',
 	'active' => true,
 	'description' => '',
+	'show_in_rest' => false,
 ));
 
 endif;

@@ -7,6 +7,7 @@
                 "key": "field_60991cd3c4177",
                 "label": "Full Page",
                 "name": "is_full_page",
+                "aria-label": "",
                 "type": "true_false",
                 "instructions": "",
                 "required": 0,
@@ -26,6 +27,7 @@
                 "key": "field_60b5fe74ffe13",
                 "label": "Hero Style",
                 "name": "hero_style",
+                "aria-label": "",
                 "type": "select",
                 "instructions": "",
                 "required": 0,
@@ -53,6 +55,7 @@
                 "key": "field_60d584e6eedce",
                 "label": "Text Align",
                 "name": "text_align",
+                "aria-label": "",
                 "type": "select",
                 "instructions": "",
                 "required": 0,
@@ -80,6 +83,7 @@
                 "key": "field_60991e9de2a68",
                 "label": "Background Image",
                 "name": "background_image",
+                "aria-label": "",
                 "type": "image",
                 "instructions": "",
                 "required": 0,
@@ -104,6 +108,7 @@
                 "key": "field_60d5885858916",
                 "label": "Mobile Background",
                 "name": "mobile_background",
+                "aria-label": "",
                 "type": "image",
                 "instructions": "",
                 "required": 0,
@@ -128,6 +133,7 @@
                 "key": "field_60991e496a7b0",
                 "label": "Title",
                 "name": "title",
+                "aria-label": "",
                 "type": "text",
                 "instructions": "",
                 "required": 0,
@@ -147,6 +153,7 @@
                 "key": "field_60991e4e6a7b1",
                 "label": "Description",
                 "name": "description",
+                "aria-label": "",
                 "type": "text",
                 "instructions": "",
                 "required": 0,
@@ -166,6 +173,7 @@
                 "key": "field_60991e536a7b2",
                 "label": "Buttons",
                 "name": "buttons",
+                "aria-label": "",
                 "type": "repeater",
                 "instructions": "",
                 "required": 0,
@@ -179,12 +187,14 @@
                 "min": 0,
                 "max": 0,
                 "layout": "table",
-                "button_label": "",
+                "button_label": "Add Row",
+                "rows_per_page": 20,
                 "sub_fields": [
                     {
                         "key": "field_60991e616a7b3",
                         "label": "Button",
                         "name": "button",
+                        "aria-label": "",
                         "type": "link",
                         "instructions": "",
                         "required": 0,
@@ -194,12 +204,14 @@
                             "class": "",
                             "id": ""
                         },
-                        "return_format": "array"
+                        "return_format": "array",
+                        "parent_repeater": "field_60991e536a7b2"
                     },
                     {
                         "key": "field_60991e6b6a7b4",
                         "label": "Style",
                         "name": "style",
+                        "aria-label": "",
                         "type": "select",
                         "instructions": "",
                         "required": 0,
@@ -219,12 +231,14 @@
                         "ui": 0,
                         "return_format": "value",
                         "ajax": 0,
-                        "placeholder": ""
+                        "placeholder": "",
+                        "parent_repeater": "field_60991e536a7b2"
                     },
                     {
                         "key": "field_60b0deb232a48",
                         "label": "Icon",
                         "name": "icon",
+                        "aria-label": "",
                         "type": "alpha_icon",
                         "instructions": "",
                         "required": 0,
@@ -234,7 +248,8 @@
                             "class": "",
                             "id": ""
                         },
-                        "font_size": 14
+                        "font_size": 14,
+                        "parent_repeater": "field_60991e536a7b2"
                     }
                 ]
             }
@@ -255,6 +270,7 @@
         "instruction_placement": "label",
         "hide_on_screen": "",
         "active": true,
-        "description": ""
+        "description": "",
+        "show_in_rest": false
     }
 ]

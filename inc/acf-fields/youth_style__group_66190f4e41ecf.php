@@ -3,16 +3,16 @@
 if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
-	'key' => 'group_60b0b5449b810',
-	'title' => 'Alpha Story',
+	'key' => 'group_66190f4e41ecf',
+	'title' => 'Youth style',
 	'fields' => array(
 		array(
-			'key' => 'field_60b0b54a7c615',
-			'label' => 'Video URL',
-			'name' => 'video_url',
+			'key' => 'field_66190f4e0e3e8',
+			'label' => 'Youth style',
+			'name' => 'youth_style',
 			'aria-label' => '',
-			'type' => 'url',
-			'instructions' => '',
+			'type' => 'button_group',
+			'instructions' => 'Turning this on will change some base styles on the page, such as fonts.',
 			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array(
@@ -20,8 +20,14 @@ acf_add_local_field_group(array(
 				'class' => '',
 				'id' => '',
 			),
+			'choices' => array(
+				'off' => 'Off',
+				'on' => 'On',
+			),
 			'default_value' => '',
-			'placeholder' => '',
+			'return_format' => 'value',
+			'allow_null' => 0,
+			'layout' => 'horizontal',
 		),
 	),
 	'location' => array(
@@ -29,7 +35,7 @@ acf_add_local_field_group(array(
 			array(
 				'param' => 'post_type',
 				'operator' => '==',
-				'value' => 'story',
+				'value' => 'page',
 			),
 		),
 	),
@@ -41,7 +47,7 @@ acf_add_local_field_group(array(
 	'hide_on_screen' => '',
 	'active' => true,
 	'description' => '',
-	'show_in_rest' => false,
+	'show_in_rest' => 0,
 ));
 
 endif;

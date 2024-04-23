@@ -10,6 +10,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_611d0f7b6169b',
 			'label' => 'Feature image fallback',
 			'name' => 'feature_image_fallback',
+			'aria-label' => '',
 			'type' => 'image',
 			'instructions' => 'Upload an image you would like to appear in the blog posts page. Do this if you want an image other than Featured loaded on that page.',
 			'required' => 0,
@@ -48,6 +49,7 @@ acf_add_local_field_group(array(
 	'hide_on_screen' => '',
 	'active' => true,
 	'description' => '',
+	'show_in_rest' => false,
 ));
 
 endif;

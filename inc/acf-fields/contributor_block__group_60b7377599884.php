@@ -10,6 +10,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_60b7377eba1fc',
 			'label' => 'Photo',
 			'name' => 'photo',
+			'aria-label' => '',
 			'type' => 'image',
 			'instructions' => '',
 			'required' => 0,
@@ -48,6 +49,7 @@ acf_add_local_field_group(array(
 	'hide_on_screen' => '',
 	'active' => true,
 	'description' => '',
+	'show_in_rest' => false,
 ));
 
 endif;

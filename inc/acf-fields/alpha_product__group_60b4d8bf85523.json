@@ -7,6 +7,7 @@
                 "key": "field_60be02e9f6799",
                 "label": "Link Back To",
                 "name": "link_back_to",
+                "aria-label": "",
                 "type": "post_object",
                 "instructions": "",
                 "required": 0,
@@ -23,12 +24,14 @@
                 "allow_null": 0,
                 "multiple": 0,
                 "return_format": "object",
-                "ui": 1
+                "ui": 1,
+                "bidirectional_target": []
             },
             {
                 "key": "field_60b4d95485496",
                 "label": "Teaser Video",
                 "name": "teaser_video",
+                "aria-label": "",
                 "type": "text",
                 "instructions": "",
                 "required": 0,
@@ -48,6 +51,7 @@
                 "key": "field_60b4d96585497",
                 "label": "Subtitle",
                 "name": "subtitle",
+                "aria-label": "",
                 "type": "text",
                 "instructions": "",
                 "required": 0,
@@ -67,6 +71,7 @@
                 "key": "field_60b4d9ab85499",
                 "label": "Product Meta",
                 "name": "product_meta",
+                "aria-label": "",
                 "type": "repeater",
                 "instructions": "",
                 "required": 0,
@@ -81,11 +86,13 @@
                 "max": 0,
                 "layout": "block",
                 "button_label": "Add Item",
+                "rows_per_page": 20,
                 "sub_fields": [
                     {
                         "key": "field_60b4d9d88549a",
                         "label": "Icon",
                         "name": "icon",
+                        "aria-label": "",
                         "type": "alpha_icon",
                         "instructions": "",
                         "required": 0,
@@ -95,12 +102,14 @@
                             "class": "",
                             "id": ""
                         },
-                        "font_size": 14
+                        "font_size": 14,
+                        "parent_repeater": "field_60b4d9ab85499"
                     },
                     {
                         "key": "field_60b4d9e18549b",
                         "label": "Text",
                         "name": "text",
+                        "aria-label": "",
                         "type": "text",
                         "instructions": "",
                         "required": 0,
@@ -114,7 +123,8 @@
                         "placeholder": "",
                         "prepend": "",
                         "append": "",
-                        "maxlength": ""
+                        "maxlength": "",
+                        "parent_repeater": "field_60b4d9ab85499"
                     }
                 ]
             }
@@ -135,6 +145,7 @@
         "instruction_placement": "label",
         "hide_on_screen": "",
         "active": true,
-        "description": ""
+        "description": "",
+        "show_in_rest": false
     }
 ]

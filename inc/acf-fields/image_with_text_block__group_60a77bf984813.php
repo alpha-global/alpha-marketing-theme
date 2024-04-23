@@ -10,6 +10,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_60a77c0bdac6b',
 			'label' => 'Image',
 			'name' => 'image',
+			'aria-label' => '',
 			'type' => 'image',
 			'instructions' => '',
 			'required' => 0,
@@ -34,6 +35,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_60a77c18dac6c',
 			'label' => 'Image Position',
 			'name' => 'image_position',
+			'aria-label' => '',
 			'type' => 'select',
 			'instructions' => '',
 			'required' => 0,
@@ -59,6 +61,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_60a77c33dac6d',
 			'label' => 'Mobile Arrangement',
 			'name' => 'mobile_arrangement',
+			'aria-label' => '',
 			'type' => 'select',
 			'instructions' => '',
 			'required' => 0,
@@ -98,6 +101,7 @@ acf_add_local_field_group(array(
 	'hide_on_screen' => '',
 	'active' => true,
 	'description' => '',
+	'show_in_rest' => false,
 ));
 
 endif;

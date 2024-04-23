@@ -10,6 +10,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_60be02e9f6799',
 			'label' => 'Link Back To',
 			'name' => 'link_back_to',
+			'aria-label' => '',
 			'type' => 'post_object',
 			'instructions' => '',
 			'required' => 0,
@@ -27,11 +28,14 @@ acf_add_local_field_group(array(
 			'multiple' => 0,
 			'return_format' => 'object',
 			'ui' => 1,
+			'bidirectional_target' => array(
+			),
 		),
 		array(
 			'key' => 'field_60b4d95485496',
 			'label' => 'Teaser Video',
 			'name' => 'teaser_video',
+			'aria-label' => '',
 			'type' => 'text',
 			'instructions' => '',
 			'required' => 0,
@@ -51,6 +55,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_60b4d96585497',
 			'label' => 'Subtitle',
 			'name' => 'subtitle',
+			'aria-label' => '',
 			'type' => 'text',
 			'instructions' => '',
 			'required' => 0,
@@ -70,6 +75,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_60b4d9ab85499',
 			'label' => 'Product Meta',
 			'name' => 'product_meta',
+			'aria-label' => '',
 			'type' => 'repeater',
 			'instructions' => '',
 			'required' => 0,
@@ -84,11 +90,13 @@ acf_add_local_field_group(array(
 			'max' => 0,
 			'layout' => 'block',
 			'button_label' => 'Add Item',
+			'rows_per_page' => 20,
 			'sub_fields' => array(
 				array(
 					'key' => 'field_60b4d9d88549a',
 					'label' => 'Icon',
 					'name' => 'icon',
+					'aria-label' => '',
 					'type' => 'alpha_icon',
 					'instructions' => '',
 					'required' => 0,
@@ -99,11 +107,13 @@ acf_add_local_field_group(array(
 						'id' => '',
 					),
 					'font_size' => 14,
+					'parent_repeater' => 'field_60b4d9ab85499',
 				),
 				array(
 					'key' => 'field_60b4d9e18549b',
 					'label' => 'Text',
 					'name' => 'text',
+					'aria-label' => '',
 					'type' => 'text',
 					'instructions' => '',
 					'required' => 0,
@@ -118,6 +128,7 @@ acf_add_local_field_group(array(
 					'prepend' => '',
 					'append' => '',
 					'maxlength' => '',
+					'parent_repeater' => 'field_60b4d9ab85499',
 				),
 			),
 		),
@@ -139,6 +150,7 @@ acf_add_local_field_group(array(
 	'hide_on_screen' => '',
 	'active' => true,
 	'description' => '',
+	'show_in_rest' => false,
 ));
 
 endif;
