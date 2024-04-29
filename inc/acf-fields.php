@@ -11,8 +11,10 @@ if ( function_exists( 'acf_add_local_field_group' ) ) :
 	require_once __DIR__ . '/acf-fields/alpha_cta_widget__group_60951528b410f.php';
 	require_once __DIR__ . '/acf-fields/alpha_product__group_60b4d8bf85523.php';
 	require_once __DIR__ . '/acf-fields/alpha_story__group_60b0b5449b810.php';
+	require_once __DIR__ . '/acf-fields/ays_call_to_action__group_662a28cd086c1.php';
 	require_once __DIR__ . '/acf-fields/ays_cards__group_66193122278de.php';
 	require_once __DIR__ . '/acf-fields/ays_episode_carousel__group_661e2c6357272.php';
+	require_once __DIR__ . '/acf-fields/ays_hosts__group_662a2ecd7c9ca.php';
 	require_once __DIR__ . '/acf-fields/ays_link_tiles__group_66193e7b06799.php';
 	require_once __DIR__ . '/acf-fields/ays_stay_connected__group_661e6a674791c.php';
 	require_once __DIR__ . '/acf-fields/ays_vimeo_embed_with_custom_thumbnail__group_661e4f7993d7b.php';
@@ -30,6 +32,5 @@ if ( function_exists( 'acf_add_local_field_group' ) ) :
 	require_once __DIR__ . '/acf-fields/testimonials_block__group_609e26089bc68.php';
 	require_once __DIR__ . '/acf-fields/theme_settings__group_60ba2cf2799a7.php';
 	require_once __DIR__ . '/acf-fields/video_hero_block__group_6619010f77bdf.php';
-	require_once __DIR__ . '/acf-fields/youth_style__group_66190f4e41ecf.php';
 
 endif;

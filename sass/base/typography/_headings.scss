@@ -84,6 +84,16 @@ h6 {
 			line-height: 140px;
 		}
 	}
+	h1.has-x-large-font-size{
+		font-size: 47px !important;
+		line-height: 47px;
+		margin-bottom: 40px;
+
+		@include media($tablet__desktop){
+			font-size: 88px !important;
+			line-height: 88px;
+		}
+	}
 	h2{
 		font-size: 50px;
 		line-height: 50px;
@@ -95,7 +105,12 @@ h6 {
 		margin: 0;
 		margin-bottom: 20px;
 
-		@include media($tablet__desktop){
+		@media (min-width: 600px) and (max-width: 820px) {
+			font-size: 85px;
+			line-height: 85px;
+		}
+
+		@include media($desktop__only){
 			font-size: 105px;
 			line-height: 105px;
 		}
@@ -108,5 +123,17 @@ h6 {
 		font-style: normal;
 		text-transform: uppercase;
 		margin: 0;
+	}
+	h4{
+		font-size: 27px;
+		line-height: 27px;
+		font-family: $font__ays;
+		font-optical-sizing: auto;
+		font-weight: 700;
+		font-style: normal;
+		text-transform: uppercase;
+		margin: 0;
+		margin-bottom: 10px;
+		color: #000;
 	}
 }

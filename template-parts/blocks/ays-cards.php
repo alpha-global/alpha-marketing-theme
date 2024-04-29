@@ -38,7 +38,7 @@ $i = 0;
 				      media="(min-width: 465px)"
 				      srcset="<?php echo $card['mobile_image']['url'] ?>">
 				   <img src="<?php echo $card['image']['url'] ?>" 
-				   alt="a cute kitten">
+				   alt="<?php echo $card['image']['alt'] ?>">
 				</picture>
 			</div>
 			<?php $i++; ?>

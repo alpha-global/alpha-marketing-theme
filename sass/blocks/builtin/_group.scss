@@ -16,7 +16,15 @@
 .ays-styles{
 	.wp-block-group{
 		position: relative;
-		padding-top: 40px;
-		padding-bottom: 40px;
+		padding-top: 70px;
+		padding-bottom: 70px;
+		&.no-padding-bottom{
+			padding-bottom: 0;
+		}
+
+		@include media($tablet__desktop){
+			padding-top: 100px;
+			padding-bottom: 100px;
+		}
 	}
 }

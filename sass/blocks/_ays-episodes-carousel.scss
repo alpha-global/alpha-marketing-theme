@@ -25,11 +25,25 @@
 .ays-episode-carousel-colour-one-ays-blue{
 	.swiper-slide:nth-child(odd){
 		background-color: $color__ays-blue;
+		color: #fff;
 	}
 }
 .ays-episode-carousel-colour-two-ays-blue{
 	.swiper-slide:nth-child(even){
 		background-color: $color__ays-blue;
+		color: #fff;
+	}
+}
+.ays-episode-carousel-colour-one-ays-light-blue{
+	.swiper-slide:nth-child(odd){
+		background-color: $color__ays-light-blue;
+		color: #fff;
+	}
+}
+.ays-episode-carousel-colour-two-ays-light-blue{
+	.swiper-slide:nth-child(even){
+		background-color: $color__ays-light-blue;
+		color: #fff;
 	}
 }
 .ays-episode-carousel-colour-one-ays-pink{
@@ -43,6 +57,11 @@
 	}
 }
 
+.ays-episode-carousel-container{
+	h2{
+		max-width: 770px;
+	}
+}
 
 .ays-episode-inner{
 	padding: 2rem 4em 2rem 2rem;
@@ -144,6 +163,10 @@ html .swiper-button-next{
 		border-radius: 0 !important;
 		background-color: $color__ays-purple;
 	}
+
+	.swiper-scrollbar-ays-light-blue .swiper-scrollbar-drag{
+		background-color: $color__ays-light-blue;
+	}
 	
 	// .slick-dots{
 	// 	display: flex;
@@ -184,5 +207,12 @@ html .swiper-button-next{
 			transform: translate3d(0px, 0px, 0px);
 		}
 		
+	}
+}
+
+// WP Preview
+.acf-block-preview{
+	.swiper-wrapper{
+		display: flex;
 	}
 }

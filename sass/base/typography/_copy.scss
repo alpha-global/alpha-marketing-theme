@@ -59,6 +59,21 @@ big {
 		color: #000;
 		margin-top: 0;
 	}
+
+	p.has-medium-font-size{
+		font-size: 18px !important;
+		line-height: 22px;
+		@include media($tablet__desktop){
+			font-size: 24px !important;
+			line-height: 28px;
+			max-width: 1110px;
+		}
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
 	p.has-large-font-size{
 		font-size: 20px !important;
 		margin-top: 0;
@@ -68,7 +83,18 @@ big {
 		margin-bottom: 1em;
 
 		@include media($tablet__desktop){
-			font-size: 28px !important;
+			font-size: 27px !important;
+		}
+	}
+
+	p.has-x-large-font-size{
+		font-size: 28px !important;
+		line-height: 28px !important;
+		margin-bottom: 35px;
+
+		@include media($tablet__desktop){
+			font-size: 37px !important;
+			line-height: 37px !important;
 		}
 	}
 }

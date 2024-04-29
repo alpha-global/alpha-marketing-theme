@@ -43,6 +43,7 @@ acf_add_local_field_group(array(
 			'choices' => array(
 				'ays-green' => 'Green',
 				'ays-blue' => 'Blue',
+				'ays-light-blue' => 'Light Blue',
 				'ays-purple' => 'Purple',
 				'ays-pink' => 'Pink',
 				'white' => 'White',
@@ -69,6 +70,7 @@ acf_add_local_field_group(array(
 			'choices' => array(
 				'ays-green' => 'Green',
 				'ays-blue' => 'Blue',
+				'ays-light-blue' => 'Light Blue',
 				'ays-purple' => 'Purple',
 				'ays-pink' => 'Pink',
 				'white' => 'White',

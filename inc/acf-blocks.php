@@ -392,6 +392,46 @@ function alpha_register_acf_block_types() {
 		)
 	);
 
+	acf_register_block_type(
+		array(
+			'name'            => 'ays-call-to-action',
+			'title'           => __( 'AYS Call To Action', 'alpha' ),
+			'description'     => __( 'AYS Call To Action', 'alpha' ),
+			'render_template' => 'template-parts/blocks/ays-call-to-action.php',
+			'category'        => 'alpha',
+			'keywords'        => array( 'call to action', 'alpha' ),
+			'mode'            => 'auto',
+			'icon'            => 'megaphone',
+			'supports'        => array(
+				'mode'            => false,
+				'align'           => false,
+				'anchor'          => true,
+				'customClassName' => true,
+				'jsx'             => true,
+			),
+		)
+	);
+
+	acf_register_block_type(
+		array(
+			'name'            => 'ays-hosts',
+			'title'           => __( 'AYS Hosts', 'alpha' ),
+			'description'     => __( 'AYS Hosts', 'alpha' ),
+			'render_template' => 'template-parts/blocks/ays-hosts.php',
+			'category'        => 'alpha',
+			'keywords'        => array( 'hosts', 'alpha' ),
+			'mode'            => 'auto',
+			'icon'            => 'megaphone',
+			'supports'        => array(
+				'mode'            => false,
+				'align'           => false,
+				'anchor'          => true,
+				'customClassName' => true,
+				'jsx'             => true,
+			),
+		)
+	);
+
 }
 
 // Check if function exists and hook into setup.

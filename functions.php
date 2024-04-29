@@ -212,6 +212,12 @@ function alpha_scripts() {
 		wp_enqueue_script( 'alpha-ays-episodes-carousel', get_template_directory_uri() . '/js/ays-episodes-carousel.js', array( 'jquery', 'swiper' ), $version, true );
 	}
 
+	if ( has_block( 'acf/ays-hosts' ) || has_reusable_block( 'acf/ays-episode-carousel' ) ) {
+		wp_enqueue_script( 'swiper', get_template_directory_uri() . '/js/vendor/swiper/swiper-bundle.min.js', array(), $version, true );
+		wp_enqueue_style( 'swiper', get_template_directory_uri() . '/js/vendor/swiper/swiper-bundle.min.css', array(), $version );
+		wp_enqueue_script( 'alpha-ays-hosts', get_template_directory_uri() . '/js/ays-hosts.js', array( 'jquery', 'swiper' ), $version, true );
+	}
+
 	if ( has_block( 'acf/ays-vimeo-custom-thumb' ) || has_reusable_block( 'acf/ays-vimeo-custom-thumb' ) ) {
 		wp_enqueue_script( 'vimeo', 'https://player.vimeo.com/api/player.js', array(), $version, true );
 		wp_enqueue_script( 'vimeo-player', get_template_directory_uri() . '/js/vimeo-player.js', array(), array( 'jquery' ), $version, true );
@@ -322,6 +328,11 @@ function alpha_add_custom_gutenberg_color_palette() {
 				'name'  => esc_html__( 'AYS Blue', 'alpha' ),
 				'slug'  => 'ays-blue',
 				'color' => '#4F38E1',
+			),
+			array(
+				'name'  => esc_html__( 'AYS Light Blue', 'alpha' ),
+				'slug'  => 'ays-light-blue',
+				'color' => '#0042FF',
 			),
 			array(
 				'name'  => esc_html__( 'AYS Green', 'alpha' ),

@@ -1,7 +1,27 @@
 .ays-vimeo-custom-thumb{
-	margin-top: -9rem;
-	@include media($desktop__only){
-		margin-top: -25rem;
+
+	&.ays-vimeo-custom-thumb-overlap-top{
+		margin-top: -9rem;
+		@include media($desktop__only){
+			margin-top: -25rem;
+		}
+		.container{
+			margin-bottom: 40px;
+		}
+	}
+
+	&.ays-vimeo-custom-thumb-overlap-bottom{
+		margin-top: 70px;
+		&:before{
+			content: "";
+			width: 200vw;
+			height: calc(50% + 180px);
+			background-color: #fff;
+			position: absolute;
+			bottom: -180px;
+			left: -50vw;
+		}
+
 	}
 	// &:before{
 	// 		content: "";
@@ -18,7 +38,7 @@
 		overflow: hidden;
 		width: 100%;
 		padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-		margin-bottom: 40px;
+		
 
 
 		iframe, 
@@ -66,7 +86,7 @@
 		}
 	}
 
-	.ays-styles .overlap-group{
+	&.ays-styles .overlap-group{
 		margin-top: 9rem;
 		position: relative;
 		z-index: 1;

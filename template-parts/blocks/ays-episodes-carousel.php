@@ -57,7 +57,7 @@ $count = 0;
 			  <div class="swiper-button-next"></div>
 
 			  <!-- If we need scrollbar -->
-			  <div class="swiper-scrollbar"></div>
+			  <div class="swiper-scrollbar swiper-scrollbar-<?php echo $colour_one; ?>"></div>
 		</div>
 	</div>
 </section>

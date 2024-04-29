@@ -24,7 +24,7 @@ if ( get_field( 'video_position' ) ) {
 }
 
 ?>
-<section id="<?php echo esc_attr( $block_id ); ?>" class="<?php echo esc_attr( $class_name ); ?>">
+<section id="<?php echo esc_attr( $block_id ); ?>" class="<?php echo esc_attr( $class_name ); ?> <?php if($video_position == 'overlap-top'){ echo 'ays-vimeo-custom-thumb-overlap-top'; } elseif($video_position == 'overlap-bottom'){ echo 'ays-vimeo-custom-thumb-overlap-bottom'; } ?>">
 	<div class="container">
 		
 		<a href="javascript:void(0)" class="ays-vimeo-custom-thumb-cover" data-vimeo-video-id="<?php echo $vimeo_id; ?>">

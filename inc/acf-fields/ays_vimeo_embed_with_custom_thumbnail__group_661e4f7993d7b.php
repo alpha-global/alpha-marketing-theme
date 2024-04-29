@@ -67,7 +67,8 @@ acf_add_local_field_group(array(
 			),
 			'choices' => array(
 				'regular' => 'Regular',
-				'overlap' => 'Overlap background',
+				'overlap-top' => 'Overlap background top',
+				'overlap-bottom' => 'Overlap background bottom',
 			),
 			'default_value' => '',
 			'return_format' => 'value',
