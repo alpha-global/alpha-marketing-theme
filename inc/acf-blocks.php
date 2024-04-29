@@ -301,7 +301,7 @@ function alpha_register_acf_block_types() {
 			'category'        => 'alpha',
 			'keywords'        => array( 'ays-cards', 'alpha' ),
 			'mode'            => 'auto',
-			'icon'            => 'format-video',
+			'icon'            => 'text-page',
 			'supports'        => array(
 				'mode'            => false,
 				'align'           => false,
@@ -321,7 +321,7 @@ function alpha_register_acf_block_types() {
 			'category'        => 'alpha',
 			'keywords'        => array( 'ays-link-tile', 'alpha' ),
 			'mode'            => 'auto',
-			'icon'            => 'format-video',
+			'icon'            => 'text-page',
 			'supports'        => array(
 				'mode'            => false,
 				'align'           => false,
@@ -361,7 +361,7 @@ function alpha_register_acf_block_types() {
 			'category'        => 'alpha',
 			'keywords'        => array( 'vimeo', 'custom-thumbnail', 'alpha' ),
 			'mode'            => 'auto',
-			'icon'            => 'video',
+			'icon'            => 'format-video',
 			'supports'        => array(
 				'mode'            => false,
 				'align'           => false,
@@ -381,7 +381,7 @@ function alpha_register_acf_block_types() {
 			'category'        => 'alpha',
 			'keywords'        => array( 'stay-connected', 'alpha' ),
 			'mode'            => 'auto',
-			'icon'            => 'columns',
+			'icon'            => 'share',
 			'supports'        => array(
 				'mode'            => false,
 				'align'           => false,
@@ -421,7 +421,7 @@ function alpha_register_acf_block_types() {
 			'category'        => 'alpha',
 			'keywords'        => array( 'hosts', 'alpha' ),
 			'mode'            => 'auto',
-			'icon'            => 'megaphone',
+			'icon'            => 'groups',
 			'supports'        => array(
 				'mode'            => false,
 				'align'           => false,
