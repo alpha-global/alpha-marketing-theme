@@ -6,7 +6,7 @@ Author URI: https://heartwp.com/
 Description: Basic theme for Alpha websites
 Primary Branch: main
 GitHub Theme URI: https://github.com/alpha-global/alpha-marketing-theme
-Version: 1.2.12
+Version: 1.2.13
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: alpha
@@ -746,7 +746,7 @@ big {
 .ays-styles p.has-large-font-size {
 	font-size: 20px !important;
 	margin-top: 0;
-	max-width: 970px;
+	max-width: 1050px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1em; }
@@ -3345,7 +3345,7 @@ html .swiper-button-next:after {
 .ays-country-selector .ays-country-selector-link svg {
 	fill: #4F38E1; }
 .ays-country-selector .ays-country-selector-region {
-	margin-bottom: 20px; }
+	margin-bottom: 60px; }
 .ays-country-selector.show {
 	top: 72px; }
 @media (min-width: 600px) {
