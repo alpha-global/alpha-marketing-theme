@@ -2817,7 +2817,7 @@ body.admin-bar .alpha-hero-blog {
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
-	height: 85vh; }
+	height: 80vh; }
 @media (max-width: 599px) {
 	.alpha-hero-video {
 		height: 50vh; } }

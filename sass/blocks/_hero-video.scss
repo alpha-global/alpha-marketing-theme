@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: center;
     align-items: flex-end;
-	height: 85vh;
+	height: 80vh;
 	// margin-bottom: 40px;
 
 	@include media( $mobile__only ) {

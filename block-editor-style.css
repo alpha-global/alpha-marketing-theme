@@ -1920,7 +1920,7 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
-	height: 85vh; }
+	height: 80vh; }
 @media (max-width: 599px) {
 	.block-editor-block-list__layout .wp-block .alpha-hero-video {
 		height: 50vh; } }
