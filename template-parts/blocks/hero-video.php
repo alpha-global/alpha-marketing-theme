@@ -27,6 +27,9 @@ if ( get_field( 'video_file_webm' ) ) {
 if ( get_field( 'video_file_ogg' ) ) {
 	$video_file_ogg = get_field( 'video_file_ogg' );
 }
+if ( get_field( 'fallback_image' ) ) {
+	$fallback_image = get_field( 'fallback_image' );
+}
 
 
 ?>
@@ -34,7 +37,7 @@ if ( get_field( 'video_file_ogg' ) ) {
 <section id="<?php echo esc_attr( $block_id ); ?>" class="<?php echo esc_attr( $class_name ); ?>">
 	
 	<div class="alpha-hero-video-container">
-		<video autoplay="true" loop muted playsinline>
+		<video <?php if(isset($fallback_image)){ echo 'poster="'. $fallback_image["url"] . '"'; }; ?> autoplay="true" loop muted playsinline>
 			<?php if(isset($video_file_mp4)){ ?>
 		  		<source src="<?php echo $video_file_mp4['url']; ?>" type="video/mp4">
 		  	<?php } ?>

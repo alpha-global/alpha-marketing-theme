@@ -2868,6 +2868,10 @@ body.admin-bar .alpha-hero-blog {
 .page-template-template-ays .site-footer {
 	position: relative; }
 
+.acf-block-preview .alpha-hero-video .alpha-hero-video-container {
+	z-index: 0;
+	position: relative; }
+
 @media (min-width: 1024px) {
 	.alpha-ays-cards .container {
 		display: flex;
@@ -3065,7 +3069,8 @@ html .swiper-button-next:after {
 	transform: translate3d(0px, 0px, 0px); }
 
 .acf-block-preview .swiper-wrapper {
-	display: flex; }
+	display: flex;
+	overflow: hidden; }
 
 .ays-vimeo-custom-thumb.ays-vimeo-custom-thumb-overlap-top {
 	margin-top: -9rem; }
@@ -3497,6 +3502,14 @@ html .swiper-button-next:after {
 	position: relative;
 	display: block !important;
 	background-color: transparent; }
+
+.acf-block-preview .ays-host {
+	display: none; }
+.acf-block-preview .ays-host:first-child {
+	display: block; }
+.acf-block-preview .ays-host .ays-host-contain {
+	opacity: 1;
+	transform: scale(1); }
 
 .wp-block-columns {
 	margin-bottom: 0; }

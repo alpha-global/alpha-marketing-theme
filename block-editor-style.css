@@ -1968,6 +1968,9 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 	transform: scale(1); }
 .block-editor-block-list__layout .wp-block .page-template-template-ays .site-footer {
 	position: relative; }
+.block-editor-block-list__layout .wp-block .acf-block-preview .alpha-hero-video .alpha-hero-video-container {
+	z-index: 0;
+	position: relative; }
 @media (min-width: 1024px) {
 	.block-editor-block-list__layout .wp-block .alpha-ays-cards .container {
 		display: flex;
@@ -2137,7 +2140,8 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 .block-editor-block-list__layout .wp-block .ays-parallax .ays-episode-carousel-swiper.move-in {
 	transform: translate3d(0px, 0px, 0px); }
 .block-editor-block-list__layout .wp-block .acf-block-preview .swiper-wrapper {
-	display: flex; }
+	display: flex;
+	overflow: hidden; }
 .block-editor-block-list__layout .wp-block .ays-vimeo-custom-thumb.ays-vimeo-custom-thumb-overlap-top {
 	margin-top: -9rem; }
 @media (min-width: 1024px) {
@@ -2537,6 +2541,13 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 	position: relative;
 	display: block !important;
 	background-color: transparent; }
+.block-editor-block-list__layout .wp-block .acf-block-preview .ays-host {
+	display: none; }
+.block-editor-block-list__layout .wp-block .acf-block-preview .ays-host:first-child {
+	display: block; }
+.block-editor-block-list__layout .wp-block .acf-block-preview .ays-host .ays-host-contain {
+	opacity: 1;
+	transform: scale(1); }
 .block-editor-block-list__layout .wp-block .wp-block-columns {
 	margin-bottom: 0; }
 .block-editor-block-list__layout .wp-block .wp-block-column {

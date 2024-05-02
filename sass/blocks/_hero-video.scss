@@ -78,7 +78,16 @@
 }
 
 .page-template-template-ays{
-		.site-footer{
-			position: relative;
-		}
+	.site-footer{
+		position: relative;
 	}
+}
+
+
+// WP Preview
+.acf-block-preview{
+	.alpha-hero-video .alpha-hero-video-container{
+		z-index: 0;
+		position: relative;
+	}
+}
