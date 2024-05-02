@@ -123,3 +123,16 @@
 		background-color: transparent;
 	}
 }
+
+.acf-block-preview{
+	.ays-host{
+		display: none;
+		&:first-child{
+			display: block;
+		}
+		.ays-host-contain{
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+}
