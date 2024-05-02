@@ -56,10 +56,12 @@
 			@include media( $mobile__only ) {
 				width: 80px !important;
 			}
-			position: absolute !important;
- 			top: 50% !important;
-			left: 50% !important;
-			transform: translate(-50%, -50%) !important;
+			position: absolute;
+ 			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 160px !important;
+			height: 160px !important;
 		}
 	}
 }
