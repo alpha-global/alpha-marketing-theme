@@ -54,12 +54,12 @@
 
 		svg{
 			@include media( $mobile__only ) {
-				width: 80px;
+				width: 80px !important;
 			}
-			position: absolute;
- 			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
+			position: absolute !important;
+ 			top: 50% !important;
+			left: 50% !important;
+			transform: translate(-50%, -50%) !important;
 		}
 	}
 }
