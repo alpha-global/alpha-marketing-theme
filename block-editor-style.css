@@ -700,7 +700,7 @@ body.admin-bar .block-editor-block-list__layout .wp-block .site-header.fixed {
 .block-editor-block-list__layout .wp-block .ays-button:hover {
 	background-color: #afe600;
 	color: #000; }
-.block-editor-block-list__layout .wp-block .ays-button:visited, .block-editor-block-list__layout .wp-block .ays-button:active {
+.block-editor-block-list__layout .wp-block .ays-button:visited, .block-editor-block-list__layout .wp-block .ays-button:active, .block-editor-block-list__layout .wp-block .ays-button:focus {
 	color: #000; }
 .block-editor-block-list__layout .wp-block .ays-button .wp-block-button__link {
 	box-shadow: none;

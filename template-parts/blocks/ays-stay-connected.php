@@ -28,23 +28,9 @@ if ( get_field( 'image' ) ) {
 
 			<h2><?php the_field( 'title' ); ?></h2>
 
-			<?php if ( get_field( 'newsletter_embed' ) ) { ?>
-				<!-- MailerLite Universal -->
-				<script>
-				(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
-				var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
-				f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
-				var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
-				_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
-
-				var ml_account = ml('accounts', '1785156', 'x0t8g9s6s7', 'load');
-				</script>
-				<!-- End MailerLite Universal -->
-			
-				<?php echo get_field('newsletter_embed'); ?>
-			
-			<?php } ?>
-
+			<?php if ( get_field( 'newsletter_embed' ) ) {
+				echo get_field('newsletter_embed');
+			} ?>
 
 			<div class="ays-stay-connected-social">
 				<?php if ( get_field( 'youtube' ) ) { ?>
