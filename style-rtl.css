@@ -1518,6 +1518,8 @@ input.gform_button [class*=" aicon-"]:before {
 .ays-button:hover {
 	background-color: #afe600;
 	color: #000; }
+.ays-button:visited {
+	color: #000; }
 .ays-button .wp-block-button__link {
 	box-shadow: none;
 	border: none;
