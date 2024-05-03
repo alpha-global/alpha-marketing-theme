@@ -6,7 +6,7 @@ Author URI: https://heartwp.com/
 Description: Basic theme for Alpha websites
 Primary Branch: main
 GitHub Theme URI: https://github.com/alpha-global/alpha-marketing-theme
-Version: 1.2.20
+Version: 1.2.21
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: alpha
@@ -1518,7 +1518,7 @@ input.gform_button [class*=" aicon-"]:before {
 .ays-button:hover {
 	background-color: #afe600;
 	color: #000; }
-.ays-button:visited {
+.ays-button:visited, .ays-button:active {
 	color: #000; }
 .ays-button .wp-block-button__link {
 	box-shadow: none;

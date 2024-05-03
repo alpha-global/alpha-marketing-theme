@@ -37,12 +37,20 @@ if ( get_field( 'image' ) ) {
 			<?php if($button_type == 'button'){ ?>
 				<a class="ays-button" href="<?php echo $button['url'] ?>"><?php echo $button['title'] ?></a>
 			<?php } else { ?>
-				<?php global $pagenow;
-				if ( $pagenow != 'post.php' ){ ?>
-					<?php echo get_field('newsletter_embed'); ?>
-				<?php } else { ?>
-					<p>Embed code disabled in page editor mode.</p>
-				<?php } ?>
+				<!-- MailerLite Universal -->
+				<script>
+				(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+				var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+				f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+				var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+				_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+				var ml_account = ml('accounts', '1785156', 'x0t8g9s6s7', 'load');
+				</script>
+				<!-- End MailerLite Universal -->
+			
+				<?php echo get_field('newsletter_embed'); ?>
+			
 			<?php } ?>
 
 		</div>
