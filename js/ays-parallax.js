@@ -34,16 +34,6 @@
 	$(window).on( "scroll", function() {
 		var scroll = $(window).scrollTop();
 
-		
-
-		// console.log($('.ays-vimeo-custom-thumb').offset().top);
-
-	    if(scroll > position) {
-	        // console.log('scrollDown');
-	    } else {
-	         // console.log('scrollUp');
-	    }
-
 	    function elementFromTop(elem){
 	    	var docViewTop = $(window).scrollTop();
 		    var docViewBottom = docViewTop + $(window).height();
@@ -217,7 +207,7 @@
 		}
 		if ( $( ".ays-link-tile-0" ).length ) {
 			if(elementScrolled('.ays-link-tile-0')) {
-				console.log(elementFromTop('.ays-link-tile-0'));
+				// console.log(elementFromTop('.ays-link-tile-0'));
 				if(scroll > position) {
 					// console.log(scroll - position);
 					// if(tiles_position_y > 0){
@@ -233,7 +223,7 @@
 			        // 		tiles_position_right_x = 0;
 			        // 	}
 					// }
-					console.log(elementFromTop('.ays-link-tile-0'));
+					// console.log(elementFromTop('.ays-link-tile-0'));
 					$('.ays-link-tile-0').addClass('move-in');
 					
 			    } else {
@@ -256,7 +246,7 @@
 
 		if ( $( ".ays-link-tile-1" ).length ) {
 			if(elementScrolled('.ays-link-tile-1')) {
-				console.log(elementFromTop('.ays-link-tile-1'));
+				// console.log(elementFromTop('.ays-link-tile-1'));
 				if(scroll > position) {
 					
 					$('.ays-link-tile-1').addClass('move-in');
@@ -272,7 +262,7 @@
 
 		if ( $( ".ays-call-to-action" ).length ) {
 			if(elementScrolled('.ays-call-to-action')) {
-				console.log(elementFromTop('.ays-call-to-action'));
+				// console.log(elementFromTop('.ays-call-to-action'));
 				if(scroll > position) {
 					
 					$('.ays-call-to-action').addClass('move-in');
@@ -307,12 +297,7 @@
 			}
 
 			if ( $( ".ays-styles .parallax-scroll" ).length ) {
-				console.log(elementFromTop('.ays-styles .parallax-scroll'));
-				console.log(elementfromBottom('.ays-styles .parallax-scroll'));
 				if(elementScrolled('.ays-styles .parallax-scroll')) {
-					console.log('in');
-					// console.log(elementfromBottom('.ays-styles .parallax-scroll'));
-					// console.log(hosts_image_position);
 					if(scroll > position) {
 						if(hosts_image_position > -600){
 				        	hosts_image_position--;
