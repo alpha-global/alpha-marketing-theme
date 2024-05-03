@@ -37,7 +37,12 @@ if ( get_field( 'image' ) ) {
 			<?php if($button_type == 'button'){ ?>
 				<a class="button" href="<?php echo $button['url'] ?>"><?php echo $button['title'] ?></a>
 			<?php } else { ?>
-				<?php echo get_field('newsletter_embed'); ?>
+				<?php global $pagenow;
+				if ( $pagenow != 'post.php' ){ ?>
+					<?php echo get_field('newsletter_embed'); ?>
+				<?php } else { ?>
+					<p>Embed code disabled in page editor mode.</p>
+				<?php } ?>
 			<?php } ?>
 
 		</div>
