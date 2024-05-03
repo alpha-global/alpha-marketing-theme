@@ -380,7 +380,7 @@ function alpha_register_acf_block_types() {
 			'render_template' => 'template-parts/blocks/ays-stay-connected.php',
 			'category'        => 'alpha',
 			'keywords'        => array( 'stay-connected', 'alpha' ),
-			'mode'            => 'auto',
+			'mode'            => 'preview',
 			'icon'            => 'share',
 			'supports'        => array(
 				'mode'            => false,
@@ -400,7 +400,7 @@ function alpha_register_acf_block_types() {
 			'render_template' => 'template-parts/blocks/ays-call-to-action.php',
 			'category'        => 'alpha',
 			'keywords'        => array( 'call to action', 'alpha' ),
-			'mode'            => 'auto',
+			'mode'            => 'preview',
 			'icon'            => 'megaphone',
 			'supports'        => array(
 				'mode'            => false,
