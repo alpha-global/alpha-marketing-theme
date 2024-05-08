@@ -14,7 +14,12 @@ $class_name = 'alpha-ays-stay-connected';
 if ( get_field( 'image' ) ) {
 	$image = get_field( 'image' );
 }
-
+if ( get_field( 'button_type' ) ) {
+	$button_type = get_field( 'button_type' );
+}
+if ( get_field( 'button' ) ) {
+	$button = get_field( 'button' );
+}
 
 
 ?>
@@ -28,7 +33,9 @@ if ( get_field( 'image' ) ) {
 
 			<h2><?php the_field( 'title' ); ?></h2>
 
-			<?php if ( get_field( 'newsletter_embed' ) ) {
+			<?php if($button_type == 'button'){ ?>
+				<a class="ays-button" href="<?php echo $button['url'] ?>"><?php echo $button['title'] ?></a>
+			<?php } else {
 				echo get_field('newsletter_embed');
 			} ?>
 

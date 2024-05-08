@@ -35,7 +35,7 @@ if ( get_field( 'image' ) ) {
 			<h2><?php the_field( 'title' ); ?></h2>
 
 			<?php if($button_type == 'button'){ ?>
-				<a class="button" href="<?php echo $button['url'] ?>"><?php echo $button['title'] ?></a>
+				<a class="ays-button" href="<?php echo $button['url'] ?>"><?php echo $button['title'] ?></a>
 			<?php } else { ?>
 				<?php echo get_field('newsletter_embed'); ?>
 			<?php } ?>
