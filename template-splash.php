@@ -9,7 +9,7 @@
  * Template name: Splash Page
  */
 
-get_header();
+get_header('splash');
 ?>
 
 	<main id="primary" class="site-main">
