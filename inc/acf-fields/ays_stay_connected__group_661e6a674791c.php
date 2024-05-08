@@ -27,6 +27,29 @@ acf_add_local_field_group(array(
 			'append' => '',
 		),
 		array(
+			'key' => 'field_663b3a6a8813d',
+			'label' => 'Button type',
+			'name' => 'button_type',
+			'aria-label' => '',
+			'type' => 'button_group',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'choices' => array(
+				'button' => 'Button',
+				'embed' => 'Newsletter list embed',
+			),
+			'default_value' => '',
+			'return_format' => 'value',
+			'allow_null' => 0,
+			'layout' => 'horizontal',
+		),
+		array(
 			'key' => 'field_661e6bd6cc893',
 			'label' => 'Newsletter embed',
 			'name' => 'newsletter_embed',
@@ -34,7 +57,15 @@ acf_add_local_field_group(array(
 			'type' => 'textarea',
 			'instructions' => '',
 			'required' => 0,
-			'conditional_logic' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_663b3a6a8813d',
+						'operator' => '==',
+						'value' => 'embed',
+					),
+				),
+			),
 			'wrapper' => array(
 				'width' => '',
 				'class' => '',
@@ -45,6 +76,30 @@ acf_add_local_field_group(array(
 			'rows' => '',
 			'placeholder' => '',
 			'new_lines' => '',
+		),
+		array(
+			'key' => 'field_663b3a868813e',
+			'label' => 'Button',
+			'name' => 'button',
+			'aria-label' => '',
+			'type' => 'link',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_663b3a6a8813d',
+						'operator' => '==',
+						'value' => 'button',
+					),
+				),
+			),
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'return_format' => 'array',
 		),
 		array(
 			'key' => 'field_661e6c14cc894',

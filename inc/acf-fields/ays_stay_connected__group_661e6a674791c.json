@@ -24,6 +24,29 @@
                 "append": ""
             },
             {
+                "key": "field_663b3a6a8813d",
+                "label": "Button type",
+                "name": "button_type",
+                "aria-label": "",
+                "type": "button_group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "button": "Button",
+                    "embed": "Newsletter list embed"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "layout": "horizontal"
+            },
+            {
                 "key": "field_661e6bd6cc893",
                 "label": "Newsletter embed",
                 "name": "newsletter_embed",
@@ -31,7 +54,15 @@
                 "type": "textarea",
                 "instructions": "",
                 "required": 0,
-                "conditional_logic": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_663b3a6a8813d",
+                            "operator": "==",
+                            "value": "embed"
+                        }
+                    ]
+                ],
                 "wrapper": {
                     "width": "",
                     "class": "",
@@ -42,6 +73,30 @@
                 "rows": "",
                 "placeholder": "",
                 "new_lines": ""
+            },
+            {
+                "key": "field_663b3a868813e",
+                "label": "Button",
+                "name": "button",
+                "aria-label": "",
+                "type": "link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_663b3a6a8813d",
+                            "operator": "==",
+                            "value": "button"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array"
             },
             {
                 "key": "field_661e6c14cc894",
