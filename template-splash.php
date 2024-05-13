@@ -31,4 +31,4 @@ get_header('splash');
 	</main><!-- #main -->
 
 <?php
-get_footer();
+get_footer('splash');
