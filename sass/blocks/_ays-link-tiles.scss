@@ -118,7 +118,7 @@
 	transition-duration: 150ms;
 	overflow: scroll;
 
-	@include media($tablet__desktop){
+	@include media($desktop__only){
 		height: calc(100vh - 112px);
 	}
 
@@ -132,20 +132,25 @@
 		font-family: $font__ays;
 		font-optical-sizing: auto;
 		font-weight: 700;
-		text-align: center;
+		
 		margin-bottom: 40px;
 		font-style: normal;
 		color: #000;
 		text-transform: uppercase;
+		text-align: left;
+    	max-width: 290px;
 
-		@include media($tablet__desktop){
+		@include media($desktop__only){
 			font-size: 60px;
 			line-height: 60px;
+			max-width: 100%;
+			text-align: center;
 		}
 	}
 
 	h4{
 		font-size: 40px;
+		line-height: 40px;
 		font-family: $font__ays;
 		font-optical-sizing: auto;
 		font-weight: 700;
@@ -212,7 +217,10 @@
 
 	&.show{
 		top: 72px;
-		@include media($tablet__desktop){
+		// @include media($tablet__desktop){
+		// 	top: 112px;
+		// }
+		@include media($desktop__only){
 			top: 112px;
 		}
 	}
@@ -220,7 +228,10 @@
 	.ays-country-selector-close{
 		position: absolute;
 		top: 20px;
-		right: 40px;
+		right: 10px;
+		@include media($tablet__desktop){
+			right: 40px;
+		}
 	}
 }
 
