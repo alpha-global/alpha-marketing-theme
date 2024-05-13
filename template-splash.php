@@ -9,7 +9,7 @@
  * Template name: Splash Page
  */
 
-get_header();
+get_header('splash');
 ?>
 
 	<main id="primary" class="site-main">
@@ -31,4 +31,4 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_footer();
+get_footer('splash');
