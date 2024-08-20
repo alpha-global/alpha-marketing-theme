@@ -323,7 +323,7 @@ $sites = array(
 		),
 	),
 	106 => array(
-		'name'    => __( '대한민국 / Korea', 'alpha' ),
+		'name'    => __( '대한민국 / South Korea', 'alpha' ),
 		'domain'  => 'https://alphakorea.org',
 		'flag'    => 'kr',
 		'regions' => array(
