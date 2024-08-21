@@ -774,15 +774,6 @@ $sites = array(
 			1 => 'europe-middle-east',
 		),
 	),
-	193 => array(
-		'name'    => __( 'Syria', 'alpha' ),
-		'domain'  => 'https://alpha-mena.org',
-		'flag'    => 'sy',
-		'regions' => array(
-			0 => 'all',
-			1 => 'europe-middle-east',
-		),
-	),
 	180 => array(
 		'name'    => __( 'Türkiye', 'alpha' ),
 		'domain'  => 'https://turkey.alpha.org/',
