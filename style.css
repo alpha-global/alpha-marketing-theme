@@ -6,7 +6,7 @@ Author URI: https://heartwp.com/
 Description: Basic theme for Alpha websites
 Primary Branch: main
 GitHub Theme URI: https://github.com/alpha-global/alpha-marketing-theme
-Version: 1.2.31
+Version: 1.2.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: alpha
@@ -1957,6 +1957,7 @@ input.gform_button [class*=" aicon-"]:before {
 	background-color: #C2FF00;
 	color: #000;
 	display: inline-block;
+	border: solid 3px #D90099;
 }
 
 .ays-button:hover {
@@ -4829,6 +4830,335 @@ html .swiper-button-next:after {
 .acf-block-preview .ays-host .ays-host-contain {
 	opacity: 1;
 	transform: scale(1);
+}
+
+.ays-title-animation {
+	position: relative;
+	max-width: 1100px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+h1.ays-title-animation-h1 {
+	font-size: 6rem;
+	line-height: 5rem;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 80px;
+}
+
+@media (min-width: 600px) {
+	h1.ays-title-animation-h1 {
+		font-size: 10rem;
+		line-height: 9rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	h1.ays-title-animation-h1 {
+		font-size: 12rem;
+		line-height: 10rem;
+	}
+}
+
+.ays-title-animation-pretitle {
+	font-size: 6rem;
+	line-height: 5rem;
+	text-align: center;
+	color: #C2FF00;
+	text-transform: uppercase;
+	font-family: "swear-display", serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+@media (min-width: 600px) {
+	.ays-title-animation-pretitle {
+		font-size: 10rem;
+		line-height: 9rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.ays-title-animation-pretitle {
+		font-size: 12rem;
+		line-height: 10rem;
+	}
+}
+
+.animation-apple {
+	position: absolute;
+	right: -20px;
+	top: -40px;
+	width: 160px;
+}
+
+@media (min-width: 600px) {
+	.animation-apple {
+		top: -50px;
+		right: 0px;
+		width: 270px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.animation-apple {
+		right: 50px;
+		width: 300px;
+	}
+}
+
+@media (min-width: 1300px) {
+	.animation-apple {
+		right: 100px;
+	}
+}
+
+.animation-strawberry {
+	position: absolute;
+	right: -40px;
+	bottom: -60px;
+	width: 110px;
+}
+
+@media (min-width: 600px) {
+	.animation-strawberry {
+		width: 180px;
+		right: -40px;
+		bottom: -60px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.animation-strawberry {
+		width: 250px;
+		right: -60px;
+		bottom: -40px;
+	}
+}
+
+@media (min-width: 1300px) {
+	.animation-strawberry {
+		right: 10px;
+	}
+}
+
+.green-ribbon {
+	position: absolute;
+	right: 70px;
+	top: 250px;
+	width: 100px;
+	display: none;
+}
+
+@media (min-width: 1024px) {
+	.green-ribbon {
+		width: 180px;
+		display: block;
+		right: 0px;
+	}
+}
+
+@media (min-width: 1300px) {
+	.green-ribbon {
+		right: 70px;
+	}
+}
+
+.red-star {
+	position: absolute;
+	right: -10px;
+	top: 200px;
+	width: 40px;
+}
+
+@media (min-width: 600px) {
+	.red-star {
+		width: 62px;
+		right: -10px;
+		top: 370px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.red-star {
+		width: 62px;
+		right: 40px;
+		top: 370px;
+	}
+}
+
+@media (min-width: 1300px) {
+	.red-star {
+		right: 110px;
+	}
+}
+
+.animation-spaceship {
+	position: absolute;
+	left: -20px;
+	top: -80px;
+	width: 170px;
+}
+
+@media (min-width: 600px) {
+	.animation-spaceship {
+		width: 300px;
+		top: -100px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.animation-spaceship {
+		left: 30px;
+		top: -150px;
+		width: 370px;
+	}
+}
+
+@media (min-width: 1300px) {
+	.animation-spaceship {
+		top: -140px;
+		left: 100px;
+	}
+}
+
+.animation-shooting-heart {
+	position: absolute;
+	left: -20px;
+	bottom: -40px;
+	width: 120px;
+}
+
+@media (min-width: 600px) {
+	.animation-shooting-heart {
+		width: 180px;
+		left: -20px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.animation-shooting-heart {
+		width: 250px;
+		left: 20px;
+		bottom: -60px;
+	}
+}
+
+@media (min-width: 1300px) {
+	.animation-shooting-heart {
+		bottom: -40px;
+	}
+}
+
+.plane {
+	position: absolute;
+	left: 20px;
+	bottom: 100px;
+	width: 100px;
+	display: none;
+}
+
+@media (min-width: 1024px) {
+	.plane {
+		width: 220px;
+		display: block;
+		left: -40px;
+	}
+}
+
+@media (min-width: 1300px) {
+	.plane {
+		left: 20px;
+	}
+}
+
+.pink-ribbon {
+	position: absolute;
+	left: 20px;
+	bottom: 300px;
+	width: 100px;
+}
+
+@media (min-width: 600px) {
+	.pink-ribbon {
+		left: -20px;
+		bottom: 200px;
+		width: 148px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.pink-ribbon {
+		width: 148px;
+		bottom: 300px;
+	}
+}
+
+.hearts {
+	display: none;
+}
+
+@media (min-width: 1024px) {
+	.hearts {
+		position: absolute;
+		left: 40px;
+		top: 90px;
+		display: block;
+		width: 80px;
+	}
+}
+
+@media (min-width: 1300px) {
+	.hearts {
+		left: 70px;
+	}
+}
+
+.lightning {
+	position: absolute;
+	left: 150px;
+	bottom: 260px;
+	width: 100px;
+	display: none;
+}
+
+@media (min-width: 1024px) {
+	.lightning {
+		width: 79px;
+		display: block;
+		left: 80px;
+	}
+}
+
+@media (min-width: 1300px) {
+	.lightning {
+		left: 150px;
+	}
+}
+
+.stars {
+	display: none;
+}
+
+@media (min-width: 1024px) {
+	.stars {
+		display: block;
+		position: absolute;
+		left: 38%;
+		bottom: 260px;
+	}
+}
+
+.ays-parallax .ays-title-animation-title-block {
+	transform: translate3d(0px, 60px, 0px);
+	transition-property: transform;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 700ms;
+}
+
+.ays-parallax .ays-title-animation-title-block.move-in {
+	transform: translate3d(0px, 0px, 0px);
 }
 
 .wp-block-columns {

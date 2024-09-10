@@ -30,7 +30,9 @@ $count = 0;
 							<div class="ays-host-content">
 								<div>
 									<div class="ays-host-image-mobile">
-										<?php if(isset($host['image']['url'])) { ?>
+										<?php if(isset($host['video_embed'])){ ?>
+											<?php echo $host['video_embed']; ?>
+										<?php } elseif(isset($host['image']['url'])) { ?>
 											<img src="<?php echo $host['image']['url']; ?>"alt="<?php echo $host['image']['alt']; ?>" />
 										<?php } ?>
 									</div>
@@ -48,7 +50,9 @@ $count = 0;
 								</div>
 							</div>
 							<div class="ays-host-image ays-host-image-desktop">
-								<?php if(isset($host['image']['url'])) { ?>
+								<?php if(isset($host['video_embed'])){ ?>
+									<?php echo $host['video_embed']; ?>
+								<?php } elseif(isset($host['image']['url'])) { ?>
 									<img src="<?php echo $host['image']['url']; ?>"alt="<?php echo $host['image']['alt']; ?>" />
 								<?php } ?>
 							</div>

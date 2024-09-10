@@ -172,6 +172,17 @@
 		//   	$('.ays-card-2 img').css({'transform' : 'translate3d(0px, ' + card_1_img_position + 'px, 0px)'});
 		// }
 
+		if ( $( ".ays-title-animation-title-block" ).length ) {
+			if(elementScrolled('.ays-title-animation-title-block')) {
+				if(scroll > position) {
+					$('.ays-title-animation-title-block').addClass('move-in');
+			    } else {
+			    	if(elementFromTop('.ays-title-animation-title-block') > -150){
+				    	$('.ays-title-animation-title-block').removeClass('move-in');
+				    }
+			    }
+			}
+		}
 		if ( $( ".ays-card-0" ).length ) {
 			if(elementScrolled('.ays-card-0')) {
 				if(scroll > position) {

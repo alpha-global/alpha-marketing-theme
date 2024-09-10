@@ -103,6 +103,7 @@ input.gform_button {
 	background-color: $color__ays-green;
 	color: #000;
 	display: inline-block;
+	border: solid 3px $color__ays-pink;
 
 	&:hover{
 		background-color: darken($color__ays-green, 5%);

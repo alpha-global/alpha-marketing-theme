@@ -229,6 +229,11 @@ function alpha_scripts() {
 
 	}
 
+	if ( has_block( 'acf/ays-title-animation' ) || has_reusable_block( 'acf/ays-title-animation' ) ) {
+		wp_enqueue_style( 'swear-typekit', 'https://use.typekit.net/zxc6udl.css', false ); 
+
+	}
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
