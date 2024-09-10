@@ -30,6 +30,9 @@ if ( get_field( 'video_file_ogg' ) ) {
 if ( get_field( 'fallback_image' ) ) {
 	$fallback_image = get_field( 'fallback_image' );
 }
+if ( get_field( 'button' ) ) {
+	$button = get_field( 'button' );
+}
 
 
 ?>
@@ -65,5 +68,10 @@ if ( get_field( 'fallback_image' ) ) {
 		</defs>
 	</svg> -->
 
+	<?php if(isset($button)){ ?>
+		<div class="alpha-hero-video-button">
+			<a class="ays-button" href="<?php echo $button['url'];?>"><?php echo $button['title']; ?></a>
+		</div>
+	<?php } ?>
 
 </section>

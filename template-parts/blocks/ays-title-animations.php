@@ -1,7 +1,16 @@
+<?php
+if ( get_field( 'pre-title' ) ) {
+  $pre_title = get_field( 'pre-title' );
+}
+if ( get_field( 'title' ) ) {
+  $title = get_field( 'title' );
+}
+?>
+
 <div class="ays-title-animation">
 	<div class="ays-title-animation-title-block">
-		<div class="ays-title-animation-pretitle">New</div>
-		<h1 class="ays-title-animation-h1">Alpha Youth Series</h1>
+		<div class="ays-title-animation-pretitle"><?php echo $pre_title; ?></div>
+		<h1 class="ays-title-animation-h1"><?php echo $title; ?></h1>
 	</div>
 
 	<img class="animation-apple" src="/wp-content/uploads/2024/09/AYS-Animation-2.gif" />

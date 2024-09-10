@@ -23,13 +23,18 @@ if ( get_field( 'video_position' ) ) {
 	$video_position = get_field( 'video_position' );
 }
 
+if ( get_field( 'width' ) ) {
+	$width = get_field( 'width' );
+}
+
 ?>
-<section id="<?php echo esc_attr( $block_id ); ?>" class="<?php echo esc_attr( $class_name ); ?> <?php if($video_position == 'overlap-top'){ echo 'ays-vimeo-custom-thumb-overlap-top'; } elseif($video_position == 'overlap-bottom'){ echo 'ays-vimeo-custom-thumb-overlap-bottom'; } ?>">
-	<div class="container">
+<section id="<?php echo esc_attr( $block_id ); ?>" class="<?php if(isset($width)){ echo esc_attr( $class_name ) . "-" . $width; } ?> <?php echo esc_attr( $class_name ); ?> <?php if($video_position == 'overlap-top'){ echo 'ays-vimeo-custom-thumb-overlap-top'; } elseif($video_position == 'overlap-bottom'){ echo 'ays-vimeo-custom-thumb-overlap-bottom'; } ?>">
+	
+	<div class="container <?php if(isset($width) && $width == 'full'){ echo 'container-full'; } ?>">
 		
 		<a href="javascript:void(0)" class="ays-vimeo-custom-thumb-cover" data-vimeo-video-id="<?php echo $vimeo_id; ?>">
 
-			 <img  src="<?php echo $thumbnail['url']; ?>" />
+			 <img src="<?php echo $thumbnail['url']; ?>" />
 
 			 <svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g clip-path="url(#clip0_24_707)">

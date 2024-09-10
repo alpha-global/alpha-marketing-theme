@@ -451,6 +451,44 @@ function alpha_register_acf_block_types() {
 		)
 	);
 
+	acf_register_block_type(
+		array(
+			'name'            => 'ays-ticker-tape',
+			'title'           => __( 'AYS Ticker Tape', 'alpha' ),
+			'render_template' => 'template-parts/blocks/ays-ticker-tape.php',
+			'category'        => 'alpha',
+			'keywords'        => array( 'ticker', 'alpha' ),
+			'mode'            => 'auto',
+			'icon'            => 'groups',
+			'supports'        => array(
+				'mode'            => false,
+				'align'           => false,
+				'anchor'          => true,
+				'customClassName' => true,
+				'jsx'             => true,
+			),
+		)
+	);
+
+	acf_register_block_type(
+		array(
+			'name'            => 'ays-whats-new',
+			'title'           => __( 'AYS What\'s New', 'alpha' ),
+			'render_template' => 'template-parts/blocks/ays-whats-new.php',
+			'category'        => 'alpha',
+			'keywords'        => array( 'new', 'alpha' ),
+			'mode'            => 'auto',
+			'icon'            => 'groups',
+			'supports'        => array(
+				'mode'            => false,
+				'align'           => false,
+				'anchor'          => true,
+				'customClassName' => true,
+				'jsx'             => true,
+			),
+		)
+	);
+
 }
 
 // Check if function exists and hook into setup.

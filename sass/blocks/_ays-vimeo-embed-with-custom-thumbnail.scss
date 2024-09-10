@@ -64,6 +64,24 @@
 			height: 160px !important;
 		}
 	}
+
+	.container-full{
+		width: 100%;
+		max-width: 100vw;
+	}
+}
+
+.ays-vimeo-custom-thumb-cover{
+	img{
+		width: 100%;
+		max-width: 100vw;
+	}
+}
+
+.ays-vimeo-custom-thumb-full{
+	background-color: #fff;
+	margin-left: calc((100vw - 100%) / -2);
+    margin-right: calc((100vw - 100%) / -2);
 }
 
 .acf-block-preview {
