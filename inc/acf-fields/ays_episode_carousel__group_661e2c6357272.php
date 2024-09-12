@@ -104,6 +104,29 @@ acf_add_local_field_group(array(
 			'layout' => 'horizontal',
 		),
 		array(
+			'key' => 'field_66e068b73be7d',
+			'label' => 'Format',
+			'name' => 'format',
+			'aria-label' => '',
+			'type' => 'button_group',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'choices' => array(
+				'title' => 'Title',
+				'video' => 'Video',
+			),
+			'default_value' => '',
+			'return_format' => 'value',
+			'allow_null' => 0,
+			'layout' => 'horizontal',
+		),
+		array(
 			'key' => 'field_661e2d2669c36',
 			'label' => 'Episodes',
 			'name' => 'episodes',
@@ -117,7 +140,7 @@ acf_add_local_field_group(array(
 				'class' => '',
 				'id' => '',
 			),
-			'layout' => 'table',
+			'layout' => 'block',
 			'pagination' => 0,
 			'min' => 0,
 			'max' => 0,
@@ -133,7 +156,15 @@ acf_add_local_field_group(array(
 					'type' => 'text',
 					'instructions' => '',
 					'required' => 0,
-					'conditional_logic' => 0,
+					'conditional_logic' => array(
+						array(
+							array(
+								'field' => 'field_66e068b73be7d',
+								'operator' => '==',
+								'value' => 'title',
+							),
+						),
+					),
 					'wrapper' => array(
 						'width' => '',
 						'class' => '',
@@ -154,7 +185,15 @@ acf_add_local_field_group(array(
 					'type' => 'text',
 					'instructions' => '',
 					'required' => 0,
-					'conditional_logic' => 0,
+					'conditional_logic' => array(
+						array(
+							array(
+								'field' => 'field_66e068b73be7d',
+								'operator' => '==',
+								'value' => 'title',
+							),
+						),
+					),
 					'wrapper' => array(
 						'width' => '',
 						'class' => '',
@@ -165,6 +204,35 @@ acf_add_local_field_group(array(
 					'placeholder' => '',
 					'prepend' => '',
 					'append' => '',
+					'parent_repeater' => 'field_661e2d2669c36',
+				),
+				array(
+					'key' => 'field_66e068ef3be7e',
+					'label' => 'Video',
+					'name' => 'video',
+					'aria-label' => '',
+					'type' => 'textarea',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => array(
+						array(
+							array(
+								'field' => 'field_66e068b73be7d',
+								'operator' => '==',
+								'value' => 'video',
+							),
+						),
+					),
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'default_value' => '',
+					'maxlength' => '',
+					'rows' => '',
+					'placeholder' => '',
+					'new_lines' => '',
 					'parent_repeater' => 'field_661e2d2669c36',
 				),
 			),

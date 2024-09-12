@@ -75,6 +75,29 @@ acf_add_local_field_group(array(
 			'allow_null' => 0,
 			'layout' => 'horizontal',
 		),
+		array(
+			'key' => 'field_66e0420486fc4',
+			'label' => 'Width',
+			'name' => 'width',
+			'aria-label' => '',
+			'type' => 'button_group',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'choices' => array(
+				'regular' => 'Regular',
+				'full' => 'Full-width',
+			),
+			'default_value' => '',
+			'return_format' => 'value',
+			'allow_null' => 0,
+			'layout' => 'horizontal',
+		),
 	),
 	'location' => array(
 		array(

@@ -32,6 +32,33 @@ acf_add_local_field_group(array(
 			),
 		),
 		array(
+			'key' => 'field_66e0563fc9788',
+			'label' => 'Redirect to',
+			'name' => 'redirect_to',
+			'aria-label' => '',
+			'type' => 'post_object',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'post_type' => array(
+				0 => 'page',
+			),
+			'post_status' => '',
+			'taxonomy' => '',
+			'return_format' => 'object',
+			'multiple' => 0,
+			'allow_null' => 0,
+			'bidirectional' => 0,
+			'ui' => 1,
+			'bidirectional_target' => array(
+			),
+		),
+		array(
 			'key' => 'field_60b4d95485496',
 			'label' => 'Teaser Video',
 			'name' => 'teaser_video',
@@ -150,7 +177,7 @@ acf_add_local_field_group(array(
 	'hide_on_screen' => '',
 	'active' => true,
 	'description' => '',
-	'show_in_rest' => false,
+	'show_in_rest' => 0,
 ));
 
 endif;

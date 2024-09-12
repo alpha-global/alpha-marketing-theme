@@ -39,34 +39,67 @@
 	// } );
 
 	$( document ).ready(function() {
-		const swiper = new Swiper('.swiper', {
-		  grabCursor: true,
-		  spaceBetween: 20,
-		  slidesPerView: 1.1,
-		  loop: false,
-		  centeredSlides: false,
-		  breakpoints: {
-		    640: {
-		      centeredSlides: false,
-		      slidesPerView: 1.2,
-		    },
-		    821: {
-		      centeredSlides: false,
-		      slidesPerView: 1.7,
-		    },
-		  },
+		if ( $( ".swiper-small" ).length ) {
+			const swiper = new Swiper('.swiper-small', {
+			  grabCursor: true,
+			  spaceBetween: 20,
+			  slidesPerView: 1.1,
+			  loop: false,
+			  centeredSlides: false,
+			  breakpoints: {
+			    640: {
+			      centeredSlides: false,
+			      slidesPerView: 1.2,
+			    },
+			    821: {
+			      centeredSlides: false,
+			      slidesPerView: 1.7,
+			    },
+			  },
 
-		  // Navigation arrows
-		  navigation: {
-		    nextEl: '.swiper-button-next',
-		    prevEl: '.swiper-button-prev',
-		  },
+			  // Navigation arrows
+			  navigation: {
+			    nextEl: '.swiper-button-next',
+			    prevEl: '.swiper-button-prev',
+			  },
 
-		  // And if we need scrollbar
-		  scrollbar: {
-		    el: '.swiper-scrollbar',
-		  },
-		});
+			  // And if we need scrollbar
+			  scrollbar: {
+			    el: '.swiper-scrollbar',
+			  },
+			});
+		}
+
+		if ( $( ".swiper-large" ).length ) {
+			const swiper = new Swiper('.swiper-large', {
+			  grabCursor: true,
+			  spaceBetween: 20,
+			  slidesPerView: 1.1,
+			  loop: false,
+			  centeredSlides: false,
+			  breakpoints: {
+			    640: {
+			      centeredSlides: false,
+			      slidesPerView: 1.2,
+			    },
+			    821: {
+			      centeredSlides: false,
+			      slidesPerView: 1,
+			    },
+			  },
+
+			  // Navigation arrows
+			  navigation: {
+			    nextEl: '.swiper-button-next',
+			    prevEl: '.swiper-button-prev',
+			  },
+
+			  // And if we need scrollbar
+			  scrollbar: {
+			    el: '.swiper-scrollbar',
+			  },
+			});
+		}
 	});
 
 	// equalheight = function(container){

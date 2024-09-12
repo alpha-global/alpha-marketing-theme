@@ -71,6 +71,29 @@
                 "return_format": "value",
                 "allow_null": 0,
                 "layout": "horizontal"
+            },
+            {
+                "key": "field_66e0420486fc4",
+                "label": "Width",
+                "name": "width",
+                "aria-label": "",
+                "type": "button_group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "regular": "Regular",
+                    "full": "Full-width"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "layout": "horizontal"
             }
         ],
         "location": [

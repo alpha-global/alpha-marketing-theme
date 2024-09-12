@@ -1,14 +1,14 @@
 [
     {
-        "key": "group_662a2ecd7c9ca",
-        "title": "AYS Hosts",
+        "key": "group_66e00d86d1fab",
+        "title": "AYS What's New",
         "fields": [
             {
-                "key": "field_662a2ecdf580f",
-                "label": "Title",
-                "name": "title",
+                "key": "field_66e010b7a7940",
+                "label": "Features colour",
+                "name": "features_colour",
                 "aria-label": "",
-                "type": "text",
+                "type": "button_group",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -17,16 +17,20 @@
                     "class": "",
                     "id": ""
                 },
+                "choices": {
+                    "ays-green": "Green",
+                    "ays-blue": "Blue",
+                    "ays-purple": "Purple"
+                },
                 "default_value": "",
-                "maxlength": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": ""
+                "return_format": "value",
+                "allow_null": 0,
+                "layout": "horizontal"
             },
             {
-                "key": "field_662a2eecf5810",
-                "label": "Hosts",
-                "name": "hosts",
+                "key": "field_66e00da129b21",
+                "label": "Feature",
+                "name": "feature",
                 "aria-label": "",
                 "type": "repeater",
                 "instructions": "",
@@ -37,7 +41,7 @@
                     "class": "",
                     "id": ""
                 },
-                "layout": "block",
+                "layout": "table",
                 "pagination": 0,
                 "min": 0,
                 "max": 0,
@@ -46,51 +50,9 @@
                 "rows_per_page": 20,
                 "sub_fields": [
                     {
-                        "key": "field_662a2efaf5811",
-                        "label": "Name",
-                        "name": "name",
-                        "aria-label": "",
-                        "type": "text",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "default_value": "",
-                        "maxlength": "",
-                        "placeholder": "",
-                        "prepend": "",
-                        "append": "",
-                        "parent_repeater": "field_662a2eecf5810"
-                    },
-                    {
-                        "key": "field_662a2f00f5812",
-                        "label": "Bio",
-                        "name": "bio",
-                        "aria-label": "",
-                        "type": "textarea",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "default_value": "",
-                        "maxlength": "",
-                        "rows": "",
-                        "placeholder": "",
-                        "new_lines": "",
-                        "parent_repeater": "field_662a2eecf5810"
-                    },
-                    {
-                        "key": "field_662a2f07f5813",
-                        "label": "Image",
-                        "name": "image",
+                        "key": "field_66e00dba29b22",
+                        "label": "Number image",
+                        "name": "number_image",
                         "aria-label": "",
                         "type": "image",
                         "instructions": "",
@@ -111,14 +73,14 @@
                         "max_size": "",
                         "mime_types": "",
                         "preview_size": "medium",
-                        "parent_repeater": "field_662a2eecf5810"
+                        "parent_repeater": "field_66e00da129b21"
                     },
                     {
-                        "key": "field_66df58658dc40",
-                        "label": "Video embed",
-                        "name": "video_embed",
+                        "key": "field_66e00dd429b23",
+                        "label": "Content",
+                        "name": "content",
                         "aria-label": "",
-                        "type": "textarea",
+                        "type": "text",
                         "instructions": "",
                         "required": 0,
                         "conditional_logic": 0,
@@ -129,10 +91,10 @@
                         },
                         "default_value": "",
                         "maxlength": "",
-                        "rows": "",
                         "placeholder": "",
-                        "new_lines": "",
-                        "parent_repeater": "field_662a2eecf5810"
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_66e00da129b21"
                     }
                 ]
             }
@@ -142,7 +104,7 @@
                 {
                     "param": "block",
                     "operator": "==",
-                    "value": "acf\/ays-hosts"
+                    "value": "acf\/ays-whats-new"
                 }
             ]
         ],

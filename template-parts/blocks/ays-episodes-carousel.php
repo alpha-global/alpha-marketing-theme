@@ -27,6 +27,11 @@ if ( get_field( 'card_size' ) ) {
 	$card_size = get_field( 'card_size' );
 }
 
+if ( get_field( 'format' ) ) {
+	$format = get_field( 'format' );
+}
+
+
 $count = 0;
 
 ?>
@@ -34,19 +39,23 @@ $count = 0;
 <section id="<?php echo esc_attr( $block_id ); ?>" class="<?php echo esc_attr( $class_name ); ?>">
 	<div class="container ays-episode-carousel-container">
 		<h2><?php the_field( 'title' ); ?></h2>
-		<div class="swiper ays-episode-carousel-swiper ays-episode-carousel-colour-one-<?php echo $colour_one; ?> ays-episode-carousel-colour-two-<?php echo $colour_two; ?>">
+		<div class="swiper swiper-<?php echo $card_size; ?> ays-episode-carousel-swiper <?php if($format != 'video'){ ?> ays-episode-carousel-colour-one-<?php echo $colour_one; ?> ays-episode-carousel-colour-two-<?php echo $colour_two; ?> <?php } ?>">
 			<div class="swiper-wrapper">
 				<?php foreach($episodes as $episode){ ?>
 					<?php $count++; ?>
-					<div class="swiper-slide ays-episode <?php echo ($count % 2 == 1) ? "ays-episode-bg-".$colour_one : "ays-episode-bg-".$colour_two; ?>">
-						<div class="ays-episode-inner">
-							<div class="ays-episode-number">
-								<?php echo $episode['episode_number']; ?>
+					<div class="swiper-slide ays-episode <?php if($format != 'video'){ ?> <?php echo ($count % 2 == 1) ? "ays-episode-bg-".$colour_one : "ays-episode-bg-".$colour_two; ?> <?php } ?>">
+						<?php if($format == 'video'){ ?>
+							<?php echo $episode['video']; ?>
+						<?php } else { ?>
+							<div class="ays-episode-inner">
+								<div class="ays-episode-number">
+									<?php echo $episode['episode_number']; ?>
+								</div>
+								<div class="ays-episode-title">
+									<?php echo $episode['episode_title']; ?>
+								</div>
 							</div>
-							<div class="ays-episode-title">
-								<?php echo $episode['episode_title']; ?>
-							</div>
-						</div>
+						<?php } ?>
 					</div>
 				<?php } ?>
 			</div>

@@ -111,6 +111,22 @@ acf_add_local_field_group(array(
 			'mime_types' => '',
 			'preview_size' => 'medium',
 		),
+		array(
+			'key' => 'field_66e04828d5c95',
+			'label' => 'Button',
+			'name' => 'button',
+			'aria-label' => '',
+			'type' => 'link',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'return_format' => 'array',
+		),
 	),
 	'location' => array(
 		array(
