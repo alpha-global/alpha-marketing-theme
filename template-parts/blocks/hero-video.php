@@ -30,8 +30,11 @@ if ( get_field( 'video_file_ogg' ) ) {
 if ( get_field( 'fallback_image' ) ) {
 	$fallback_image = get_field( 'fallback_image' );
 }
-if ( get_field( 'button' ) ) {
-	$button = get_field( 'button' );
+if ( get_field( 'video_button_text' ) ) {
+	$video_button_text = get_field( 'video_button_text' );
+}
+if ( get_field( 'vimeo_id' ) ) {
+	$vimeo_id = get_field( 'vimeo_id' );
 }
 
 
@@ -68,9 +71,9 @@ if ( get_field( 'button' ) ) {
 		</defs>
 	</svg> -->
 
-	<?php if(isset($button)){ ?>
+	<?php if(isset($vimeo_id)){ ?>
 		<div class="alpha-hero-video-button">
-			<a class="ays-button" href="<?php echo $button['url'];?>"><?php echo $button['title']; ?></a>
+			<a href="https://vimeo.com/<?php echo $vimeo_id; ?>" data-loop="true" class="trailer-link ays-button"><?php echo $video_button_text; ?></a>
 		</div>
 	<?php } ?>
 

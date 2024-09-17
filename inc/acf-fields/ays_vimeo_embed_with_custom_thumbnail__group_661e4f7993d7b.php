@@ -8,6 +8,26 @@ acf_add_local_field_group(array(
 	'fields' => array(
 		array(
 			'key' => 'field_661e4f79d0086',
+			'label' => 'Div id',
+			'name' => 'div_id',
+			'aria-label' => '',
+			'type' => 'text',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'maxlength' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+		),
+		array(
+			'key' => 'field_66e2e256c83f4',
 			'label' => 'Vimeo video id',
 			'name' => 'vimeo_video_id',
 			'aria-label' => '',

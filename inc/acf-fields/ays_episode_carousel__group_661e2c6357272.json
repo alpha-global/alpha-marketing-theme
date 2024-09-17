@@ -205,10 +205,10 @@
                     },
                     {
                         "key": "field_66e068ef3be7e",
-                        "label": "Video",
-                        "name": "video",
+                        "label": "Vimeo id",
+                        "name": "vimeo_id",
                         "aria-label": "",
-                        "type": "textarea",
+                        "type": "text",
                         "instructions": "",
                         "required": 0,
                         "conditional_logic": [
@@ -227,9 +227,43 @@
                         },
                         "default_value": "",
                         "maxlength": "",
-                        "rows": "",
                         "placeholder": "",
-                        "new_lines": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_661e2d2669c36"
+                    },
+                    {
+                        "key": "field_66e2ba669d679",
+                        "label": "Thumbnail",
+                        "name": "thumbnail",
+                        "aria-label": "",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_66e068b73be7d",
+                                    "operator": "==",
+                                    "value": "video"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "",
+                        "preview_size": "medium",
                         "parent_repeater": "field_661e2d2669c36"
                     }
                 ]

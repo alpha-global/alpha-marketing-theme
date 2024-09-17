@@ -48,6 +48,19 @@
 
 .alpha-hero-video-button{
 	margin-bottom: 60px;
+
+	@include media( $mobile__only ) {
+		margin-bottom: 30px;
+	}
+}
+
+.page-template-template-ays-php{
+	.alpha-modal{
+		max-width: 1200px;
+	}
+	.alpha-modal-container{
+		background-color: rgba(0, 0, 0, 0.7);
+	}
 }
 
 // Parallax Stuff

@@ -109,11 +109,11 @@
                 "preview_size": "medium"
             },
             {
-                "key": "field_66e04828d5c95",
-                "label": "Button",
-                "name": "button",
+                "key": "field_66e2e6fcf898c",
+                "label": "Video button text",
+                "name": "video_button_text",
                 "aria-label": "",
-                "type": "link",
+                "type": "text",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -122,7 +122,31 @@
                     "class": "",
                     "id": ""
                 },
-                "return_format": "array"
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_66e04828d5c95",
+                "label": "Vimeo ID",
+                "name": "vimeo_id",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
             }
         ],
         "location": [

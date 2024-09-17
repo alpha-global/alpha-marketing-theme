@@ -31,7 +31,12 @@
 	function maybeAddPopup( link ) {
 		const $link = $( link );
 		const href = $link.prop( "href" );
-		const playerLink = getPlayerLink( href );
+		let playerLink = getPlayerLink( href );
+		const loop = $link.data("loop");
+
+		if(loop == true){
+			playerLink = playerLink + "&loop=1";
+		}
 
 		if ( false !== playerLink ) {
 			$link.data( "vimeo-player-url", playerLink );
