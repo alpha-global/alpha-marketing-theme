@@ -72,9 +72,11 @@ if ( get_field( 'vimeo_id' ) ) {
 	</svg> -->
 
 	<?php if(isset($vimeo_id)){ ?>
-		<div class="alpha-hero-video-button">
-			<a href="https://vimeo.com/<?php echo $vimeo_id; ?>" data-loop="true" class="trailer-link ays-button"><?php echo $video_button_text; ?></a>
-		</div>
+		<!-- <div class="container" style="text-align:right"> -->
+			<div class="alpha-hero-video-button">
+				<a href="https://vimeo.com/<?php echo $vimeo_id; ?>" data-loop="true" class="trailer-link ays-button"><?php echo $video_button_text; ?></a>
+			</div>
+		<!-- </div> -->
 	<?php } ?>
 
 </section>
