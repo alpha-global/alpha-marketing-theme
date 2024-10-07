@@ -30,7 +30,7 @@ $count = 0;
 							<div class="ays-host-content">
 								<div>
 									<div class="ays-host-image-mobile">
-										<?php if(isset($host['vimeo_id'])){ ?>
+										<?php if(isset($host['vimeo_id']) && $host['vimeo_id'] != '' ){ ?>
 											<div class="ays-custom-thumb" style="position: relative;">
 
 												<div class="video-container" style="padding-top:177.92%">
@@ -74,7 +74,7 @@ $count = 0;
 								</div>
 							</div>
 							<div class="ays-host-image ays-host-image-desktop">
-								<?php if(isset($host['vimeo_id'])){ ?>
+								<?php if(isset($host['vimeo_id'])  && $host['vimeo_id'] != '' ){ ?>
 									<div class="ays-custom-thumb">
 
 										<div class="video-container" style="padding-top:177.92%">
