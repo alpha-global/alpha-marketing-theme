@@ -75,6 +75,7 @@ $count = 0;
 							</div>
 							<div class="ays-host-image ays-host-image-desktop">
 								<?php if(isset($host['vimeo_id'])  && $host['vimeo_id'] != '' ){ ?>
+
 									<div class="ays-custom-thumb">
 
 										<div class="video-container" style="padding-top:177.92%">
