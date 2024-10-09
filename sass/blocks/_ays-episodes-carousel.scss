@@ -67,7 +67,7 @@
 	padding: 2rem 4em 2rem 2rem;
 
 	@include media($tablet__desktop){
-		padding: 5rem 5em 6rem 3rem;
+		padding: 5rem 6em 6rem 4rem;
 	}
 }
 .ays-episode-title{
@@ -81,7 +81,7 @@
 	margin: 0;
 
 	@include media($tablet__desktop){
-		font-size: 56px;
+		font-size: 60px;
 		line-height: 60px;
 	}
 }
@@ -115,28 +115,17 @@ html .swiper-button-next{
 	display: none;
 	background-color: #000;
 	color: #fff;
-	height: 45px;
-	width: 45px;
+	height: 60px;
+	width: 60px;
 	border-radius: 9999px;
 
 	&:after{
-		font-size: 14px;
+		font-size: 28px;
 	}
 
 	@include media($tablet__desktop){
 		display: flex;
-		height: 60px;
-		width: 60px;
-		&:after{
-			font-size: 28px;
-		}
 	}
-}
-html .swiper-button-prev{
-	margin-left: -40px;
-}
-html .swiper-button-next{
-	margin-right: -40px;
 }
 @include media-breakpoint-up(1170px){
 	html .swiper-button-prev{
@@ -146,56 +135,7 @@ html .swiper-button-next{
 		margin-right: -80px;
 	}
 }
-@include media($mobile__only){
-	html .ays-episode-container-video{
-		.swiper-button-prev{
-			margin-left: -45px;
-			display: flex;
-		}
-		.swiper-button-next{
-			margin-right: -45px;
-			display: flex;
-		}
-		.swiper-wrapper{
-			margin-left: 15px;
-		}
-		.swiper-scrollbar{
-			margin-left: 15px;
-			width: calc(100% - 30px) !important;
-		}
-	}
-}
 
-.svg-fill-ays-pink{
-	path{
-		fill: $color__ays-pink;
-	}
-}
-.svg-fill-ays-blue{
-	path{
-		fill: $color__ays-blue;
-	}
-}
-.svg-fill-ays-light-blue{
-	path{
-		fill: $color__ays-light-blue;
-	}
-}
-.svg-fill-ays-green{
-	path{
-		fill: $color__ays-green;
-	}
-}
-.svg-fill-ays-purple{
-	path{
-		fill: $color__ays-purple;
-	}
-}
-.svg-fill-ays-bright-pink{
-	path{
-		fill: $color__ays-bright-pink;
-	}
-}
 // .ays-episode-carousel-slick{
 // 	.slick-list{
 // 		overflow: visible;

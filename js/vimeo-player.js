@@ -1,8 +1,7 @@
 ( function ( $ ) {
 
 		$('.ays-vimeo-custom-thumb-cover').on( 'click', function( event ) {
-			
-			if($(this).data('vimeo-video-id')){
+						if($(this).data('vimeo-video-id')){
 				var vimeo_id = $(this).data('vimeo-video-id');
 				$(this).closest('.video-container').prepend('<iframe class="" style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://player.vimeo.com/video/'+vimeo_id+'?badge=0&title=0&byline=0&portrait=0&autoplay=1&loop=1" width="100%" height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay"> </iframe>');
 			}else if($(this).data('brightcove-video-id')){
@@ -10,6 +9,7 @@
 				$(this).closest('.video-container').prepend('<iframe class="" style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://players.brightcove.net/6415869056001/qRAa9DVAzG_default/index.html?videoId='+brightcove_id+'&autoplay=1" width="100%" height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay"> </iframe>');
 
 			}
+
 			$(this).fadeOut();
 		} );
 
@@ -39,7 +39,7 @@
 				$("#watch-trailer .ays-vimeo-custom-thumb-cover").fadeOut();
 		      }
 
-		      // smoothScroll(target);
+		      //smoothScroll(target);
 		    });
 		  });
 		});

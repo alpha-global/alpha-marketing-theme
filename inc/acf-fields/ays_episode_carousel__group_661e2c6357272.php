@@ -127,72 +127,6 @@ acf_add_local_field_group(array(
 			'layout' => 'horizontal',
 		),
 		array(
-			'key' => 'field_66fbd73d957e6',
-			'label' => 'Video source',
-			'name' => 'video_source',
-			'aria-label' => '',
-			'type' => 'button_group',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => array(
-				array(
-					array(
-						'field' => 'field_66e068b73be7d',
-						'operator' => '==',
-						'value' => 'video',
-					),
-				),
-			),
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'choices' => array(
-				'vimeo' => 'Vimeo',
-				'brightcove' => 'Brightcove',
-			),
-			'default_value' => '',
-			'return_format' => 'value',
-			'allow_null' => 0,
-			'layout' => 'horizontal',
-		),
-		array(
-			'key' => 'field_6703b2f6c8ab4',
-			'label' => 'Play button colour',
-			'name' => 'play_button_colour',
-			'aria-label' => '',
-			'type' => 'button_group',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => array(
-				array(
-					array(
-						'field' => 'field_66e068b73be7d',
-						'operator' => '==',
-						'value' => 'video',
-					),
-				),
-			),
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'choices' => array(
-				'ays-green' => 'Green',
-				'ays-blue' => 'Blue',
-				'ays-light-blue' => 'Light Blue',
-				'ays-purple' => 'Purple',
-				'ays-pink' => 'Pink',
-				'white' => 'White',
-			),
-			'default_value' => '',
-			'return_format' => 'value',
-			'allow_null' => 0,
-			'layout' => 'horizontal',
-		),
-		array(
 			'key' => 'field_661e2d2669c36',
 			'label' => 'Episodes',
 			'name' => 'episodes',
@@ -274,7 +208,7 @@ acf_add_local_field_group(array(
 				),
 				array(
 					'key' => 'field_66e068ef3be7e',
-					'label' => 'Video id',
+					'label' => 'Vimeo id',
 					'name' => 'vimeo_id',
 					'aria-label' => '',
 					'type' => 'text',
