@@ -1,5 +1,10 @@
 .ays-hosts-swiper{
 	position: relative;
+	.swiper-slide{
+		height: auto;
+		background: $color__ays-light-blue;
+	}
+
 }
 .ays-host-inner{
 	background: $color__ays-light-blue;
@@ -14,6 +19,14 @@
 	@include media($tablet__desktop){
 		width: 50%;
 		position: relative;
+	}
+	img{
+		border: solid 6px $color__ays-green;
+	}
+	.ays-vimeo-custom-thumb-cover{
+		box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    -webkit-box-sizing: border-box;
 	}
 }
 
@@ -72,7 +85,7 @@
 	}
 	.swiper-pagination-container{
 		position: absolute;
-		bottom: 30px;
+		bottom: 10px;
 		
 		left: 2rem;
 		right: 2rem;
