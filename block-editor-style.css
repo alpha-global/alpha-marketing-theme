@@ -4288,7 +4288,7 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 	flex: 0 0 auto;
 	gap: 1rem;
 	animation-name: marquee;
-	animation-duration: 15s;
+	animation-duration: 120s;
 	animation-timing-function: linear;
 	animation-delay: 0s;
 	animation-iteration-count: infinite;

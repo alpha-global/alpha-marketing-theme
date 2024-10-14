@@ -6,7 +6,7 @@ Author URI: https://heartwp.com/
 Description: Basic theme for Alpha websites
 Primary Branch: main
 GitHub Theme URI: https://github.com/alpha-global/alpha-marketing-theme
-Version: 1.2.32
+Version: 1.2.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: alpha
@@ -5312,7 +5312,7 @@ h1.ays-title-animation-h1 {
 	flex: 0 0 auto;
 	gap: 1rem;
 	animation-name: marquee;
-	animation-duration: 15s;
+	animation-duration: 120s;
 	animation-timing-function: linear;
 	animation-delay: 0s;
 	animation-iteration-count: infinite;
