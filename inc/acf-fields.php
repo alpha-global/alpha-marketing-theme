@@ -2,7 +2,7 @@
 /**
  * ACF field groups linked separately.
  *
- * @package alpha-marketing-theme-two;
+ * @package alpha-marketing-theme;
  */
 
 if ( function_exists( 'acf_add_local_field_group' ) ) :

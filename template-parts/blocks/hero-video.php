@@ -77,10 +77,10 @@ if ( get_field( 'video_source' ) ) {
 	<?php if(isset($vimeo_id)){ ?>
 		<!-- <div class="container" style="text-align:right"> -->
 			<div class="alpha-hero-video-button">
-				<?php if($video_source == 'vimeo'){ ?>
-					<a href="https://vimeo.com/<?php echo $vimeo_id; ?>" data-loop="true" class="trailer-link ays-button"><?php echo $video_button_text; ?></a>
-				<?php }elseif($video_source == 'brightcove'){ ?>
+				<?php if(isset($video_source) && $video_source == 'brightcove'){ ?>
 					<a href="https://brightcove.net/<?php echo $vimeo_id; ?>" data-loop="true" class="trailer-link ays-button"><?php echo $video_button_text; ?></a>
+				<?php } else { ?>
+					<a href="https://vimeo.com/<?php echo $vimeo_id; ?>" data-loop="true" class="trailer-link ays-button"><?php echo $video_button_text; ?></a>
 				<?php } ?>
 			</div>
 		<!-- </div> -->
