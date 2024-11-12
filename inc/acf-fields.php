@@ -2,7 +2,7 @@
 /**
  * ACF field groups linked separately.
  *
- * @package alpha-marketing-theme;
+ * @package alpha-marketing-theme-two;
  */
 
 if ( function_exists( 'acf_add_local_field_group' ) ) :
@@ -18,7 +18,7 @@ if ( function_exists( 'acf_add_local_field_group' ) ) :
 	require_once __DIR__ . '/acf-fields/ays_link_tiles__group_66193e7b06799.php';
 	require_once __DIR__ . '/acf-fields/ays_stay_connected__group_661e6a674791c.php';
 	require_once __DIR__ . '/acf-fields/ays_title_animation__group_66e03e596b9d6.php';
-	require_once __DIR__ . '/acf-fields/ays_vimeo_embed_with_custom_thumbnail__group_661e4f7993d7b.php';
+	require_once __DIR__ . '/acf-fields/ays_video_embed_with_custom_thumbnail__group_661e4f7993d7b.php';
 	require_once __DIR__ . '/acf-fields/ays_what_s_new__group_66e00d86d1fab.php';
 	require_once __DIR__ . '/acf-fields/card_block__group_60a630fdaa1fc.php';
 	require_once __DIR__ . '/acf-fields/contributor_block__group_60b7377599884.php';

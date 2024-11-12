@@ -21,9 +21,8 @@ $i = 0;
 
 <section id="<?php echo esc_attr( $block_id ); ?>" class="<?php echo esc_attr( $class_name ); ?>">
 	<div class="container-full">
-		
 		<?php foreach($tiles as $tile){ ?>
-			<a href="<?php if($tile['country_selector'] == 'on'){ echo 'javascript:void(0)'; } else { echo $tile['link']['url']; } ?>" class="ays-link-tile ays-link-tile-<?php echo $i; ?> <?php if($tile['country_selector'] == 'on'){ echo 'ays-link-tile-country-selector'; } ?>">
+			<a href="<?php if($tile['country_selector'] == 'on'){ echo 'javascript:void(0)'; } else { echo $tile['link']['url']; } ?>" class="ays-link-tile ays-link-tiles-count-<?php echo sizeof($tiles); ?> ays-link-tile-<?php echo $i; ?> <?php if($tile['country_selector'] == 'on'){ echo 'ays-link-tile-country-selector'; } ?>">
 
 				<img src="<?php echo $tile['image']['url']; ?>" alt="<?php echo $tile['image']['alt']; ?>" />
 

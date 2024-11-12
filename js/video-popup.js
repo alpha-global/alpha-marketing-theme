@@ -13,6 +13,10 @@
 				search: /https?:\/\/youtu\.be\/(.*?)/,
 				replace: "https://www.youtube.com/embed/$1",
 			},
+			brigthcove: {
+				search: /https?:\/\/brightcove\.net\/(\d+)/,
+				replace: "https://players.brightcove.net/6415869056001/qRAa9DVAzG_default/index.html?videoId=$1&autoplay=1",
+			},
 		};
 
 		for ( const [ _, player ] of Object.entries( videoPlayers ) ) {

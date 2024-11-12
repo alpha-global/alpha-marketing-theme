@@ -1012,61 +1012,6 @@ textarea {
 .ays-styles p ~ hr {
 	margin-bottom: 30px !important; }
 
-.ays-styles .ays-group-animation .wp-block-group__inner-container {
-	position: relative;
-	max-width: 1000px; }
-.ays-styles .ays-group-animation .wp-block-group__inner-container h2 {
-	font-size: 2.5rem !important;
-	line-height: 2.5rem !important;
-	max-width: 680px;
-	margin: 0 auto;
-	margin-bottom: 2rem; }
-.ays-styles .ays-group-animation .wp-block-group__inner-container p {
-	font-size: 1.5rem !important;
-	line-height: 2rem !important;
-	z-index: 1;
-	position: relative; }
-.ays-styles .ays-group-animation .wp-block-group__inner-container .ays-button {
-	margin-bottom: 0;
-	z-index: 1; }
-
-.ays-styles .ays-group-animation .ays-banner-left {
-	position: absolute;
-	width: 250px;
-	right: -40px;
-	bottom: -130px; }
-@media (min-width: 600px) {
-	.ays-styles .ays-group-animation .ays-banner-left {
-		bottom: -50px;
-		right: 20px; } }
-
-.ays-styles .ays-group-animation .ays-banner-right {
-	position: absolute;
-	bottom: -80px;
-	left: -80px;
-	width: 180px; }
-@media (min-width: 600px) {
-	.ays-styles .ays-group-animation .ays-banner-right {
-		left: -20px;
-		bottom: -120px; } }
-@media (min-width: 1024px) {
-	.ays-styles .ays-group-animation .ays-banner-right {
-		left: -60px;
-		bottom: -80px; } }
-
-.ays-styles .ays-group-animation .ays-banner-left-top {
-	position: absolute;
-	right: -80px;
-	top: -80px;
-	width: 170px; }
-@media (min-width: 600px) {
-	.ays-styles .ays-group-animation .ays-banner-left-top {
-		right: -40px; } }
-@media (min-width: 1024px) {
-	.ays-styles .ays-group-animation .ays-banner-left-top {
-		right: 0px;
-		top: -30px; } }
-
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -3099,22 +3044,64 @@ html .swiper-button-next {
 	display: none;
 	background-color: #000;
 	color: #fff;
-	height: 60px;
-	width: 60px;
+	height: 45px;
+	width: 45px;
 	border-radius: 9999px; }
 html .swiper-button-prev:after,
 html .swiper-button-next:after {
-	font-size: 28px; }
+	font-size: 14px; }
 @media (min-width: 600px) {
 	html .swiper-button-prev,
 	html .swiper-button-next {
-		display: flex; } }
+		display: flex;
+		height: 60px;
+		width: 60px; }
+	html .swiper-button-prev:after,
+	html .swiper-button-next:after {
+		font-size: 28px; } }
+
+html .swiper-button-prev {
+	margin-right: -40px; }
+
+html .swiper-button-next {
+	margin-left: -40px; }
 
 @media (min-width: 1170px) {
 	html .swiper-button-prev {
 		margin-right: -80px; }
 	html .swiper-button-next {
 		margin-left: -80px; } }
+
+@media (max-width: 599px) {
+	html .ays-episode-container-video .swiper-button-prev {
+		margin-right: -45px;
+		display: flex; }
+	html .ays-episode-container-video .swiper-button-next {
+		margin-left: -45px;
+		display: flex; }
+	html .ays-episode-container-video .swiper-wrapper {
+		margin-right: 15px; }
+	html .ays-episode-container-video .swiper-scrollbar {
+		margin-right: 15px;
+		width: calc(100% - 30px) !important; } }
+
+.svg-fill-ays-pink path {
+	fill: #D90099; }
+
+.svg-fill-ays-blue path {
+	fill: #4F38E1; }
+
+.svg-fill-ays-light-blue path {
+	fill: #0042FF; }
+
+.svg-fill-ays-green path {
+	fill: #C2FF00; }
+
+.svg-fill-ays-purple path {
+	fill: #4F38E1; }
+
+.svg-fill-ays-bright-pink path {
+	fill: #FF22ED; }
 
 .ays-episode-carousel-container .swiper-scrollbar {
 	bottom: -30px !important;
@@ -3311,7 +3298,9 @@ html .swiper-button-next:after {
 	.ays-link-tile {
 		width: 50%;
 		position: relative;
-		height: 900px; } }
+		height: 900px; }
+	.ays-link-tile.ays-link-tiles-count-1 {
+		width: 100%; } }
 .ays-link-tile:hover .ays-tile-overlay {
 	opacity: 0; }
 .ays-link-tile:hover .ays-link-button {
@@ -3891,6 +3880,11 @@ h1.ays-title-animation-h1 {
 	100% {
 		transform: translateX(100%); } }
 
+.acf-block-preview .ticker-tape-container {
+	margin-right: 0;
+	margin-left: 0;
+	overflow: hidden; }
+
 .ays-whats-new-animation-container {
 	position: relative; }
 
@@ -4049,6 +4043,61 @@ h1.ays-title-animation-h1 {
 		left: 46%;
 		top: -40px;
 		width: 104px; } }
+
+.ays-group-animation .wp-block-group__inner-container {
+	position: relative;
+	max-width: 1000px; }
+.ays-group-animation .wp-block-group__inner-container h2 {
+	font-size: 2.5rem !important;
+	line-height: 2.5rem !important;
+	max-width: 680px;
+	margin: 0 auto;
+	margin-bottom: 2rem; }
+.ays-group-animation .wp-block-group__inner-container p {
+	font-size: 1.5rem !important;
+	line-height: 2rem !important;
+	z-index: 1;
+	position: relative; }
+.ays-group-animation .wp-block-group__inner-container .ays-button {
+	margin-bottom: 0;
+	z-index: 1; }
+
+.ays-group-animation .ays-banner-left {
+	position: absolute;
+	width: 250px;
+	right: -40px;
+	bottom: -130px; }
+@media (min-width: 600px) {
+	.ays-group-animation .ays-banner-left {
+		bottom: -50px;
+		right: 20px; } }
+
+.ays-group-animation .ays-banner-right {
+	position: absolute;
+	bottom: -80px;
+	left: -80px;
+	width: 180px; }
+@media (min-width: 600px) {
+	.ays-group-animation .ays-banner-right {
+		left: -20px;
+		bottom: -120px; } }
+@media (min-width: 1024px) {
+	.ays-group-animation .ays-banner-right {
+		left: -60px;
+		bottom: -80px; } }
+
+.ays-group-animation .ays-banner-left-top {
+	position: absolute;
+	right: -80px;
+	top: -80px;
+	width: 170px; }
+@media (min-width: 600px) {
+	.ays-group-animation .ays-banner-left-top {
+		right: -40px; } }
+@media (min-width: 1024px) {
+	.ays-group-animation .ays-banner-left-top {
+		right: 0px;
+		top: -30px; } }
 
 .wp-block-columns {
 	margin-bottom: 0; }
