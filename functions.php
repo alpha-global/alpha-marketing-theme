@@ -183,7 +183,7 @@ function alpha_scripts() {
 
 	wp_enqueue_script( 'alpha-navigation', get_template_directory_uri() . '/js/navigation.js', array(), $version, true );
 	wp_enqueue_script( 'alpha-buttons', get_template_directory_uri() . '/js/buttons.js', array(), $version, true );
-	wp_enqueue_script( 'alpha-video-popup', get_template_directory_uri() . '/js/video-popup.js', array( 'jquery' ), 0, true );
+	wp_enqueue_script( 'alpha-video-popup', get_template_directory_uri() . '/js/video-popup.js', array( 'jquery' ), $version, true );
 
 	// Work Sans for AYS
 	wp_enqueue_style( 'work-sans-google-fonts', 'https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900', false ); 
