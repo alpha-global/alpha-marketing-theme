@@ -2176,6 +2176,9 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 	background-color: #4F38E1; }
 .block-editor-block-list__layout .wp-block .ays-episode-carousel-container .swiper-scrollbar-ays-light-blue .swiper-scrollbar-drag {
 	background-color: #0042FF; }
+.block-editor-block-list__layout .wp-block .ays-episode-count-1 .swiper-button-prev,
+.block-editor-block-list__layout .wp-block .ays-episode-count-1 .swiper-button-next {
+	display: none; }
 .block-editor-block-list__layout .wp-block .ays-parallax .ays-episode-carousel-swiper {
 	transform: translate3d(100%, 120px, 0px);
 	transition-property: transform;
@@ -2861,7 +2864,7 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 	flex: 0 0 auto;
 	gap: 1rem;
 	animation-name: marquee;
-	animation-duration: 15s;
+	animation-duration: 120s;
 	animation-timing-function: linear;
 	animation-delay: 0s;
 	animation-iteration-count: infinite;

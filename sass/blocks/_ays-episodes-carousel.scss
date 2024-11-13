@@ -254,6 +254,13 @@ html .swiper-button-next{
 	// }
 }
 
+.ays-episode-count-1{
+	.swiper-button-prev,
+	.swiper-button-next{
+		display: none;
+	}
+}
+
 // Parallax stuff
 .ays-parallax{
 	.ays-episode-carousel-swiper{
