@@ -4,7 +4,7 @@ if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
 	'key' => 'group_661e4f7993d7b',
-	'title' => 'AYS Vimeo embed with custom thumbnail',
+	'title' => 'AYS video embed with custom thumbnail',
 	'fields' => array(
 		array(
 			'key' => 'field_661e4f79d0086',
@@ -27,8 +27,31 @@ acf_add_local_field_group(array(
 			'append' => '',
 		),
 		array(
+			'key' => 'field_67323e7b00555',
+			'label' => 'Video source',
+			'name' => 'video_source',
+			'aria-label' => '',
+			'type' => 'button_group',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'choices' => array(
+				'vimeo' => 'Vimeo',
+				'brightcove' => 'Brightcove',
+			),
+			'default_value' => '',
+			'return_format' => 'value',
+			'allow_null' => 0,
+			'layout' => 'horizontal',
+		),
+		array(
 			'key' => 'field_66e2e256c83f4',
-			'label' => 'Vimeo video id',
+			'label' => 'Video id',
 			'name' => 'vimeo_video_id',
 			'aria-label' => '',
 			'type' => 'text',

@@ -129,8 +129,31 @@
                 "append": ""
             },
             {
+                "key": "field_673242b3ad6e6",
+                "label": "Video popup source",
+                "name": "video_source",
+                "aria-label": "",
+                "type": "button_group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "vimeo": "Vimeo",
+                    "brightcove": "Brightcove"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "layout": "horizontal"
+            },
+            {
                 "key": "field_66e04828d5c95",
-                "label": "Vimeo ID",
+                "label": "Video ID",
                 "name": "vimeo_id",
                 "aria-label": "",
                 "type": "text",

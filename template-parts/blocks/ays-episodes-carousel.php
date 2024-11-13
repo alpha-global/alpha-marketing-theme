@@ -48,7 +48,7 @@ $count = 0;
 ?>
 
 <section id="<?php echo esc_attr( $block_id ); ?>" class="<?php echo esc_attr( $class_name ); ?>">
-	<div class="container ays-episode-carousel-container ays-episode-container-<?php echo $format; ?>">
+	<div class="container ays-episode-count-<?php echo sizeof($episodes); ?> ays-episode-carousel-container ays-episode-container-<?php echo $format; ?>">
 		<h2><?php the_field( 'title' ); ?></h2>
 		<div class="swiper swiper-<?php echo $card_size; ?> ays-episode-carousel-swiper <?php if($format != 'video'){ ?> ays-episode-carousel-colour-one-<?php echo $colour_one; ?> ays-episode-carousel-colour-two-<?php echo $colour_two; ?> <?php } ?>">
 			<div class="swiper-wrapper">
