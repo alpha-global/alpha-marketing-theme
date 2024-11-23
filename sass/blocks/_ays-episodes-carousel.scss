@@ -163,6 +163,13 @@ html .swiper-button-next{
 			margin-left: 15px;
 			width: calc(100% - 30px) !important;
 		}
+
+		&.ays-episode-count-1{
+			.swiper-button-prev,
+			.swiper-button-next{
+				display: none;
+			}
+		}
 	}
 }
 

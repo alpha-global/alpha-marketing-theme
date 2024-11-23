@@ -2152,7 +2152,10 @@ body.admin-bar .block-editor-block-list__layout .wp-block .alpha-hero-blog {
 		margin-left: 15px; }
 	.block-editor-block-list__layout .wp-block html .ays-episode-container-video .swiper-scrollbar {
 		margin-left: 15px;
-		width: calc(100% - 30px) !important; } }
+		width: calc(100% - 30px) !important; }
+	.block-editor-block-list__layout .wp-block html .ays-episode-container-video.ays-episode-count-1 .swiper-button-prev,
+	.block-editor-block-list__layout .wp-block html .ays-episode-container-video.ays-episode-count-1 .swiper-button-next {
+		display: none; } }
 .block-editor-block-list__layout .wp-block .svg-fill-ays-pink path {
 	fill: #D90099; }
 .block-editor-block-list__layout .wp-block .svg-fill-ays-blue path {
